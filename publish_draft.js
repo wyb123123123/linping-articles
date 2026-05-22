@@ -239,10 +239,8 @@ async function main() {
     // Step 3.5: Convert <a> links to text (未认证订阅号不支持正文内可点击外链)
     console.log('Step 3.5: Converting links...');
     html = convertLinksToText(html);
-    // Add reading guidance at end
     const ghPagesBase = 'https://wyb123123123.github.io/linping-articles/';
     const ghPageUrl = ghPagesBase + path.basename(htmlFile);
-    html += `<section style="margin-top:20px;padding:12px 16px;background:#F5F1EA;border-left:3px solid #8B6920;text-align:left;font-size:13px;color:#4A2C1A;">💡 <b>提示：</b>点击文末「<b>阅读原文</b>」可查看所有资讯的完整链接和详细内容。</section>`;
 
     const size = Buffer.byteLength(html, 'utf-8');
     console.log(`  Final HTML: ${size} bytes`);
@@ -258,11 +256,11 @@ async function main() {
     console.log('Step 5: Creating draft...');
     const draftResult = await httpsPost('api.weixin.qq.com', `/cgi-bin/draft/add?access_token=${token}`, {
       articles: [{
-        title, author: '临平数据产业协会', digest,
+        title, author: '临数通', digest,
         content: html,
         content_source_url: ghPageUrl,
         thumb_media_id: coverMediaId,
-        need_open_comment: 0,
+        need_open_comment: 1,
         only_fans_can_comment: 0,
         need_open_original: 1,
         pic_crop: { left: 0, right: 1, top: 0, bottom: 1 }
