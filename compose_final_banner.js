@@ -1,5 +1,31 @@
 const sharp = require('sharp');
 
+// 日期：默认使用明天（因为日报是前一天晚上生成、第二天发布）
+// 可通过命令行参数传入，如 node compose_final_banner.js 2026-05-23
+function getTargetDate() {
+  const arg = process.argv[2];
+  if (arg && /^\d{4}-\d{2}-\d{2}$/.test(arg)) {
+    return new Date(arg + 'T08:00:00+08:00');
+  }
+  // 默认：明天
+  const now = new Date();
+  const tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+  return tomorrow;
+}
+
+function formatDateCN(date) {
+  const weekdays = ['日', '一', '二', '三', '四', '五', '六'];
+  const y = date.getFullYear();
+  const m = date.getMonth() + 1;
+  const d = date.getDate();
+  const w = weekdays[date.getDay()];
+  return `${y}年${m}月${d}日 星期${w}`;
+}
+
+const targetDate = getTargetDate();
+const dateStr = formatDateCN(targetDate);
+console.log(`Target date: ${dateStr}`);
+
 async function main() {
   const W = 900, H = 320;
 
@@ -115,7 +141,7 @@ async function main() {
       <text x="${cx}" y="${dateY}" text-anchor="middle"
             font-family="Arial,Helvetica,'Microsoft YaHei',sans-serif"
             font-size="${dateFontSize}" font-weight="400" letter-spacing="7"
-            fill="rgba(255,255,255,0.78)" filter="url(#lightS)">2026年5月22日 星期五</text>
+            fill="rgba(255,255,255,0.78)" filter="url(#lightS)">${dateStr}</text>
 
       <!-- 副标语 -->
       <text x="${cx}" y="${subY}" text-anchor="middle"
