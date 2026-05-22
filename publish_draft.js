@@ -1,52 +1,175 @@
 const fs = require('fs');
 const https = require('https');
+const path = require('path');
 
-const html = fs.readFileSync('articles/linping_article_2026-05-22.html', 'utf-8');
+// Support command-line arguments: node publish_draft.js <html_file> [image_file]
+const args = process.argv.slice(2);
+const htmlFile = args[0] || 'articles/linping_daily_2026-05-22.html';
+const imageFile = args[1] || null;
+
+// Read config
+let wechatConfig;
+try {
+  wechatConfig = JSON.parse(fs.readFileSync(
+    path.join(process.env.HOME || process.env.USERPROFILE, '.workbuddy/wechat/config.json'), 'utf-8'
+  ));
+} catch (e) {
+  console.error('Failed to read wechat config:', e.message);
+  process.exit(1);
+}
+
+// Read article HTML
+let html;
+try {
+  html = fs.readFileSync(htmlFile, 'utf-8');
+} catch (e) {
+  console.error('Failed to read HTML file:', htmlFile);
+  process.exit(1);
+}
+
+// Extract title from HTML
+const titleMatch = html.match(/<title>(.*?)<\/title>/);
+const cnTitleMatch = html.match(/<div class="cn-title">(.*?)<\/div>/);
+const title = cnTitleMatch ? cnTitleMatch[1] + ' - ' + (titleMatch ? titleMatch[1].replace('数据资产日报 - ', '') : path.basename(htmlFile, '.html')) : (titleMatch ? titleMatch[1] : path.basename(htmlFile, '.html'));
+
+// Extract digest from first news item
+const digestMatch = html.match(/<div class="item-desc">\s*(.*?)\s*<\/div>/);
+const digest = digestMatch ? digestMatch[1].replace(/<[^>]+>/g, '').substring(0, 120) : '聚焦数据要素市场动态，洞察数字经济发展趋势——临平数协数据资产日报';
 
 function getToken() {
-  return new Promise((resolve) => {
-    https.get('https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wx511d73d0da197f60&secret=eb96d14a1c96d4d4d9b0996ed6605f5c', (res) => {
+  return new Promise((resolve, reject) => {
+    const url = `https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=${wechatConfig.appid}&secret=${wechatConfig.appsecret}`;
+    https.get(url, (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
-      res.on('end', () => resolve(JSON.parse(data).access_token));
-    });
+      res.on('end', () => {
+        const result = JSON.parse(data);
+        if (result.access_token) {
+          resolve(result.access_token);
+        } else {
+          reject(new Error('Token error: ' + data));
+        }
+      });
+    }).on('error', reject);
   });
 }
 
-async function main() {
-  const token = await getToken();
-  console.log('Token obtained, creating draft...');
+function uploadImage(token, imagePath) {
+  return new Promise((resolve, reject) => {
+    const boundary = '----FormBoundary' + Math.random().toString(36).substring(2);
+    const fileData = fs.readFileSync(imagePath);
+    const filename = path.basename(imagePath);
 
+    const header = Buffer.from(
+      `--${boundary}\r\nContent-Disposition: form-data; name="media"; filename="${filename}"\r\nContent-Type: image/png\r\n\r\n`
+    );
+    const footer = Buffer.from(`\r\n--${boundary}--\r\n`);
+
+    const body = Buffer.concat([header, fileData, footer]);
+
+    const req = https.request({
+      hostname: 'api.weixin.qq.com',
+      path: `/cgi-bin/material/add_material?access_token=${token}&type=image`,
+      method: 'POST',
+      headers: {
+        'Content-Type': `multipart/form-data; boundary=${boundary}`,
+        'Content-Length': body.length
+      }
+    }, (res) => {
+      let data = '';
+      res.on('data', chunk => data += chunk);
+      res.on('end', () => {
+        const result = JSON.parse(data);
+        if (result.media_id) {
+          console.log('Image uploaded, media_id:', result.media_id);
+          resolve(result.media_id);
+        } else {
+          reject(new Error('Image upload error: ' + data));
+        }
+      });
+    });
+    req.on('error', reject);
+    req.write(body);
+    req.end();
+  });
+}
+
+async function createDraft(token, mediaId) {
   const body = JSON.stringify({
     articles: [{
-      title: '数据资产化三问：中小企业数字化转型的"临平路径"',
+      title: title,
       author: '临平数据产业协会',
-      digest: '2023年国家数据局挂牌以来，数据正式成为第五大生产要素。2026年政策全面落地，中小企业数据资产化到底怎么走？本期干货科普，结合临平产业实践，梳理三步走路径。',
+      digest: digest,
       content: html,
       content_source_url: '',
-      thumb_media_id: '0lXgYYY6YEIzRsOzZH6BCA4szgrOw3VsIW1MRFKTbCThttrlTrLBCbJu2Raiuqw9',
+      thumb_media_id: mediaId,
       need_open_comment: 0,
       only_fans_can_comment: 0,
       pic_crop: { left: 0, right: 1, top: 0, bottom: 1 }
     }]
   });
 
-  const result = await new Promise((resolve) => {
+  return new Promise((resolve, reject) => {
     const req = https.request({
       hostname: 'api.weixin.qq.com',
       path: '/cgi-bin/draft/add?access_token=' + token,
       method: 'POST',
-      headers: { 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': Buffer.byteLength(body) }
+      headers: {
+        'Content-Type': 'application/json; charset=utf-8',
+        'Content-Length': Buffer.byteLength(body)
+      }
     }, (res) => {
       let data = '';
       res.on('data', chunk => data += chunk);
       res.on('end', () => resolve(data));
     });
+    req.on('error', reject);
     req.write(body);
     req.end();
   });
-
-  console.log('Result:', result);
 }
 
-main().catch(err => console.error('Error:', err));
+async function main() {
+  try {
+    console.log('=== 临平数协公众号草稿箱推送 ===');
+    console.log('HTML:', htmlFile);
+    console.log('Title:', title);
+    console.log('');
+
+    const token = await getToken();
+    console.log('Step 1: Token obtained');
+
+    let mediaId;
+    if (imageFile) {
+      mediaId = await uploadImage(token, imageFile);
+    } else {
+      // Look for any png/jpg in articles dir as fallback
+      const dir = path.dirname(htmlFile);
+      const files = fs.readdirSync(dir).filter(f => f.match(/\.(png|jpg|jpeg)$/i));
+      if (files.length > 0) {
+        const fallback = path.join(dir, files[files.length - 1]);
+        mediaId = await uploadImage(token, fallback);
+      } else {
+        console.error('No image file found and none specified');
+        process.exit(1);
+      }
+    }
+    console.log('Step 2: Image uploaded');
+
+    const result = await createDraft(token, mediaId);
+    console.log('Step 3: Draft created');
+    console.log('Result:', result);
+
+    const parsed = JSON.parse(result);
+    if (parsed.media_id) {
+      console.log('\n✅ 推送成功！草稿已存入公众号草稿箱');
+    } else if (parsed.errmsg) {
+      console.log('\n⚠️ ', parsed.errmsg);
+    }
+  } catch (err) {
+    console.error('Error:', err.message);
+    process.exit(1);
+  }
+}
+
+main();
