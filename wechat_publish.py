@@ -12,7 +12,7 @@ import requests
 # ==================== 配置 ====================
 CONFIG_PATH = os.path.expanduser("~/.workbuddy/wechat/config.json")
 BASE_URL = "https://api.weixin.qq.com"
-AUTHOR = "杭州市临平区数据产业协会"
+AUTHOR = "临平数据产业协会"
 
 def load_config():
     with open(CONFIG_PATH, "r", encoding="utf-8") as f:
