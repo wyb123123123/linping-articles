@@ -64,20 +64,14 @@ function parseAndInlineCSS(html) {
   for (const [cls, propsList] of Object.entries(rules)) {
     let styles = propsList.join(';');
 
-    // WeChat cleanup
+    // WeChat-safe cleanup — only remove what WeChat actually rejects
+    // 微信公众号富文本编辑器支持：gradient, box-shadow, flex, max-width 等
+    // 不支持：:hover伪类, position:fixed/sticky, animation, JavaScript
     styles = styles
-      .replace(/linear-gradient\([^)]+\)/gi, (m) => {
-        const c = m.match(/#[0-9a-fA-F]{3,8}/);
-        return c ? c[0] : '#F5F1EA';
-      })
-      .replace(/box-shadow:\s*[^;]+;?/gi, '')
       .replace(/:hover\s*\{[^}]*\}/g, '')
-      .replace(/display:\s*flex;?/g, '')
-      .replace(/align-items:\s*[^;]+;?/g, '')
-      .replace(/gap:\s*[^;]+;?/g, '')
-      .replace(/flex-wrap:\s*[^;]+;?/g, '')
-      .replace(/flex-shrink:\s*[^;]+;?/g, '')
-      .replace(/justify-content:\s*[^;]+;?/g, '')
+      .replace(/position:\s*(?:fixed|sticky);?/gi, '')
+      .replace(/animation:[^;]+;?/gi, '')
+      .replace(/@keyframes\s+[^{]*\{[^}]*\}/gi, '')
       .trim();
 
     if (!styles) continue;
@@ -97,8 +91,6 @@ function parseAndInlineCSS(html) {
   // Strip <style> and meta viewport
   html = html.replace(/<style>[\s\S]*?<\/style>/gi, '');
   html = html.replace(/<meta[^>]*viewport[^>]*>/gi, '');
-  // Fix any remaining max-width
-  html = html.replace(/max-width:\s*\d+px;?/g, '');
 
   return html;
 }
