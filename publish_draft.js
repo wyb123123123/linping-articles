@@ -184,19 +184,24 @@ function findLocalImages(html) {
 }
 
 // ===== WeChat link handling =====
-// 未认证订阅号不支持正文内可点击外链，必须转为纯文本URL
-// 同时设置 content_source_url（阅读原文）指向 GitHub Pages 完整链接版
-function convertLinksToText(html) {
-  let count = 0;
-  // Match <a ... href="URL" ...>TEXT</a>, replace with inline span showing URL
-  html = html.replace(/<a\b[^>]*href\s*=\s*["']([^"']*)["'][^>]*>([\s\S]*?)<\/a>/gi, (match, url, innerText) => {
-    count++;
-    // Keep as styled text reference — note: inline links filtered by WeChat for 未认证订阅号
-    const cleanedText = innerText.replace(/<[^>]*>/g, '').trim();
-    return `<span style="color:#8B6920;font-size:12px;word-break:break-all;">🔗 ${cleanedText || url}</span>`;
+// 构建链接中转页：每条新闻对应独立可点击链接，content_source_url 指向中转页
+// 保留正文中 <a> 标签 — 认证账号可点击，未认证账号配合阅读原文使用
+function buildLinkHub(htmlFile) {
+  return new Promise((resolve, reject) => {
+    const { execSync } = require('child_process');
+    try {
+      const result = execSync(`node "${__dirname}/build_link_hub.js" "${htmlFile}"`, { encoding: 'utf-8' });
+      // Parse JSON from last line after --RESULT--
+      const resultMatch = result.match(/--RESULT--\s*([\s\S]*)/);
+      if (resultMatch) {
+        resolve(JSON.parse(resultMatch[1].trim()));
+      } else {
+        reject(new Error('Failed to parse build_link_hub output'));
+      }
+    } catch (e) {
+      reject(e);
+    }
   });
-  console.log(`  Converted ${count} <a> links to text references`);
-  return html;
 }
 
 // ===== Main =====
@@ -217,6 +222,7 @@ async function main() {
     console.log(`Step 2: Found ${localImages.length} local image(s)`);
     let html = rawHtml;
     const dir = path.dirname(path.resolve(htmlFile));
+    const ghPagesBase = 'https://wyb123123123.github.io/linping-articles/';
     for (const src of localImages) {
       const fullPath = path.join(dir, src);
       if (fs.existsSync(fullPath)) {
@@ -236,11 +242,17 @@ async function main() {
     console.log('Step 3: Inlining CSS...');
     html = parseAndInlineCSS(html);
 
-    // Step 3.5: Convert <a> links to text (未认证订阅号不支持正文内可点击外链)
-    console.log('Step 3.5: Converting links...');
-    html = convertLinksToText(html);
-    const ghPagesBase = 'https://wyb123123123.github.io/linping-articles/';
-    const ghPageUrl = ghPagesBase + path.basename(htmlFile);
+    // Step 3.5: Build link hub page + set content_source_url
+    console.log('Step 3.5: Building link hub page...');
+    let ghPageUrl = '';
+    try {
+      const hubResult = await buildLinkHub(htmlFile);
+      ghPageUrl = ghPagesBase + hubResult.hubPath;
+      console.log(`  Hub: ${ghPageUrl} (${hubResult.links.length} links)`);
+    } catch (e) {
+      console.log(`  Hub build failed: ${e.message}, falling back to article page`);
+      ghPageUrl = ghPagesBase + path.basename(htmlFile);
+    }
 
     const size = Buffer.byteLength(html, 'utf-8');
     console.log(`  Final HTML: ${size} bytes`);
