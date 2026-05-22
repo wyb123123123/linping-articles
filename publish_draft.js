@@ -243,16 +243,18 @@ async function main() {
     html = parseAndInlineCSS(html);
 
     // Step 3.5: Build link hub page + set content_source_url
+    // 优先用链接中转页（每条独立可点击），如部署失败则回退到文章页
     console.log('Step 3.5: Building link hub page...');
-    let ghPageUrl = '';
+    let ghPageUrl = ghPagesBase + path.basename(htmlFile); // 默认：文章页
     try {
       const hubResult = await buildLinkHub(htmlFile);
-      ghPageUrl = ghPagesBase + hubResult.hubPath;
-      console.log(`  Hub: ${ghPageUrl} (${hubResult.links.length} links)`);
+      const hubUrl = ghPagesBase + hubResult.hubPath;
+      console.log(`  Hub built: ${hubUrl} (${hubResult.links.length} links)`);
+      // 用文章页作为阅读原文（已部署，含所有<a>链接；中转页需等待git push后生效）
     } catch (e) {
-      console.log(`  Hub build failed: ${e.message}, falling back to article page`);
-      ghPageUrl = ghPagesBase + path.basename(htmlFile);
+      console.log(`  Hub build failed: ${e.message}`);
     }
+    console.log(`  阅读原文: ${ghPageUrl}`);
 
     const size = Buffer.byteLength(html, 'utf-8');
     console.log(`  Final HTML: ${size} bytes`);
@@ -289,12 +291,37 @@ async function main() {
     if (draftOnly) {
       console.log('\n\u2705 草稿已存入草稿箱（未自动发布）');
     } else {
-      console.log('Step 6: Auto-publishing...');
-      const pubResult = await httpsPost('api.weixin.qq.com', `/cgi-bin/freepublish/submit?access_token=${token}`, { media_id: draftMediaId });
-      if (pubResult.errcode === 0 || pubResult.publish_id) {
-        console.log('\n\u2705 自动发布成功！Publish ID:', pubResult.publish_id || 'N/A');
+      // Step 6: 群发（需认证订阅号，会推送给全部用户，手机可见）
+      console.log('Step 6: Mass-sending to all subscribers...');
+      const massBody = {
+        filter: { is_to_all: true },
+        mpnews: { media_id: draftMediaId },
+        msgtype: 'mpnews',
+        send_ignore_reprint: 0
+      };
+      const massResult = await httpsPost('api.weixin.qq.com', `/cgi-bin/message/mass/sendall?access_token=${token}`, massBody);
+
+      if (massResult.errcode === 0 || massResult.msg_id) {
+        console.log('\n\u2705 群发成功！Msg ID:', massResult.msg_id || 'N/A');
+        console.log('  文章已推送到所有用户，手机上可见');
+      } else if (massResult.errcode === 48001) {
+        console.log('\n\u274c 群发失败：账号未认证，无群发API权限（errcode 48001）');
+        console.log('  回退到 freepublish/submit（自由发布，手机可能不显示）...');
+        const pubResult = await httpsPost('api.weixin.qq.com', `/cgi-bin/freepublish/submit?access_token=${token}`, { media_id: draftMediaId });
+        if (pubResult.errcode === 0 || pubResult.publish_id) {
+          console.log('\n\u2705 自由发布成功！Publish ID:', pubResult.publish_id || 'N/A');
+        } else {
+          console.log('\n\u26a0\ufe0f ', pubResult.errmsg || JSON.stringify(pubResult));
+        }
       } else {
-        console.log('\n\u26a0\ufe0f ', pubResult.errmsg || JSON.stringify(pubResult));
+        console.log('\n\u26a0\ufe0f 群发失败:', massResult.errmsg || JSON.stringify(massResult), '(errcode:', massResult.errcode, ')');
+        console.log('  回退到 freepublish/submit...');
+        const pubResult = await httpsPost('api.weixin.qq.com', `/cgi-bin/freepublish/submit?access_token=${token}`, { media_id: draftMediaId });
+        if (pubResult.errcode === 0 || pubResult.publish_id) {
+          console.log('\n\u2705 自由发布成功！Publish ID:', pubResult.publish_id || 'N/A');
+        } else {
+          console.log('\n\u26a0\ufe0f ', pubResult.errmsg || JSON.stringify(pubResult));
+        }
       }
     }
   } catch (err) {
