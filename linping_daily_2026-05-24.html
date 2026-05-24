@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产日报 - 2026年5月24日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #F5F1EA;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .cover-banner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #A89880;
+    text-align: center;
+    border-bottom: 1px solid #EBE3D5;
+    letter-spacing: 1px;
+  }
+
+  .daily-body {
+    background: #fff;
+    padding: 24px 22px;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #4A2C1A;
+    padding: 8px 0 8px 14px;
+    border-left: 4px solid #8B6920;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .news-item {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #EBE0CE;
+  }
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .news-item .item-header {
+    margin-bottom: 6px;
+  }
+  .news-item .item-index {
+    display: inline-block;
+    vertical-align: top;
+    background: #8B6920;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 19px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  .news-item .item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2E1F12;
+    line-height: 1.55;
+  }
+  .news-item .item-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .tag-hot       { background: #F0E2D0; color: #6B3A18; }
+  .tag-attention { background: #F2E6D5; color: #5C3115; }
+  .tag-event     { background: #F1E4D2; color: #7A4520; }
+  .tag-framework { background: #F0E3D0; color: #5E3316; }
+  .tag-urgent    { background: #F5E8D8; color: #7B3B1A; }
+  .tag-market    { background: #F2E5D4; color: #6D3E1C; }
+  .tag-innovation { background: #F1E4D0; color: #63401E; }
+  .tag-crossborder { background: #F2E6D2; color: #6B421F; }
+  .tag-model     { background: #F3E7D5; color: #5E3C1A; }
+  .tag-entry     { background: #EFE0CA; color: #704520; }
+  .tag-surge     { background: #F4E8D5; color: #6B3518; }
+  .tag-local     { background: #F1E4CE; color: #6C4220; }
+  .tag-finance   { background: #F0E2CC; color: #683D1C; }
+  .tag-data      { background: #F1E5D0; color: #63421E; }
+  .tag-ai         { background: #F0E8DA; color: #5A3A1A; }
+
+  .news-item .item-desc {
+    font-size: 14px;
+    color: #4A3E30;
+    line-height: 1.78;
+    margin: 6px 0 10px;
+  }
+  .news-item .item-meta {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 12px;
+    color: #A89880;
+    line-height: 1.8;
+  }
+  .news-item .item-source {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #968878;
+  }
+  .news-item .item-link {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #8B6920;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .top5-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .top5-table th {
+    background: #D4BE9C;
+    color: #4A2C1A;
+    font-weight: 600;
+    padding: 11px 8px;
+    text-align: center;
+    border-bottom: 2px solid #8B6920;
+  }
+  .top5-table td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid #E8D8C0;
+    color: #4A3E30;
+    background: #fff;
+  }
+  .top5-table tr:first-child td {
+    font-weight: 600;
+    color: #4A2C1A;
+    background: #FBF7F1;
+  }
+
+  .observe-block {
+    background: #FBF8F4;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    border: 1px solid #E5D5BC;
+  }
+  .observe-block .observe-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 7px;
+  }
+  .observe-block .observe-text {
+    font-size: 13.5px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+
+  .linping-focus {
+    background: #F4ECD8;
+    border: 1px solid #C9AD7A;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 22px 0;
+  }
+  .linping-focus .lf-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 12px;
+  }
+  .linping-focus .lf-text {
+    font-size: 14px;
+    color: #3A2E20;
+    line-height: 1.85;
+  }
+
+  .reminder-box {
+    background: #FAF7F0;
+    border: 1px solid #D8C5A5;
+    border-left: 4px solid #8B6920;
+    border-radius: 6px;
+    padding: 15px 18px;
+    margin: 18px 0;
+    font-size: 13px;
+    color: #5C3D1A;
+    line-height: 1.85;
+  }
+
+  .daily-footer {
+    background: #F2EBE0;
+    padding: 22px 24px;
+    text-align: center;
+    border-top: 1px solid #E5D8C4;
+  }
+  .daily-footer .footer-brand {
+    font-size: 13px;
+    font-weight: 600;
+    color: #6B4528;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+  .daily-footer .footer-date {
+    font-size: 12px;
+    color: #A89880;
+    margin-bottom: 10px;
+  }
+  .daily-footer .footer-note {
+    font-size: 11px;
+    color: #B8A890;
+    line-height: 1.7;
+  }
+
+  .link-icon {
+    display: inline-block;
+    margin-left: 2px;
+    font-size: 11px;
+  }
+  .item-title .hl { color: #6B4528; }
+</style>
+</head>
+<body>
+
+<img class="cover-banner" src="banner_final.png" alt="数据资产日报头图 — 临平数协">
+
+<div class="meta-bar">
+  临数通 · 数据产业周刊编辑部 &nbsp;|&nbsp; 杭州市临平区数据产业协会（临平数协）联合出品
+</div>
+
+<div class="daily-body">
+
+  <!-- ===== 一、今日要闻 ===== -->
+  <div class="section">
+    <div class="section-title">一、今日要闻</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">APEC贸易部长会议苏州闭幕，联合发表《苏州声明》，五方面成果聚焦数字贸易新规则<span class="item-tag tag-hot">重磅</span></span>
+      </div>
+      <div class="item-desc">
+        5月23日，2026年APEC贸易部长会议在苏州金鸡湖畔圆满闭幕。21个APEC经济体代表、WTO及联合国贸发会议等国际组织参会，中国商务部部长王文涛主持新闻发布会。会议达成<strong>"1+1"具体成果</strong>：联合发表《苏州声明》，并批准《APEC创新、有竞争力和韧性的服务业路线图》。五大成果共识涵盖：重申对亚太自贸区坚定支持、携手推进WTO改革（支持电子传输暂免关税）、绘制未来十年服务业蓝图、拓展数字贸易合作新空间（推进无纸贸易、电子提单跨境互认）、探索绿色贸易新举措。区域贸易数字化合作框架文件取得实质性进展，成为本次会议最具看点的数字贸易制度突破。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：中新社 / 商务部 / 财新网</span>
+        <span>2026-05-23</span>
+        <a class="item-link" href="https://www.chinanews.com.cn/cj/2026/05-23/10627294.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">2026"数据要素×"大赛温州正式启动，17赛道覆盖全行业，新增数据基础设施专业赛道<span class="item-tag tag-event">赛事</span></span>
+      </div>
+      <div class="item-desc">
+        5月23日，2026年"数据要素×"大赛在第五届数据安全发展大会开幕式上正式启动。国家数据局局长<strong>刘烈宏</strong>，浙江省委常委、常务副省长徐文光，省委常委、温州市委书记张振丰等出席并共同启动。本届大赛由国家数据局联合<strong>20个部门</strong>共同组织，以"数据赋能 乘数而上"为主题，设16个行业赛道（工业制造、现代农业、商贸流通、金融服务、医疗健康、城市治理等）及1个数据基础设施专业赛道，新增人力资源、体育发展、文物保护利用、中医药等赛道。大赛推出试点试验、成果认定、应用推广等支持举措，同日下午举办获奖企业温州行活动。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：国家数据局 / 新浪财经 / 搜狐</span>
+        <span>2026-05-23</span>
+        <a class="item-link" href="https://www.nda.gov.cn/sjj/jgsz/jld/llh/llhldhd/0523/20260523220615539632976_pc.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">国家数据局："数据要素×"行动推动数据基础设施大提速，两批试点覆盖15行业43城<span class="item-tag tag-data">数据</span></span>
+      </div>
+      <div class="item-desc">
+        5月23日央视新闻报道，国家数据局披露数据基础设施建设先行先试最新成果：两批试点累计覆盖<strong>15个行业、43个城市</strong>，协同<strong>1.9万个</strong>生态主体，上架<strong>3.8万个</strong>数据产品，落地超<strong>270个</strong>应用场景。技术路线从6条（隐私保护计算、区块链、可信数据空间、数场、数联网、数据元件）拓展吸收了数据编织、数据网格、本体论等前沿方向。刘烈宏表示，今年"数据要素×"大赛增设数据基础设施赛道，以"以赛促用、建用结合"推动技术路线动态优化与标准验证，标志着数据基础设施建设从试点示范全面进入规模化部署阶段。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：央视新闻 / 国家数据局</span>
+        <span>2026-05-23</span>
+        <a class="item-link" href="https://news.cctv.com/2026/05/23/ARTI93cTJCw6vxDqM3tggwjn260523.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 二、政策动态 ===== -->
+  <div class="section">
+    <div class="section-title">二、政策动态</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">全球人工智能技术大会杭州开幕，国家级AI产业知识产权运营中心正式揭牌<span class="item-tag tag-innovation">创新</span></span>
+      </div>
+      <div class="item-desc">
+        5月23日，2026全球人工智能技术大会在杭州余杭区未来科技城开幕，为期两天。开幕式上，<strong>国家级人工智能（关键应用）产业知识产权运营中心</strong>正式揭牌。该中心由杭州余杭未来科技城自2021年获批启动建设，已通过国家知识产权局审定认定，成为全国首批聚焦AI产业知识产权全链条运营的国家级平台，也是余杭首个知识产权领域国家级产业平台。中心累计举办培训对接活动114场、辐射服务浙江省金种子企业1.7万家、推动专利转让许可收入2641万元、发行知识产权证券化产品18单、融资规模近20亿元。余杭区2025年AI核心产业营收已突破1180亿元。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：中新网 / 中国人工智能学会</span>
+        <span>2026-05-23</span>
+        <a class="item-link" href="https://www.chinanews.com.cn/cj/2026/05-23/10627274.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">国家数据局印发《2026年数字社会发展工作要点》，以AI赋能城市全域数字化转型<span class="item-tag tag-framework">框架</span></span>
+      </div>
+      <div class="item-desc">
+        5月19日，国家数据局印发《2026年数字社会发展工作要点》，以<strong>人工智能赋能城市全域数字化转型</strong>为主线，围绕数字公共服务、数字社会治理、民生服务和制度保障四大维度部署重点任务。文件提出：推广数字家庭智能化应用，加快AI赋能交通出行场景创新，深化AI在"影视+文旅"中的创新应用，推进精准高效数字社会治理。此前5月20日，国家数据局同步印发的《2026年数字经济发展工作要点》则以数据要素市场化改革为核心。两份文件形成"经济+社会"双轮驱动格局，数字社会建设首次获得与数字经济同等量级的专项部署。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：国家数据局 / 腾讯新闻 / 搜狐</span>
+        <span>2026-05-19~22</span>
+        <a class="item-link" href="https://news.qq.com/rain/a/20260519A08YGD00" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">数据基础设施建设现场会广州召开，加快编制《国家数据基础设施建设行动计划》<span class="item-tag tag-framework">框架</span></span>
+      </div>
+      <div class="item-desc">
+        5月19日，国家数据局在广州白云国际会议中心召开数据基础设施建设现场会。刘烈宏出席并讲话，副局长夏冰主持。会议强调坚持"十五五"及数字中国建设规划引领，以<strong>自主创新、场景牵引、生态协同、开放互联、安全合规</strong>为主线，加快编制《国家数据基础设施建设行动计划》。重点聚焦技术攻关，推动可信数据空间、隐私计算、区块链、数场等6条技术路线动态优化升级，积极探索数据编织、数据网格等前沿方向。会议提出健全标准体系，持续完善数据基础设施相关标准。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：国家数据局 / 人民财讯 / 新浪财经</span>
+        <span>2026-05-21</span>
+        <a class="item-link" href="https://finance.sina.com.cn/jjxw/2026-05-21/doc-inhysnxc6253397.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 三、行业观察 ===== -->
+  <div class="section">
+    <div class="section-title">三、行业观察</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">APEC《苏州声明》为区域数字贸易规则奠基：无纸贸易、电子传输免关税成核心共识<span class="item-tag tag-crossborder">跨境</span></span>
+      </div>
+      <div class="item-desc">
+        APEC贸易部长会议联合发表的《苏州声明》标志着亚太数字贸易规则进入实质性构建阶段。会议就<strong>区域贸易数字化合作框架文件</strong>取得实质性进展，各方承诺加强无纸贸易合作，促进电子提单、电子发票等电子贸易文件跨境互认；一致支持电子传输暂免关税，确保数字市场开放可预期。在人工智能相关的贸易投资合作方面，各方进行了积极探索。分析指出，APEC数字贸易规则框架将为WTO电子商务诸边谈判提供"先导经验"，中国在规则制定中的话语权显著提升。对于数据跨境流动治理，《苏州声明》虽未直接触及，但数字贸易"基础设施层"的制度先行已为后续数据流动谈判铺路。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：商务部 / 财新网 / 东方财富</span>
+        <span>2026-05-23</span>
+        <a class="item-link" href="https://companies.caixin.com/2026-05-23/102447031.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">文化强国高峰论坛：AI重构文化生产力，深圳论道AI驱动文化产业创新<span class="item-tag tag-ai">AI</span></span>
+      </div>
+      <div class="item-desc">
+        5月22-23日，2026文化强国建设高峰论坛分论坛在深圳举行。其中"人工智能与媒体变革"分论坛（22日）由中宣部副部长、国务院新闻办主任莫高义作主旨演讲，聚焦AI赋能媒体变革与主流媒体系统性变革。"人工智能驱动文化产业创新发展"分论坛（22日）聚焦"<strong>AI重构文化生产力</strong>"主题，深入探讨人工智能时代文化生产、传播与消费的变革路径。与会嘉宾指出，无论技术如何变化，把握"人心所向"始终是文化产业的核心竞争力。AI与文化产业的深度融合正从工具赋能走向生产范式重构。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：中新网 / 深圳市委宣传部</span>
+        <span>2026-05-23</span>
+        <a class="item-link" href="https://www.chinanews.com.cn/cj/2026/05-23/10627103.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">上海数据领域国际合作综合试点启动，六大板块17项任务打造数据出海"样板间"<span class="item-tag tag-crossborder">跨境</span></span>
+      </div>
+      <div class="item-desc">
+        5月6日，在国家数据局指导下，上海正式启动全国首批数据领域国际合作综合试点，聚焦<strong>六大板块、17项具体任务</strong>，覆盖数字经济国际合作、数据跨境安全评估、全球数据要素流通规则对接等领域。试点依托2026全球数字合作交流会暨全球数据周活动平台，旨在为全国数据跨境流动治理探索制度创新经验。业内分析指出，上海试点与APEC数字贸易规则形成"制度试验+国际规则"双轨互促格局——国内试点的制度突破可为国际谈判提供经验证据，国际规则框架则为国内制度创新提供方向指引。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：新华网 / 国家数据局 / 36氪</span>
+        <span>2026-05-07</span>
+        <a class="item-link" href="https://www.news.cn/20260507/5c6fba91dd844ba5b5d9afa80f86efcd/c.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 四、数据入表与资本化 ===== -->
+  <div class="section">
+    <div class="section-title">四、数据入表与资本化</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">数据资产ABS累计储架逼近1400亿元，纯数据ABS破冰打开"独立信用"新空间<span class="item-tag tag-finance">融资</span></span>
+      </div>
+      <div class="item-desc">
+        今年以来数据资产证券化市场持续升温。最新统计显示，截至5月下旬，数据资产ABS累计申报64单、储架规模<strong>1391.8亿元</strong>、已发行20单113.6亿元。5月20日，青岛数据集团首单纯数据ABS首期5.32亿元在深交所成功发行，全网认购19.8亿元、超额3.72倍，以纯数据资产为底层、不依附应收账款和传统抵质押物，标志着数据资产从"质押增信"走向"<strong>独立信用</strong>"。5月8日，华鑫证券全国首单合规确权数据资产ABS落地，首次系统解决合规确权难题。开源证券30亿元储架正在受理中。下半年数据资产ABS或迎密集发行窗口。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：新浪财经 / 深圳金融 / 财联社</span>
+        <span>2026-05-21</span>
+        <a class="item-link" href="https://www.sohu.com/a/1021631711_122631800" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">A股入表38.6亿元同比增76.4%，三大运营商占比超四成<span class="item-tag tag-entry">入表</span></span>
+      </div>
+      <div class="item-desc">
+        截至5月7日，A股5000余家公司中134家披露数据资源入表，合计<strong>38.6亿元</strong>，较2024年入表企业增长35.3%、金额增幅76.4%。中国移动11.05亿居首，中国联通3.1亿、中国电信2.09亿，三家合计超16亿占比超四成。近250家企业在2025年报中披露数据资产入表情况。随着数据资产评估国标（GB/T 46353）5月1日正式实施，入表定价首次拥有统一技术规范，预计下半年将有更多企业加速数据资产入表进程。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：证券时报 / 新浪财经</span>
+        <span>2026-05-14</span>
+        <a class="item-link" href="https://finance.sina.com.cn/wm/2026-05-14/doc-inhxwene0071483.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div style="overflow-x:auto; margin: 10px 0 4px;">
+      <table class="top5-table">
+        <tr><th>企业</th><th>入表金额</th><th>资产化模式</th><th>入表科目</th></tr>
+        <tr><td>中国移动</td><td>11.05 亿元</td><td>规模驱动</td><td>无形资产</td></tr>
+        <tr><td>科大讯飞</td><td>3.15 亿元</td><td>外购驱动</td><td>无形资产</td></tr>
+        <tr><td>中国联通</td><td>3.10 亿元</td><td>场景变现</td><td>无形资产</td></tr>
+        <tr><td>中国电信</td><td>2.09 亿元</td><td>综合驱动</td><td>无形资产</td></tr>
+        <tr><td>传神语联</td><td>过 1 亿元</td><td>场景变现</td><td>无形资产</td></tr>
+      </table>
+    </div>
+
+    <div class="news-item" style="margin-top: 18px;">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">城投数据资产入表扩面提速，约50家平台入表3.07亿元<span class="item-tag tag-local">城投</span></span>
+      </div>
+      <div class="item-desc">
+        财联社数据显示，约50家城投公司在2025年年报中公布数据资产入表，合计约<strong>3.07亿元</strong>。绍兴柯桥国资超3000万居首，石家庄交投、成都城投超2000万。数据资产融资已形成质押担保和双层结构两种主流模式。随着国家数据局明确将加快建立全国统一数据产权登记制度、推动公共数据授权运营价格形成机制，地方城投以数据资产撬动融资的路径将进一步拓宽。近一个月内，"国家队"数据集团（如青岛、北京、温州等）加速组建，城投数据资产化有望从"单点试水"进入"成片铺开"阶段。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：财联社 / 腾讯新闻</span>
+        <span>2026-05-15</span>
+        <a class="item-link" href="https://news.qq.com/rain/a/20260515A07GYY00" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 五、地方实践 ===== -->
+  <div class="section">
+    <div class="section-title">五、地方实践</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">温州以"数安大会+数据要素×大赛"双引擎驱动，数安港成全国数据安全治理标杆<span class="item-tag tag-local">地方</span></span>
+      </div>
+      <div class="item-desc">
+        5月22日至24日，第五届温州数据安全发展大会以"瓯江论数·AI赢未来"为主题，在温州园博园国际会议中心举行，会期三天。本届大会由国家数据发展研究院首次参与承办，主体大会设置合作签约、揭牌仪式、成果发布、主旨演讲等核心环节。23日当天，国家数据局局长刘烈宏出席并启动2026"数据要素×"大赛，温州作为多年数据安全产业先行区，已从"数据安全大会"影响力向"数据要素大会"全面升级。此前四届大会已促成一批国家级试点落地和重磅合作项目签约，温州数据产业从无到有、集聚成势。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：温州市政府 / 搜狐 / 网易</span>
+        <span>2026-05-23</span>
+        <a class="item-link" href="https://www.sohu.com/a/1022635652_120109837" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">余杭AI核心产业营收破1180亿，"浙江经济第一区"打造国家级AI产业生态高地<span class="item-tag tag-local">地方</span></span>
+      </div>
+      <div class="item-desc">
+        借2026全球人工智能技术大会开幕之机，杭州余杭区亮出AI产业成绩单：2025年人工智能核心产业营收<strong>突破1180亿元</strong>。余杭构建了"创新金字塔"企业结构——阿里巴巴、字节跳动为塔尖龙头，利尔达、申昊科技等上市及独角兽企业为塔腰，200多家芯片、智能计算、视觉智能、"AI+"融合领域创新创业企业为塔基。全国首批国家级AI知识产权运营中心揭牌后，余杭将打造从专利创造、保护到转化融资的全链条运营体系，进一步巩固其作为"浙江经济第一区"的产业竞争优势。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：中新网 / 杭州余杭未来科技城</span>
+        <span>2026-05-23</span>
+        <a class="item-link" href="https://www.chinanews.com.cn/cj/2026/05-23/10627274.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">广州发布AI产业"2026工作要点"：建2大平台+40个垂直模型+450个场景<span class="item-tag tag-local">地方</span></span>
+      </div>
+      <div class="item-desc">
+        近日，广州市人工智能产业发展办公室印发《广州市人工智能产业2026年工作要点》，提出到2026年底：建成<strong>2个重大平台</strong>、培育<strong>40个垂直行业大模型</strong>、开放不少于<strong>450个</strong>人工智能应用场景，并附三年目标分解表。文件明确广州将打造"垂类模型之都、人工智能应用示范高地"，加快推进AI全域全时全行业高水平应用。广州的落地方案与杭州、深圳形成差异化竞争——广州侧重垂类行业模型应用，杭州（余杭）侧重平台生态与知识产权，深圳侧重文化与媒体AI融合。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：新快报 / 新浪财经</span>
+        <span>2026-05-13</span>
+        <a class="item-link" href="https://finance.sina.com.cn/tech/roll/2026-05-13/doc-inhxspmw1193810.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 深度观察 ===== -->
+  <div class="section">
+    <div class="section-title">深度观察</div>
+
+    <div class="observe-block">
+      <div class="observe-label">观察一：五月末数据要素迎来"规则+大赛+基建"三重奏，从顶层设计到场景落地全面加速</div>
+      <div class="observe-text">
+        本周最后的48小时（5月22-24日）堪称数据要素产业的"规则大赛周"：APEC《苏州声明》定调区域数字贸易规则框架、2026"数据要素×"大赛新增数据基础设施赛道启动、国家数据局披露两批试点成果（15行业43城3.8万数据产品）。三重事件彼此呼应：数字贸易规则解决"数据出海的制度供给"，大赛机制解决"数据价值的场景释放"，基础设施建设解决"数据流通的能力底座"。从APEC到瓯江之畔，从国际规则到城市试点，数据要素正以史无前例的频率进入全球和中国政策的核心议程。
+      </div>
+    </div>
+
+    <div class="observe-block">
+      <div class="observe-label">观察二：数据资产证券化进入"独立信用"新时代——从"能不能融到钱"到"能融多少钱"</div>
+      <div class="observe-text">
+        青岛5.32亿纯数据ABS的3.72倍超额认购不仅是一个市场信号，更是一个里程碑——资本市场开始不再问"数据算不算资产"，而是在问"数据值多少钱、能发多大规模"。这一转变有三个支撑：技术层面，数据资产评估国标（GB/T 46353）5月1日实施提供统一计量依据；市场层面，ABS储架逼近1400亿元说明承销商和投资者已形成定价共识；政策层面，国家数据局"数据要素价值释放年"定位、专家咨询委员会2026年重点工作对入表与评估的聚焦形成制度合力。三力叠加，下半年数据资产证券化有望从"点状突破"进入"面状铺开"。
+      </div>
+    </div>
+
+    <div class="observe-block">
+      <div class="observe-label">观察三：杭州"AI生态三角"初现——余杭1180亿+临平算力+滨江智造，谁能成为数据产业核心承载区？</div>
+      <div class="observe-text">
+        5月23日，余杭借全球AI技术大会之机官宣AI核心产业营收1180亿元，并揭牌国家级AI知识产权运营中心。与此同时，温州以"数安+数据要素"双会驱动数据安全产业集群。反观杭州内部格局：余杭拥有平台+知识产权运营，滨江拥有视谷+智能制造，而<strong>临平坐拥算力小镇3000P智能算力、国家数据基础设施典型案例（杭州数据要素运营中心）、老板电器国家高质量数据集试点、G60数智产业园</strong>——临平的独特优势恰恰在于"数据产业硬件底座+垂直场景"的组合。在杭州争创国家数据要素综合试验区的战略背景下，临平需要在余杭-滨江之间找到自己的差异化定位：不是做大而全的AI平台，而是做"数据要素×智能制造"的垂直深耕者和"算力+场景"的产业运营商。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 临平关注 ===== -->
+  <div class="linping-focus">
+    <div class="lf-title">📍 临平关注</div>
+    <div class="lf-text">
+      <strong>本周末多项重磅事件为临平数据产业发展带来多重利好信号。</strong><br><br>
+      <strong>第一，APEC数字贸易规则突破为临平企业数字出海提供制度窗口。</strong>《苏州声明》确立的无纸贸易、电子传输免关税等规则，以及上海数据领域国际合作综合试点的六大板块17项任务，为临平算力小镇入驻企业开展跨境数据业务提供了明确的制度预期。临平应主动对接上海试点经验，在数据跨境安全评估、国际数字合作等方向开展制度先行先试。<br><br>
+      <strong>第二，数据基础设施先行先试加速推进，临平"国家数据基础设施典型案例"优势凸显。</strong>国家数据局两批试点覆盖15行业43城、上架3.8万数据产品的成绩单表明，数据基础设施建设正从试点迈向规模化部署。临平的杭州数据要素运营中心作为国家数据基础设施典型案例（唯一入选区县级），正是可信数据空间、隐私计算等技术路线的最佳实验场，应借势争取纳入第三批试点布局。<br><br>
+      <strong>第三，"数据要素×"大赛新设数据基础设施赛道，为临平提供"以赛促用"窗口。</strong>大赛新增人力资源、体育、文物保护、中医药等赛道，加上16大行业赛道，覆盖了临平"2327X"先进制造业集群中的智能制造等领域。临平可组织算力小镇和G60数智产业园企业积极参赛，以赛对接资源、以赛扩大影响。<br><br>
+      <strong>第四，余杭AI产业1180亿与AI知识产权运营中心的"近邻效应"。</strong>余杭与临平地缘相邻，余杭的国家级AI知识产权运营中心融资近20亿的经验，可为临平推动数据资产知识产权证券化提供借鉴路径。临平可考虑与余杭在AI知识产权运营和数据要素流通领域建立协同机制。<br><br>
+      临平数协将持续跟踪上述政策动态，协助会员企业对接"数据要素×"大赛参赛通道、数据基础设施试点申报、数据资产资本化等关键机遇，助力临平在杭州争创国家数据要素综合试验区进程中发挥独特支撑作用。
+    </div>
+  </div>
+
+  <!-- ===== 特别提醒 ===== -->
+  <div class="reminder-box">
+    <strong>📌 近期重点事件日历</strong><br>
+    · 5月22-23日：<strong>APEC贸易部长会议「苏州」闭幕</strong>，联合发表《苏州声明》<br>
+    · 5月22-24日：<strong>第五届温州数据安全发展大会</strong>，"瓯江论数·AI赢未来"<br>
+    · 5月23-24日：<strong>2026全球人工智能技术大会「杭州余杭」</strong>，国家级AI知识产权运营中心揭牌<br>
+    · 5月26日：阿里云AI生产力峰会杭州站<br>
+    · <strong>5月30日："模数共振"行动申报截止（仅剩6天！）</strong><br>
+    · 6月：<strong>国家数据要素综合试验区评审启动</strong>（杭州重点关注，临平积极争取）
+    · 6-8月：2026"数据要素×"大赛地方分赛（16行业赛道+数据基础设施赛道）<br>
+    · 11月18-19日：APEC领导人非正式会议「深圳」<br>
+    · 数据资产ABS累计储架1391.8亿元，下半年或迎密集发行期
+  </div>
+
+</div>
+
+<!-- ========== FOOTER ========== -->
+<div class="daily-footer">
+  <div class="footer-brand">—— 数据驱动未来，资产赋能发展 ——</div>
+  <div class="footer-date">临数通 · 数据产业周刊编辑部<br>2026年5月24日</div>
+  <div class="footer-note">
+    本日报由"临数通"编辑出品，每日为您精选数据要素市场最新动态<br>
+    杭州市临平区数据产业协会（临平数协）联合出品<br>
+    免责声明：以上内容仅供参考，不构成投资建议
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,6 +1,7 @@
 const fs = require('fs');
 const https = require('https');
 const path = require('path');
+const juice = require('juice');
 
 // ===== Args =====
 const args = process.argv.slice(2);
@@ -26,71 +27,47 @@ const title = titleMatch ? titleMatch[1] : path.basename(htmlFile, '.html');
 const digestMatch = rawHtml.match(/<div class="item-desc">\s*(.*?)\s*<\/div>/);
 const digest = digestMatch ? digestMatch[1].replace(/<[^>]+>/g, '').substring(0, 120) : '聚焦数据要素市场动态，洞察数字经济发展趋势';
 
-// ===== Smart CSS Parser =====
-function parseAndInlineCSS(html) {
-  const styleMatch = html.match(/<style>([\s\S]*?)<\/style>/);
-  if (!styleMatch) return html;
-  const css = styleMatch[1];
-
-  // Parse all rules, group by last class name in selector
-  const rules = {};
-  const ruleRegex = /([^{]+)\{([^}]+)\}/g;
-  let rm;
-  while ((rm = ruleRegex.exec(css)) !== null) {
-    const selector = rm[1].trim();
-    const props = rm[2].replace(/\/\*.*?\*\//g, '').trim();
-    if (!props) continue;
-
-    // Handle body element
-    if (selector === 'body' || selector === '*') {
-      const key = selector === 'body' ? '__body__' : '__all__';
-      if (!rules[key]) rules[key] = [];
-      rules[key].push(props);
-      continue;
-    }
-
-    // Extract class names (last one is the target)
-    const classNames = selector.match(/\.[a-zA-Z0-9_-]+/g);
-    if (classNames) {
-      const key = classNames[classNames.length - 1].substring(1);
-      if (!rules[key]) rules[key] = [];
-      rules[key].push(props);
-    }
-  }
-
-  console.log(`  Parsed ${Object.keys(rules).length} style rules`);
-
-  // Merge and inline
-  for (const [cls, propsList] of Object.entries(rules)) {
-    let styles = propsList.join(';');
-
-    // WeChat-safe cleanup — only remove what WeChat actually rejects
-    // 微信公众号富文本编辑器支持：gradient, box-shadow, flex, max-width 等
-    // 不支持：:hover伪类, position:fixed/sticky, animation, JavaScript
-    styles = styles
-      .replace(/:hover\s*\{[^}]*\}/g, '')
-      .replace(/position:\s*(?:fixed|sticky);?/gi, '')
-      .replace(/animation:[^;]+;?/gi, '')
-      .replace(/@keyframes\s+[^{]*\{[^}]*\}/gi, '')
-      .trim();
-
-    if (!styles) continue;
-
-    if (cls === '__body__') {
-      html = html.replace(/<body([^>]*)>/, `<body$1 style="${styles}">`);
-    } else if (cls === '__all__') {
-      // Skip * rules - too broad for inline
-    } else {
-      const clsRegex = new RegExp(`class="([^"]*\\b${cls}\\b[^"]*)"`, 'g');
-      html = html.replace(clsRegex, (m, classes) => {
-        return `class="${classes}" style="${styles}"`;
-      });
-    }
-  }
-
-  // Strip <style> and meta viewport
-  html = html.replace(/<style>[\s\S]*?<\/style>/gi, '');
+// ===== CSS handling: inline ALL styles, then strip <style> =====
+// WeChat draft editor does NOT reliably support <style> tags.
+// juice inlines all CSS into style="" attributes for 100% consistent rendering.
+function prepareCSS(html) {
+  // Strip meta viewport (WeChat ignores it)
   html = html.replace(/<meta[^>]*viewport[^>]*>/gi, '');
+
+  // First, strip truly incompatible CSS rules that juice can't handle
+  html = html.replace(/<style>([\s\S]*?)<\/style>/gi, (match, css) => {
+    css = css
+      .replace(/[^}]*:hover\s*\{[^}]*\}/g, '')        // WeChat不支持:hover
+      .replace(/position:\s*(?:fixed|sticky);?/gi, '') // 不支持fixed/sticky
+      .replace(/animation:[^;]+;?/gi, '')               // 不支持animation
+      .replace(/@keyframes\s+[^{]*\{[^}]*\}/gi, '');    // 不支持@keyframes
+    return '<style>' + css + '</style>';
+  });
+
+  // Use juice to inline all CSS into style="" attributes
+  html = juice(html, {
+    removeStyleTags: true,        // Remove <style> after inlining
+    preserveImportant: true,
+    applyStyleTags: true,
+    applyWidthAttributes: true,
+    applyHeightAttributes: true,
+    xmlMode: false,
+  });
+
+  return html;
+}
+
+// ===== WeChat HTML compatibility: div→section, extract body content =====
+// WeChat draft/add API DESTROYS <div> tags and their styles.
+// Only <section>, <span>, <img>, <strong>, <br> survive with styles intact.
+function wechatifyHTML(html) {
+  // 1. Extract only <body> inner content (strip DOCTYPE/html/head/body wrapper)
+  const bodyMatch = html.match(/<body[^>]*>([\s\S]*)<\/body>/i);
+  if (bodyMatch) html = bodyMatch[1];
+
+  // 2. Convert <div to <section, </div> to </section>
+  html = html.replace(/<div\b/gi, '<section');
+  html = html.replace(/<\/div>/gi, '</section>');
 
   return html;
 }
@@ -230,9 +207,13 @@ async function main() {
       }
     }
 
-    // Step 3: Inline CSS for WeChat
-    console.log('Step 3: Inlining CSS...');
-    html = parseAndInlineCSS(html);
+    // Step 3: Prepare CSS for WeChat (juice inline all styles, strip <style>)
+    console.log('Step 3: Preparing CSS...');
+    html = prepareCSS(html);
+
+    // Step 3.2: WeChatify HTML (div→section, extract body content)
+    html = wechatifyHTML(html);
+    console.log('  WeChatified: div→section, body extracted');
 
     // Step 3.5: Build link hub page + set content_source_url
     // 优先用链接中转页（每条独立可点击），如部署失败则回退到文章页

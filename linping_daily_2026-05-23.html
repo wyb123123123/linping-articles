@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>数据资产日报 - 2026年5月23日</title>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
     background: #F5F1EA;
@@ -17,14 +17,14 @@
 
   /* === Cover Banner Image === */
   .cover-banner {
-    max-width: 680px;
-    margin: 0 auto;
     display: block;
     width: 100%;
+    margin: 0 auto;
   }
 
   /* === Meta Bar === */
   .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
     background: #fff;
     padding: 12px 24px;
     font-size: 11px;
@@ -51,7 +51,6 @@
     padding: 8px 0 8px 14px;
     border-left: 4px solid #8B6920;
     margin-bottom: 16px;
-    background: linear-gradient(90deg, rgba(139,105,32,0.06) 0%, transparent 100%);
     letter-spacing: 1px;
   }
 
@@ -67,24 +66,22 @@
     padding-bottom: 0;
   }
   .news-item .item-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
     margin-bottom: 6px;
   }
   .news-item .item-index {
+    display: inline-block;
+    vertical-align: top;
     background: #8B6920;
     color: #fff;
     font-size: 11px;
     font-weight: 600;
     min-width: 19px;
     height: 19px;
+    line-height: 19px;
+    text-align: center;
     border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
     margin-top: 3px;
+    margin-right: 8px;
   }
   .news-item .item-title {
     font-size: 15px;
@@ -125,26 +122,21 @@
     margin: 6px 0 10px;
   }
   .news-item .item-meta {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
     font-size: 12px;
     color: #A89880;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+    line-height: 1.8;
   }
   .news-item .item-source {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
     color: #968878;
   }
   .news-item .item-link {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
     color: #8B6920;
     text-decoration: none;
     font-size: 12px;
-    word-break: break-all;
     font-weight: 500;
-  }
-  .news-item .item-link:hover {
-    color: #6B4E15;
-    text-decoration: underline;
   }
 
   /* === Top5 Table === */
@@ -153,12 +145,9 @@
     border-collapse: collapse;
     font-size: 13px;
     margin-top: 10px;
-    border-radius: 6px;
-    overflow: hidden;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
   }
   .top5-table th {
-    background: linear-gradient(180deg, #E0CDB0 0%, #D4BE9C 100%);
+    background: #D4BE9C;
     color: #4A2C1A;
     font-weight: 600;
     padding: 11px 8px;
@@ -200,7 +189,7 @@
 
   /* === Linping Focus === */
   .linping-focus {
-    background: linear-gradient(135deg, #F6F0E5 0%, #F2EAD8 100%);
+    background: #F4ECD8;
     border: 1px solid #C9AD7A;
     border-radius: 8px;
     padding: 20px;
@@ -211,9 +200,6 @@
     font-weight: 700;
     color: #4A2C1A;
     margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
   }
   .linping-focus .lf-text {
     font-size: 14px;
