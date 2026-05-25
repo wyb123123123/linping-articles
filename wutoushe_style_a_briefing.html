@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>雾透数据 · 简报 - 2026年5月25日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #FDF9F9;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .cover-banner { display: block; width: 100%; margin: 0 auto; }
+
+  /* -- 顶部信息栏 -- */
+  .top-bar {
+    background: #fff;
+    padding: 14px 24px;
+    border-bottom: 1px solid #F0D0D0;
+    text-align: center;
+  }
+  .top-bar .pub-title { font-size: 13px; font-weight: 700; color: #8B0000; letter-spacing: 2px; }
+  .top-bar .pub-date { font-size: 11px; color: #9B6B6B; margin-top: 4px; }
+
+  /* -- 正文 -- */
+  .brief-body { background: #fff; padding: 22px 20px; }
+
+  /* -- 核心数据面板 -- */
+  .dash-grid {
+    margin-bottom: 28px;
+  }
+  .dash-row {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .dash-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    padding: 12px 6px;
+    margin: 0 1%;
+    background: #FFF5F5;
+    border-radius: 4px;
+    border-top: 3px solid #C41E3A;
+  }
+  .dash-item .dash-num {
+    font-size: 24px;
+    font-weight: 700;
+    color: #C41E3A;
+    line-height: 1.2;
+  }
+  .dash-item .dash-label {
+    font-size: 11px;
+    color: #8B6B6B;
+    margin-top: 4px;
+    line-height: 1.4;
+  }
+
+  /* -- 板块 -- */
+  .section { margin-bottom: 26px; }
+  .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #8B0000;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #F0D0D0;
+    letter-spacing: 1px;
+  }
+
+  /* -- 简报条目（紧凑型） -- */
+  .brief-item {
+    margin-bottom: 14px;
+    padding: 0 0 0 14px;
+    border-left: 3px solid #F0D0D0;
+  }
+  .brief-item.hot { border-left-color: #C41E3A; }
+  .brief-item .brief-head {
+    font-size: 13px;
+    font-weight: 700;
+    color: #5C1010;
+    margin-bottom: 3px;
+    line-height: 1.5;
+  }
+  .brief-item .brief-text {
+    font-size: 12px;
+    color: #6B4A4A;
+    line-height: 1.7;
+    margin-bottom: 2px;
+  }
+  .brief-item .brief-link {
+    font-size: 10px;
+    color: #C41E3A;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .brief-tag {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    color: #fff;
+    background: #C41E3A;
+    padding: 1px 6px;
+    border-radius: 2px;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+
+  /* -- 洞察盒子 -- */
+  .insight-box {
+    background: #FFF8F8;
+    padding: 14px 16px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    border: 1px solid #FADDDD;
+  }
+  .insight-box p {
+    font-size: 13px;
+    color: #5A3838;
+    line-height: 1.8;
+    margin-bottom: 6px;
+  }
+  .insight-box p:last-child { margin-bottom: 0; }
+  .insight-box strong { color: #8B0000; }
+
+  /* -- 三步走速览 -- */
+  .quick-steps {
+    background: #FFF0F0;
+    padding: 16px 18px;
+    border-radius: 4px;
+    border: 1px solid #FAD5D5;
+  }
+  .quick-steps .qs-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #8B0000;
+    margin-bottom: 10px;
+  }
+  .quick-steps .qs-row {
+    font-size: 12px;
+    color: #6B3838;
+    line-height: 1.9;
+    padding: 3px 0;
+  }
+  .quick-steps .qs-step {
+    display: inline-block;
+    font-weight: 700;
+    color: #C41E3A;
+    min-width: 60px;
+  }
+
+  .divider-line { text-align: center; color: #D0A0A0; font-size: 10px; letter-spacing: 5px; margin: 20px 0; }
+
+  .footer-section {
+    background: #FDF5F5;
+    padding: 18px 20px;
+    text-align: center;
+    border-top: 1px solid #F0D0D0;
+  }
+  .footer-section p { font-size: 10px; color: #9B6B6B; line-height: 1.7; }
+  .footer-section .brand { font-size: 12px; font-weight: 700; color: #8B0000; letter-spacing: 2px; }
+</style>
+</head>
+<body>
+
+<img class="cover-banner" src="banner_final.png" alt="雾透数据资产周报">
+
+<section class="top-bar">
+  <section class="pub-title">雾透数据 · 简报</section>
+  <section class="pub-date">2026年第21周 ｜ 5月25日 星期一 ｜ 5分钟读完</section>
+</section>
+
+<section class="brief-body">
+
+  <!-- ===== 数据面板 ===== -->
+  <section class="dash-grid">
+    <section class="dash-row">
+      <section class="dash-item">
+        <section class="dash-num">134</section>
+        <section class="dash-label">A股入表企业</section>
+      </section>
+      <section class="dash-item">
+        <section class="dash-num">38.6亿</section>
+        <section class="dash-label">入表总金额</section>
+      </section>
+      <section class="dash-item">
+        <section class="dash-num">2114亿</section>
+        <section class="dash-label">ABS储备规模</section>
+      </section>
+    </section>
+    <section class="dash-row">
+      <section class="dash-item">
+        <section class="dash-num">5.32亿</section>
+        <section class="dash-label">纯数据ABS首单</section>
+      </section>
+      <section class="dash-item">
+        <section class="dash-num">5.1亿</section>
+        <section class="dash-label">信托融资首单</section>
+      </section>
+      <section class="dash-item">
+        <section class="dash-num">2302</section>
+        <section class="dash-label">数据产权登记</section>
+      </section>
+    </section>
+  </section>
+
+  <!-- ===== 本周信号 ===== -->
+  <section class="section">
+    <section class="section-title">📡 本周三大信号</section>
+
+    <section class="brief-item hot">
+      <section class="brief-head"><span class="brief-tag">1</span>国家数据局印发全年数字经济路线图</section>
+      <section class="brief-text">8大任务：统一数据产权登记制度、数据基建先行先试、"模数共振"AI数据集专项行动、跨境可信数据空间建设。全年政策框架已定。</section>
+      <a class="brief-link" href="https://www.nda.gov.cn/sjj/ywpd/szjj/0519/20260519194643007508935_pc.html" target="_blank">原文 ↗</a>
+    </section>
+
+    <section class="brief-item hot">
+      <section class="brief-head"><span class="brief-tag">2</span>纯数据ABS首单落地：5.32亿 + 3.72倍认购</section>
+      <section class="brief-text">青岛数据集团纯数据资产信托受益权ABS在深交所发行，100%纯数据底层、零实物抵押，票面利率创同期新低。数据资产金融属性首次得到资本市场全面认可。</section>
+      <a class="brief-link" href="https://www.shujiaowang.cn/home/article/detail?id=1350" target="_blank">原文 ↗</a>
+    </section>
+
+    <section class="brief-item hot">
+      <section class="brief-head"><span class="brief-tag">3</span>盐城城投信托融资5.1亿，补齐金融化拼图</section>
+      <section class="brief-text">5项数据集通过信托模式融资5.1亿。ABS+信托+质押"三驾马车"成型，城投数据融资进入"路径可选"阶段。全年数据融资总规模有望突破500亿。</section>
+      <a class="brief-link" href="https://baijiahao.baidu.com/s?id=1865668584851232443" target="_blank">原文 ↗</a>
+    </section>
+  </section>
+
+  <!-- ===== 政策速递 ===== -->
+  <section class="section">
+    <section class="section-title">📋 政策速递</section>
+
+    <section class="brief-item">
+      <section class="brief-head">数据资产评估国标实施满月</section>
+      <section class="brief-text">GB/T 46353-2025六维度评价体系成为入表"及格线"，多数企业暴露缺乏自动化评估工具的痛点。评估工具需求井喷。</section>
+    </section>
+
+    <section class="brief-item">
+      <section class="brief-head">山东数据条例草案征求意见</section>
+      <section class="brief-text">第12个省级数据条例出炉，对数据交易场所设立、评估定价、入表制度做出明确规定。</section>
+    </section>
+
+    <section class="brief-item">
+      <section class="brief-head">APEC贸易数字化框架21经济体推动</section>
+      <section class="brief-text">电子认证互认、无纸化贸易、数据跨境流动合作。全球数据治理"布鲁塞尔效应+APEC软法"双轨成形。</section>
+    </section>
+  </section>
+
+  <!-- ===== 资本动向 ===== -->
+  <section class="section">
+    <section class="section-title">💰 资本动向</section>
+
+    <section class="insight-box">
+      <p><strong>融资"三驾马车"成型：</strong>ABS路径（标准化、大额、适合优质数据资产）→ 信托路径（灵活、中长期、适合城投国企）→ 质押路径（覆盖面广、50家城投入表3亿）。企业可根据数据资产特征选择最优融资方式，而非"能不能融"。</p>
+      <p><strong>数据资产ABS爆发：</strong>103单项目储备2114亿元，前4月受理39单。三峡担保20亿数据ABS获受理，华鑫-鑫欣首单合规确权ABS落地。"数据资产"正成为ABS市场增长最快的新底层资产类别。</p>
+    </section>
+  </section>
+
+  <!-- ===== 三步走速览 ===== -->
+  <section class="section">
+    <section class="section-title">🔗 三步走 · 速览</section>
+    <section class="quick-steps">
+      <section class="qs-title">数据资源化 → 数据资产化 → 数据资本化</section>
+      <p class="qs-row"><span class="qs-step">第一步</span>国标满月，数据盘点需求井喷 — 自动化评估工具成刚需</p>
+      <p class="qs-row"><span class="qs-step">第二步</span>134家企业入表38.6亿，头部6家过亿 — 入表从试探走向标配</p>
+      <p class="qs-row"><span class="qs-step">第三步</span>ABS+信托+质押三驾马车成型 — 融资进入"路径可选"时代</p>
+    </section>
+  </section>
+
+  <section class="divider-line">· · ·</section>
+
+</section>
+
+<section class="footer-section">
+  <p class="brand">雾透数据 · 简报</p>
+  <p>雾透科技 ｜ 数据资源化 · 数据资产化 · 数据资本化</p>
+  <p>© 2026 雾透科技 ｜ 仅供行业参考</p>
+</section>
+
+</body>
+</html>

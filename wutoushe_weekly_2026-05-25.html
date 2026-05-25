@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>雾透数据资产周报 - 2026年5月25日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #FDF9F9;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .cover-banner { display: block; width: 100%; margin: 0 auto; }
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #9B6B6B;
+    text-align: center;
+    border-bottom: 1px solid #F0D0D0;
+    letter-spacing: 1px;
+  }
+  .weekly-body { background: #fff; padding: 28px 24px; }
+
+  /* -- 板块标题 -- */
+  .section { margin-bottom: 32px; }
+  .section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #8B0000;
+    padding: 10px 0 10px 16px;
+    border-left: 5px solid #C41E3A;
+    margin-bottom: 18px;
+    letter-spacing: 1.5px;
+  }
+
+  /* -- 综述卡片 -- */
+  .overview-card {
+    background: linear-gradient(135deg, #FFF5F5 0%, #FFF0F0 100%);
+    background: #FFF5F5;
+    padding: 20px 22px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #FAD5D5;
+  }
+  .overview-card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #8B0000;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .overview-card p {
+    font-size: 14px;
+    color: #5A3030;
+    line-height: 1.95;
+  }
+  .overview-card .highlight {
+    color: #C41E3A;
+    font-weight: 700;
+  }
+
+  /* -- 新闻条目 -- */
+  .news-item {
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed #F0D0D0;
+  }
+  .news-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .news-tags { margin-bottom: 6px; }
+  .tag { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 9px; border-radius: 2px; margin-right: 6px; color: #fff; }
+  .tag-red { background: #C41E3A; }
+  .tag-deep { background: #8B0000; }
+  .tag-warm { background: #D4442C; }
+  .tag-dark { background: #5C1010; }
+  .tag-mid { background: #B83042; }
+  .news-title { font-size: 15px; font-weight: 700; color: #5C1010; line-height: 1.6; margin-bottom: 4px; }
+  .news-desc { font-size: 13px; color: #4A3030; line-height: 1.78; margin-bottom: 4px; }
+  .news-source { font-size: 11px; color: #9B6B6B; letter-spacing: 0.5px; }
+  .news-source a { color: #C41E3A; text-decoration: none; font-weight: 600; }
+
+  /* -- 三步走框架 -- */
+  .three-step {
+    margin: 22px 0;
+  }
+  .step-card {
+    background: #FFF8F8;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    border-radius: 6px;
+    border-left: 4px solid #C41E3A;
+  }
+  .step-card .step-num {
+    display: inline-block;
+    background: #C41E3A;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+  }
+  .step-card .step-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #8B0000;
+    margin-bottom: 6px;
+  }
+  .step-card .step-desc {
+    font-size: 13px;
+    color: #5A3838;
+    line-height: 1.85;
+  }
+
+  /* -- 数据亮点 -- */
+  .data-highlight-row {
+    margin: 22px 0;
+    text-align: center;
+  }
+  .data-highlight-row table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .data-highlight-row thead th {
+    background: #F5C5C5;
+    color: #8B0000;
+    font-weight: 700;
+    padding: 10px 8px;
+    border: 1px solid #E8B0B0;
+    font-size: 12px;
+  }
+  .data-highlight-row tbody td {
+    padding: 10px 8px;
+    text-align: center;
+    border: 1px solid #F0D0D0;
+    color: #4A3030;
+    font-size: 13px;
+  }
+  .data-highlight-row tbody td:first-child { text-align: left; font-weight: 600; }
+  .data-highlight-row .big-num { font-size: 20px; font-weight: 700; color: #C41E3A; }
+
+  /* -- 下周关注 -- */
+  .next-week-box {
+    background: #FFFBFB;
+    padding: 16px 20px;
+    border-left: 4px solid #C41E3A;
+    margin-bottom: 14px;
+    font-size: 13px;
+    color: #5A3838;
+    line-height: 2.0;
+  }
+  .next-week-box strong { color: #8B0000; }
+
+  /* -- 分隔线 -- */
+  .divider-line { text-align: center; color: #D0A0A0; font-size: 11px; letter-spacing: 6px; margin: 24px 0; }
+
+  /* -- Footer -- */
+  .footer-section {
+    background: #FDF5F5;
+    padding: 22px 24px;
+    text-align: center;
+    border-top: 1px solid #F0D0D0;
+  }
+  .footer-section p {
+    font-size: 11px;
+    color: #9B6B6B;
+    line-height: 1.9;
+    letter-spacing: 0.5px;
+  }
+  .footer-section .brand {
+    font-size: 14px;
+    font-weight: 700;
+    color: #8B0000;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+  }
+</style>
+</head>
+<body>
+
+<!-- 封面头图 -->
+<img class="cover-banner" src="banner_final.png" alt="雾透数据资产周报 - 2026年5月25日">
+
+<!-- 出品信息栏 -->
+<section class="meta-bar">
+  雾透数据资产周报 · 第21周（5.18-5.24）｜ 雾透科技出品 ｜ 2026年5月25日 星期一
+</section>
+
+<section class="weekly-body">
+
+  <!-- ===== 本周综述 ===== -->
+  <section class="section">
+    <section class="section-title">本周综述</section>
+    <section class="overview-card">
+      <h3>数据资产化进入"三步走"加速期</h3>
+      <p>
+        本周（5.18-5.24），数据资产化领域迎来三大里程碑：<span class="highlight">国家数据局印发《2026年数字经济发展工作要点》</span>，部署8大重点任务明确数据要素市场化路径；<span class="highlight">全国首单纯数据资产ABS落地青岛</span>，首期5.32亿元、3.72倍超额认购；<span class="highlight">盐城城投5.1亿数据资产信托融资</span>落地，补齐金融化最后拼图。134家A股公司入表合计38.6亿元，数据资产支持证券储备规模突破2114亿元。<br><br>
+        从"能不能入表"到"如何选最优融资方式"，数据资产正从概念走向金融闭环。雾透科技以"<span class="highlight">数据资源化→数据资产化→数据资本化</span>"三步走方法论，为企业提供从数据盘点到融资变现的全链路赋能。
+      </p>
+    </section>
+  </section>
+
+  <!-- ===== 一、政策风向 ===== -->
+  <section class="section">
+    <section class="section-title">一、政策风向</section>
+
+    <section class="news-item">
+      <section class="news-tags"><span class="tag tag-red">重磅</span></section>
+      <section class="news-title">国家数据局印发《2026年数字经济发展工作要点》，8大任务锚定全年方向</section>
+      <section class="news-desc">5月19日，国家数据局发布《2026年数字经济发展工作要点》，提出深化数据要素市场化配置改革、筑牢数字基础设施底座、强化数据赋能AI、促进实体经济与数字经济深度融合等8大重点任务。文件明确加快建立全国统一数据产权登记制度、推进"模数共振"专项行动、建设跨境可信数据空间。截至5月17日，全国数据产权累计登记已逾2302个。</section>
+      <section class="news-source">来源：国家数据局 2026-05-19 <a href="https://www.nda.gov.cn/sjj/ywpd/szjj/0519/20260519194643007508935_pc.html" target="_blank">原文链接 ↗</a></section>
+    </section>
+
+    <section class="news-item">
+      <section class="news-tags"><span class="tag tag-deep">框架</span></section>
+      <section class="news-title">数据资产评估国标 GB/T 46353-2025 实施满月：六维度质量评价成入表标尺</section>
+      <section class="news-desc">自5月1日正式实施以来，首个数据资产评估国标已运行近一个月。标准定义的"准确性、完整性、一致性、时效性、可访问性、合规性"六维度评价体系正在成为企业数据治理的"及格线"。行业反馈显示，国标实施加速了企业数据资产盘点需求，但也暴露出多数企业缺乏自动化评估工具的痛点。</section>
+      <section class="news-source">来源：国家标准化管理委员会 2026-05 <a href="https://www.sohu.com/a/1014889637_416839" target="_blank">原文链接 ↗</a></section>
+    </section>
+
+    <section class="news-item">
+      <section class="news-tags"><span class="tag tag-mid">地方</span></section>
+      <section class="news-title">山东省数据条例草案公开征求意见，省级数据立法矩阵达12省市</section>
+      <section class="news-desc">5月21日，《山东省数据条例（草案）》全文公布征求意见，涵盖数据权益保护、公共数据共享开放、数据要素市场培育等核心章节。至此，全国已有12个省市出台或审议省级数据条例，地方数据立法从"先行先试"进入"全面铺开"阶段。条例对数据交易场所设立、评估定价、入表制度等关键环节做出明确规定。</section>
+      <section class="news-source">来源：山东省人大 2026-05-21 <a href="http://www.sdrd.gov.cn/articles/ch06248/202605/c8c2cb5f-eace-49a1-9c27-6a9cdc9a9c23.shtml" target="_blank">原文链接 ↗</a></section>
+    </section>
+  </section>
+
+  <!-- ===== 二、资本脉动 ===== -->
+  <section class="section">
+    <section class="section-title">二、资本脉动</section>
+
+    <section class="news-item">
+      <section class="news-tags"><span class="tag tag-red">首创</span><span class="tag tag-deep">入表</span></section>
+      <section class="news-title">历史性突破：全国首单纯数据资产ABS落地青岛，首期5.32亿元、3.72倍超额认购</section>
+      <section class="news-desc">5月19日，中信建投-青岛数据-青岛融担数据资产1期ABS在深交所成功定价，首期发行5.32亿元，票面利率创同期同类新低，累计吸引19.8亿元市场资金。这是我国首单100%以纯数据资产为底层、不依附任何传统抵质押物的资产证券化产品，标志着数据资产首次以"独立信用"获得资本市场认可。储架总规模10亿元。</section>
+      <section class="news-source">来源：青岛新闻网 / 数据交易网 2026-05-19 <a href="https://www.shujiaowang.cn/home/article/detail?id=1350" target="_blank">原文链接 ↗</a></section>
+    </section>
+
+    <section class="news-item">
+      <section class="news-tags"><span class="tag tag-warm">模式</span></section>
+      <section class="news-title">盐城城投5.1亿数据资产信托融资落地，补齐金融化"第三条路径"</section>
+      <section class="news-desc">5月19日，盐城经开区披露：盐东方集团、世纪新城集团5项标准化数据资产完成信托融资，总金额5.1亿元。数据集涵盖旅居消费洞察、供应链管理、客流分析等城市场景。盐城案例创造性采用信托模式，与青岛ABS、银行质押形成"三驾马车"格局——ABS（标准化大额）、信托（灵活中长期）、质押（覆盖面广），城投平台数据融资进入"路径可选"新阶段。</section>
+      <section class="news-source">来源：百度百家 / 盐城经开区 2026-05-19 <a href="https://baijiahao.baidu.com/s?id=1865668584851232443" target="_blank">原文链接 ↗</a></section>
+    </section>
+
+    <section class="news-item">
+      <section class="news-tags"><span class="tag tag-dark">市场</span></section>
+      <section class="news-title">本周数据资产化关键数字</section>
+      <section class="news-desc">
+        <section class="data-highlight-row">
+          <table>
+            <thead><tr><th>指标</th><th>截至2026年5月</th><th>变化趋势</th></tr></thead>
+            <tbody>
+              <tr><td>A股入表企业</td><td><span class="big-num">134</span> 家</td><td>较上年+76.4%</td></tr>
+              <tr><td>入表总金额</td><td><span class="big-num">38.6</span> 亿元</td><td>头部6家过亿</td></tr>
+              <tr><td>数据资产ABS储备</td><td><span class="big-num">2114</span> 亿元（103单）</td><td>年内爆发式增长</td></tr>
+              <tr><td>纯数据ABS首单</td><td><span class="big-num">5.32</span> 亿元</td><td>3.72倍认购</td></tr>
+              <tr><td>数据产权登记</td><td><span class="big-num">2302</span> 个</td><td>周增63个</td></tr>
+              <tr><td>城投入表平台</td><td><span class="big-num">50</span> 家</td><td>合计约3亿元</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </section>
+      <section class="news-source">来源：综合公开报道整理 2026-05-24</section>
+    </section>
+  </section>
+
+  <!-- ===== 三、行业纵深 ===== -->
+  <section class="section">
+    <section class="section-title">三、行业纵深</section>
+
+    <section class="news-item">
+      <section class="news-tags"><span class="tag tag-red">关注</span></section>
+      <section class="news-title">大模型"效率竞赛"白热化：GPT-5.5 Agent能力领跑，DeepSeek V4双版本以1/35成本逼近</section>
+      <section class="news-desc">本周AI领域持续高热：OpenAI GPT-5.5 Terminal-Bench得分82.7%；DeepSeek V4以1.6万亿参数Pro版+MIT开源策略，实现1/35的成本效率；Claude Sonnet 4.6在编程任务称雄；百度文心5.1以业界6%的预训练成本达领先水平。Agent能力成为新竞争主线——主流厂商密集推出场景化Agent产品，AI正从"聊天"转向"做事"，对高质量训练数据的需求急剧攀升。</section>
+      <section class="news-source">来源：CSDN / 量子位 / 掘金 2026-05 <a href="https://blog.csdn.net/2301_81401822/article/details/160876427" target="_blank">原文链接 ↗</a></section>
+    </section>
+
+    <section class="news-item">
+      <section class="news-tags"><span class="tag tag-deep">跨境</span></section>
+      <section class="news-title">APEC贸易数字化合作框架获21经济体一致推动，全球数据治理加速成形</section>
+      <section class="news-desc">5月23日，2026年APEC贸易部长会议在苏州闭幕。各方就《APEC贸易数字化合作框架》取得实质性进展，21经济体推动完善数字贸易政策协同，涵盖电子认证互认、无纸化贸易、数据跨境流动合作等议题。中国倡议建立APEC数字贸易能力建设网络。在全球数据治理"布鲁塞尔效应"（EU AI法案）与"APEC软法"双轨并进格局下，数据跨境合规正成为中国出海企业的新必修课。</section>
+      <section class="news-source">来源：中新社 / 东方财富网 2026-05-23 <a href="https://fund.eastmoney.com/a/202605233747398163.html" target="_blank">原文链接 ↗</a></section>
+    </section>
+
+    <section class="news-item">
+      <section class="news-tags"><span class="tag tag-warm">生态</span></section>
+      <section class="news-title">国家数据局召开数据领域民营企业座谈会，10家企业共议数据赋能AI</section>
+      <section class="news-desc">5月20日，国家数据局局长刘烈宏主持召开数据领域民营企业座谈会，与奥凯信息、每日互动、无问芯穹、携程等10家企业深入交流。座谈会聚焦数据赋能AI发展、数据要素流通利用等议题，释放明确信号：民营企业是数据要素市场的重要参与者和创新源泉。结合"模数共振"专项行动6大AI数据集方向，高质量数据集的供需对接进入政策快车道。</section>
+      <section class="news-source">来源：财联社 / 国家数据局 2026-05-20 <a href="https://baijiahao.baidu.com/s?id=1865785399336932162" target="_blank">原文链接 ↗</a></section>
+    </section>
+  </section>
+
+  <!-- ===== 四、三步走·雾透观察 ===== -->
+  <section class="section">
+    <section class="section-title">三步走 · 雾透观察</section>
+
+    <section class="three-step">
+      <section class="step-card">
+        <span class="step-num">第一步</span>
+        <section class="step-title">数据资源化 — 从"沉睡数据"到"可计量资源"</section>
+        <section class="step-desc">
+          本周信号：GB/T 46353国标实施满月，六维度质量评价体系成为入表前置条件；134家A股公司入表38.6亿元，但多数企业仍面临"有什么数据、数据值多少钱"的盘点难题。雾透<strong>数据资源化</strong>方案通过AI Agent驱动自动盘点、质量检测和合规标注，帮助企业快速完成数据资源的摸底、分级和标准化，为后续入表奠定基础。国标落地窗口期，率先完成数据资源化的企业将抢占入表先机。
+        </section>
+      </section>
+
+      <section class="step-card">
+        <span class="step-num">第二步</span>
+        <section class="step-title">数据资产化 — 从"计量资源"到"表内资产"</section>
+        <section class="step-desc">
+          本周信号：青岛首单5.32亿纯数据ABS、盐城5.1亿信托融资双双落地，验证了"盘点→确权→评估→入表→融资"的全链条可行性。但134家入表企业中过半数仍在"试探性入表"阶段，入表金额偏低。雾透<strong>数据资产化</strong>方案覆盖合规确权、成本法/收益法/市场法多维度评估、入表方案设计，帮助企业将数据从"后台记录"转化为"表内资产"，并匹配合适的融资路径。
+        </section>
+      </section>
+
+      <section class="step-card">
+        <span class="step-num">第三步</span>
+        <section class="step-title">数据资本化 — 从"表内资产"到"流动资本"</section>
+        <section class="step-desc">
+          本周信号：ABS、信托、质押"三驾马车"成型，数据资产融资进入"路径可选"阶段——103单ABS储备2114亿元、信托模式首次跑通、50家城投通过质押撬动融资。雾透<strong>数据资本化</strong>方案联动后日资本（投融资）、中安（合规安全），为企业提供从融资结构设计到产品发行的端到端服务——无论是交易所ABS、信托计划还是银行质押，我们帮助企业在"三驾马车"中做出最优选择。
+        </section>
+      </section>
+    </section>
+  </section>
+
+  <!-- ===== 五、下周关注 ===== -->
+  <section class="section">
+    <section class="section-title">下周关注</section>
+    <section class="next-week-box">
+      <p><strong>📅 5月26日-6月1日重点事件：</strong></p>
+      <p>· <strong>5月26日</strong> — 阿里云AI生产力峰会杭州站，聚焦AI Agent与大模型产业落地</p>
+      <p>· <strong>5月30日</strong> — 工信部+国家数据局"模数共振"行动申报截止（仅剩5天！）</p>
+      <p>· <strong>5月下旬</strong> — 各地数据局跟进《数字经济发展工作要点》地方配套方案</p>
+      <p>· <strong>6月</strong> — 国家数据要素综合试验区评审启动，杭州为重点关注城市</p>
+      <p>· <strong>持续关注</strong> — 全国统一数据产权登记制度配套指引预期发布、H1数据资产入表半年报窗口</p>
+      <p style="margin-top:8px;"><strong>雾透提醒：</strong>国标落地满月 + ABS破冰 + 信托首单三重信号叠加，当前是启动数据资产化的战略窗口。建议企业尽快完成数据资源盘点，为H1入表窗口期做好准备。</p>
+    </section>
+  </section>
+
+  <section class="divider-line">· · ·</section>
+
+</section>
+
+<!-- Footer -->
+<section class="footer-section">
+  <p class="brand">雾透数据资产周报</p>
+  <p>雾透科技 · 数据资产化全链路服务商</p>
+  <p>数据资源化（盘点治理）· 数据资产化（确权评估入表）· 数据资本化（融资ABS信托）</p>
+  <p style="margin-top:6px;">WUTOU DATA ASSET WEEKLY REPORT</p>
+  <p style="margin-top:8px;">© 2026 雾透科技 ｜ 本报告仅供行业参考，不构成投资建议</p>
+</section>
+
+</body>
+</html>
