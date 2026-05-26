@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>雾透科技 · 产业纵深 - 2026年5月25日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #FDF9F9;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .cover-banner { display: block; width: 100%; margin: 0 auto; }
+
+  .deep-body { background: #fff; padding: 28px 24px; }
+
+  /* -- 导语 -- */
+  .lead {
+    font-size: 15px;
+    color: #4A3030;
+    line-height: 2.0;
+    margin-bottom: 28px;
+    padding: 20px 22px;
+    background: #FFF8F8;
+    border-radius: 6px;
+    border: 1px solid #FADDDD;
+    text-align: center;
+  }
+  .lead .lead-highlight {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #8B0000;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+  }
+
+  /* -- 产业板块 -- */
+  .deep-section { margin-bottom: 30px; }
+  .deep-section .ds-icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    background: #C41E3A;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  .deep-section .ds-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #8B0000;
+    display: inline;
+    vertical-align: middle;
+    letter-spacing: 1px;
+  }
+  .deep-section .ds-divider {
+    height: 2px;
+    background: #F0D0D0;
+    margin: 10px 0 16px 0;
+  }
+
+  /* -- 产业链卡片 -- */
+  .chain-card {
+    background: #FFFBFB;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    border-radius: 4px;
+    border: 1px solid #F5DDDD;
+  }
+  .chain-card .cc-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    background: #C41E3A;
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+  .chain-card .cc-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #5C1010;
+    margin-bottom: 6px;
+  }
+  .chain-card .cc-body {
+    font-size: 13px;
+    color: #4A3030;
+    line-height: 1.85;
+  }
+  .chain-card .cc-data {
+    font-size: 12px;
+    color: #C41E3A;
+    font-weight: 700;
+    margin-top: 6px;
+  }
+
+  /* -- 生态协同图 -- */
+  .eco-map {
+    margin: 20px 0;
+    padding: 18px;
+    background: #FFF5F5;
+    border-radius: 6px;
+    border: 1px solid #FAD5D5;
+    text-align: center;
+  }
+  .eco-map .eco-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #8B0000;
+    margin-bottom: 14px;
+  }
+  .eco-card {
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 16px;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid #E8D0D0;
+    font-size: 12px;
+    color: #4A3030;
+    line-height: 1.7;
+    text-align: center;
+  }
+  .eco-card.eco-main {
+    display: block;
+    width: auto;
+    margin: 0 0 12px 0;
+    border-left: 3px solid #C41E3A;
+  }
+  .eco-card.eco-sub {
+    width: 44%;
+    margin: 0 2.5%;
+  }
+  .eco-card .en-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #C41E3A;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .eco-card .en-sub {
+    font-size: 11px;
+    color: #9B6B6B;
+  }
+  .eco-arrow {
+    display: block;
+    text-align: center;
+    color: #C41E3A;
+    font-size: 16px;
+    margin: 6px 0;
+    letter-spacing: 2px;
+  }
+
+  /* -- 三步走纵深 -- */
+  .three-step-deep {
+    margin: 22px 0;
+  }
+  .tsd-card {
+    background: #FFF8F8;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    border-radius: 6px;
+    border: 1px solid #FADDDD;
+  }
+  .tsd-card .tsd-header {
+    font-size: 15px;
+    font-weight: 700;
+    color: #8B0000;
+    margin-bottom: 8px;
+  }
+  .tsd-card .tsd-header span {
+    font-size: 11px;
+    font-weight: 400;
+    color: #C41E3A;
+    margin-left: 6px;
+  }
+  .tsd-card .tsd-text {
+    font-size: 13px;
+    color: #5A3838;
+    line-height: 1.85;
+    margin-bottom: 8px;
+  }
+  .tsd-card .tsd-wutou {
+    font-size: 12px;
+    color: #6B3838;
+    line-height: 1.7;
+    font-style: italic;
+    padding: 8px 12px;
+    background: #FFF0F0;
+    border-radius: 3px;
+  }
+
+  .divider-line { text-align: center; color: #D0A0A0; font-size: 10px; letter-spacing: 5px; margin: 24px 0; }
+
+  .footer-section {
+    background: #FDF5F5;
+    padding: 22px 24px;
+    text-align: center;
+    border-top: 1px solid #F0D0D0;
+  }
+  .footer-section p { font-size: 11px; color: #9B6B6B; line-height: 1.8; }
+  .footer-section .brand { font-size: 14px; font-weight: 700; color: #8B0000; letter-spacing: 2px; }
+</style>
+</head>
+<body>
+
+<img class="cover-banner" src="banner_final.png" alt="雾透数据资产周报">
+
+<section class="deep-body">
+
+  <!-- 导语 -->
+  <section class="lead">
+    <span class="lead-highlight">数据资产化全产业链深度扫描</span>
+    2026年第21周（5.18-5.24），数据资产化产业呈现出从"政策驱动"到"市场驱动"的关键转折——金融闭环打通、生态协同加速、AI赋能深化。本文从产业链上中下游视角，系统梳理本周产业格局变化。
+  </section>
+
+  <!-- 一、上游：数据资源供给 -->
+  <section class="deep-section">
+    <span class="ds-icon">上</span>
+    <section class="ds-title">数据资源供给：国标驱动标准化提速</section>
+    <section class="ds-divider"></section>
+
+    <section class="chain-card">
+      <section class="cc-label">政策框架</section>
+      <section class="cc-title">国家数据局8大任务确立全年基调</section>
+      <section class="cc-body">《2026年数字经济发展工作要点》将"深化数据要素市场化配置改革"列为首要任务，提出加快建立全国统一数据产权登记制度。截至本周，全国数据产权累计登记2302个，周增63个。标准化的数据产权登记体系正在为数据资源供给建立"身份认证"基础设施。</section>
+      <section class="cc-data">2302个登记 · 12省市数据条例 · 6大AI数据集专项行动</section>
+    </section>
+
+    <section class="chain-card">
+      <section class="cc-label">质量标准</section>
+      <section class="cc-title">GB/T 46353国标实施满月：六维度评价成入表"通行证"</section>
+      <section class="cc-body">准确性、完整性、一致性、时效性、可访问性、合规性——这六个维度的数据质量评价体系已运行近一个月。行业反馈两极分化：头部数据密集型企业已建立自动化评价流程，但多数中小企业和传统企业仍在"手工盘点"阶段。国标在加速数据资产化进程的同时，也暴露出<strong>数据治理工具供给不足</strong>的产业短板。</section>
+      <section class="cc-data">134家企业入表 · 38.6亿元总额 · 评估工具需求井喷</section>
+    </section>
+  </section>
+
+  <!-- 二、中游：数据资产化服务 -->
+  <section class="deep-section">
+    <span class="ds-icon">中</span>
+    <section class="ds-title">数据资产化服务：从工具到生态</section>
+    <section class="ds-divider"></section>
+
+    <section class="chain-card">
+      <section class="cc-label">生态协同</section>
+      <section class="cc-title">民营企业座谈会释放协同信号</section>
+      <section class="cc-body">5月20日，刘烈宏局长主持召开数据领域民企座谈会，10家企业覆盖数据治理、AI算力、数据应用全链条。信号明确：<strong>民营科技企业是数据要素市场的核心创新力量。</strong>在"模数共振"专项行动框架下，企业持有的行业数据将从"内部资源"升级为"战略资产"，数据服务商面临从"项目制"到"平台化"的转型窗口。</section>
+    </section>
+
+    <section class="chain-card">
+      <section class="cc-label">全球视野</section>
+      <section class="cc-title">APEC贸易数字化框架 + EU AI法案：全球数据治理"双轨"成型</section>
+      <section class="cc-body">APEC 21经济体推动数字贸易规则协同、EU AI法案设置2027-2028差异化合规截止日——全球数据治理正从"各自为政"走向"标准竞合"。对中国企业而言，率先完成数据跨境合规布局的，将在全球市场中获得定价权和客户信任。数据合规服务正从成本中心转变为竞争力中心。</section>
+    </section>
+  </section>
+
+  <!-- 三、下游：数据资本化 -->
+  <section class="deep-section">
+    <span class="ds-icon">下</span>
+    <section class="ds-title">数据资本化：金融闭环与路径分化</section>
+    <section class="ds-divider"></section>
+
+    <section class="chain-card">
+      <section class="cc-label">历史突破</section>
+      <section class="cc-title">纯数据ABS首单落地：5.32亿 + 3.72倍认购</section>
+      <section class="cc-body">青岛数据集团在深交所成功发行全国首单100%纯数据资产ABS。核心突破在于：<strong>完全剥离传统抵质押物依赖</strong>，以数据资产信托受益权为唯一底层支撑。3.72倍超额认购、19.8亿资金追逐5.32亿份额，市场用真金白银为数据资产的金融属性投了信任票。</section>
+      <section class="cc-data">首期5.32亿 · 储架10亿 · 票面利率创同期新低</section>
+    </section>
+
+    <section class="chain-card">
+      <section class="cc-label">路径分化</section>
+      <section class="cc-title">融资"三驾马车"成型：ABS vs 信托 vs 质押</section>
+      <section class="cc-body">
+        <strong>ABS路径</strong>：标准化程度最高，适合大额融资。103单储备2114亿元。代表案：青岛5.32亿。<br>
+        <strong>信托路径</strong>：灵活性最佳，适合城投国企中长期。代表案：盐城5.1亿（5项数据集）。<br>
+        <strong>质押路径</strong>：覆盖面最广，50家城投入表3.07亿。适合中小规模融资。<br>
+        三种路径的并存标志着数据资产融资从"能不能融到资"走到了<strong>"如何选择最优融资方式"</strong>的新阶段。
+      </section>
+      <section class="cc-data">ABS 2114亿/103单 · 信托5.1亿首单 · 质押50家城投3亿</section>
+    </section>
+  </section>
+
+  <!-- 四、三步走 · 雾透赋能 -->
+  <section class="deep-section">
+    <span class="ds-icon">雾</span>
+    <section class="ds-title">三步走 · 雾透赋能全景</section>
+    <section class="ds-divider"></section>
+
+    <section class="three-step-deep">
+      <section class="tsd-card">
+        <section class="tsd-header">第一步：数据资源化<span>盘点 · 治理 · 标准化</span></section>
+        <section class="tsd-text">产业信号：国标六维度评价成为入表前提，但多数企业缺乏自动化工具。2302个数据产权登记、134家企业入表的背后，是对高效数据盘点工具的巨大需求。</section>
+        <section class="tsd-wutou">雾透赋能：AI Agent驱动的自动化数据盘点、六维度质量评价、合规标注、分级分类。帮助企业快速将"沉睡数据"转化为可计量的标准化资源，为国标合规和后续入表奠定基础。</section>
+      </section>
+
+      <section class="tsd-card">
+        <section class="tsd-header">第二步：数据资产化<span>确权 · 评估 · 入表</span></section>
+        <section class="tsd-text">产业信号：38.6亿入表总额、头部6家过亿。但过半数企业仍在"试探性入表"，入表金额偏低。成本法/收益法/市场法的选择、合规确权路径设计，成为企业入表的"拦路虎"。</section>
+        <section class="tsd-wutou">雾透赋能：覆盖合规确权、多维度评估、入表方案设计的全流程服务。联动后日资本（估值），帮助企业实现从"能入表"到"入好表"的跨越。</section>
+      </section>
+
+      <section class="tsd-card">
+        <section class="tsd-header">第三步：数据资本化<span>融资 · ABS · 信托</span></section>
+        <section class="tsd-text">产业信号：ABS+信托+质押三驾马车成型，全年融资规模有望突破500亿。企业面临的不是"能不能融"，而是"选哪条路"——这需要专业的产品结构设计和金融机构对接能力。</section>
+        <section class="tsd-wutou">雾透赋能：端到端数据资本化服务。联动后日资本（投融资结构设计），为企业提供从融资路径选择到产品发行的全链条支持。</section>
+      </section>
+    </section>
+
+    <!-- 生态协同图 -->
+    <section class="eco-map">
+      <section class="eco-title">雾透科技 · 生态协同矩阵</section>
+      <section class="eco-card eco-main">
+        <span class="en-name">雾透科技</span>
+        <span class="en-sub">技术赋能 · 三步走方法论 · AI Agent驱动全链路</span><br>
+        <span class="en-sub">数据资产化核心引擎</span>
+      </section>
+      <span class="eco-arrow">▼</span>
+      <section class="eco-card eco-sub">
+        <span class="en-name">后日资本</span>
+        <span class="en-sub">投融资 · 估值定价</span>
+        <span class="en-sub">ABS / 信托产品设计</span>
+      </section>
+      <section class="eco-card eco-sub">
+        <span class="en-name">临平数协</span>
+        <span class="en-sub">产业生态 · 政企桥梁</span>
+        <span class="en-sub">标准推广与区域落地</span>
+      </section>
+    </section>
+  </section>
+
+  <section class="divider-line">· · ·</section>
+
+</section>
+
+<section class="footer-section">
+  <p class="brand">雾透科技 · 产业纵深</p>
+  <p>雾透科技 ｜ 数据三资化全链集成服务商</p>
+  <p>数据资源化 · 数据资产化 · 数据资本化</p>
+  <p style="margin-top:6px;">© 2026 雾透科技 ｜ 本报告仅供行业参考</p>
+</section>
+
+</body>
+</html>

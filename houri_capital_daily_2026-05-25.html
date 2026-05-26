@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产投资日报 - 2026年5月25日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #F0F7F0;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .cover-banner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #6B8E6B;
+    text-align: center;
+    border-bottom: 1px solid #D0E0D0;
+    letter-spacing: 1px;
+  }
+
+  .daily-body {
+    background: #fff;
+    padding: 24px 22px;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0D3B0D;
+    padding: 8px 0 8px 14px;
+    border-left: 4px solid #3D8B3D;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .news-item {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #D0E0D0;
+  }
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .news-item .item-header {
+    margin-bottom: 6px;
+  }
+  .news-item .item-index {
+    display: inline-block;
+    vertical-align: top;
+    background: #3D8B3D;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 19px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  .news-item .item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1A3A1A;
+    line-height: 1.55;
+  }
+  .news-item .item-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .tag-hot       { background: #E0F0E0; color: #1A5C1A; }
+  .tag-attention { background: #E8F5E8; color: #0D3B0D; }
+  .tag-event     { background: #E5F0E5; color: #2D7D2D; }
+  .tag-framework { background: #E0F0E0; color: #1A5C1A; }
+  .tag-urgent    { background: #EAF5EA; color: #2D7D2D; }
+  .tag-market    { background: #E3F3E3; color: #1A5C1A; }
+  .tag-innovation { background: #E0F0E0; color: #2D7D2D; }
+  .tag-crossborder { background: #E5F5E5; color: #1A5C1A; }
+  .tag-model     { background: #E8F5E8; color: #0D3B0D; }
+  .tag-entry     { background: #DCF0DC; color: #2D7D2D; }
+  .tag-surge     { background: #E3F3E3; color: #1A5C1A; }
+  .tag-local     { background: #E0F0E0; color: #2D7D2D; }
+  .tag-finance   { background: #E5F5E5; color: #0D3B0D; }
+  .tag-data      { background: #E8F5E8; color: #1A5C1A; }
+  .tag-trust     { background: #E0F0E0; color: #2D7D2D; }
+
+  .news-item .item-desc {
+    font-size: 14px;
+    color: #2D4A2D;
+    line-height: 1.78;
+    margin: 6px 0 10px;
+  }
+  .news-item .item-meta {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 12px;
+    color: #6B8E6B;
+    line-height: 1.8;
+  }
+  .news-item .item-source {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #5A7A5A;
+  }
+  .news-item .item-link {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #3D8B3D;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .top5-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .top5-table th {
+    background: #C8E6C8;
+    color: #0D3B0D;
+    font-weight: 600;
+    padding: 11px 8px;
+    text-align: center;
+    border-bottom: 2px solid #3D8B3D;
+  }
+  .top5-table td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid #D8E8D8;
+    color: #2D4A2D;
+    background: #fff;
+  }
+  .top5-table tr:first-child td {
+    font-weight: 600;
+    color: #0D3B0D;
+    background: #F1F8F1;
+  }
+
+  .observe-block {
+    background: #F1F8F1;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    border: 1px solid #B8D8B8;
+  }
+  .observe-block .observe-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #0D3B0D;
+    margin-bottom: 7px;
+  }
+  .observe-block .observe-text {
+    font-size: 13.5px;
+    color: #2D4A2D;
+    line-height: 1.8;
+  }
+
+  .houri-focus {
+    background: #E8F5E8;
+    border: 1px solid #A8D0A8;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 22px 0;
+  }
+  .houri-focus .lf-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0D3B0D;
+    margin-bottom: 12px;
+  }
+  .houri-focus .lf-text {
+    font-size: 14px;
+    color: #1A3A1A;
+    line-height: 1.85;
+  }
+
+  .reminder-box {
+    background: #F0F8F0;
+    border: 1px solid #C0D8C0;
+    border-left: 4px solid #3D8B3D;
+    border-radius: 6px;
+    padding: 15px 18px;
+    margin: 18px 0;
+    font-size: 13px;
+    color: #2D5A2D;
+    line-height: 1.85;
+  }
+
+  .daily-footer {
+    background: #E8F0E8;
+    padding: 22px 24px;
+    text-align: center;
+    border-top: 1px solid #D0E0D0;
+  }
+  .daily-footer .footer-brand {
+    font-size: 13px;
+    font-weight: 600;
+    color: #2D7D2D;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+  .daily-footer .footer-date {
+    font-size: 12px;
+    color: #6B8E6B;
+    margin-bottom: 10px;
+  }
+  .daily-footer .footer-note {
+    font-size: 11px;
+    color: #7A9A7A;
+    line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+
+<!-- === COVER BANNER === -->
+<img class="cover-banner" src="banner_final.png" alt="数据资产投资日报头图 — 后日资本">
+
+<div class="meta-bar">
+  后日资本 · 数据资产投资研究中心 &nbsp;|&nbsp; 数据驱动投资，资产赋能增长
+</div>
+
+<!-- ========== BODY ========== -->
+<div class="daily-body">
+
+  <!-- ===== 一、今日要闻 ===== -->
+  <div class="section">
+    <div class="section-title">一、今日要闻</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">盐城5.1亿数据资产信托融资落地，数据资本化"第三条路径"正式成型<span class="item-tag tag-hot">重磅</span></span>
+      </div>
+      <div class="item-desc">
+        5月19日，盐城经开区披露：盐东方集团、世纪新城集团合计形成7项标准化数据资产，其中5项于今年4月完成<strong>信托融资，总金额5.1亿元</strong>。与青岛纯数据ABS和银行贷款质押不同，盐城案例创造性采用<strong>信托融资模式</strong>——以数据资产未来收益权为信托财产，实现了数据资产化从"质押增值"到"独立信用"再到"信托收益权"的金融工具全覆盖。<strong>后日资本分析</strong>：信托模式门槛更低、灵活性更高，适合城投国企中长期融资，是数据资产金融化的关键创新，预计将引发全国城投平台跟进复制。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：盐城经济技术开发区 / 百度百家号</span>
+        <span>2026-05-19</span>
+        <a class="item-link" href="https://baijiahao.baidu.com/s?id=1865668584851232443" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">48小时5款大模型密集发布，AI产业从"参数竞赛"全面转向"效能竞赛"<span class="item-tag tag-attention">关注</span></span>
+      </div>
+      <div class="item-desc">
+        本周，阿里、谷歌、微软、智谱AI四家巨头在<strong>48小时内连发5款大模型</strong>，掀起2026年迄今最密集的AI模型发布潮。阿里云Wan2.7-Image在图像生成质量上超越Stable Diffusion 3；谷歌Gemma4实现推理能力重大突破；微软Phi-4系列在多模态理解领域刷新基准。<strong>后日资本研判</strong>：AI产业竞争重心已从"参数规模"转向"推理效率和场景融合"，2026年下半年将迎来AI Agent规模化落地的关键窗口。投资逻辑应从"算力基础设施"向"AI应用层"和"数据治理层"转移。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：腾讯云开发者社区 / 量子位 / 机器之心</span>
+        <span>2026-05-24</span>
+        <a class="item-link" href="https://cloud.tencent.com.cn/developer/article/2650738" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">央行法修订赋予数字人民币法定货币地位，"数字存款货币"开辟金融数据治理新纪元<span class="item-tag tag-crossborder">跨境</span></span>
+      </div>
+      <div class="item-desc">
+        《中国人民银行法》修订案日前经全国人大常委会审议通过，首次在法律层面明确<strong>数字人民币的法定货币地位</strong>。修订案框定数字人民币从"数字现金"正式升级为"数字存款货币"，呼应2026年1月1日起实施的新一代计量框架。<strong>后日资本解读</strong>：数字人民币的每一笔交易都将产生标准化金融数据流，为数据资产定价、合规审计和金融风险监测提供全新维度的基础设施。数字人民币"可编程性"特征将为智能合约驱动的数据交易结算开辟新场景，建议重点关注数字人民币生态链上的数据服务商。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：全国人大常委会 / 新浪财经 / 21世纪经济报道</span>
+        <span>2026-05-23</span>
+        <a class="item-link" href="https://baijiahao.baidu.com/s?id=1865902672287789001" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 二、政策动态 ===== -->
+  <div class="section">
+    <div class="section-title">二、政策动态</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">山东省数据条例草案公开征求意见，省级数据立法矩阵持续扩容<span class="item-tag tag-framework">框架</span></span>
+      </div>
+      <div class="item-desc">
+        5月21日，《山东省数据条例（草案）》经省十四届人大常委会第二十四次会议初次审议，全文公布并公开征求社会各界意见。条例草案涵盖<strong>数据权益保护、公共数据共享开放、数据要素市场培育、数据安全管理</strong>等核心章节。<strong>后日资本观察</strong>：继贵州、广东、浙江、上海等地之后，又一经济大省在省级层面推进综合性数据立法。草案专设"数据要素市场"章节，对数据交易场所设立、数据资产评估定价、数据资产入表等制度安排做出明确规定，为地方数据要素市场化配置改革提供了更完整的法规依据，将加速数据资产投融资制度建设。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：山东省人大 / 山东人大网</span>
+        <span>2026-05-21</span>
+        <a class="item-link" href="http://www.sdrd.gov.cn/articles/ch06248/202605/c8c2cb5f-eace-49a1-9c27-6a9cdc9a9c23.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">上海发布深化"一网通办"改革方案，"AI+政务服务"新范式引领数字政府建设<span class="item-tag tag-framework">框架</span></span>
+      </div>
+      <div class="item-desc">
+        5月15日，上海市政府正式印发《上海市深化"一网通办"改革 打造"高效办成一件事"最佳体验地行动方案》，共计六方面26条。方案最大亮点为<strong>安全稳妥有序推进"人工智能+政务服务"</strong>，推行惠企政策"免申即享、直达快享"模式。<strong>后日资本分析</strong>：数字政府建设进入"多城竞速"新阶段，政务数据的高频流通和标准化治理正在催生一个规模巨大的数据服务市场。市场测算，全国数字政府数据服务市场规模有望在2027年突破千亿元。建议布局政务数据治理、智能审批引擎、跨域数据安全交换等细分赛道。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：上海市人民政府 / 中新网 / 新浪财经</span>
+        <span>2026-05-15</span>
+        <a class="item-link" href="https://www.shanghai.gov.cn/nw12344/20260515/b393a352da314b92b42730755baf2d25.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 三、行业观察 ===== -->
+  <div class="section">
+    <div class="section-title">三、行业观察</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">海天瑞声Q1营收增38.63%，高质量训练数据集成AI竞争核心资源<span class="item-tag tag-market">市场</span></span>
+      </div>
+      <div class="item-desc">
+        5月21日，AI数据服务头部企业海天瑞声披露：2026年第一季度实现营业收入<strong>9677.93万元，同比增长38.63%</strong>，受益于AI应用爆发与数据要素产业化提速。公司参与国家数据局词元经济座谈会，其"数据标注+数据治理+合规审计"一体化服务模式被视为AI数据服务商转型升级的标杆路径。<strong>后日资本研判</strong>：业绩高增长验证了"数据即新石油"的市场逻辑。随着AI Agent规模化落地，高质量训练数据集将成为AI企业的核心竞争壁垒，数据服务商的投资价值将被重估。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：证券日报网 / 东方财富网</span>
+        <span>2026-05-21</span>
+        <a class="item-link" href="https://finance.eastmoney.com/a/202605213745390230.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">万国数据Q1营收33.67亿同比增23.6%，未来三年300-500亿加码算力基础设施<span class="item-tag tag-surge">爆发</span></span>
+      </div>
+      <div class="item-desc">
+        5月20日，万国数据公布2026年第一季度财报：净收入<strong>33.671亿元，同比增长23.6%</strong>。公司宣布未来三年计划投入<strong>300-500亿元</strong>扩建高性能数据中心。<strong>后日资本分析</strong>：随着"全国一体化算力网"纳入"十五五"109项重大工程，头部数据中心运营商的资本扩张步伐显著加快，算力基础设施正从"建够"转向"建好、建绿色"。投资建议：关注算力网产业链上游（液冷设备、绿色能源）、中游（数据中心REITs）和下游（AI推理服务）的全链条投资机会。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：万国数据 / 凤凰财经 / 中国经济新闻网</span>
+        <span>2026-05-20</span>
+        <a class="item-link" href="https://www.cet.com.cn/wzsy/cyzx/10370568.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 四、数据入表与资本化 ===== -->
+  <div class="section">
+    <div class="section-title">四、数据入表与资本化</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">数据资产金融化"三驾马车"成型：ABS+信托+质押并行，全年规模有望突破500亿<span class="item-tag tag-trust">信托</span></span>
+      </div>
+      <div class="item-desc">
+        随着盐城5.1亿信托融资落地，数据资产金融化已形成<strong>三种主流路径并行</strong>的格局。ABS路径（青岛、华鑫）适用于标准化程度高、现金流可预测的数据资产；信托路径（盐城）门槛更低、灵活性更高，适合城投国企中长期融资；银行质押路径覆盖面最广，50家城投合计入表3.07亿元。<strong>后日资本研判</strong>：随着全国统一数据产权登记制度加快建设，数据资产评估国标全面实施，下半年预计将有更多创新金融工具涌现，全年数据资产融资总规模有望突破500亿元。建议投资方重点关注数据资产ABS次级档、数据信托受益权凭证等创新金融产品。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：新华财经 / 新浪财经 / 财联社 综合</span>
+        <span>2026-05-24</span>
+        <a class="item-link" href="https://finance.sina.com.cn/" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <!-- TOP5 Table -->
+    <div style="overflow-x:auto; margin: 10px 0 4px;">
+      <table class="top5-table">
+        <tr><th>模式</th><th>代表案例</th><th>规模</th><th>创新点</th></tr>
+        <tr><td>纯数据ABS</td><td>青岛数据集团</td><td>5.32 亿元</td><td>纯数据信用，3.72倍超额认购</td></tr>
+        <tr><td>合规确权ABS</td><td>华鑫—鑫欣</td><td>—</td><td>首单合规确权数据资产ABS</td></tr>
+        <tr><td>数据信托融资</td><td>盐城城投</td><td>5.10 亿元</td><td>信托受益权模式，5项数据集</td></tr>
+        <tr><td>ABS储架受理</td><td>圃泽+三峡担保</td><td>30 亿元</td><td>供应链数据+担保增信组合</td></tr>
+        <tr><td>银行质押贷款</td><td>多地城投</td><td>千万至亿级</td><td>城投数据资产质押标准化</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <!-- ===== 五、投资视角 ===== -->
+  <div class="section">
+    <div class="section-title">五、投资视角</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">AI治理全球化加速，合规成为新竞争力，中国出海企业迎两年窗口期<span class="item-tag tag-crossborder">跨境</span></span>
+      </div>
+      <div class="item-desc">
+        5月7日，欧洲议会与欧盟理事会通过<strong>AI法案重大修订（Omnibus）</strong>，设置差异化合规截止日：嵌入式AI产品最迟<strong>2028年8月</strong>完成合规。对出海企业而言，这意味着两年窗口期。<strong>后日资本建议</strong>：率先完成合规的企业将获得定价权和客户信任，在2028年全球AI治理"布鲁塞尔效应"全面显现前抢占卡位。投资建议：关注AI合规服务、跨境数据治理、隐私计算等赛道，这些领域将在2027-2028年迎来爆发式增长。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：欧洲议会 / 新浪财经 / 德和衡律师事务所</span>
+        <span>2026-05-19</span>
+        <a class="item-link" href="https://finance.sina.com.cn/wm/2026-05-19/doc-inhymumf2147504.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">APEC贸易数字化合作框架取得实质性进展，21经济体勾勒数字贸易规则蓝图<span class="item-tag tag-crossborder">跨境</span></span>
+      </div>
+      <div class="item-desc">
+        5月23日，2026年APEC贸易部长会议在苏州闭幕。各方就《<strong>APEC贸易数字化合作框架</strong>》取得实质性进展，21个经济体一致推动完善数字贸易政策协同框架。<strong>后日资本解读</strong>：在全球贸易规则加速重构的背景下，APEC贸易数字化框架将成为区域数字治理的"软法"基础设施。中国倡议推动建立APEC数字贸易能力建设网络，支持发展中经济体弥合数字鸿沟。投资建议：关注跨境电商数据服务、数字贸易合规、跨境支付数据流转等细分领域的头部企业。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：中新社 / 东方财富网 / 新浪财经</span>
+        <span>2026-05-23</span>
+        <a class="item-link" href="https://fund.eastmoney.com/a/202605233747398163.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 深度观察 ===== -->
+  <div class="section">
+    <div class="section-title">深度观察</div>
+
+    <div class="observe-block">
+      <div class="observe-label">观察一：数据资产金融化"三驾马车"成型——从"能不能融"到"怎么选最优"</div>
+      <div class="observe-text">
+        盐城5.1亿信托融资的落地，补齐了数据资产金融化的最后一块"拼图"。至此，数据资产融资已形成完整的"三驾马车"：ABS（标准化程度最高，适合大额融资，代表案青岛5.32亿）、信托（灵活性最佳，适合城投国企中长期，代表案盐城5.1亿）、银行质押（覆盖面最广，50家城投合计入表3.07亿）。三者的并存意味着数据资产已经从"能不能融到资"走到了"如何选择最优融资方式"的新阶段。随着全国统一数据产权登记制度加快建设，数据资产评估国标全面实施，下半年预计将有更多创新金融工具涌现，全年数据资产融资总规模有望突破500亿元。对投资机构而言，数据资产ABS次级档、数据信托受益权凭证等创新金融产品值得重点关注。
+      </div>
+    </div>
+
+    <div class="observe-block">
+      <div class="observe-label">观察二：AI产业"效能竞赛"阶段开启——投资逻辑从"算力"向"应用+数据"转移</div>
+      <div class="observe-text">
+        本周48小时5款大模型密集发布，标志着AI产业竞争重心已从"参数规模"转向"推理效率和场景融合"。MoE架构全面普及、端侧部署走向成熟、多模态成为标配而非卖点。对投资机构而言，这意味着投资逻辑需要从"算力基础设施"向"AI应用层"和"数据治理层"转移。具体而言：①AI Agent应用层（toB的企业级AI Agent、toC的个人AI助手）将在2026年下半年迎来规模化落地；②数据治理层（高质量训练数据、数据标注、数据合规审计）将成为AI企业的核心竞争壁垒；③端侧AI芯片、模型压缩、推理优化等细分赛道值得提前布局。后日资本建议：2026年Q3-Q4是AI应用层投资的最佳窗口期。
+      </div>
+    </div>
+
+    <div class="observe-block">
+      <div class="observe-label">观察三："AI+政务"多城竞速——数字政府数据服务市场2027年有望突破千亿</div>
+      <div class="observe-text">
+        本周上海、京津冀在数字政府领域的密集动作，折射出一个被低估的趋势：政务数据的高频流通和标准化治理，正在催生一个规模巨大的数据服务市场。从上海"免申即享"到京津冀3万项跨省通办，再到长三角首部"一网通办"协同立法，核心驱动力都是将政务数据从"静态档案"变为"动态生产要素"。对企业数据服务商而言，政务数据治理、智能审批引擎、跨域数据安全交换、政策智能匹配等细分赛道正在打开。市场测算，全国数字政府数据服务市场规模有望在2027年突破千亿元。投资逻辑：关注政务数据治理头部企业、AI+政务解决方案提供商、跨域数据安全交换技术厂商。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 后日视角 ===== -->
+  <div class="houri-focus">
+    <div class="lf-title">💼 后日视角</div>
+    <div class="lf-text">
+      <strong>后日资本作为数据资产化领域的专业投资机构，持续跟踪全球数据要素市场动态，为被投企业赋能。</strong><br><br>
+      <strong>本周核心判断：数据资产金融化进入"择偶期"，投资方需要建立差异化竞争优势。</strong><br><br>
+      <strong>第一，信托模式将引发城投平台跟进复制潮。</strong>盐城案例的示范效应将在未来3-6个月内显现，预计全国将有20-30家城投平台启动数据资产信托融资试点。后日资本已启动"数据资产信托"专项投资基金筹备，计划规模10亿元，重点投资城投平台数据资产信托受益权凭证。<br><br>
+      <strong>第二，AI Agent规模化落地将催生数据治理新需求。</strong>2026年下半年AI Agent规模化落地，企业级AI Agent需要大量高质量行业数据集进行微调。后日资本被投企业雾透科技（灵枢/灵犀/灵源三大AI Agent系统）已率先布局企业级AI Agent数据治理赛道，建议持续加码。<br><br>
+      <strong>第三，数字政府数据服务市场将诞生新一代独角兽。</strong>政务数据治理、智能审批引擎、跨域数据安全交换等细分赛道正在打开，市场测算2027年突破千亿。后日资本正在接触3家政务数据服务头部企业，计划在Q3完成投资布局。<br><br>
+      后日资本将继续秉持"数据驱动投资，资产赋能增长"的理念，为被投企业提供资本+资源+技术的全方位赋能，共同推动数据要素市场繁荣发展。
+    </div>
+  </div>
+
+  <!-- ===== 特别提醒 ===== -->
+  <div class="reminder-box">
+    <strong>📌 近期重点事件日历</strong><br>
+    · 5月26日：<strong>阿里云AI生产力峰会杭州站</strong>，聚焦AI Agent与大模型落地<br>
+    · <strong>5月30日："模数共振"行动申报截止（仅剩5天！）</strong><br>
+    · 6月：国家数据要素综合试验区评审启动（杭州重点关注）<br>
+    · 6月16-18日：<strong>2026中国国际金融展</strong>（上海世博展览馆），数字人民币与金融数据治理<br>
+    · 2027年12月：EU AI法案高风险AI合规截止（生物识别、关键基础设施等领域）<br>
+    · 2028年8月：EU AI法案嵌入式AI产品合规截止（中国出海企业两年窗口期）<br>
+    · 数据资产ABS前4月受理39单，信托融资首单落地，下半年或迎密集发行期
+  </div>
+
+</div>
+
+<!-- ========== FOOTER ========== -->
+<div class="daily-footer">
+  <div class="footer-brand">—— 数据驱动投资，资产赋能增长 ——</div>
+  <div class="footer-date">后日资本 · 数据资产投资研究中心<br>2026年5月25日</div>
+  <div class="footer-note">
+    本日报由"后日资本"编辑出品，每日为您精选数据资产投资最新动态<br>
+    免责声明：以上内容仅供参考，不构成投资建议<br>
+    投资有风险，入市需谨慎
+  </div>
+</div>
+
+</body>
+</html>
