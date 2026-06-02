@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产日报 - 2026年5月29日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #F5F1EA;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .cover-banner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #A89880;
+    text-align: center;
+    border-bottom: 1px solid #EBE3D5;
+    letter-spacing: 1px;
+  }
+
+  .daily-body {
+    background: #fff;
+    padding: 24px 22px;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #4A2C1A;
+    padding: 8px 0 8px 14px;
+    border-left: 4px solid #8B6920;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .news-item {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #EBE0CE;
+  }
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .news-item .item-header {
+    margin-bottom: 6px;
+  }
+  .news-item .item-index {
+    display: inline-block;
+    vertical-align: top;
+    background: #8B6920;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 19px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  .news-item .item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2E1F12;
+    line-height: 1.55;
+  }
+  .news-item .item-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .tag-hot       { background: #F0E2D0; color: #6B3A18; }
+  .tag-attention { background: #F2E6D5; color: #5C3115; }
+  .tag-event     { background: #F1E4D2; color: #7A4520; }
+  .tag-framework { background: #F0E3D0; color: #5E3316; }
+  .tag-urgent    { background: #F5E8D8; color: #7B3B1A; }
+  .tag-market    { background: #F2E5D4; color: #6D3E1C; }
+  .tag-innovation { background: #F1E4D0; color: #63401E; }
+  .tag-crossborder { background: #F2E6D2; color: #6B421F; }
+  .tag-model     { background: #F3E7D5; color: #5E3C1A; }
+  .tag-entry     { background: #EFE0CA; color: #704520; }
+  .tag-surge     { background: #F4E8D5; color: #6B3518; }
+  .tag-local     { background: #F1E4CE; color: #6C4220; }
+  .tag-finance   { background: #F0E2CC; color: #683D1C; }
+  .tag-data      { background: #F1E5D0; color: #63421E; }
+  .tag-trust     { background: #F0E4D0; color: #6D3F1C; }
+  .tag-esg       { background: #E8F0E0; color: #3B5E1A; }
+  .tag-security  { background: #F5E8E0; color: #7B3A1A; }
+
+  .news-item .item-desc {
+    font-size: 14px;
+    color: #4A3E30;
+    line-height: 1.78;
+    margin: 6px 0 10px;
+  }
+  .news-item .item-meta {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 12px;
+    color: #A89880;
+    line-height: 1.8;
+  }
+  .news-item .item-source {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #968878;
+  }
+  .news-item .item-link {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #8B6920;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .top5-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .top5-table th {
+    background: #D4BE9C;
+    color: #4A2C1A;
+    font-weight: 600;
+    padding: 11px 8px;
+    text-align: center;
+    border-bottom: 2px solid #8B6920;
+  }
+  .top5-table td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid #E8D8C0;
+    color: #4A3E30;
+    background: #fff;
+  }
+  .top5-table tr:first-child td {
+    font-weight: 600;
+    color: #4A2C1A;
+    background: #FBF7F1;
+  }
+
+  .observe-block {
+    background: #FBF8F4;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    border: 1px solid #E5D5BC;
+  }
+  .observe-block .observe-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 7px;
+  }
+  .observe-block .observe-text {
+    font-size: 13.5px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+
+  .linping-focus {
+    background: #F4ECD8;
+    border: 1px solid #C9AD7A;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 22px 0;
+  }
+  .linping-focus .lf-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 12px;
+  }
+  .linping-focus .lf-text {
+    font-size: 14px;
+    color: #3A2E20;
+    line-height: 1.85;
+  }
+
+  .reminder-box {
+    background: #FAF7F0;
+    border: 1px solid #D8C5A5;
+    border-left: 4px solid #8B6920;
+    border-radius: 6px;
+    padding: 15px 18px;
+    margin: 18px 0;
+    font-size: 13px;
+    color: #5C3D1A;
+    line-height: 1.85;
+  }
+
+  .daily-footer {
+    background: #F2EBE0;
+    padding: 22px 24px;
+    text-align: center;
+    border-top: 1px solid #E5D8C4;
+  }
+  .daily-footer .footer-brand {
+    font-size: 13px;
+    font-weight: 600;
+    color: #6B4528;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+  .daily-footer .footer-date {
+    font-size: 12px;
+    color: #A89880;
+    margin-bottom: 10px;
+  }
+  .daily-footer .footer-note {
+    font-size: 11px;
+    color: #B8A890;
+    line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+
+<!-- === COVER BANNER === -->
+<img class="cover-banner" src="banner_final.png" alt="数据资产日报头图 — 临平数协">
+
+<div class="meta-bar">
+  临数通 · 数据产业周刊编辑部 &nbsp;|&nbsp; 杭州市临平区数据产业协会（临平数协）联合出品
+</div>
+
+<!-- ========== BODY ========== -->
+<div class="daily-body">
+
+  <!-- ===== 一、今日要闻 ===== -->
+  <div class="section">
+    <div class="section-title">一、今日要闻</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">国家数据局连开两场座谈会：民营企业+词元经济，释放数据产业链全环节布局信号<span class="item-tag tag-hot">重磅</span></span>
+      </div>
+      <div class="item-desc">
+        5月19日至22日，国家数据局局长刘烈宏接连主持召开<strong>数据领域民营企业座谈会</strong>和<strong>词元经济座谈会</strong>两场会议，引发行业高度关注。民营企业座谈会上，奥凯信息、致景科技、数说故事、趣链科技、每日互动、无问芯穹、携程等10家企业代表参会，覆盖数据采集、治理、流通到应用变现的全产业链环节——从传统纺织业的数字化改造到消费端数据应用，从区块链隐私计算到AI算力基础设施，几乎每个环节都有代表企业入座。词元经济座谈会则聚焦AI训练数据的标准化、标注和流通问题。分析人士指出，两场座谈会释放了明确信号：<strong>国家数据局正从"顶层设计者"转向"产业组织者"</strong>，让数据产业链上每个环节的企业都找到自己的位置和话语权。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：新浪财经 / 中新经纬 / 国家数据局</span>
+        <span>2026-05-29</span>
+        <a class="item-link" href="https://finance.sina.com.cn/jjxw/2026-05-29/doc-inhzpnfu8105264.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">六部门联合印发中小企业数字化转型推进方案：设备补贴15%最高100万，"数智赋能"真金白银<span class="item-tag tag-attention">关注</span></span>
+      </div>
+      <div class="item-desc">
+        5月16日，工信部、国家发改委、财政部、生态环境部、国家税务总局、中国中小企业协会六部门联合发布<strong>《2026年中小企业数字化转型与绿色化改造推进方案》</strong>。方案核心亮点包括：设备补贴最高15%（上限100万元）、数字化诊断"先服务后付费"模式、<strong>绿色化与数字化"双化协同"</strong>推进。区别于以往"给文件不给钱"的政策风格，本次方案直接给出可量化的补贴标准和申报路径，中小企业可以"对着文件算钱"。业内评价，这份方案为全国约5200万家中小企业提供了"看得见、摸得着"的数字化转型路线图，是今年中小企业数字化领域力度最大的政策礼包。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：工信部 / 搜狐财经 / 财政部</span>
+        <span>2026-05-16</span>
+        <a class="item-link" href="https://www.sohu.com/a/1024682768_122658410" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">大模型产业从"烧钱"到"挣钱"：豆包付费引争议、千问3.7-Max登顶国产第一、商业化拐点全面到来<span class="item-tag tag-model">模式</span></span>
+      </div>
+      <div class="item-desc">
+        2026年5月，全球大模型产业迎来最具戏剧性的一个月。一边，字节跳动豆包试水付费模式却因"笨还收费"冲上热搜；另一边，<strong>千问3.7-Max在Arena全球盲测中登顶国产第一</strong>，超越DeepSeek-V4-Pro和GLM-5.1；DeepSeek则宣布6月1日起促销价永久生效，不再恢复原价。阿里Q1财报显示AI相关产品收入达<strong>89.71亿元，连续11个季度三位数增长</strong>，AI年化收入突破358亿元。浙商证券研报指出，中国AI产业已从"烧钱换规模"进入"商业化验证"阶段，头部企业AI收入占比突破30%是一个重要分水岭。但硬币的另一面：字节、阿里AI基础设施年度资本开支合计逼近6000亿元，商业化回报能否覆盖天量投入仍待时间检验。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：新浪财经 / C114通信网 / 浙商证券</span>
+        <span>2026-05-27</span>
+        <a class="item-link" href="https://finance.sina.com.cn/stock/t/2026-05-26/doc-inhzfwqk1299289.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 二、政策动态 ===== -->
+  <div class="section">
+    <div class="section-title">二、政策动态</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">DCMM 2.0新国标7月1日起实施，8000+企业已通过评估，数据管理能力成数字化转型新标配<span class="item-tag tag-framework">框架</span></span>
+      </div>
+      <div class="item-desc">
+        修订版《数据管理能力成熟度评估模型》（DCMM 2.0，GB/T 36073-2025）将于<strong>2026年7月1日起正式实施</strong>。这是我国数据管理领域核心国标自2018年首次发布以来的重大升级。DCMM 2.0在原有8大能力域基础上扩展了<strong>数据安全合规、AI数据治理、数据资产运营</strong>等新维度，更加贴近当前企业数据管理实践。据统计，截至目前全国已有超过<strong>8000家企业通过DCMM评估</strong>，其中获得最高等级（5级）的企业包括中国太保等头部机构。随着各省将DCMM认证纳入数字化转型补贴和政府采购加分项，数据管理能力认证正从"锦上添花"变为企业参与数字经济的"准入门槛"。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：国家标准化管理委员会 / 知乎 / 科技日报</span>
+        <span>2026-05-29</span>
+        <a class="item-link" href="https://zhuanlan.zhihu.com/p/1997698876409419115" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">"十五五"ESG与碳数据政策多维提速：《生态环境法典》通过+碳达峰考核压实+金融机构可持续信披新规<span class="item-tag tag-esg">绿色</span></span>
+      </div>
+      <div class="item-desc">
+        2026年3-4月，我国ESG领域多项政策密集落地，构建起从顶层设计到执行考核的完整体系。《"十五五"规划纲要》明确四大绿色发展方向并设定刚性约束指标；<strong>《生态环境法典》获全国人大表决通过</strong>，以法治之力护航绿色低碳转型；工信部聚焦节能装备、工业绿色设计出台专项方案；财政部修订节能减排补助资金管理办法。在金融端，监管部门正推动<strong>金融机构可持续信息披露</strong>从"自愿"走向"强制"，大型银行和上市公司面临更严格的碳数据披露要求。5月12日，2026年《财富》中国ESG影响力榜揭晓，蒙牛蝉联中国乳业唯一连续两年上榜企业。ESG数据从"加分项"向"必答题"的转变，正在创造企业碳数据管理、绿色资产评估、可持续信披等全新数据服务赛道。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：新浪财经ESG / 全国人大 / 工信部</span>
+        <span>2026-05-19</span>
+        <a class="item-link" href="https://finance.sina.com.cn/wm/2026-05-19/doc-inhymivp7536598.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">《数据流通服务机构创新发展报告（2026）》发布：国家数研院首次系统梳理三类流通主体<span class="item-tag tag-data">数据</span></span>
+      </div>
+      <div class="item-desc">
+        4月28日，在第九届数字中国建设峰会上，国家数据发展研究院正式发布<strong>《数据流通服务机构创新发展报告（2026年）》</strong>。报告首次系统梳理了数据流通服务机构的<strong>三类主体</strong>：数据经纪商（撮合数据供需匹配）、数据服务商（提供数据治理、标注、合规等专业服务）、数据交易场所（提供合规流通基础设施）。报告指出，数据流通服务机构正从"单一撮合"向"全链条增值服务"转型，头部机构已形成"数据治理→评估定价→合规审计→撮合交易"的一站式服务能力。这是国家层面首次对数据流通服务产业做全面摸底和方向指引，为数据要素市场的专业化分工提供了坐标系。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：国家数据发展研究院 / 人民邮电报 / 数字中国建设峰会</span>
+        <span>2026-05-08</span>
+        <a class="item-link" href="https://www.cnii.com.cn/rmydb/202605/t20260508_734258.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 三、行业观察 ===== -->
+  <div class="section">
+    <div class="section-title">三、行业观察</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">全国数据标注产业指数编制启动，9地数据主管部门参与，标注市场规模2025年达117.53亿<span class="item-tag tag-data">数据</span></span>
+      </div>
+      <div class="item-desc">
+        5月23日，在2026数据安全发展大会上，<strong>数据标注产业指数编制工作组</strong>正式启动。工业和信息化部电子第五研究所作为核心参与单位，联合成都、沈阳、合肥、长沙、海口、保定、大同、南宁、温州等9地数据主管部门，以及机械工业经济管理研究院等机构共同推进。据华经产业研究院数据，中国数据标注行业市场规模从2018年的25.86亿元增长至<strong>2025年的117.53亿元</strong>，年复合增长率超过24%。随着大模型训练对高质量标注数据需求激增，数据标注正从"劳动密集型"向"知识密集型"升级，医疗影像、自动驾驶、工业质检等垂直领域的专业标注需求爆发式增长。指数的编制将首次为这一产业建立量化"晴雨表"。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：工信部电子五所 / 数据安全发展大会 / 华经产业研究院</span>
+        <span>2026-05-23</span>
+        <a class="item-link" href="https://zhuanlan.zhihu.com/p/2027337094159155266" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">世纪互联Q1批发IDC收入大涨58.1%，AI算力需求推动数据中心进入"超大规模2.0"时代<span class="item-tag tag-surge">爆发</span></span>
+      </div>
+      <div class="item-desc">
+        5月26日，世纪互联发布2026年第一季度财报：总净营收<strong>26.91亿元，同比增长19.8%</strong>；其中批发IDC业务净营收10.60亿元，同比<strong>大幅增长58.1%</strong>，零售IDC净营收10.20亿元增长5.4%。批发IDC首次在营收体量上超越零售，标志着数据中心产业进入"超大规模2.0"新阶段——以AI训练集群、大模型推理集群为代表的大规模定制化需求已成为行业增长主引擎。公司依托"双核战略"推进超大规模数据中心建设，一季度继续加大在京津冀、长三角、粤港澳等枢纽节点的布局。TrendForce数据显示，2026年Q1全球NAND Flash营收突破389亿美元、季增83.7%，AI基础设施需求对上游半导体和数据中心产业链的拉动效应全面显现。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：世纪互联财报 / 百家号 / TrendForce</span>
+        <span>2026-05-26</span>
+        <a class="item-link" href="https://baijiahao.baidu.com/s?id=1866307340053846684" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">IDC：中国AI Agent市场2026年将达500万活跃体，从"概念验证"迈向"规模化落地"<span class="item-tag tag-innovation">创新</span></span>
+      </div>
+      <div class="item-desc">
+        IDC最新发布的<strong>《中国AI Agent市场概览，2026Q1》</strong>显示，中国AI Agent（人工智能体）市场正从"概念验证"阶段迈向"规模化落地"阶段。报告将市场划分为行业智能体、企业级智能体和智能体开发平台三大核心赛道。数据显示，2025年中国企业活跃智能体数量已接近<strong>200万个</strong>，预计2026年将达到<strong>500万个</strong>，增长超过150%。行业分布上，金融、制造、零售位居前三，合计占比超过60%。与此同时，区块链领域AI Agent也在快速发展——2025年5月至2026年4月期间，链上AI Agent累计完成约1.76亿笔交易，结算金额超7300万美元。AI Agent正从"技术玩具"变为"生产力工具"，成为企业数字化转型的下一个关键抓手。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：IDC / 百度百科 / 金色财经</span>
+        <span>2026-05-26</span>
+        <a class="item-link" href="https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhzhavy2577723.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 四、数据入表与资本化 ===== -->
+  <div class="section">
+    <div class="section-title">四、数据入表与资本化</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">城投数据资产"去实物化"融资提速：邯郸12项城市数据支撑10亿ABS储架，脱离传统抵押物<span class="item-tag tag-trust">信托</span></span>
+      </div>
+      <div class="item-desc">
+        近日，邯郸城市发展投资集团以<strong>12项城市核心数据资产</strong>为底层、不依托任何传统实物抵押和应收账款，完成10亿元储架ABS注册，其中首期发行规模与青岛项目形成呼应。这是继青岛纯数据ABS（5.32亿首期）和盐城数据信托（5.1亿）之后，城投数据资产融资的又一标志性案例。三地案例覆盖了<strong>ABS、信托、银行质押三种主流路径</strong>，共同验证了一个核心趋势：城投公司正在从依赖"土地+应收"的传统融资模式，转向以"数据+信用"为核心的新型融资模式。截至5月底，数据资产ABS累计储架规模已逼近1400亿元，前4月受理39单，下半年预计迎来密集发行期。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：同花顺财经 / 新浪财经 / 财联社 综合</span>
+        <span>2026-05-28</span>
+        <a class="item-link" href="http://news.10jqka.com.cn/20260528/c677039364.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <!-- TOP5 Table -->
+    <div style="overflow-x:auto; margin: 10px 0 4px;">
+      <table class="top5-table">
+        <tr><th>模式</th><th>代表案例</th><th>规模</th><th>创新点</th></tr>
+        <tr><td>纯数据ABS</td><td>青岛数据集团</td><td>5.32 亿元</td><td>纯数据信用，3.72倍超额认购</td></tr>
+        <tr><td>数据ABS储架</td><td>邯郸城发集团</td><td>10 亿元</td><td>12项城市数据，脱离实物抵押</td></tr>
+        <tr><td>数据信托融资</td><td>盐城城投</td><td>5.10 亿元</td><td>信托受益权模式，5项数据集</td></tr>
+        <tr><td>ABS储架受理</td><td>圃泽+三峡担保</td><td>30 亿元</td><td>供应链数据+担保增信组合</td></tr>
+        <tr><td>银行质押贷款</td><td>多地城投</td><td>千万至亿级</td><td>城投数据资产质押标准化</td></tr>
+      </table>
+    </div>
+
+    <div class="news-item" style="margin-top: 18px;">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">上海国企不动产数据资产化路径浮出水面，政策体系清晰成型，头部国企图谱逐渐明朗<span class="item-tag tag-entry">入表</span></span>
+      </div>
+      <div class="item-desc">
+        随着财政部《企业数据资源相关会计处理暂行规定》施行两年半，上海国企在不动产领域的数据资产化路径日渐清晰。根据最新行业分析，上海国企围绕不动产运营管理过程中产生的<strong>空间使用数据、设备运行数据、能耗数据、租户行为数据</strong>等，已形成标准化的数据资产盘点—确权—评估—入表全流程操作指南。不动产数据因其体量大、标准化程度高、应用场景明确，被视为国企数据资产入表的"最佳起步领域"。上海国企在该领域的实践——包括数据分类分级标准、成本法/收益法评估模型选择、国资监管合规要求等——正在为全国同类企业提供可复制的参考模板。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：百度百家号 / 上海市国资委 / 财政部</span>
+        <span>2026-05-22</span>
+        <a class="item-link" href="https://baijiahao.baidu.com/s?id=1865856840820012918" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 五、地方实践 ===== -->
+  <div class="section">
+    <div class="section-title">五、地方实践</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">安徽印发"人工智能+政务"行动方案，2027年落地100+应用场景，政务智能化进入"多城竞速"<span class="item-tag tag-local">地方</span></span>
+      </div>
+      <div class="item-desc">
+        5月27日，《安徽省加快推进"人工智能+政务"行动方案》正式印发。方案聚焦政务服务、数据要素、经济调节等六大领域，明确到2027年夯实全省统一数智底座，落地不少于<strong>100个"人工智能+政务"特色应用场景</strong>；2030年实现全方位、全流程、全要素数智化。这一方案的出台标志着继上海"一网通办"深化改革（5/15）、京津冀73厅3万项跨省通办之后，"AI+政务"的竞速赛道从东部沿海向中部省份延伸。对数据产业而言，政务AI化释放出大量政务数据治理、智能审批引擎、政策智能匹配等数据服务需求，市场测算全国数字政府数据服务市场有望在2027年突破千亿元。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：安徽新闻网 / 新浪财经 / 安徽省数据资源局</span>
+        <span>2026-05-27</span>
+        <a class="item-link" href="https://finance.sina.com.cn/roll/2026-05-27/doc-inhzhxzw0896173.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">台州港一体化信息平台投用：全港生产数据首次统一集成，破解港区数据壁垒<span class="item-tag tag-local">地方</span></span>
+      </div>
+      <div class="item-desc">
+        5月21日，台州港一体化信息平台正式投入运行。全港生产运营数据首次实现<strong>统一集成与高效调用</strong>，困扰行业多年的港区数据壁垒问题得到系统性破解。平台通过数字驾驶舱实时展示全港船舶调度、货物吞吐、设备运行等核心指标，实现从"经验调度"到"数据驱动调度"的跃升。作为浙江省港口数字化转型的最新样本，台州港的实践验证了工业数据标准化治理在传统行业中的巨大潜力——数据打通之后，港口运营效率提升、物流成本降低、安全风险预警等价值即刻兑现，为全国港口数字化提供了"小投入、快见效"的路径参考。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：浙江数据开放平台 / 台州港港务有限公司</span>
+        <span>2026-05-21</span>
+        <a class="item-link" href="https://data.zjzwfw.gov.cn/" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 深度观察 ===== -->
+  <div class="section">
+    <div class="section-title">深度观察</div>
+
+    <div class="observe-block">
+      <div class="observe-label">观察一：数据产业链"全环节参与"时代来临——从"塔尖"到"塔基"的普惠化</div>
+      <div class="observe-text">
+        国家数据局两周内连开两场座谈会（民营企业+词元经济），传递的核心信号是：数据产业不再只是"巨头游戏"。从致景科技（传统纺织业数字化）到趣链科技（区块链隐私计算），从无问芯穹（AI算力基础设施）到携程（消费端数据应用）——10家参会民企覆盖了数据从"原材料采集"到"终端应用"的完整链路。与以往仅邀请头部科技企业不同，此次座谈会特意安排了一批"数据赋能传统产业"的中坚力量入座。这标志着国家数据治理逻辑的重大转变：<strong>数据要素市场化不仅要"塔尖"突破，更需要"塔基"厚实</strong>。对临平这样以制造业为根基的区域而言，这一信号意味着：本地传统制造企业的数据资产化不是"遥远的未来"，而是正在打开的政策窗口。
+      </div>
+    </div>
+
+    <div class="observe-block">
+      <div class="observe-label">观察二：大模型商业化的"冰与火之歌"——从烧钱到挣钱的路径之争</div>
+      <div class="observe-text">
+        5月的大模型产业呈现出极端分裂的图景：字节豆包付费被网友骂上热搜，DeepSeek永久降价被开发者拥为"价格屠夫"，千问3.7-Max登顶国产第一但用户付费意愿仍待检验，阿里云AI收入占比首破30%却面临6000亿资本开支的回收压力。这背后是大模型商业化最核心的矛盾：<strong>C端用户不习惯为AI付费（"豆包笨还收费"），B端企业开始认可AI的ROI价值（阿里云AI ARR突破358亿）</strong>。两条路径的分化意味着，2026年下半年AI产业将出现"双轨制"：C端以免费+广告模式争夺流量，B端以解决方案+订阅制深耕行业。对数据产业从业者而言，B端AI落地意味着大量行业数据治理、AI数据标注、模型微调等数据服务需求将持续爆发。
+      </div>
+    </div>
+
+    <div class="observe-block">
+      <div class="observe-label">观察三：城投数据资产"去实物化"——从"土地财政"到"数据财政"的转型加速</div>
+      <div class="observe-text">
+        邯郸12项城市数据支撑10亿ABS储架、不依赖任何实物抵押——这标志着城投数据资产融资进入"纯信用"阶段。回顾城投融资工具的演变：2024年以数据资产为辅助增信、2025年青岛实现首单纯数据ABS（5.32亿）、2026年盐城开辟数据信托新路径（5.1亿）、邯郸进一步验证12项城市数据独立支撑10亿储架的可行性。<strong>仅用两年时间，城投数据资产从"锦上添花的辅助"变成了"独立创造信用的主体"</strong>。随着DCMM 2.0（7月1日实施）、数据产权登记指引、数据资产评估国标三大制度基础设施落地，下半年城投数据资产融资预计进入"爆发期"。临平坐拥算力小镇、G60数智产业园、老板电器等高质量数据载体，在这一轮"数据财政"转型中具备独特区位优势。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 临平关注 ===== -->
+  <div class="linping-focus">
+    <div class="lf-title">📍 临平关注</div>
+    <div class="lf-text">
+      <strong>本周多项动态与临平数据产业发展高度相关，三大方向值得重点关注。</strong><br><br>
+      <strong>第一，算力小镇获省政协专题调研，存算一体芯片成关注焦点。</strong>5月19日，省政协副主席叶正波带队赴临平算力小镇开展算力产业专题调研，实地考察知存科技（全球领先存算一体芯片企业），围绕芯片政策扶持、人才引育、产业生态完善展开深入交流。存算一体芯片作为突破传统"冯·诺依曼"架构瓶颈的前沿技术，与临平算力小镇"AI+集成电路"赛道高度契合，此次省级高规格调研有望为算力小镇带来更多政策资源和产业关注度。<br><br>
+      <strong>第二，G60数智产业园核心启动区正式开工，临平数智城建设进入实质阶段。</strong>G60数智产业园一期桩基施工全面推进，年内结顶，二期同步紧密推进。作为临平数智城核心启动区首个产业园项目，G60数智园将承载数据要素运营、AI算力服务、产业数字化赋能等核心功能，与杭州数据要素运营中心（国家数据基础设施典型案例）形成"双核驱动"格局。<br><br>
+      <strong>第三，六部门中小企业数字化转型方案为临平制造业带来直接红利。</strong>临平制造业基础雄厚（数字经济核心产业增加值91.15亿元，"2327X"先进制造业集群），六部门方案中设备补贴15%（上限100万）、"双化协同"（数字化+绿色化）等政策设计，与临平智能制造"8332"计划天然对接。建议协会抓住政策窗口期，组织区内制造业企业开展"数智赋能"专题对接，助力企业用好用足补贴政策。<br><br>
+      临平数协将持续跟踪国家数据局产业链布局、DCMM 2.0实施及城投数据资产融资创新动态，为会员企业提供精准政策解读和资源对接服务，助力临平在"数据财政"转型和"AI+政务"竞速中抢占先机。
+    </div>
+  </div>
+
+  <!-- ===== 特别提醒 ===== -->
+  <div class="reminder-box">
+    <strong>📌 近期重点事件日历</strong><br>
+    · <strong>5月30日："模数共振"行动申报截止（仅剩1天！）</strong><br>
+    · 6月：国家数据要素综合试验区评审启动（杭州重点关注）<br>
+    · 6月14日：临平区电子商务师职业技能竞赛（浙江开放大学临平学院）<br>
+    · 6月16-18日：2026中国国际金融展（上海世博展览馆），聚焦数字人民币与金融数据治理<br>
+    · 7月1日：DCMM 2.0新国标（GB/T 36073-2025）正式实施<br>
+    · 下半年：数据资产ABS预计迎来密集发行期（累计储架逼近1400亿，前4月受理39单）
+  </div>
+
+</div>
+
+<!-- ========== FOOTER ========== -->
+<div class="daily-footer">
+  <div class="footer-brand">—— 数据驱动未来，资产赋能发展 ——</div>
+  <div class="footer-date">临数通 · 数据产业周刊编辑部<br>2026年5月29日</div>
+  <div class="footer-note">
+    本日报由"临数通"编辑出品，每日为您精选数据要素市场最新动态<br>
+    杭州市临平区数据产业协会（临平数协）联合出品<br>
+    免责声明：以上内容仅供参考，不构成投资建议
+  </div>
+</div>
+
+</body>
+</html>
