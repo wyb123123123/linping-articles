@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产日报 - 2026年6月2日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #F5F1EA;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .cover-banner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #A89880;
+    text-align: center;
+    border-bottom: 1px solid #EBE3D5;
+    letter-spacing: 1px;
+  }
+
+  .daily-body {
+    background: #fff;
+    padding: 24px 22px;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #4A2C1A;
+    padding: 8px 0 8px 14px;
+    border-left: 4px solid #8B6920;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .news-item {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #EBE0CE;
+  }
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .news-item .item-header {
+    margin-bottom: 6px;
+  }
+  .news-item .item-index {
+    display: inline-block;
+    vertical-align: top;
+    background: #8B6920;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 19px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  .news-item .item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2E1F12;
+    line-height: 1.55;
+  }
+  .news-item .item-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .tag-hot       { background: #F0E2D0; color: #6B3A18; }
+  .tag-attention { background: #F2E6D5; color: #5C3115; }
+  .tag-event     { background: #F1E4D2; color: #7A4520; }
+  .tag-framework { background: #F0E3D0; color: #5E3316; }
+  .tag-urgent    { background: #F5E8D8; color: #7B3B1A; }
+  .tag-market    { background: #F2E5D4; color: #6D3E1C; }
+  .tag-innovation { background: #F1E4D0; color: #63401E; }
+  .tag-crossborder { background: #F2E6D2; color: #6B421F; }
+  .tag-model     { background: #F3E7D5; color: #5E3C1A; }
+  .tag-entry     { background: #EFE0CA; color: #704520; }
+  .tag-surge     { background: #F4E8D5; color: #6B3518; }
+  .tag-local     { background: #F1E4CE; color: #6C4220; }
+  .tag-finance   { background: #F0E2CC; color: #683D1C; }
+  .tag-data      { background: #F1E5D0; color: #63421E; }
+  .tag-trust     { background: #F0E4D0; color: #6D3F1C; }
+  .tag-esg       { background: #E8F0E0; color: #3B5E1A; }
+  .tag-security  { background: #F5E8E0; color: #7B3A1A; }
+  .tag-policy    { background: #F0E8D4; color: #5E4018; }
+
+  .news-item .item-desc {
+    font-size: 14px;
+    color: #4A3E30;
+    line-height: 1.78;
+    margin: 6px 0 10px;
+  }
+  .news-item .item-meta {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 12px;
+    color: #A89880;
+    line-height: 1.8;
+  }
+  .news-item .item-source {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #968878;
+  }
+  .news-item .item-link {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #8B6920;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .top5-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .top5-table th {
+    background: #D4BE9C;
+    color: #4A2C1A;
+    font-weight: 600;
+    padding: 11px 8px;
+    text-align: center;
+    border-bottom: 2px solid #8B6920;
+  }
+  .top5-table td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid #E8D8C0;
+    color: #4A3E30;
+    background: #fff;
+  }
+  .top5-table tr:first-child td {
+    font-weight: 600;
+    color: #4A2C1A;
+    background: #FBF7F1;
+  }
+
+  .observe-block {
+    background: #FBF8F4;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    border: 1px solid #E5D5BC;
+  }
+  .observe-block .observe-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 7px;
+  }
+  .observe-block .observe-text {
+    font-size: 13.5px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+
+  .linping-focus {
+    background: #F4ECD8;
+    border: 1px solid #C9AD7A;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 22px 0;
+  }
+  .linping-focus .lf-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 12px;
+  }
+  .linping-focus .lf-text {
+    font-size: 14px;
+    color: #3A2E20;
+    line-height: 1.85;
+  }
+
+  .reminder-box {
+    background: #FAF7F0;
+    border: 1px solid #D8C5A5;
+    border-left: 4px solid #8B6920;
+    border-radius: 6px;
+    padding: 15px 18px;
+    margin: 18px 0;
+    font-size: 13px;
+    color: #5C3D1A;
+    line-height: 1.85;
+  }
+
+  .daily-footer {
+    background: #F2EBE0;
+    padding: 22px 24px;
+    text-align: center;
+    border-top: 1px solid #E5D8C4;
+  }
+  .daily-footer .footer-brand {
+    font-size: 13px;
+    font-weight: 600;
+    color: #6B4528;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+  .daily-footer .footer-date {
+    font-size: 12px;
+    color: #A89880;
+    margin-bottom: 10px;
+  }
+  .daily-footer .footer-note {
+    font-size: 11px;
+    color: #B8A890;
+    line-height: 1.7;
+  }
+</style>
+</head>
+<body>
+
+<!-- === COVER BANNER === -->
+<img class="cover-banner" src="http://mmbiz.qpic.cn/mmbiz_png/Tq2yibzQiabOokzAialNVfH2OdpSpel9mHdBOfU8rjNyczocGG2cUiaicO5AUylY5SrLXcNHxEvlibX3iab3KsPyyhEMBq0R2v7weXqmrQ0LrBXauQ/0?wx_fmt=png" alt="数据资产日报头图 — 临平数协">
+
+<div class="meta-bar">
+  临数通 · 数据产业周刊编辑部 &nbsp;|&nbsp; 杭州市临平区数据产业协会（临平数协）联合出品
+</div>
+
+<!-- ========== BODY ========== -->
+<div class="daily-body">
+
+  <!-- ===== 一、今日要闻 ===== -->
+  <div class="section">
+    <div class="section-title">一、今日要闻</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">长安链攻克同态加密计算加速芯片：密态流通效率提速10倍以上，"可用不可见"进入硬件化时代<span class="item-tag tag-hot">重磅</span></span>
+      </div>
+      <div class="item-desc">
+        6月1日，国家区块链技术创新中心发布重大成果：长安链团队成功研发<strong>同态加密计算加速芯片</strong>，支撑数据流通全周期高效密态处理，效率较国内外现有标杆方案<strong>提升10倍以上</strong>。该芯片可广泛应用于金融、政务等领域的端云协同计算与跨机构数据协作，实现"不解密即计算"，为数据流通中的"可用不可见"提供硬件级支撑。这标志着数据安全流通从"理论可行"真正迈入"工程可用"阶段，为数据资产入表的技术合规性提供了更坚实的底层保障——加密流通产生的交易记录可溯源、可审计，有望显著降低数据资产入表的合规风险与审计成本。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：中国日报 / 科技日报 / 国家区块链技术创新中心</span>
+        <span>2026-06-01</span>
+        <a class="item-link" href="https://cn.chinadaily.com.cn/a/202606/01/WS6a1d8d07a310942cc49af7a3.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">《重庆市数字经济促进条例》6月1日正式施行：七章五十三条，西部首个数字经济促进地方性法规落地<span class="item-tag tag-policy">立法</span></span>
+      </div>
+      <div class="item-desc">
+        6月1日，《重庆市数字经济促进条例》正式施行，成为<strong>西部首个以"促进条例"形式</strong>推动数字经济高质量发展的地方性法规。条例共七章五十三条，覆盖数字基础设施、数字产业化、产业数字化等方面，特别强调积极对接国际高标准经贸规则，推进跨境电商产业园、数字服务出口基地等数字贸易特色集聚区建设，对"数据出境"与"数字贸易"协同作出制度安排。这一立法模式——从政策文件到地方法规的跨越——代表数字经济治理正在从"倡导性"走向"约束性"，广东、浙江、上海等地预计将在2026年内完成类似立法动作。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：重庆市政府 / 重庆市人大</span>
+        <span>2026-06-01</span>
+        <a class="item-link" href="https://www.cq.gov.cn/ywdt/jrcq/202606/t20260602_15720052.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">*ST实达凭算力数据资产注入涨停：福建大数据集团注资+2000P算力合同，营收同比增82%<span class="item-tag tag-entry">入表</span></span>
+      </div>
+      <div class="item-desc">
+        6月1日，*ST实达（600734）触及涨停板。公司于2026年2月完成对数产名商95%股权的收购，获得<strong>2000P算力智算中心</strong>及年均1.21亿元长期稳定算力合同。一季度营收同比增长82.59%至7579.83万元，亏损大幅收窄。这是数据/算力资产注入资本市场的典型案例——通过股权并购将"算力中心运营权益"以数据/算力资产形式注入上市公司，区别于青岛首单纯数据资产ABS的"资产分离-证券化"路径，探索出"大数据资产+上市公司+国资协同"的新型资本化模式，为数据资产上市公司化提供了可复制样本。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：东方财富 / 同花顺财经</span>
+        <span>2026-05-29</span>
+        <a class="item-link" href="https://caifuhao.eastmoney.com/news/20260529102747260743200" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 二、政策动态 ===== -->
+  <div class="section">
+    <div class="section-title">二、政策动态</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">工信部印发《推动工业互联网平台高质量发展行动方案（2026—2028年）》：三年行动，工业数据资产形成获顶层支撑<span class="item-tag tag-framework">框架</span></span>
+      </div>
+      <div class="item-desc">
+        工业和信息化部正式印发《推动工业互联网平台高质量发展行动方案（2026—2028年）》，部署三年行动任务。方案强调工业互联网平台是制造业数字化转型的核心支撑，将推动平台在<strong>工业数据汇聚、工业AI赋能、"5G+数据"融合</strong>三个方向集中发力，明确到2028年打造一批行业级工业互联网平台。这为工业数据资产的形成与流通提供了重要的基础平台政策支撑，制造业数据资产化的基础设施建设将进入系统化推进阶段。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：工业和信息化部</span>
+        <span>2026-02-06</span>
+        <a class="item-link" href="https://hbca.miit.gov.cn/xxgk/zcwj/zcjd/art/2026/art_faab855f4f744b17aa8d6f2c07b2b49d.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">国家数据局广州现场会：国家数据基础设施建设行动计划正在编制，43城市1.9万主体已在列<span class="item-tag tag-attention">关注</span></span>
+      </div>
+      <div class="item-desc">
+        5月19日，国家数据局在广州召开数据基础设施建设现场会，发布先行先试进展：两批试点已覆盖<strong>15个行业、43个城市</strong>，协同1.9万个生态主体，上架3.8万个数据产品。国家数据基础设施建设行动计划正在编制中，将以自主创新、场景牵引、生态协同为主线，系统构建可信数据空间、隐私计算、区块链、数场等技术路线体系。西安"丝路数港"、杭州数据要素运营中心等作为优秀试点代表作会议发言，为全国其他城市提供经验参照。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：国家数据局 / 国家发改委</span>
+        <span>2026-05-19</span>
+        <a class="item-link" href="https://www.ndrc.gov.cn/fzggw/wld/llh/zyhd/202605/t20260525_1405441.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">全国统一数据产权登记制度推进：《数据产权登记工作指引》征求意见，登记凭证法律效力是关键<span class="item-tag tag-framework">框架</span></span>
+      </div>
+      <div class="item-desc">
+        国家数据局明确2026年将推动全国统一数据产权登记制度建立，《数据产权登记工作指引》征求意见稿落地后，核心挑战是<strong>登记凭证的法律效力认定</strong>——凭证是否具有民法层面的"物权性质"，直接决定数据资产是否能用于质押融资和资产证券化。目前浙江、上海已积累超20个典型案例，为顶层设计提供实践参照。随着DCMM 2.0（7月1日实施）、数据资产评估国标等制度设施同步推进，数据资产入表和资本化的制度底座正在加速夯实。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：国家数据局 / 浙江省数据局</span>
+        <span>2026-06-01</span>
+        <a class="item-link" href="https://www.nda.gov.cn/sjj/ywpd/szjj/0519/20260519194643007508935_pc.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 三、行业观察 ===== -->
+  <div class="section">
+    <div class="section-title">三、行业观察</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">第二届WOD制造业数智化博览会6月3日上海开幕：AI+数字孪生+工业数据三大方向同台竞技<span class="item-tag tag-event">展会</span></span>
+      </div>
+      <div class="item-desc">
+        聚焦制造业数智化转型的行业盛会——<strong>第二届WOD制造业数智化博览会</strong>将于6月3日—5日在上海新国际博览中心举办。本届展会聚焦电子电气、汽车制造、高端装备、石化、半导体、储能六大核心制造领域，集中展示AI技术、数字孪生、工业视觉等前沿技术，搭建制造业数智化供需对接平台。工业数据的采集、标注、治理和变现将成为重要议题——这也是目前制造业数据资产化的核心价值链环节，临平装备制造业企业可借此窗口了解最新技术解决方案。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：中国日报 / 博览会官网</span>
+        <span>2026-06-02</span>
+        <a class="item-link" href="https://cnews.chinadaily.com.cn/a/202604/09/WS69d73d02a310942cc49a6e3a.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">数字人民币2.0落地：钱包余额可计息、绿色出行可变现，数字货币从"数字现金"跨越到"数字存款货币"<span class="item-tag tag-innovation">创新</span></span>
+      </div>
+      <div class="item-desc">
+        2026年以来，数字人民币迎来重大升级：商业银行钱包余额纳入准备金制度管理，<strong>余额可正常计息</strong>；"碳积分"功能上线，骑共享单车、乘地铁公交等绿色出行行为被量化为碳积分，可直接兑换消费权益；跨境数字人民币应用加速推进，云南边贸场景、中越/中老跨境二维码支付持续扩展。余额计息标志着数字货币从"数字现金"向"数字存款货币"的关键跨越，大规模用户沉淀成为可能，随之而来的交易数据资产化和碳数据运营也将形成新的数字金融赛道。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：央视新闻 / 人民日报 / 中国人民银行</span>
+        <span>2026-01-23</span>
+        <a class="item-link" href="https://news.cctv.cn/2026/01/23/ARTIXLYSUXrOpl5njQujXHuW260123.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">2026数字经济人才缺口突破千万：数据交易规模剑指3万亿，人才培育是最大瓶颈<span class="item-tag tag-market">人才</span></span>
+      </div>
+      <div class="item-desc">
+        据国家数据局公开测算，2026年数字经济有望进入"价值释放"关键年，数据交易规模可能突破<strong>3万亿元</strong>，带动数字经济占GDP比重提升至45%以上。千万级数字人才缺口在大数据分析、AI工程、数据合规、数字贸易等方向尤为突出。单纯依靠高校培养周期太长，企业内训效率低、成本高，<strong>新型数字人才培育生态</strong>（短周期、实战导向、认证互认）是2026年数字经济高质量发展中亟待攻关的核心命题。数字人才供给不足，正在成为制约数据交易市场扩容的结构性瓶颈。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：国家数据局 / 多方综合</span>
+        <span>2026-06-01</span>
+        <a class="item-link" href="http://m.article.sangguo.cc/wdnnews/202606/468079.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 四、数据入表与资本化 ===== -->
+  <div class="section">
+    <div class="section-title">四、数据入表与资本化</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">同态加密+区块链双轮驱动：密态流通技术合规关卡打通，数据资产入表的技术壁垒正在消解<span class="item-tag tag-trust">技术</span></span>
+      </div>
+      <div class="item-desc">
+        长安链同态加密芯片突破，叠加可信数据空间+隐私计算的国家布局，对数据资产入表的技术合规性有重大意义。此前数据资产入表的最大争议之一是"数据流通是否安全可控"——如今加密流通产生的交易记录<strong>可溯源、可审计</strong>，为数据资产的权属认定和价值评估提供更坚实的技术底层。同态加密使"不暴露原始数据的前提下完成计算验证"成为现实，预计将在金融数据、医疗数据、政务数据等高敏感类数据资产的入表实践中率先规模化应用。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：科技日报 / 新华社 / 国家区块链技术创新中心</span>
+        <span>2026-06-01</span>
+        <a class="item-link" href="https://www.stdaily.com/web/gdxw/2026-06/02/content_526104.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <!-- 数据资本化路径对比表 -->
+    <div style="overflow-x:auto; margin: 10px 0 4px;">
+      <table class="top5-table">
+        <tr><th>资本化路径</th><th>代表案例</th><th>规模</th><th>创新亮点</th></tr>
+        <tr><td>纯数据ABS</td><td>青岛数据集团</td><td>5.32 亿元</td><td>纯数据信用，3.72倍超额认购</td></tr>
+        <tr><td>数据ABS储架</td><td>邯郸城发集团</td><td>10 亿元</td><td>12项城市数据，脱离实物抵押</td></tr>
+        <tr><td>算力资产注入</td><td>*ST实达</td><td>7580 万营收</td><td>算力中心资产注入上市公司</td></tr>
+        <tr><td>数据信托融资</td><td>盐城城投</td><td>5.10 亿元</td><td>信托受益权+5项数据集组合</td></tr>
+        <tr><td>密态数据流通</td><td>长安链同态加密</td><td>—</td><td>不解密即计算，合规可审计</td></tr>
+      </table>
+    </div>
+
+    <div class="news-item" style="margin-top: 18px;">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">西安"丝路数港"成全国可信数据空间样板：制造、政务、金融三类数据跨机构共享经验可复制<span class="item-tag tag-local">地方</span></span>
+      </div>
+      <div class="item-desc">
+        5月19日国家数据局广州现场会上，西安"丝路数港"作为优秀试点代表作会议发言，以《破除供给壁垒筑牢可信根基》为主题分享经验。西安在制造业数据、政务数据、金融数据跨机构可信共享方面走在全国前列，采用<strong>可信数据空间+隐私计算+国产区块链三层技术栈</strong>协同发力，已形成可推广的"西安模式"。从数据资产入表角度看，西安实践验证了"可信数据空间"使数据流通记录可追溯、资产价值可量化，为数据资产在交易后进行资产化处理提供了完整技术路径。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：西安市数据局 / 国家数据局</span>
+        <span>2026-05-25</span>
+        <a class="item-link" href="http://xasjj.xa.gov.cn/xwzx/xwdt/2058716966609305602.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 五、地方实践 ===== -->
+  <div class="section">
+    <div class="section-title">五、地方实践</div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">杭州市经信局明确点名支持临平垂类大模型赋能制造业，首次以公开回复形式出现<span class="item-tag tag-local">临平</span></span>
+      </div>
+      <div class="item-desc">
+        杭州市经信局（市数字经济局）在答复市人大代表建议中明确：将深入贯彻国家"人工智能+"行动部署，<strong>"特别是支持临平区这样的重点区域，推动垂类大模型赋能制造业，助力建设全国人工智能创新发展第一城"</strong>。这是杭州市级层面首次在公开回复中专门点名支持临平垂类大模型，为临平智能制造+数据要素融合发展提供了明确政策背书。对临平数协而言，这是会员企业申报垂类大模型项目、争取市级配套资源的重要政策依据，建议协会尽快组织专题对接活动。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：杭州市经信局 / 杭州市数字经济局</span>
+        <span>2026-05-15</span>
+        <a class="item-link" href="https://jxj.hangzhou.gov.cn/col/col1229265378/art/2026/art_51b44c98d580467a82ca228a0413a01b.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">广州全国数标委首次"标准周"进省级城市：数据产品、服务、流通核心领域标准制定加速<span class="item-tag tag-local">华南</span></span>
+      </div>
+      <div class="item-desc">
+        5月18日，全国数据标准化技术委员会2026年第一次"标准周"在广州举行。国家数据局局长刘烈宏出席并讲话，重点部署数据产品、数据服务、数据流通等核心领域标准制定工作。<strong>这是国家数标委首次将核心工作活动下放到省级城市</strong>，标志着数据标准化工作正从中央向地方深度延伸，为各地数据资产化提供统一度量衡。标准先行的意义在于：统一的数据产品标准能降低数据交易的认知成本，统一的流通标准为数据资产价值评估提供客观基准。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：广东省数据局 / 国家数据局</span>
+        <span>2026-05-20</span>
+        <a class="item-link" href="http://zfsg.gd.gov.cn/xxfb/sjyw/content/mpost_4899251.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 深度观察 ===== -->
+  <div class="section">
+    <div class="section-title">深度观察</div>
+
+    <div class="observe-block">
+      <div class="observe-label">观察一：技术突破与制度建设同频共振——2026年下半年数据资产化将迎实质性提速</div>
+      <div class="observe-text">
+        今日最值得关注的是长安链同态加密芯片突破与全国统一数据产权登记制度推进的同步发酵。前者解决了数据流通的"技术信任"问题，后者解决了数据权属的"法律认定"问题。这两个方向的同向共进，叠加DCMM 2.0（7月1日）、数据资产评估国标等制度基础设施的密集落地，意味着<strong>2026年下半年数据资产入表和资本化可能迎来实质性加速</strong>。对临平而言，老板电器国家高质量数据集试点和算力小镇入驻企业的算力调度数据，将在这一波技术+制度共振中获得更清晰的资产化路径。
+      </div>
+    </div>
+
+    <div class="observe-block">
+      <div class="observe-label">观察二：地方数字经济立法潮涌——从"政策文件"向"地方法规"的跨越</div>
+      <div class="observe-text">
+        重庆《数字经济促进条例》6月1日落地，成为2026年首个正式施行的省级数字经济促进地方性法规。法规一旦成立，其约束性远强于政策文件：政府必须履行推动职责，企业违规可被追责，争议可上诉。<strong>从"倡导性政策"到"约束性法规"的跨越</strong>，意味着当地数字经济生态建设进入法治轨道。预计浙江、广东、上海等数字经济先行省份将在2026年内完成类似立法，届时全国主要数字经济集聚区都将有专项地方法规护航，这对数据资产化的确定性将是巨大利好。
+      </div>
+    </div>
+
+    <div class="observe-block">
+      <div class="observe-label">观察三：数字人才缺口是数据经济最大隐患——新型培育生态亟待构建</div>
+      <div class="observe-text">
+        3万亿数据交易规模与千万级人才缺口并存，折射出数字经济发展最深层的结构性矛盾。传统高校培养周期4年以上，现有数据人才存量远不能满足市场需求增速。当前市场上兴起的"短周期、实战导向、认证互认"新型培育模式——数字人才训练营、企业联合认证、政产学研协同——正在成为填补缺口的重要补充渠道。<strong>对临平数协而言，数字人才培育本身就是一个价值洼地</strong>：协会依托临平区制造业基础，有条件率先搭建面向临平工业数字化场景的专项人才培育体系，将"人才供给短缺"转化为协会服务会员的核心价值主张。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 临平关注 ===== -->
+  <div class="linping-focus">
+    <div class="lf-title">📍 临平关注</div>
+    <div class="lf-text">
+      <strong>本期多项重磅动态与临平数据产业发展高度相关，以下三个方向值得协会重点关注。</strong><br><br>
+      <strong>第一，杭州市经信局首次公开点名支持临平垂类大模型，政策窗口已开。</strong>这是临平垂类大模型项目申报最直接的政策依据，临平数协应尽快牵头组织一次"垂类大模型赋能制造业"专题对接会，将协会内数字化基础较好的制造业龙头（老板电器、春风动力等）引入与大模型企业的合作洽谈，帮助企业把握这一政策窗口期。<br><br>
+      <strong>第二，长安链同态加密芯片突破，为算力小镇数据资产出圈创造技术条件。</strong>临平算力小镇的存算一体芯片（知存科技）与长安链同态加密芯片方向高度协同——前者解决算力效率，后者解决数据安全。两项技术的结合，将使算力小镇的数据处理服务具备面向金融、政务等高敏感数据场景的合规能力。协会可推动算力小镇入驻企业关注国家数据基础设施可信数据空间试点申报，抢占先发优势。<br><br>
+      <strong>第三，数字人才缺口是临平数字经济发展的短板，也是协会的机会。</strong>临平区制造业数字化人才需求真实且集中，但目前缺乏本地化的短期培育渠道。临平数协可探索与杭州电子科技大学、浙江工业大学临平校区等在地高校合作，共建"工业数据资产专项人才培育计划"，形成协会服务会员的差异化能力，也为临平制造业数字化转型提供人才保障。<br><br>
+      临平数协将持续追踪工业互联网行动方案落地进展、可信数据空间试点扩容、数字人才政策动态，为会员企业提供精准政策解读与资源对接服务。
+    </div>
+  </div>
+
+  <!-- ===== 特别提醒 ===== -->
+  <div class="reminder-box">
+    <strong>📌 近期重点事件日历</strong><br>
+    · <strong>6月3日—5日：第二届WOD制造业数智化博览会（上海新国际博览中心）</strong><br>
+    · 6月中旬：临平算力小镇2026年第二批项目评审（具体时间另行通知）<br>
+    · 持续推进：《数据产权登记工作指引》征求意见稿意见征集（国家数据局）<br>
+    · 6月16—18日：2026中国国际金融展（上海世博展览馆），聚焦数字人民币与金融数据治理<br>
+    · 7月1日：DCMM 2.0新国标（GB/T 36073-2025）正式实施，企业数据管理能力评估迎新标准<br>
+    · 下半年：数据资产ABS预计迎来密集发行期（累计储架逼近1400亿，前4月受理39单）
+  </div>
+
+</div>
+
+<!-- ========== FOOTER ========== -->
+<div class="daily-footer">
+  <div class="footer-brand">—— 数据驱动未来，资产赋能发展 ——</div>
+  <div class="footer-date">临数通 · 数据产业周刊编辑部<br>2026年6月2日</div>
+  <div class="footer-note">
+    本日报由"临数通"编辑出品，每日为您精选数据要素市场最新动态<br>
+    杭州市临平区数据产业协会（临平数协）联合出品<br>
+    免责声明：以上内容仅供参考，不构成投资建议
+  </div>
+</div>
+
+</body>
+</html>
