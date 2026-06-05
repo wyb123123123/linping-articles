@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产日报 - 2026年6月6日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; background: #F5F1EA; color: #333; max-width: 680px; margin: 0 auto; padding: 0; }
+  .cover-banner { display: block; width: 100%; margin: 0 auto; }
+  .meta-bar { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; background: #fff; padding: 12px 24px; font-size: 11px; color: #A89880; text-align: center; border-bottom: 1px solid #EBE3D5; letter-spacing: 1px; }
+  .daily-body { background: #fff; padding: 24px 22px; }
+  .section { margin-bottom: 30px; }
+  .section-title { font-size: 17px; font-weight: 700; color: #4A2C1A; padding: 8px 0 8px 14px; border-left: 4px solid #8B6920; margin-bottom: 16px; letter-spacing: 1px; }
+  .news-item { margin-bottom: 20px; padding-bottom: 18px; border-bottom: 1px dashed #EBE0CE; }
+  .news-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .news-item .item-header { margin-bottom: 6px; }
+  .news-item .item-index { display: inline-block; vertical-align: top; background: #8B6920; color: #fff; font-size: 11px; font-weight: 600; min-width: 19px; height: 19px; line-height: 19px; text-align: center; border-radius: 4px; margin-top: 3px; margin-right: 8px; }
+  .news-item .item-title { font-size: 15px; font-weight: 600; color: #2E1F12; line-height: 1.55; }
+  .news-item .item-tag { display: inline-block; font-size: 10.5px; padding: 1px 7px; border-radius: 3px; margin-left: 6px; font-weight: 500; vertical-align: middle; letter-spacing: 0.5px; }
+  .tag-hot { background: #F0E2D0; color: #6B3A18; }
+  .tag-attention { background: #F2E6D5; color: #5C3115; }
+  .tag-event { background: #F1E4D2; color: #7A4520; }
+  .tag-framework { background: #F0E3D0; color: #5E3316; }
+  .tag-urgent { background: #F5E8D8; color: #7B3B1A; }
+  .tag-market { background: #F2E5D4; color: #6D3E1C; }
+  .tag-innovation { background: #F1E4D0; color: #63401E; }
+  .tag-crossborder { background: #F2E6D2; color: #6B421F; }
+  .tag-model { background: #F3E7D5; color: #5E3C1A; }
+  .tag-entry { background: #EFE0CA; color: #704520; }
+  .tag-surge { background: #F4E8D5; color: #6B3518; }
+  .tag-local { background: #F1E4CE; color: #6C4220; }
+  .tag-finance { background: #F0E2CC; color: #683D1C; }
+  .tag-data { background: #F1E5D0; color: #63421E; }
+  .tag-trust { background: #F0E4D0; color: #6D3F1C; }
+  .tag-esg { background: #E8F0E0; color: #3B5E1A; }
+  .tag-security { background: #F5E8E0; color: #7B3A1A; }
+  .tag-policy { background: #F0E8D4; color: #5E4018; }
+  .news-item .item-desc { font-size: 14px; color: #4A3E30; line-height: 1.78; margin: 6px 0 10px; }
+  .news-item .item-meta { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; font-size: 12px; color: #A89880; line-height: 1.8; }
+  .news-item .item-source { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; color: #968878; }
+  .news-item .item-link { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; color: #8B6920; text-decoration: none; font-size: 12px; font-weight: 500; }
+  .top5-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 10px; }
+  .top5-table th { background: #D4BE9C; color: #4A2C1A; font-weight: 600; padding: 11px 8px; text-align: center; border-bottom: 2px solid #8B6920; }
+  .top5-table td { padding: 10px 8px; text-align: center; border-bottom: 1px solid #E8D8C0; color: #4A3E30; background: #fff; }
+  .top5-table tr:first-child td { font-weight: 600; color: #4A2C1A; background: #FBF7F1; }
+  .observe-block { background: #FBF8F4; border-radius: 8px; padding: 16px 18px; margin-bottom: 14px; border: 1px solid #E5D5BC; }
+  .observe-block .observe-label { font-size: 13px; font-weight: 700; color: #4A2C1A; margin-bottom: 7px; }
+  .observe-block .observe-text { font-size: 13.5px; color: #4A3E30; line-height: 1.8; }
+  .linping-focus { background: #F4ECD8; border: 1px solid #C9AD7A; border-radius: 8px; padding: 20px; margin: 22px 0; }
+  .linping-focus .lf-title { font-size: 15px; font-weight: 700; color: #4A2C1A; margin-bottom: 12px; }
+  .linping-focus .lf-text { font-size: 14px; color: #3A2E20; line-height: 1.85; }
+  .reminder-box { background: #FAF7F0; border: 1px solid #D8C5A5; border-left: 4px solid #8B6920; border-radius: 6px; padding: 15px 18px; margin: 18px 0; font-size: 13px; color: #5C3D1A; line-height: 1.85; }
+  .daily-footer { background: #F2EBE0; padding: 22px 22px; text-align: center; }
+  .daily-footer .footer-brand { font-size: 13px; font-weight: 600; color: #6B4528; margin-bottom: 5px; letter-spacing: 1px; }
+  .daily-footer .footer-date { font-size: 12px; color: #A89880; margin-bottom: 14px; }
+  .daily-footer .footer-note { font-size: 11px; color: #B8A890; line-height: 1.7; border-top: 1px solid #E5D8C4; padding-top: 14px; }
+  .daily-contact { padding: 24px 22px 18px; text-align: center; }
+  .daily-contact .contact-hint-text { font-size: 13px; color: #8C7A68; margin-bottom: 12px; }
+  .daily-contact .footer-contact-row { text-align: center; line-height: 0; }
+  .daily-contact .footer-contact-row .qr-wrap { display: inline-block; vertical-align: middle; width: 88px; height: 88px; margin: 0 10px; }
+  .daily-contact .footer-contact-row .qr-wrap img { width: 88px; height: 88px; border-radius: 3px; display: block; }
+  .daily-contact .footer-contact-row .contact-text { display: inline-block; vertical-align: middle; font-size: 13px; color: #6B4528; line-height: 1.6; text-align: left; }
+</style>
+</head>
+<body>
+<img class="cover-banner" src="banner_2026-06-06.png" alt="数据资产日报头图 — 临平数协">
+<div class="meta-bar">临数通 · 数据产业周刊编辑部 &nbsp;|&nbsp; 杭州市临平区数据产业协会（临平数协）联合出品</div>
+<div class="daily-body">
+
+  <div class="section">
+    <div class="section-title">一、今日要闻</div>
+    <div class="news-item">
+      <div class="item-header"><span class="item-index">1</span><span class="item-title">全国统一数据产权登记制度加速推进："多证并存"走向"全国一盘棋"，登记指引即将印发<span class="item-tag tag-hot">重磅</span></span></div>
+      <div class="item-desc">国家数据局最新披露，将加快建立<strong>全国统一数据产权登记制度</strong>，印发《数据产权登记工作指引（试行）》，推动各地建立健全公共数据授权运营价格形成机制。此前深圳、北京、上海等地已分别开展数据产权登记试点，但各地标准不一，"多证并存"局面亟须理顺。统一登记制度的建立将终结这一碎片化格局，为数据资产入表、交易、质押融资提供全国统一的法律和技术底座。</div>
+      <div class="item-meta"><span class="item-source">来源：新华网 / 国家数据局</span><span>2026-05-20</span><a class="item-link" href="https://www.news.cn/politics/20260520/1467653acef44cb7b695d692d7720573/c.html" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div class="news-item">
+      <div class="item-header"><span class="item-index">2</span><span class="item-title">东数西算进入集中竣工期：五部门划定80%绿电红线，首个算电协同绿电直供项目投运<span class="item-tag tag-data">数据</span></span></div>
+      <div class="item-desc">国家数据局等五部门联合发文，明确八大"东数西算"枢纽节点新建数据中心<strong>绿电消费比例须≥80%</strong>，无绿证项目一律不予审批。我国首个大规模"算电协同"绿电直供项目——中国大唐中卫云基地50万千瓦光伏电站已正式投运，实现从沙漠风光电到数字算力的直连直通。2026年一季度全国新建智算中心机柜交付量同比增长41%，IDC行业迎来项目交付高峰，"算电协同"首次写入政府工作报告。</div>
+      <div class="item-meta"><span class="item-source">来源：央视网 / 百度百家号</span><span>2026-05-06</span><a class="item-link" href="http://energy.cctv.cn/2026/05/06/ARTIhO2y995bcDGvjFyFlI89260506.shtml" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div class="news-item">
+      <div class="item-header"><span class="item-index">3</span><span class="item-title">2026年"数据产权多证并存"终结倒计时：登记机构注册资本门槛1亿元，专业化整合窗口开启<span class="item-tag tag-framework">框架</span></span></div>
+      <div class="item-desc">国家数据局明确数据产权登记机构注册资本门槛<strong>1亿元</strong>，释放了提高行业准入标准、推动市场出清的明确信号。业界分析，全国统一登记制度+注册资本门槛+登记指引三重政策叠加，将推动数据产权登记从"地方各自为政"走向"全国统一标准"，不具备资质的中小型登记机构面临整合或出清。对数据资产入表企业而言，统一登记意味着入表资产的法律确权将获得全国互认的基础。</div>
+      <div class="item-meta"><span class="item-source">来源：腾讯新闻 / 法治周末</span><span>2026-05-01</span><a class="item-link" href="https://news.qq.com/rain/a/20260501A06B5W00" target="_blank">原文链接 ↗</a></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">二、政策动态</div>
+    <div class="news-item">
+      <div class="item-header"><span class="item-index">1</span><span class="item-title">全球隐私计算平台市场规模突破87.3亿美元：中国隐私计算进入"规模化落地"关键阶段<span class="item-tag tag-security">安全</span></span></div>
+      <div class="item-desc">最新市场报告显示，全球隐私计算平台市场2025年突破<strong>87.3亿美元</strong>，同比增长41.2%，预计2030年达到426.5亿美元。中国隐私计算技术在2024至2026年间进入规模化落地关键阶段，多方安全计算、联邦学习等技术在金融风控、医疗数据共享、政务数据开放等场景加速应用。隐私计算正从"技术尝鲜"走向"合规刚需"——在数据跨境、数据交易、数据共享场景中，隐私计算已成为不可或缺的基础设施。</div>
+      <div class="item-meta"><span class="item-source">来源：IIM / 行业报告</span><span>2026-06-01</span><a class="item-link" href="https://www.iim.net.cn/91/view-264625-1.html" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div class="news-item">
+      <div class="item-header"><span class="item-index">2</span><span class="item-title">原材料工业数字化转型专家委员会2026年工作会议召开：石化、钢铁、有色三大行业转型路径敲定<span class="item-tag tag-policy">政策</span></span></div>
+      <div class="item-desc">工信部原材料工业数字化转型专家委员会2026年全体工作会议在北京召开，多位中国工程院院士出席。会议聚焦石化化工、钢铁、有色稀土三大行业的数字化转型路径，明确提出<strong>以"行业知识+数据"为核心驱动</strong>的转型策略。原材料工业作为制造业数据密集度最高的板块，其数字化转型的核心瓶颈不在IT系统，而在于如何将工艺知识转化为结构化数据资产。</div>
+      <div class="item-meta"><span class="item-source">来源：新浪财经 / 工信部</span><span>2026-05-27</span><a class="item-link" href="https://finance.sina.com.cn/wm/2026-05-27/doc-inhzivfk8409269.shtml" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div class="news-item">
+      <div class="item-header"><span class="item-index">3</span><span class="item-title">青岛市通过首批中小企业数字化转型城市试点国家验收：链式转型模式成效显著<span class="item-tag tag-model">模式</span></span></div>
+      <div class="item-desc">工信部、财政部联合公示首批中小企业数字化转型城市试点终期绩效评价结果，<strong>青岛市成功通过国家验收</strong>。青岛创新推出"链主企业+中小企业"链式转型模式，以智能制造服务商知业科技为代表的本地服务商获得三项重磅殊荣。青岛经验的核心启示：中小企业数字化转型不能"单打独斗"，必须嵌入龙头企业的供应链数字化体系，以"链式协同"降本增效。</div>
+      <div class="item-meta"><span class="item-source">来源：新浪财经 / 工信部</span><span>2026-05-27</span><a class="item-link" href="https://finance.sina.com.cn/jjxw/2026-05-27/doc-inhzizpk0702953.shtml" target="_blank">原文链接 ↗</a></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">三、行业观察</div>
+    <div class="news-item">
+      <div class="item-header"><span class="item-index">1</span><span class="item-title">2026数据中心"算电协同"成核心战略：绿电80%红线倒逼行业绿色转型<span class="item-tag tag-esg">绿色</span></span></div>
+      <div class="item-desc">2026年数据中心行业迎来最严绿色新政。五部门明确"东数西算"枢纽新建数据中心<strong>绿电消费比例须≥80%</strong>，碳排放数据管理被纳入数据中心运营考核。联想自主研发的温水水冷技术已实现数据中心PUE≤1.1，节能40%。绿色数据中心技术（液冷、绿电直供、余热回收）成为算力基础设施标配，碳数据管理从"自愿报告"升级为"强制考核"，碳数据资产化赛道加速成形。</div>
+      <div class="item-meta"><span class="item-source">来源：百度百家号 / 行业综合</span><span>2026-04-20</span><a class="item-link" href="https://baijiahao.baidu.com/s?id=1862985898460730686" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div class="news-item">
+      <div class="item-header"><span class="item-index">2</span><span class="item-title">呼和浩特算力产业全链条成型：45家算电设备企业入驻，从单一数据中心向"制造+调度+应用"延伸<span class="item-tag tag-local">地方</span></span></div>
+      <div class="item-desc">呼和浩特围绕"东数西算"布局，从单一的数据中心集聚向<strong>"上游制造、中游调度、下游应用"全链条延伸</strong>。北京乐讯科技、万帮新能源等45家算电设备制造企业已入驻和林格尔新区，算力产业形成上下游联动、各环节协同的完整格局。和林格尔新区数据中心标准机架已超30万架，成为"东数西算"八大枢纽节点中增速最快的区域之一。</div>
+      <div class="item-meta"><span class="item-source">来源：内蒙古自治区人民政府</span><span>2026-04-08</span><a class="item-link" href="https://www.nmg.gov.cn/zwyw/ymjnmg/202604/t20260408_2886017.html" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div class="news-item">
+      <div class="item-header"><span class="item-index">3</span><span class="item-title">江西超七成规上工业企业完成数智化改造：产品不良率降16.5%，运营成本降16.1%<span class="item-tag tag-innovation">创新</span></span></div>
+      <div class="item-desc">江西省依托"1269"产业行动计划，锂电新能源、有色金属、高端装备制造、电子信息四大核心产业链加速智能化升级。<strong>全省超七成规上工业企业已完成数智化改造</strong>，改造后企业产品不良品率平均降低16.5%，运营成本下降16.1%。江西经验的关键在于：依托产业链"链主"带动上下游中小企业同步转型，形成可量化的投入产出闭环。</div>
+      <div class="item-meta"><span class="item-source">来源：搜狐 / 江西省工信厅</span><span>2026-06-01</span><a class="item-link" href="https://www.sohu.com/a/1030423590_121078241" target="_blank">原文链接 ↗</a></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">四、数据入表与资本化</div>
+    <div class="news-item">
+      <div class="item-header"><span class="item-index">1</span><span class="item-title">数据产权登记工作指引即将全国推行：企业数据资产确权从"地方试点"走向"全国互认"<span class="item-tag tag-framework">框架</span></span></div>
+      <div class="item-desc">国家数据局发布的《数据产权登记工作指引（试行）》明确数据产权是权利人对特定数据享有的<strong>财产性权利</strong>，包括数据持有权、数据使用权、数据经营权等。清华大学智能法治研究院解读指出，这标志着中国数据产权制度从"政策宣示"进入"制度落地"阶段。对企业而言，统一登记意味着在深圳登记的数据产权将在全国获得法律互认，跨区域数据交易和融资的法律确定性将大幅提升。</div>
+      <div class="item-meta"><span class="item-source">来源：国家数据局 / 清华大学</span><span>2026-04-07</span><a class="item-link" href="https://www.nda.gov.cn/sjj/zwgk/zjjd/0407/20260407165920611653824_pc.html" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div style="overflow-x:auto; margin: 10px 0 4px;">
+      <table class="top5-table">
+        <tr><th>数据产权登记维度</th><th>当前状态</th><th>关键节点</th><th>企业影响</th></tr>
+        <tr><td>全国统一登记制度</td><td>征求意见中</td><td>预计2026下半年印发</td><td>终结"多证并存"，全国互认</td></tr>
+        <tr><td>登记机构门槛</td><td>已明确1亿元</td><td>行业整合窗口期</td><td>优质机构集中，服务质量提升</td></tr>
+        <tr><td>公共数据授权定价</td><td>机制建设中</td><td>各地试点2026年内完成</td><td>公共数据资产化提速</td></tr>
+        <tr><td>数据产权三权分置</td><td>制度已确立</td><td>企业实操案例增多</td><td>持有权/使用权/经营权可分离</td></tr>
+        <tr><td>跨境数据产权互认</td><td>探索阶段</td><td>负面清单三地联动</td><td>跨境数据交易合规路径渐清晰</td></tr>
+      </table>
+    </div>
+    <div class="news-item" style="margin-top: 18px;">
+      <div class="item-header"><span class="item-index">2</span><span class="item-title">数据资产融资2026年"井喷"态势延续：从"有没有不动产"到"有没有高质量数据集"<span class="item-tag tag-finance">金融</span></span></div>
+      <div class="item-desc">2026年数据资产融资市场呈现井喷态势，融资案例已覆盖<strong>停车、交通、医疗、环保、农业、工业</strong>等十余个行业。融资门槛的质变最值得关注：银行对数据资产质押融资的审批逻辑已从"有没有不动产"转变为"有没有高质量数据集+合规的数据产权"。这意味着轻资产科技企业、中小制造企业的融资通道被实质性打开。</div>
+      <div class="item-meta"><span class="item-source">来源：11467 / 行业综合</span><span>2026-05-21</span><a class="item-link" href="https://33036599.b2b.11467.com/news/6566210.asp" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div class="news-item">
+      <div class="item-header"><span class="item-index">3</span><span class="item-title">《数据产权登记工作指引》核心解读："识别—确认—计量—登记—披露"五步法定型<span class="item-tag tag-model">模型</span></span></div>
+      <div class="item-desc">《指引》将数据产权登记流程标准化为<strong>"识别-确认-计量-登记-披露"五步法</strong>：识别阶段确定数据来源合法性；确认阶段厘清持有权、使用权、经营权归属；计量阶段以成本法/收益法/市场法估值；登记阶段在指定机构完成法律登记；披露阶段在财务报表中完成数据资产列报。从试点实践看，遵循五步法的企业从数据盘点到完成登记平均仅需30-45天。</div>
+      <div class="item-meta"><span class="item-source">来源：国家数据局 / 法治周末</span><span>2026-05-14</span><a class="item-link" href="http://www.legalweekly.cn/lldy/2026-05/14/content_9388816.html" target="_blank">原文链接 ↗</a></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">五、地方实践</div>
+    <div class="news-item">
+      <div class="item-header"><span class="item-index">1</span><span class="item-title">腾讯AI大会透露AI Agent安全治理新框架：自主决策边界、数据权限管理、隐私保护为三大核心命题<span class="item-tag tag-security">安全</span></span></div>
+      <div class="item-desc">6月5日腾讯AI产业应用大会安全专场发布AI Agent安全治理框架，聚焦三大核心：<strong>自主决策边界</strong>（Agent可自主执行的操作范围）、<strong>数据权限管理</strong>（Agent访问企业数据的权限分级）、<strong>隐私保护</strong>（Agent处理用户数据时的脱敏与合规要求）。Gartner预测到2026年底超50%企业将部署AI Agent，Agent安全治理已成为企业数字化治理的新基建。</div>
+      <div class="item-meta"><span class="item-source">来源：腾讯云AI产业应用大会</span><span>2026-06-05</span><a class="item-link" href="https://finance.sina.com.cn/stock/t/2026-06-03/doc-iniacaet0964600.shtml" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div class="news-item">
+      <div class="item-header"><span class="item-index">2</span><span class="item-title">中国移动PC服务器集采大单落地：长江计算中标19亿元，ARM架构服务器成算力主力<span class="item-tag tag-market">市场</span></span></div>
+      <div class="item-desc">中国移动2026至2027年PC服务器产品集中采购结果公布，武汉长江计算中标全部4个ARM架构服务器标包，税前中标金额<strong>超19亿元</strong>。国产ARM架构服务器在运营商算力采购中的占比持续攀升，标志着国产算力芯片在数据中心市场的规模化替代进入加速期。对国产算力产业链而言，运营商集采是最大的单一市场风向标。</div>
+      <div class="item-meta"><span class="item-source">来源：新浪财经 / 中国移动</span><span>2026-06-02</span><a class="item-link" href="https://finance.sina.com.cn/roll/2026-06-02/doc-inhzynrx1811404.shtml" target="_blank">原文链接 ↗</a></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">深度观察</div>
+    <div class="observe-block">
+      <div class="observe-label">观察一：数据产权统一登记——数据要素市场的"不动产登记"时刻</div>
+      <div class="observe-text">全国统一数据产权登记制度的推进，其意义堪比不动产统一登记制度对房地产市场的奠基作用。没有统一产权登记，数据资产的交易、抵押、融资都缺乏法律确定性。登记门槛1亿元、五步法定型、"多证并存"局面终结——这三件事同时发生，意味着<strong>数据资产正从"草莽时代"走向"正规化时代"</strong>。对拥有大量生产工艺数据、设备数据的临平制造企业而言，统一登记制度的确立降低了数据资产入表的制度不确定性和合规风险。</div>
+    </div>
+    <div class="observe-block">
+      <div class="observe-label">观察二：算力绿色化从"加分项"变"准入门槛"——碳数据与算力数据正在深度融合</div>
+      <div class="observe-text">五部门80%绿电红线+首个算电协同项目投运+碳数据纳入数据中心运营考核，标志着算力产业的绿色转型从"自觉行为"升级为"制度约束"。更深层的影响是：<strong>算力碳数据正在成为新的数据资产类别</strong>——数据中心的碳核算数据、绿证数据、能效数据本身就可以转化为可交易的碳资产。对临平联通算力中心而言，绿色化不仅是合规要求，更是将"绿色算力"作为差异化竞争力和数据资产化方向的战略机遇。</div>
+    </div>
+    <div class="observe-block">
+      <div class="observe-label">观察三：链式数字化转型模式被验证——中小企业不能"单打独斗"</div>
+      <div class="observe-text">青岛通过国家验收、江西超七成规上企业完成改造、贵州"智改数转"入企服务——多地实践证明，中小企业数字化转型的有效路径不是"单打独斗"，而是<strong>"链主引领+链式协同+政府诊断+服务商赋能"的四位一体模式</strong>。临平拥有老板电器、春风动力等链主企业，完全有条件借鉴青岛模式，以链主企业的数字化能力带动上下游中小供应商同步转型。这同时也是数据资产化的协同路径——链主企业的高质量数据集可以带动供应链数据的标准化和资产化。</div>
+    </div>
+  </div>
+
+  <div class="linping-focus">
+    <div class="lf-title">📍 临平关注</div>
+    <div class="lf-text">
+      <strong>本期多项制度性进展对临平数据产业发展具有深远影响，三个方向值得重点关注。</strong><br><br>
+      <strong>第一，全国统一数据产权登记制度即将落地，临平企业应做好数据资产确权准备。</strong>登记门槛1亿元、五步法定型、"多证并存"终结——这些制度变化对拥有大量工业数据的临平制造企业而言，既是合规要求，也是资产化机遇。老板电器已率先实现"三权合一"全国首例，建议协会以此为标杆案例，组织区内重点企业开展数据资产盘点和确权准备。<br><br>
+      <strong>第二，算力绿色化新政对临平联通算力中心提出新要求、创造新机遇。</strong>80%绿电红线+碳数据纳入考核，意味着算力中心的运营数据（能耗、碳排放、PUE）本身就具备了数据资产化的条件。临平联通算力中心应加快建立碳数据管理台账和绿证体系，将"绿色算力"打造为核心竞争力和可交易的碳资产。<br><br>
+      <strong>第三，链式数字化转型的"青岛经验"为临平提供了可复制的路线图。</strong>临平"2327X"先进制造业集群中，老板电器、春风动力等链主企业已具备较强的数字化能力，协会可牵头推动"链主企业+中小企业"的协同转型模式，同时借此推动供应链数据的标准化和资产化，实现"数字化转型"与"数据资产化"双轮驱动。<br><br>
+      临平数协将持续追踪数据产权登记制度落地、算力绿色化政策执行、链式数字化转型模式推广，为会员企业提供精准制度解读与资源对接服务。
+    </div>
+  </div>
+
+  <div class="reminder-box">
+    <strong>📌 近期重点事件日历</strong><br>
+    · 已开启：六部门《中小企业数字化转型与绿色化改造推进方案》设备补贴申报通道<br>
+    · 已开启：2026年"数据要素×"大赛浙江分赛报名<br>
+    · 6月16—18日：2026中国国际金融展（上海），"数据要素×资本市场"专项试点启动<br>
+    · 6月中旬：临平算力小镇2026年第二批项目评审<br>
+    · 7月1日：DCMM 2.0新国标（GB/T 36073-2025）正式实施<br>
+    · 持续推进：全国统一数据产权登记制度意见征集、登记指引印发（国家数据局）
+  </div>
+
+</div>
+
+<div class="daily-footer">
+  <div class="footer-brand">—— 数据驱动未来，资产赋能发展 ——</div>
+  <div class="footer-date">临数通 · 数据产业周刊编辑部<br>2026年6月6日</div>
+  <div class="footer-note">本栏目资讯仅作行业前沿信息分享，内容来源于外部公开媒体；如原文链接无法打开、信息与官方发布存在出入，敬请自行核验权威源头，本协会不对转载内容准确性承担责任。如涉及版权问题，请联系我们处理。</div>
+</div>
+<div class="daily-contact">
+  <div class="contact-hint-text">— 业务咨询 · 会员服务 —</div>
+  <div class="footer-contact-row"><span class="contact-text">业务咨询请联络</span><span class="qr-wrap"><img src="qr_code_cropped.png" alt="扫码咨询" /></span></div>
+</div>
+</body>
+</html>
