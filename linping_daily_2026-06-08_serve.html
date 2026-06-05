@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产日报 - 2026年6月8日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #F5F1EA;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .cover-banner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #A89880;
+    text-align: center;
+    border-bottom: 1px solid #EBE3D5;
+    letter-spacing: 1px;
+  }
+  .daily-body {
+    background: #fff;
+    padding: 24px 22px;
+  }
+  .section {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #4A2C1A;
+    padding: 8px 0 8px 14px;
+    border-left: 4px solid #8B6920;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+  .news-item {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #EBE0CE;
+  }
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .news-item .item-header {
+    margin-bottom: 6px;
+  }
+  .news-item .item-index {
+    display: inline-block;
+    vertical-align: top;
+    background: #8B6920;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 19px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  .news-item .item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2E1F12;
+    line-height: 1.55;
+  }
+  .news-item .item-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .tag-hot       { background: #F0E2D0; color: #6B3A18; }
+  .tag-attention { background: #F2E6D5; color: #5C3115; }
+  .tag-event     { background: #F1E4D2; color: #7A4520; }
+  .tag-framework { background: #F0E3D0; color: #5E3316; }
+  .tag-urgent    { background: #F5E8D8; color: #7B3B1A; }
+  .tag-market    { background: #F2E5D4; color: #6D3E1C; }
+  .tag-innovation { background: #F1E4D0; color: #63401E; }
+  .tag-crossborder { background: #F2E6D2; color: #6B421F; }
+  .tag-model     { background: #F3E7D5; color: #5E3C1A; }
+  .tag-entry     { background: #EFE0CA; color: #704520; }
+  .tag-surge     { background: #F4E8D5; color: #6B3518; }
+  .tag-local     { background: #F1E4CE; color: #6C4220; }
+  .tag-finance   { background: #F0E2CC; color: #683D1C; }
+  .tag-data      { background: #F1E5D0; color: #63421E; }
+  .tag-trust     { background: #F0E4D0; color: #6D3F1C; }
+  .tag-esg       { background: #E8F0E0; color: #3B5E1A; }
+  .tag-security  { background: #F5E8E0; color: #7B3A1A; }
+  .tag-policy    { background: #F0E8D4; color: #5E4018; }
+  .news-item .item-desc {
+    font-size: 14px;
+    color: #4A3E30;
+    line-height: 1.78;
+    margin: 6px 0 10px;
+  }
+  .news-item .item-meta {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 12px;
+    color: #A89880;
+    line-height: 1.8;
+  }
+  .news-item .item-source {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #968878;
+  }
+  .news-item .item-link {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #8B6920;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .top5-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .top5-table th {
+    background: #D4BE9C;
+    color: #4A2C1A;
+    font-weight: 600;
+    padding: 11px 8px;
+    text-align: center;
+    border-bottom: 2px solid #8B6920;
+  }
+  .top5-table td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid #E8D8C0;
+    color: #4A3E30;
+    background: #fff;
+  }
+  .top5-table tr:first-child td {
+    font-weight: 600;
+    color: #4A2C1A;
+    background: #FBF7F1;
+  }
+  .observe-block {
+    background: #FBF8F4;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    border: 1px solid #E5D5BC;
+  }
+  .observe-block .observe-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 7px;
+  }
+  .observe-block .observe-text {
+    font-size: 13.5px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+  .linping-focus {
+    background: #F4ECD8;
+    border: 1px solid #C9AD7A;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 22px 0;
+  }
+  .linping-focus .lf-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 12px;
+  }
+  .linping-focus .lf-text {
+    font-size: 14px;
+    color: #3A2E20;
+    line-height: 1.85;
+  }
+  .reminder-box {
+    background: #FAF7F0;
+    border: 1px solid #D8C5A5;
+    border-left: 4px solid #8B6920;
+    border-radius: 6px;
+    padding: 15px 18px;
+    margin: 18px 0;
+    font-size: 13px;
+    color: #5C3D1A;
+    line-height: 1.85;
+  }
+  .daily-footer {
+    background: #F2EBE0;
+    padding: 22px 22px;
+    text-align: center;
+  }
+  .daily-footer .footer-brand {
+    font-size: 13px;
+    font-weight: 600;
+    color: #6B4528;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+  .daily-footer .footer-date {
+    font-size: 12px;
+    color: #A89880;
+    margin-bottom: 14px;
+  }
+  .daily-footer .footer-note {
+    font-size: 11px;
+    color: #B8A890;
+    line-height: 1.7;
+    border-top: 1px solid #E5D8C4;
+    padding-top: 14px;
+  }
+  .daily-contact {
+    padding: 24px 22px 18px;
+    text-align: center;
+  }
+  .daily-contact .contact-hint-text {
+    font-size: 13px;
+    color: #8C7A68;
+    margin-bottom: 12px;
+  }
+  .daily-contact .footer-contact-row {
+    text-align: center;
+    line-height: 0;
+  }
+  .daily-contact .footer-contact-row .qr-wrap {
+    display: inline-block;
+    vertical-align: middle;
+    width: 88px;
+    height: 88px;
+    margin: 0 10px;
+  }
+  .daily-contact .footer-contact-row .qr-wrap img {
+    width: 88px;
+    height: 88px;
+    border-radius: 3px;
+    display: block;
+  }
+  .daily-contact .footer-contact-row .contact-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    color: #6B4528;
+    line-height: 1.6;
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+<img class="cover-banner" src="banner_2026-06-08.png" alt="数据资产日报">
+<div class="meta-bar">临数通 · 数据产业周刊编辑部 | 杭州市临平区数据产业协会（临平数协）联合出品</div>
+<div class="daily-body">
+
+  <!-- ===== 今日要闻 ===== -->
+  <div class="section">
+    <div class="section-title">今日要闻</div>
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">本周数字产业重磅回顾：数据产权统一登记加速+数据要素×大赛全国开花+AI Agent产业落地元年来临</span>
+        <span class="item-tag tag-hot">重磅</span>
+      </div>
+      <div class="item-desc">本周数字产业领域迎来多项重大进展：国家数据局推进数据产权统一登记制度建设提速，"数据要素×"大赛在全国多地同步启动赛区选拔，AI Agent作为2026年产业落地的核心方向已从概念验证进入规模化部署阶段。三大趋势共振，标志着数据要素市场化进入"加速施工"阶段。</div>
+      <div class="item-meta"><span class="item-source">来源：国家数据局</span> &nbsp;|&nbsp; 2026年6月7日 &nbsp;|&nbsp; <a class="item-link" href="https://www.ndrc.gov.cn" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">算力大单密集落地：中国移动19亿服务器集采+三大运营商算力投资占比超35%</span>
+        <span class="item-tag tag-market">市场</span>
+      </div>
+      <div class="item-desc">中国移动本周公布19亿元服务器集采大单，聚焦AI算力与智算中心建设；三大运营商2026年算力投资占比首次突破35%，同比提升8个百分点。算力基础设施从"建设期"加速进入"运营+应用期"，带动上下游产业链景气度持续攀升。</div>
+      <div class="item-meta"><span class="item-source">来源：通信世界</span> &nbsp;|&nbsp; 2026年6月6日 &nbsp;|&nbsp; <a class="item-link" href="https://www.cww.net.cn" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">2026中国大模型调用量首次超越美国：国产AI从"跟跑"到"并跑"的历史性跨越</span>
+        <span class="item-tag tag-data">数据</span>
+      </div>
+      <div class="item-desc">据最新统计，2026年上半年中国大模型API调用量首次超越美国，达到日均42亿次调用。国产大模型在政务、金融、制造等垂直领域的渗透率快速攀升，标志着中国AI产业从技术追赶进入"应用引领"的新阶段。</div>
+      <div class="item-meta"><span class="item-source">来源：中国信通院</span> &nbsp;|&nbsp; 2026年6月5日 &nbsp;|&nbsp; <a class="item-link" href="https://www.caict.ac.cn" target="_blank">原文链接 ↗</a></div>
+    </div>
+  </div>
+
+  <!-- ===== 政策动态 ===== -->
+  <div class="section">
+    <div class="section-title">政策动态</div>
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">"数据要素×资本市场"专项试点即将启动：证监会+国家数据局联合部署</span>
+        <span class="item-tag tag-policy">政策</span>
+      </div>
+      <div class="item-desc">证监会与国家数据局本周联合印发"数据要素×资本市场"专项试点工作方案，拟在沪深北交易所选取首批20家上市公司开展数据资产入表与估值试点，探索数据要素在资本市场的定价机制与信息披露规范。试点预计2026年Q3正式启动。</div>
+      <div class="item-meta"><span class="item-source">来源：证监会</span> &nbsp;|&nbsp; 2026年6月6日 &nbsp;|&nbsp; <a class="item-link" href="https://www.csrc.gov.cn" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">一周政策速览：六部门中小企业数字化转型方案设备补贴通道已开放</span>
+        <span class="item-tag tag-policy">政策</span>
+      </div>
+      <div class="item-desc">工信部等六部门联合发布的中小企业数字化转型实施方案本周进入落地执行阶段，设备补贴线上申报通道已正式开放。方案覆盖制造业、服务业等8大行业，单项补贴最高可达200万元，预计惠及中小企业超15万家。</div>
+      <div class="item-meta"><span class="item-source">来源：工信部</span> &nbsp;|&nbsp; 2026年6月4日 &nbsp;|&nbsp; <a class="item-link" href="https://www.miit.gov.cn" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">DCMM 2.0新国标7月1日施行倒计时：数据管理能力评估进入强制时代</span>
+        <span class="item-tag tag-framework">框架</span>
+      </div>
+      <div class="item-desc">DCMM 2.0国家标准将于2026年7月1日正式施行，倒计时不足一月。新标准将数据管理能力评估从"自愿认证"升级为"强制要求"，覆盖金融、电信、能源等关键行业。目前已有超1200家企业启动贯标准备，第三方评估机构预约排期至9月。</div>
+      <div class="item-meta"><span class="item-source">来源：全国信标委</span> &nbsp;|&nbsp; 2026年6月5日 &nbsp;|&nbsp; <a class="item-link" href="https://www.tc28.org.cn" target="_blank">原文链接 ↗</a></div>
+    </div>
+  </div>
+
+  <!-- ===== 行业观察 ===== -->
+  <div class="section">
+    <div class="section-title">行业观察</div>
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">2026 AI应用爆发元年·一周回顾：AI Agent部署率54%，市场规模突破232亿元</span>
+        <span class="item-tag tag-surge">爆发</span>
+      </div>
+      <div class="item-desc">本周多项行业数据印证AI Agent已进入规模化落地阶段：企业AI Agent部署率达到54%，同比提升31个百分点；市场规模突破232亿元，预计全年将超过500亿元。金融、客服、研发是最热门的三大部署场景，"AI+数据要素"融合应用成为新增长极。</div>
+      <div class="item-meta"><span class="item-source">来源：艾瑞咨询</span> &nbsp;|&nbsp; 2026年6月7日 &nbsp;|&nbsp; <a class="item-link" href="https://www.iresearch.cn" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">隐私计算全球市场突破87.3亿美元：数据安全+AI安全崛起成下半年主线</span>
+        <span class="item-tag tag-security">安全</span>
+      </div>
+      <div class="item-desc">全球隐私计算市场规模在2026年H1达到87.3亿美元，同比增长38.6%。国内市场中，联邦学习与多方安全计算在金融与医疗领域的渗透率分别达到47%和33%。数据安全与AI安全的交叉融合正成为资本与政策双重驱动下的下半年主线方向。</div>
+      <div class="item-meta"><span class="item-source">来源：Gartner</span> &nbsp;|&nbsp; 2026年6月6日 &nbsp;|&nbsp; <a class="item-link" href="https://www.gartner.com" target="_blank">原文链接 ↗</a></div>
+    </div>
+  </div>
+
+  <!-- ===== 数据入表与资本化 ===== -->
+  <div class="section">
+    <div class="section-title">数据入表与资本化</div>
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">本周数据资产融资亮点：从央企8623亿到县域314万，全谱系案例涌现</span>
+        <span class="item-tag tag-entry">入表</span>
+      </div>
+      <div class="item-desc">本周数据资产融资呈现"全谱系"特征：央企层面，国家电网数据资产规模达8623亿元；县域层面，福建闽清公交实现314万数据资产质押+500万授信全闭环；市场层面，青岛5.32亿ABS以纯数据质押开创先河。数据资产融资正从"个案突破"走向"规模化复制"。</div>
+      <div class="item-meta"><span class="item-source">来源：中国数据要素流通平台</span> &nbsp;|&nbsp; 2026年6月7日 &nbsp;|&nbsp; <a class="item-link" href="https://www.cde.org.cn" target="_blank">原文链接 ↗</a></div>
+      <table class="top5-table">
+        <thead>
+          <tr><th>融资模式进化</th><th>阶段</th><th>代表案例</th><th>里程碑</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>信用担保期</td><td>2022-2023</td><td>佳华科技1000万</td><td>首笔数据资产质押</td></tr>
+          <tr><td>数据增信期</td><td>2024-2025</td><td>闽清公交314万+500万</td><td>县域全闭环</td></tr>
+          <tr><td>纯数据质押期</td><td>2026</td><td>青岛5.32亿ABS</td><td>纯数据独立质押</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">停车+交通+医疗+县域：数据资产化从"大宗交易"走向"普惠金融"</span>
+        <span class="item-tag tag-finance">金融</span>
+      </div>
+      <div class="item-desc">数据资产融资的行业覆盖面本周显著扩展：智慧停车、交通出行、医疗健康、县域公共服务四大领域均有新增案例落地。这一趋势标志着数据资产化从少数头部企业的"大宗交易"模式，加速向中小企业的"普惠金融"模式渗透，数据资产正在成为新的普惠金融基础设施。</div>
+      <div class="item-meta"><span class="item-source">来源：中国银行业协会</span> &nbsp;|&nbsp; 2026年6月6日 &nbsp;|&nbsp; <a class="item-link" href="https://www.china-cba.net" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">全国统一数据产权登记制度将终结"多证并存"：企业数据确权进入正规化</span>
+        <span class="item-tag tag-framework">框架</span>
+      </div>
+      <div class="item-desc">国家数据局本周明确全国统一数据产权登记制度建设时间表，预计2026年底前完成制度框架，2027年正式实施。此举将终结当前各地"多证并存、标准不一"的碎片化局面，企业数据确权将从"地方试验"进入"全国正规化"阶段，为数据资产跨区域流通扫清制度障碍。</div>
+      <div class="item-meta"><span class="item-source">来源：国家数据局</span> &nbsp;|&nbsp; 2026年6月5日 &nbsp;|&nbsp; <a class="item-link" href="https://www.ndata.gov.cn" target="_blank">原文链接 ↗</a></div>
+    </div>
+  </div>
+
+  <!-- ===== 地方实践 ===== -->
+  <div class="section">
+    <div class="section-title">地方实践</div>
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">本周地方亮点：上海/湖北/江西/重庆/天津五地大赛同步启动+贵州入企服务+青岛通过验收</span>
+        <span class="item-tag tag-local">地方</span>
+      </div>
+      <div class="item-desc">本周"数据要素×"大赛在上海、湖北、江西、重庆、天津五地同步启动赛区选拔，形成全国联动之势；贵州开展数据资产入企服务专项行动，深入100家企业进行"一对一"辅导；青岛数据资产运营平台顺利通过国家级验收，成为全国首批通过验收的地方平台之一。</div>
+      <div class="item-meta"><span class="item-source">来源：各地数据局</span> &nbsp;|&nbsp; 2026年6月7日 &nbsp;|&nbsp; <a class="item-link" href="https://www.ndata.gov.cn" target="_blank">原文链接 ↗</a></div>
+    </div>
+    <div class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">算力小镇建设加速：呼和浩特45家企业入驻，临平第二批项目评审在即</span>
+        <span class="item-tag tag-local">地方</span>
+      </div>
+      <div class="item-desc">呼和浩特算力小镇本周迎来第45家入驻企业，形成"算力+数据+应用"产业生态闭环。杭州临平算力小镇第二批项目评审工作即将启动，预计将引入10-15家数据要素与AI应用相关企业，进一步壮大临平数据产业集群。</div>
+      <div class="item-meta"><span class="item-source">来源：呼和浩特市政府</span> &nbsp;|&nbsp; 2026年6月6日 &nbsp;|&nbsp; <a class="item-link" href="https://www.huhhot.gov.cn" target="_blank">原文链接 ↗</a></div>
+    </div>
+  </div>
+
+  <!-- ===== 深度观察 ===== -->
+  <div class="section">
+    <div class="section-title">深度观察</div>
+    <div class="observe-block">
+      <div class="observe-label">观察一：数据要素市场建设从"顶层设计"进入"多地同步施工"——一周多地联动释放的信号</div>
+      <div class="observe-text">本周，上海、湖北、江西、重庆、天津五地"数据要素×"大赛同步启动，贵州入企服务深入一线，青岛平台通过国家级验收——这不是巧合，而是数据要素市场建设从"顶层设计"阶段正式进入"多地同步施工"阶段的明确信号。过去两年，数据要素的政策框架已基本成型，2026年的核心任务是从"有没有制度"转向"制度能不能落地"。多地同步施工意味着：资源调配从单点突破转向网络化协同；地方竞争从"抢政策"转向"拼落地"；企业参与从"观望等待"转向"主动入场"。</div>
+    </div>
+    <div class="observe-block">
+      <div class="observe-label">观察二：从"有没有数据"到"数据有没有产权"——2026年数据资产化的底层逻辑转变</div>
+      <div class="observe-text">2024-2025年的数据资产化叙事核心是"数据有没有价值"，企业关心的是数据能否入表、能否融资。而2026年的底层逻辑正在发生根本性转变：核心问题从"有没有数据"转向"数据有没有产权"。这一转变的标志有三：全国统一数据产权登记制度即将终结"多证并存"；纯数据质押融资模式的出现（青岛5.32亿ABS），意味着市场已认可"产权清晰的数据本身即为资产"；DCMM 2.0强制实施，倒逼企业建立数据治理体系。产权清晰是资产化的前提——没有产权的数据只是"资源"，有了产权的数据才是"资产"。</div>
+    </div>
+  </div>
+
+  <!-- ===== 临平关注 ===== -->
+  <div class="section">
+    <div class="section-title">临平关注</div>
+    <div class="linping-focus">
+      <div class="lf-title">本周总结与下周展望</div>
+      <div class="lf-text">
+        第一，数据要素×大赛浙江分赛正在报名，临平企业应积极参与以赛促用。建议协会组织赛前培训，辅导企业提炼项目亮点，提高入围率。<br><br>
+        第二，DCMM 2.0新国标7月1日实施倒计时，协会应组织企业提前开展数据管理能力自评，主动对标新标准补齐短板，避免被动合规。<br><br>
+        第三，国产大模型调用量超越美国背景下，临平AI产业营收目标110亿元面临前所未有的产业机遇。算力小镇第二批项目评审应重点引入AI+数据要素融合类创新企业，打造差异化竞争力。
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 本周日历 ===== -->
+  <div class="section">
+    <div class="section-title">本周日历</div>
+    <div class="reminder-box">
+      <strong>2026年6月8日—6月14日 关键日程</strong><br>
+      • 6月9日（周一）&nbsp; DCMM 2.0贯标培训第三期·线上直播<br>
+      • 6月10日（周二）&nbsp; "数据要素×资本市场"试点方案内部征求意见截止<br>
+      • 6月11日（周三）&nbsp; 临平算力小镇第二批项目评审启动<br>
+      • 6月12日（周四）&nbsp; 浙江省数据要素市场化配置改革推进会·杭州<br>
+      • 6月13日（周五）&nbsp; 中小企业数字化转型设备补贴第二批申报截止<br>
+      • 6月14日（周六）&nbsp; "数据要素×"大赛浙江赛区初赛作品提交截止
+    </div>
+  </div>
+
+</div><!-- /daily-body -->
+
+<!-- 页脚 -->
+<div class="daily-footer">
+  <div class="footer-brand">临平数协 · 数据资产日报</div>
+  <div class="footer-date">2026年6月8日</div>
+  <div class="footer-note">数据资产领航者 · 引领数据产业高质量发展</div>
+</div>
+
+<!-- 二维码关注区 -->
+<div class="daily-contact">
+  <div class="contact-hint-text">关注临平数协 · 把握数据产业脉搏</div>
+  <div class="footer-contact-row">
+    <div class="qr-wrap"><img src="qr_code_cropped.png" alt="临平数协公众号"></div>
+    <div class="contact-text">
+      临平数协公众号<br>
+      数据资产日报每周一至周五更新
+    </div>
+    <div class="qr-wrap"><img src="qr_code_cropped.png" alt="雾透社公众号"></div>
+    <div class="contact-text">
+      雾透社公众号<br>
+      数据资产化全链条服务
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
