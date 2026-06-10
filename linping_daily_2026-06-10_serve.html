@@ -218,57 +218,53 @@
     padding: 22px 24px;
     text-align: center;
     border-top: 1px solid #E5D8C4;
+    border-radius: 8px;
+    margin: 0 22px 18px;
   }
   .daily-footer .footer-brand {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     color: #6B4528;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     letter-spacing: 1px;
+  }
+  .daily-footer .footer-editor {
+    font-size: 12px;
+    color: #A89880;
+    margin-bottom: 4px;
   }
   .daily-footer .footer-date {
     font-size: 12px;
     color: #A89880;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
   .daily-footer .footer-note {
     font-size: 11px;
-    color: #B8A890;
-    line-height: 1.7;
+    color: #A89880;
+    line-height: 1.85;
   }
 
-  .qr-placeholder {
-    background: #F5F1EA;
-    border: 2px dashed #C9AD7A;
-    border-radius: 8px;
-    padding: 28px 20px;
-    margin: 0 22px;
+  .qr-section {
+    background: #fff;
+    padding: 18px 22px 28px;
     text-align: center;
   }
-  .qr-placeholder .qr-hint {
+  .qr-section .qr-hint {
     font-size: 13px;
     color: #A89880;
     letter-spacing: 1px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
-  .qr-placeholder .qr-box {
+  .qr-section .qr-box {
     width: 120px;
     height: 120px;
     margin: 0 auto;
     background: #fff;
     border: 2px dashed #D4BE9C;
     border-radius: 6px;
-    display: inline-block;
-    vertical-align: middle;
     line-height: 120px;
     font-size: 12px;
     color: #C9AD7A;
-  }
-  .qr-placeholder .qr-desc {
-    font-size: 11px;
-    color: #B8A890;
-    margin-top: 10px;
-    line-height: 1.6;
   }
 </style>
 </head>
@@ -581,22 +577,23 @@
 
 </div>
 
-<!-- ===== 二维码空白占位区 ===== -->
-<div class="qr-placeholder">
-  <div class="qr-hint">— 扫码关注 · 获取更多数据产业资讯 —</div>
-  <div class="qr-box">二维码占位</div>
-  <div class="qr-desc">请在此处插入公众号二维码图片<br>建议尺寸：120×120px 或 150×150px</div>
-</div>
-
 <!-- ========== FOOTER ========== -->
 <div class="daily-footer">
   <div class="footer-brand">—— 数据驱动未来，资产赋能发展 ——</div>
-  <div class="footer-date">临数通 · 数据产业周刊编辑部<br>2026年6月10日</div>
+  <div class="footer-editor">临数通 · 数据产业周刊编辑部</div>
+  <div class="footer-date">2026年6月10日</div>
   <div class="footer-note">
-    本日报由"临数通"编辑出品，每日为您精选数据要素市场最新动态<br>
-    杭州市临平区数据产业协会（临平数协）联合出品<br>
-    免责声明：以上内容仅供参考，不构成投资建议
+    本资讯内容来源于外部公开媒体；<br>
+    如链接无法打开、信息与官方发布存在出入；<br>
+    敬请自行核验，本会不对转载内容准确性承担责任。<br>
+    如涉及版权问题，请联系我们处理。
   </div>
+</div>
+
+<!-- ===== 二维码占位区 ===== -->
+<div class="qr-section">
+  <div class="qr-hint">— 业务咨询 · 会员服务 —</div>
+  <div class="qr-box">二维码占位</div>
 </div>
 
 </body>
