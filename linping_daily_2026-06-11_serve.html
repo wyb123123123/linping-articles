@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产日报 - 2026年6月11日</title>
+<style>
+  * { margin:0; padding:0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #F5F1EA;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .cover-banner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #A89880;
+    text-align: center;
+    border-bottom: 1px solid #EBE3D5;
+    letter-spacing: 1px;
+  }
+
+  .daily-body {
+    background: #fff;
+    padding: 24px 22px;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #4A2C1A;
+    padding: 8px 0 8px 14px;
+    border-left: 4px solid #8B6920;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .news-item {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #EBE0CE;
+  }
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .news-item .item-header {
+    margin-bottom: 6px;
+  }
+  .news-item .item-index {
+    display: inline-block;
+    vertical-align: top;
+    background: #8B6920;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 19px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  .news-item .item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2E1F12;
+    line-height: 1.55;
+  }
+  .news-item .item-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .tag-hot        { background: #F0E2D0; color: #6B3A18; }
+  .tag-attention  { background: #F2E6D5; color: #5C3115; }
+  .tag-event      { background: #F1E4D2; color: #7A4520; }
+  .tag-framework  { background: #F0E3D0; color: #5E3316; }
+  .tag-urgent     { background: #F5E8D8; color: #7B3B1A; }
+  .tag-market     { background: #F2E5D4; color: #6D3E1C; }
+  .tag-innovation { background: #F1E4D0; color: #63401E; }
+  .tag-crossborder{ background: #F2E6D2; color: #6B421F; }
+  .tag-model      { background: #F3E7D5; color: #5E3C1A; }
+  .tag-entry      { background: #EFE0CA; color: #704520; }
+  .tag-surge      { background: #F4E8D5; color: #6B3518; }
+  .tag-local      { background: #F1E4CE; color: #6C4220; }
+  .tag-finance    { background: #F0E2CC; color: #683D1C; }
+  .tag-data       { background: #F1E5D0; color: #63421E; }
+  .tag-trust      { background: #F0E4D0; color: #6D3F1C; }
+  .tag-esg        { background: #E8F0E0; color: #3B5E1A; }
+  .tag-security   { background: #F5E8E0; color: #7B3A1A; }
+
+  .news-item .item-desc {
+    font-size: 14px;
+    color: #4A3E30;
+    line-height: 1.78;
+    margin: 6px 0 10px;
+  }
+  .news-item .item-meta {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 12px;
+    color: #A89880;
+    line-height: 1.8;
+  }
+  .news-item .item-source {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #968878;
+  }
+  .news-item .item-link {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #8B6920;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .top5-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .top5-table th {
+    background: #D4BE9C;
+    color: #4A2C1A;
+    font-weight: 600;
+    padding: 11px 8px;
+    text-align: center;
+    border-bottom: 2px solid #8B6920;
+  }
+  .top5-table td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid #E8D8C0;
+    color: #4A3E30;
+    background: #fff;
+  }
+  .top5-table tr:first-child td {
+    font-weight: 600;
+    color: #4A2C1A;
+    background: #FBF7F1;
+  }
+
+  .observe-block {
+    background: #FBF8F4;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    border: 1px solid #E5D5BC;
+  }
+  .observe-block .observe-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 7px;
+  }
+  .observe-block .observe-text {
+    font-size: 13.5px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+
+  .linping-focus {
+    background: #F4ECD8;
+    border: 1px solid #C9AD7A;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 22px 0;
+  }
+  .linping-focus .lf-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 12px;
+  }
+  .linping-focus .lf-text {
+    font-size: 14px;
+    color: #3A2E20;
+    line-height: 1.85;
+  }
+
+  .reminder-box {
+    background: #FAF7F0;
+    border: 1px solid #D8C5A5;
+    border-left: 4px solid #8B6920;
+    border-radius: 6px;
+    padding: 15px 18px;
+    margin: 18px 0;
+    font-size: 13px;
+    color: #5C3D1A;
+    line-height: 1.85;
+  }
+
+  .daily-footer {
+    background: #F2EBE0;
+    padding: 22px 24px;
+    text-align: center;
+    border-top: 1px solid #E5D8C4;
+    border-radius: 8px;
+    margin: 0 22px 18px;
+  }
+  .daily-footer .footer-brand {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6B4528;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .daily-footer .footer-editor {
+    font-size: 12px;
+    color: #A89880;
+    margin-bottom: 4px;
+  }
+  .daily-footer .footer-date {
+    font-size: 12px;
+    color: #A89880;
+    margin-bottom: 14px;
+  }
+  .daily-footer .footer-note {
+    font-size: 11px;
+    color: #A89880;
+    line-height: 1.85;
+  }
+
+  .qr-section {
+    background: #fff;
+    padding: 18px 22px 28px;
+    text-align: center;
+  }
+  .qr-section .qr-hint {
+    font-size: 13px;
+    color: #A89880;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+  }
+  .qr-section .qr-box {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background: #fff;
+    border: 2px dashed #D4BE9C;
+    border-radius: 6px;
+    line-height: 120px;
+    font-size: 12px;
+    color: #C9AD7A;
+  }
+</style>
+</head>
+<body>
+
+<!-- === COVER BANNER === -->
+<img class="cover-banner" src="banner_final.png" alt="数据资产日报头图 — 临平数协">
+
+<div class="meta-bar">
+  临数通 · 数据产业周刊编辑部 &nbsp;|&nbsp; 杭州市临平区数据产业协会（临平数协）联合出品
+</div>
+
+<section class="daily-body">
+
+  <!-- ===== 一、今日要闻 ===== -->
+  <section class="section">
+    <div class="section-title">一、今日要闻</div>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">全球智能算力需求将呈指数级增长，2026年成数据中心建设关键年</span>
+        <span class="item-tag tag-hot">重磅</span>
+      </div>
+      <div class="item-desc">中国经济信息社《2026人工智能产业发展趋势研究报告》指出，伴随大模型训练、多模态应用及智能体爆发，全球智能算力需求将呈指数级增长。2025年全国算力中心总用电量达1700亿千瓦时，"十五五"期间年均新增1000亿千瓦时以上，预计2030年达8000亿千瓦时，占全社会用电量约6%。算力基础设施正进入空前规模扩张期，数据成为驱动这一浪潮的核心燃料。</div>
+      <div class="item-meta">
+        <span class="item-source">来源：新华财经 · 2026-06-09</span>
+        &nbsp;&nbsp;
+        <a class="item-link" href="https://finance.sina.com.cn/jjxw/2026-06-09/doc-iniauzkt5055642.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">重庆落地两笔大额数字人民币跨境交易，合计超35亿元</span>
+        <span class="item-tag tag-hot">重磅</span>
+      </div>
+      <div class="item-desc">建设银行重庆市分行成功办理两笔多边央行数字货币桥资本项下跨境结算交易，单笔金额分别为20.78亿元和14.76亿元。这标志着重庆市数字人民币跨境业务从"试点探索"向实质化、规模化应用转型。数字人民币跨境结算依托区块链技术，可实现跨境支付T+0清算，大幅降低汇兑成本和数据流通壁垒，为跨境贸易数据资产化提供新路径。</div>
+      <div class="item-meta">
+        <span class="item-source">来源：人民银行重庆市分行 · 2026-06-03</span>
+        &nbsp;&nbsp;
+        <a class="item-link" href="https://chongqing.pbc.gov.cn/chongqing/107665/2026060310094321682/index.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">数据资产价值评估新国标5月1日正式生效，附7个标准评估案例</span>
+        <span class="item-tag tag-framework">框架</span>
+      </div>
+      <div class="item-desc">数据资产价值评估最新国家标准于5月1日正式生效，明确了收益法、成本法、市场法三大评估路径，并公布7个典型案例，涵盖城投公交数据（700亿条）、银行征信数据（2.8亿元入账）、航运数据（上市公司标杆）等多行业场景。该标准将成为企业数据资产合规入表、融资质押的权威依据，数据资产化进程有望提速。</div>
+      <div class="item-meta">
+        <span class="item-source">来源：百家号 · 2026-05-01</span>
+        &nbsp;&nbsp;
+        <a class="item-link" href="https://baijiahao.baidu.com/s?id=1863914670904745237" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- ===== 二、政策动态 ===== -->
+  <section class="section">
+    <div class="section-title">二、政策动态</div>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">4</span>
+        <span class="item-title">国家发改委等五部门联合印发《深化智慧城市发展推进全域数字化转型行动计划》</span>
+        <span class="item-tag tag-urgent">急</span>
+      </div>
+      <div class="item-desc">国家发改委、国家数据局、财政部、住建部、自然资源部联合发布该行动计划，明确推进城市数据全域汇聚、跨层级跨部门数据共享，以"城市数据一张图"为目标，构建数字孪生城市基础底座。文件强调数据资源的确权、登记与开放利用，为城市级数据资产化提供顶层指引，智慧城市将成为数据要素规模化落地的最大场景之一。</div>
+      <div class="item-meta">
+        <span class="item-source">来源：国家发改委 · 2025-10-31（持续落地）</span>
+        &nbsp;&nbsp;
+        <a class="item-link" href="https://www.ndrc.gov.cn/xxgk/zcfb/tz/202510/t20251031_1401297.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">5</span>
+        <span class="item-title">六部门联合发布《2026年中小企业数字化转型与绿色化改造推进方案》</span>
+        <span class="item-tag tag-attention">关注</span>
+      </div>
+      <div class="item-desc">工信部、国家发改委、财政部、生态环境部等六部门联合发文，聚焦中小企业数字化转型，明确补贴标准、试点城市扩围及绿色数据管理要求。方案要求企业在申请补贴时须提交数据治理情况说明，将数据资产管理能力纳入评估维度，倒逼中小企业加快数据资产化布局，为协会会员企业提供新的政策红利窗口。</div>
+      <div class="item-meta">
+        <span class="item-source">来源：工信部 · 2026-05-16</span>
+        &nbsp;&nbsp;
+        <a class="item-link" href="https://www.sohu.com/a/1024682768_122658410" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">6</span>
+        <span class="item-title">国家数据局《2026年数字经济发展工作要点》确立八大任务方向</span>
+        <span class="item-tag tag-framework">框架</span>
+      </div>
+      <div class="item-desc">国家数据局印发工作要点，八大重点任务包括：深化数据要素市场化配置改革、筑牢数字基础设施底座、强化数据赋能人工智能发展等。其中明确"加快建立全国统一数据产权登记制度"，印发登记指引，将成为2026年数据资产化的基础性制度文件，为企业数据资产合规持有提供法律锚点。</div>
+      <div class="item-meta">
+        <span class="item-source">来源：国家数据局 · 2026-05-19</span>
+        &nbsp;&nbsp;
+        <a class="item-link" href="https://www.nda.gov.cn/sjj/ywpd/szjj/0519/20260519194643007508935_pc.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- ===== 三、行业观察 ===== -->
+  <section class="section">
+    <div class="section-title">三、行业观察</div>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">7</span>
+        <span class="item-title">国家数据局推动可信数据空间、隐私计算、区块链等技术路线加速落地</span>
+        <span class="item-tag tag-innovation">创新</span>
+      </div>
+      <div class="item-desc">国家数据局在广州召开数据基础设施建设现场会，明确三条技术攻关方向：可信数据空间、隐私计算、区块链，并探索数据编织、流式处理等新技术。会议强调"数场"（数据市场基础设施）建设，通过多方安全计算实现"数据可用不可见"，打通数据流通的安全合规关，为数据要素市场奠定技术底座。</div>
+      <div class="item-meta">
+        <span class="item-source">来源：财闻网 · 2026-05-21</span>
+        &nbsp;&nbsp;
+        <a class="item-link" href="https://www.caiwennews.com/article/1453051.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">8</span>
+        <span class="item-title">算力竞争进入"系统性"时代，AI算力硬件呈现三大分化趋势</span>
+        <span class="item-tag tag-market">市场</span>
+      </div>
+      <div class="item-desc">据算力硬件中期策略研报，AI算力竞争已从单点算力比拼升级为"系统性"时代——芯片、网络、存储、冷却需协同设计。市场呈现三大分化：国产芯片快速追赶自给率，云厂商算力投资加速，边缘算力需求爆发。数据中心已从"存储中心"转型为"算数中心"，数据的价值挖掘能力决定算力投资回报率，数据资产质量成为核心竞争力。</div>
+      <div class="item-meta">
+        <span class="item-source">来源：MSN财经 · 2026-05</span>
+        &nbsp;&nbsp;
+        <a class="item-link" href="https://www.msn.cn/zh-cn/技术/云计算/2026年5月ai算力硬件年中策略-竞争进入-系统性-时代/ar-AA24o77M" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">9</span>
+        <span class="item-title">上海探索基于区块链的跨境人民币结算机制，数字金融数据基础设施加速构建</span>
+        <span class="item-tag tag-crossborder">跨境</span>
+      </div>
+      <div class="item-desc">上海市政府办公厅印发《关于深化上海全球资产管理中心建设的若干意见》，明确探索基于区块链的跨境人民币结算机制，构建数字人民币跨境金融基础设施体系，推动数字人民币向金融市场、跨境贸易等深层场景落地。跨境结算数据的标准化、可信化将为数字贸易数据资产化创造新机遇。</div>
+      <div class="item-meta">
+        <span class="item-source">来源：雪球 · 2026-06</span>
+        &nbsp;&nbsp;
+        <a class="item-link" href="https://xueqiu.com/2744910577/393544460" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- ===== 四、数据入表与资本化 ===== -->
+  <section class="section">
+    <div class="section-title">四、数据入表与资本化</div>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">10</span>
+        <span class="item-title">河钢集团"模型+数据集"双资产入表落地，钢铁行业数字估值重塑</span>
+        <span class="item-tag tag-entry">入表</span>
+      </div>
+      <div class="item-desc">2026年3月，河钢集团完成物流线路智能匹配模型、供应商智能风险洞察数据集双资产入表，两项资产评估后写入资产负债表，成为钢铁行业数字资产化标杆案例。此次入表采用收益法评估，以未来五年数据贡献收益折现，净资产显著增厚，融资成本下降，为传统重工业企业数据资产化开辟示范路径。</div>
+      <div class="item-meta">
+        <span class="item-source">来源：搜狐财经 · 2026-04-28</span>
+        &nbsp;&nbsp;
+        <a class="item-link" href="https://news.sohu.com/a/1015787691_122631800" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">11</span>
+        <span class="item-title">中远海科船视宝航运数据成功入表，上市公司数据资产化树立新标杆</span>
+        <span class="item-tag tag-entry">入表</span>
+      </div>
+      <div class="item-desc">中远海科（上市公司）将船视宝全球船舶位置、航线、气象等航运数据资产评估入表，预测未来五年坏账减少、利息增长收益3.2亿元，评估值2.8亿元，全额计入无形资产。该案例打通了"数据评估→入表→披露→市场认可"全链条，为资本市场提供可复制的数据资产会计处理范本。</div>
+      <div class="item-meta">
+        <span class="item-source">来源：百家号 · 2026-05-01</span>
+        &nbsp;&nbsp;
+        <a class="item-link" href="https://baijiahao.baidu.com/s?id=1863914670904745237" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <p style="font-size:13.5px;color:#4A2C1A;font-weight:700;margin:14px 0 8px;">近期数据资产入表典型案例（TOP5）</p>
+    <table class="top5-table">
+      <thead>
+        <tr>
+          <th>企业/机构</th>
+          <th>数据类型</th>
+          <th>入表方式</th>
+          <th>估值规模</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>中远海科</td>
+          <td>航运/气象数据</td>
+          <td>无形资产</td>
+          <td>2.8亿元</td>
+        </tr>
+        <tr>
+          <td>河钢集团</td>
+          <td>物流模型+数据集</td>
+          <td>双资产入表</td>
+          <td>未披露</td>
+        </tr>
+        <tr>
+          <td>南京公交集团</td>
+          <td>700亿条公交数据</td>
+          <td>无形资产</td>
+          <td>未披露</td>
+        </tr>
+        <tr>
+          <td>银行征信机构</td>
+          <td>征信数据</td>
+          <td>无形资产</td>
+          <td>2.8亿元</td>
+        </tr>
+        <tr>
+          <td>某风电企业</td>
+          <td>风机运行数据集</td>
+          <td>数据资产</td>
+          <td>待披露</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <!-- ===== 五、地方实践 ===== -->
+  <section class="section">
+    <div class="section-title">五、地方实践</div>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">12</span>
+        <span class="item-title">2026"数据要素×"大赛上海分赛在浦东启动，长三角数据竞技格局成型</span>
+        <span class="item-tag tag-event">赛事</span>
+      </div>
+      <div class="item-desc">6月2日，2026年"数据要素×"大赛上海分赛在浦东新区数智天地启动，由上海市数据局、市委网信办等19家单位联合主办。上海分赛聚焦工业制造、交通运输、医疗健康等重点赛道，与宁波（6月6日）、浙江分赛形成长三角联动格局，区域数据要素竞技体系初步成型，为跨域数据共享合作奠定竞技基础。</div>
+      <div class="item-meta">
+        <span class="item-source">来源：澎湃新闻 · 2026-06-02</span>
+        &nbsp;&nbsp;
+        <a class="item-link" href="https://m.thepaper.cn/newsDetail_forward_33313543" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">13</span>
+        <span class="item-title">宁波召开2026数据要素与数字产业生态创新大会，聚焦先进制造数据赋能</span>
+        <span class="item-tag tag-local">地方</span>
+      </div>
+      <div class="item-desc">6月6日，2026数据要素与数字产业生态创新大会在宁波举行，由宁波市数据局指导，华为技术有限公司参与共建，聚焦宁波先进制造、现代服务业与数字经济深度融合。会议重点推进制造业数据资产化，探索"数据+算力+场景"三要素协同，宁波经验为临平制造业集群数据资产化提供直接参考。</div>
+      <div class="item-meta">
+        <span class="item-source">来源：凤凰网宁波 · 2026-06-06</span>
+        &nbsp;&nbsp;
+        <a class="item-link" href="http://nb.ifeng.com/c/8toYrKXA208" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">14</span>
+        <span class="item-title">国家发改委联合工信部发布中小企业数字化转型专项扶持计划，试点城市扩容</span>
+        <span class="item-tag tag-attention">关注</span>
+      </div>
+      <div class="item-desc">2026年6月4日，国家发改委联合工信部发布《中小企业数字化转型专项扶持计划》，旨在加速中小企业融入数字经济浪潮。文件明确补贴标准、试点城市范围扩大至全国主要制造业集聚区，并将企业数据治理能力纳入评估指标体系，为临平区制造业企业数字化转型提供政策保障。</div>
+      <div class="item-meta">
+        <span class="item-source">来源：牛企俱乐部 · 2026-06-04</span>
+        &nbsp;&nbsp;
+        <a class="item-link" href="https://www.niuqiclub.com/news/334807.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- ===== 深度观察 ===== -->
+  <section class="section">
+    <div class="section-title">深度观察</div>
+
+    <section class="observe-block">
+      <div class="observe-label">① 算力与数据：从"基础设施"到"资产底座"的范式转移</div>
+      <div class="observe-text">
+        全球算力需求爆发，本质上是数据价值密度提升的必然结果。2025年全国算力中心用电1700亿千瓦时，这一数字背后是海量数据的实时处理与价值提炼。当算力投资规模持续扩大，数据资产的质量和可用性将直接决定算力的ROI——"算力竞争就是数据质量竞争"的判断正在被市场验证。对数据要素市场参与者而言，提升数据资产的标准化程度和流通能力，是赢得算力时代红利的关键。
+      </div>
+    </section>
+
+    <section class="observe-block">
+      <div class="observe-label">② 数字人民币跨境：从结算工具到数据信任基础设施</div>
+      <div class="observe-text">
+        重庆35亿元数字人民币跨境大额交易落地，上海探索区块链跨境结算机制，数字人民币正从"零售场景试点"加速向"批发级跨境结算"演进。数字人民币的独特价值不仅在于结算效率，更在于其天然具备的交易数据可信、可追溯、可审计特性，为跨境贸易数据资产化奠定信任基础。未来，数字人民币结算生成的交易数据，有望成为企业征信、贸易融资、供应链金融的高质量数据资产。
+      </div>
+    </section>
+
+    <section class="observe-block">
+      <div class="observe-label">③ 入表国标生效：数据资产化从"摸石头"到"有章可循"</div>
+      <div class="observe-text">
+        数据资产价值评估新国标5月1日生效，是2026年数据资产化进程中的里程碑。此前，数据入表面临"评估标准不统一、会计处理有争议"两大痛点，导致众多企业望而却步。新国标明确评估方法论和7类场景案例，为企业提供可操作的合规路径。预计下半年数据资产入表将迎来加速期，各地数据交易所也将围绕新国标更新交易规则，数据资产市场化流通条件趋于成熟。
+      </div>
+    </section>
+
+  </section>
+
+  <!-- ===== 临平关注 ===== -->
+  <section class="linping-focus">
+    <div class="lf-title">🔍 临平关注</div>
+    <div class="lf-text">
+      <strong>算力小镇+数据资产：临平双轮驱动数字产业升级的新机遇</strong><br><br>
+      近期全球算力基础设施建设进入爆发期，临平算力小镇（省级特色小镇创建单位）恰逢其时。联通算力中心已落地临平，为区域企业提供低成本算力接入；与此同时，杭州数据要素运营中心（国家数据基础设施典型案例）正加速推动区域数据资产化服务体系建设。<br><br>
+      宁波中小制造企业数据资产化的实践表明，制造业数据具有高密度、场景明确的特点，天然适合入表，临平"2327X"先进制造业集群、G60数智产业园中的企业均具备类似条件。<br><br>
+      临平数协建议：结合数字人民币跨境结算新机遇，重点推动区域外向型制造企业（老板电器等出口导向企业）探索"交易数据资产化+数字人民币结算"协同路径，以外贸数据为突破口，带动全链条数据资产化实践，力争在长三角数据要素竞技格局中占据先机。
+    </div>
+  </section>
+
+  <!-- ===== 特别提醒 ===== -->
+  <section class="reminder-box">
+    <strong>📅 近期重要日程</strong><br>
+    · <strong>2026-06-11</strong>（本周四）｜"数据要素×"大赛浙江分赛报名截止在即，请相关企业抓紧提交材料<br>
+    · <strong>2026-06-15</strong>（下周一）｜数据资产价值评估新国标落地后首批"合规入表辅导"征集开放，临平数协会员企业可优先申报<br>
+    · <strong>2026-06-20前</strong>｜中小企业数字化转型专项扶持计划首批申报窗口，符合条件的临平区制造企业请关注区数据资源管理局官方通知<br>
+    · <strong>持续关注</strong>｜全国统一数据产权登记制度实施细则即将发布，对数据资产确权持有具有重要影响
+  </section>
+
+</section><!-- end daily-body -->
+
+<!-- === FOOTER === -->
+<section class="daily-footer">
+  <div class="footer-brand">临数通 · 数据资产日报</div>
+  <div class="footer-editor">杭州市临平区数据产业协会（临平数协）联合出品</div>
+  <div class="footer-date">2026年6月11日 · 星期四</div>
+  <div class="footer-note">
+    本报告资讯来源于公开渠道，仅供参考，不构成投资建议。<br>
+    数据资产化相关业务请咨询专业机构，注意合规风险。<br>
+    转载请注明来源：临平数协·临数通数据产业周刊
+  </div>
+</section>
+
+<!-- === QR SECTION === -->
+<section class="qr-section">
+  <div class="qr-hint">扫码关注 · 临平数协公众号</div>
+  <div class="qr-box">二维码</div>
+</section>
+
+</body>
+</html>
