@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产日报 - 2026年6月12日</title>
+<style>
+  * { margin:0; padding:0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #F5F1EA;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .cover-banner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #A89880;
+    text-align: center;
+    border-bottom: 1px solid #EBE3D5;
+    letter-spacing: 1px;
+  }
+
+  .daily-body {
+    background: #fff;
+    padding: 24px 22px;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #4A2C1A;
+    padding: 8px 0 8px 14px;
+    border-left: 4px solid #8B6920;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .news-item {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #EBE0CE;
+  }
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .news-item .item-header {
+    margin-bottom: 6px;
+  }
+  .news-item .item-index {
+    display: inline-block;
+    vertical-align: top;
+    background: #8B6920;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 19px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  .news-item .item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2E1F12;
+    line-height: 1.55;
+  }
+  .news-item .item-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .tag-hot        { background: #F0E2D0; color: #6B3A18; }
+  .tag-attention  { background: #F2E6D5; color: #5C3115; }
+  .tag-event      { background: #F1E4D2; color: #7A4520; }
+  .tag-framework  { background: #F0E3D0; color: #5E3316; }
+  .tag-urgent     { background: #F5E8D8; color: #7B3B1A; }
+  .tag-market     { background: #F2E5D4; color: #6D3E1C; }
+  .tag-innovation { background: #F1E4D0; color: #63401E; }
+  .tag-crossborder{ background: #F2E6D2; color: #6B421F; }
+  .tag-model      { background: #F3E7D5; color: #5E3C1A; }
+  .tag-entry      { background: #EFE0CA; color: #704520; }
+  .tag-surge      { background: #F4E8D5; color: #6B3518; }
+  .tag-local      { background: #F1E4CE; color: #6C4220; }
+  .tag-finance    { background: #F0E2CC; color: #683D1C; }
+  .tag-data       { background: #F1E5D0; color: #63421E; }
+  .tag-trust      { background: #F0E4D0; color: #6D3F1C; }
+  .tag-esg        { background: #E8F0E0; color: #3B5E1A; }
+  .tag-security   { background: #F5E8E0; color: #7B3A1A; }
+
+  .news-item .item-desc {
+    font-size: 14px;
+    color: #4A3E30;
+    line-height: 1.78;
+    margin: 6px 0 10px;
+  }
+  .news-item .item-meta {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 12px;
+    color: #A89880;
+    line-height: 1.8;
+  }
+  .news-item .item-source {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #968878;
+  }
+  .news-item .item-link {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #8B6920;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .top5-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .top5-table th {
+    background: #D4BE9C;
+    color: #4A2C1A;
+    font-weight: 600;
+    padding: 11px 8px;
+    text-align: center;
+    border-bottom: 2px solid #8B6920;
+  }
+  .top5-table td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid #E8D8C0;
+    color: #4A3E30;
+    background: #fff;
+  }
+  .top5-table tr:first-child td {
+    font-weight: 600;
+    color: #4A2C1A;
+    background: #FBF7F1;
+  }
+
+  .observe-block {
+    background: #FBF8F4;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    border: 1px solid #E5D5BC;
+  }
+  .observe-block .observe-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 7px;
+  }
+  .observe-block .observe-text {
+    font-size: 13.5px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+
+  .linping-focus {
+    background: #F4ECD8;
+    border: 1px solid #C9AD7A;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 22px 0;
+  }
+  .linping-focus .lf-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 12px;
+  }
+  .linping-focus .lf-text {
+    font-size: 14px;
+    color: #3A2E20;
+    line-height: 1.85;
+  }
+
+  .reminder-box {
+    background: #FAF7F0;
+    border: 1px solid #D8C5A5;
+    border-left: 4px solid #8B6920;
+    border-radius: 6px;
+    padding: 15px 18px;
+    margin: 18px 0;
+    font-size: 13px;
+    color: #5C3D1A;
+    line-height: 1.85;
+  }
+
+  .daily-footer {
+    background: #F2EBE0;
+    padding: 22px 24px;
+    text-align: center;
+    border-top: 1px solid #E5D8C4;
+    border-radius: 8px;
+    margin: 0 22px 18px;
+  }
+  .daily-footer .footer-brand {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6B4528;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .daily-footer .footer-editor {
+    font-size: 12px;
+    color: #A89880;
+    margin-bottom: 4px;
+  }
+  .daily-footer .footer-date {
+    font-size: 12px;
+    color: #A89880;
+    margin-bottom: 14px;
+  }
+  .daily-footer .footer-note {
+    font-size: 11px;
+    color: #A89880;
+    line-height: 1.85;
+  }
+
+  .qr-section {
+    background: #fff;
+    padding: 18px 22px 28px;
+    text-align: center;
+  }
+  .qr-section .qr-hint {
+    font-size: 13px;
+    color: #A89880;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+  }
+  .qr-section .qr-box {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background: #fff;
+    border: 2px dashed #D4BE9C;
+    border-radius: 6px;
+    line-height: 120px;
+    font-size: 12px;
+    color: #C9AD7A;
+  }
+</style>
+</head>
+<body>
+
+<!-- === COVER BANNER === -->
+<img class="cover-banner" src="banner_final.png" alt="数据资产日报头图 — 临平数协">
+
+<div class="meta-bar">
+  临数通 · 数据产业周刊编辑部 &nbsp;|&nbsp; 杭州市临平区数据产业协会（临平数协）联合出品
+</div>
+
+<!-- ========== BODY ========== -->
+<section class="daily-body">
+
+  <!-- ===== 一、今日要闻 ===== -->
+  <section class="section">
+    <div class="section-title">一、今日要闻</div>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">国家数据局"数据要素×"三年行动成果发布：2025年企业数据交易额增长39.8%，活跃数据总量达1.67ZB<span class="item-tag tag-hot">重磅</span></span>
+      </div>
+      <div class="item-desc">
+        6月11日，国家数据局举行新闻发布会，介绍推进"数据要素×"三年行动计划有关情况。数据显示，行动计划实施两年多来取得阶段性显著成效：<strong>2025年全国活跃数据总量为1.67泽字节（ZB），同比增长28.46%</strong>；企业数据产品和服务的数量同比增长29.29%，<strong>交易额同比增长39.8%</strong>——量价齐升，且交易额增速显著高于数量增速，表明数据产品的单位价值在持续提升。场景建设方面，累计发布<strong>417个典型案例</strong>，形成覆盖11个行业领域的<strong>760个"数据要素×"典型场景</strong>，提前超额完成原定"打造300个以上场景"的目标。国家数据局表示，下一阶段将聚焦数据产权登记、流通交易、收益分配等制度建设和场景深化。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：国家数据局 / 新华社 / 百度百家号</span>
+        <span>2026-06-11</span>
+        <a class="item-link" href="https://baijiahao.baidu.com/s?id=1867751577488485548" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">欧盟与韩国签署数字贸易协议，跨境数据流动规则国际化再提速<span class="item-tag tag-crossborder">跨境</span></span>
+      </div>
+      <div class="item-desc">
+        6月11日，欧盟与韩国正式签署<strong>数字贸易协议</strong>，作为对2011年双方自由贸易协定的补充。协议核心条款包括：<strong>促进跨境数据流动、承认电子合同和电子签名、制定消费者保护规则</strong>，旨在降低企业数字化交易成本、扩大服务贸易规模。报道指出，此协议签署于"地缘政治不确定性加剧的背景下"，具有深化数字联盟关系的战略意涵。欧盟是韩国第三大商品贸易伙伴，韩国则是欧盟第八大贸易伙伴。此次协议标志着<strong>欧盟数字治理模式在亚太地区的进一步输出</strong>，将对中国参与全球数字贸易规则制定构成新的竞争压力，也促使中国加速推进加入DEPA（数字经济伙伴关系协定）等国际数据规则谈判。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：新浪财经 / 欧盟委员会 / Reuters</span>
+        <span>2026-06-11</span>
+        <a class="item-link" href="https://finance.sina.com.cn/stock/usstock/c/2026-06-11/doc-iniaysky2370999.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">中央网信办再亮剑：通报30款App个人信息收集使用违规，要求15个工作日内完成整改<span class="item-tag tag-security">安全</span></span>
+      </div>
+      <div class="item-desc">
+        6月11日，中央网信办依据《网络安全法》《个人信息保护法》《网络数据安全管理条例》等法律法规，通报<strong>30款App（含小程序）存在违法违规收集使用个人信息</strong>行为，涉及网易云阅读等多款应用，涵盖阅读、出行、社交、工具等多个领域。这是继6月3日通报71款App后，<strong>2026年个人信息保护系列专项行动的第二次公开通报</strong>，密集程度和处罚力度较往年显著升级。被通报App须在15个工作日内完成整改并上报。分析人士指出，随着《网络数据安全管理条例》进入实施第二年，个人信息保护的执法力度正在从"运动式"走向"常态化"，数据合规已成为企业经营的刚性成本。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：中央网信办 / IT之家 / 中新网</span>
+        <span>2026-06-11</span>
+        <a class="item-link" href="https://www.chinanews.com/gn/2026/06-11/10638423.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===== 二、政策动态 ===== -->
+  <section class="section">
+    <div class="section-title">二、政策动态</div>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">4</span>
+        <span class="item-title">广东自贸区数据出境负面清单政策宣讲会深圳站举行，28领域覆盖、深圳征信首单落地<span class="item-tag tag-urgent">急</span></span>
+      </div>
+      <div class="item-desc">
+        6月11日，广东省互联网信息办公室联合省商务厅、省政务和数据局在深圳前海举办<strong>数据出境负面清单政策宣讲会</strong>，约120家企业代表参会。广东自贸区数据出境负面清单于2026年5月发布，累计覆盖<strong>28个领域</strong>，包括人工智能训练数据、自动驾驶、企业信用信息服务、医疗、零售、清结算等。宣讲会重点解读了数据出境安全评估、标准合同备案、负面清单适用条件等三大路径。值得关注的是，<strong>深圳征信服务有限公司</strong>已依托该制度完成首笔数据合规出境，标志着负面清单管理制度进入实质实操阶段。前海蛇口自贸片区按"一地制定、多地适用"原则可参照执行。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：南方都市报 / 广东省网信办 / 前海管理局</span>
+        <span>2026-06-11</span>
+        <a class="item-link" href="https://www.163.com/dy/article/KV67EDEC05129QAF.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">5</span>
+        <span class="item-title">法治日报：加快完善数据跨境流动法治方案，三法框架夯实"中国方案"<span class="item-tag tag-framework">框架</span></span>
+      </div>
+      <div class="item-desc">
+        6月10日，《法治日报》刊发专题文章指出，我国数据出境安全评估制度框架已基本形成。以<strong>《网络安全法》《数据安全法》《个人信息保护法》</strong>为法律根基，以《数据出境安全评估办法》《促进和规范数据跨境流动规定》为具体实施规则，以《数据出境安全评估申报指南》为操作指引，辅以行业规范，形成了多层次、多路径的数据跨境治理体系。文章强调，我国拥有海量数据资源和蓬勃发展的数字经济，这是<strong>参与全球数据规则博弈的独特优势</strong>，下一步需加快数据跨境流动法规的精细化落地，在安全与发展之间寻求动态平衡。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：法治日报 · 2026-06-10</span>
+        <a class="item-link" href="http://h5epaper.legaldaily.com.cn/content/20260610/Articel09003SR.htm" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">6</span>
+        <span class="item-title">国家数据局征集中国—上合组织国家数字经济合作典型案例，截止7月17日<span class="item-tag tag-attention">关注</span></span>
+      </div>
+      <div class="item-desc">
+        6月10日，国家数据局发布通知，面向国内外公开征集<strong>中国—上合组织国家数字经济合作典型案例</strong>，截止日期为2026年7月17日。征集方向涵盖数字基础设施建设、数字贸易便利化、数据安全与隐私保护、人工智能合作应用等领域。这是在<strong>中国—中亚峰会数字经济合作共识</strong>框架下的具体落地举措，旨在梳理和推广中国与上合组织国家在数字经济领域的合作经验，打造可复制的国际合作模式。对企业而言，入选典型案例将获得国家层面背书，有助于拓展"一带一路"沿线数据业务布局。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：国家数据局 · 2026-06-10</span>
+        <a class="item-link" href="https://www.nda.gov.cn/sjj/zwgk/tzgg/0610/20260610160536317357478_pc.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===== 三、行业观察 ===== -->
+  <section class="section">
+    <div class="section-title">三、行业观察</div>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">7</span>
+        <span class="item-title">外贸前5月进出口20.68万亿增15.3%，数字化贸易成增长新引擎<span class="item-tag tag-market">市场</span></span>
+      </div>
+      <div class="item-desc">
+        海关总署6月9日发布数据显示，2026年前5个月我国货物贸易进出口总值<strong>20.68万亿元</strong>，同比增长15.3%，较前4个月加快0.4个百分点。其中5月单月进出口4.45万亿元，同比增速提升至<strong>16.9%</strong>。进口连续3个月同比增长超两成，人工智能相关产品进出口逐月扩大，对非洲国家进出口历史同期首破1万亿元。分析人士指出，外贸高速增长背后，<strong>跨境电商、数字服务贸易等新业态贡献率持续提升</strong>，数据驱动的智能供应链、AI选品、数字支付等正在重塑中国外贸的竞争优势。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：海关总署 / 商务部 / 新浪财经</span>
+        <span>2026-06-09</span>
+        <a class="item-link" href="https://cacs.mofcom.gov.cn/article/gnwjmdt/gn/202606/188286.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">8</span>
+        <span class="item-title">第10届中国-南亚博览会开幕，首设服务贸易馆，RCEP成员国实现全覆盖<span class="item-tag tag-crossborder">跨境</span></span>
+      </div>
+      <div class="item-desc">
+        6月11日，第10届中国-南亚博览会在云南昆明开幕（展期至6月16日），超过66个国家和地区、国际组织报名参展参会，<strong>南亚、东南亚及RCEP成员国首次实现全覆盖</strong>。本届南博会首次设立<strong>服务贸易馆</strong>，聚焦数字贸易、数据服务、跨境电商、金融科技等新兴领域。云南省商务厅表示，南博会将打造面向南亚东南亚的<strong>"数字丝绸之路"核心枢纽</strong>，推动跨境数据流动、数字支付互联互通等议题在区域层面取得实质进展。对西部省份而言，南博会服务贸易馆的设立意味着数字贸易正从沿海向内陆纵深拓展。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：中国一带一路网 / 云南省商务厅</span>
+        <span>2026-06-11</span>
+        <a class="item-link" href="https://www.yidaiyilu.gov.cn/p/0M69OQI4.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">9</span>
+        <span class="item-title">绿色金融科技融入数据要素：碳数据管理市场规模加速扩容，ESG披露进入"数据驱动"时代<span class="item-tag tag-esg">ESG</span></span>
+      </div>
+      <div class="item-desc">
+        6月11日，中研网发布《2026绿色金融科技行业市场发展规模与趋势分析》报告指出，绿色金融科技是大数据、人工智能、区块链等数字技术与绿色金融深度融合形成的新兴产业，核心以<strong>技术创新赋能绿色信贷、碳金融、ESG投资</strong>等领域。报告显示，2026年碳数据管理市场规模加速扩容，企业碳排放数据的采集、核算、披露正从"手动填报"转向"自动化+智能化"。与此同时，欧盟<strong>CSRD（企业可持续发展报告指令）</strong>对中国出口企业的ESG数据披露要求不断提升，碳数据已成为企业跨境贸易的新"通行证"，数据资产管理与ESG合规的交叉融合将成为2026年下半年的重要产业趋势。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：中研网 / 北京绿色金融与可持续发展研究院</span>
+        <span>2026-06-11</span>
+        <a class="item-link" href="https://www.chinairn.com/scfx/20260611/174428201.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===== 四、数据入表与资本化 ===== -->
+  <section class="section">
+    <div class="section-title">四、数据入表与资本化</div>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">10</span>
+        <span class="item-title">监管重拳！数据资产ABS被全面叫停：沪深交易所窗口指导暂停申报发行，城投套利路径被封堵<span class="item-tag tag-urgent">急</span></span>
+      </div>
+      <div class="item-desc">
+        据财新等多家媒体6月5日报道，<strong>沪深交易所已于6月3日通过窗口指导方式，全面暂停数据资产ABS的申报与发行审核流程</strong>，已过会项目亦被暂停封卷。首单落地尚不满一年，数据资产ABS在2026年上半年申报和发行量出现井喷，城投平台争相涌入这一"点数成金"的新赛道，其中潜藏的风险——包括<strong>底层数据资产评估虚高、城投借数据名义变相新增隐性债务、数据权属不清晰</strong>等问题——已引发监管部门高度关注。此次全面暂停意味着数据资产融资将从"野蛮生长"进入"规范发展"新阶段，预计监管部门将在完善数据资产评估标准、强化ABS底层资产穿透审查后，再逐步放开闸门。对数据资产化行业而言，短期阵痛难以避免，但长期有利于建立更健康的信用体系。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：财新网 / 新浪财经 / 同花顺财经</span>
+        <span>2026-06-05</span>
+        <a class="item-link" href="https://finance.sina.cn/2026-06-05/detail-iniaiyys8430026.d.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <!-- TOP5 Table -->
+    <p style="font-size:13.5px;color:#4A2C1A;font-weight:700;margin:14px 0 8px;">数据资产融资模式对比——ABS叫停前后的格局变化</p>
+    <table class="top5-table">
+      <thead>
+        <tr>
+          <th>融资模式</th>
+          <th>当前状态</th>
+          <th>代表规模</th>
+          <th>受影响程度</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>数据资产ABS</td>
+          <td>🔴 全面暂停</td>
+          <td>储架累计近1700亿</td>
+          <td>重大冲击</td>
+        </tr>
+        <tr>
+          <td>数据资产质押贷款</td>
+          <td>🟢 正常运行</td>
+          <td>覆盖28省，单笔千万至亿级</td>
+          <td>影响有限</td>
+        </tr>
+        <tr>
+          <td>数据信托融资</td>
+          <td>🟢 持续拓展</td>
+          <td>累计突破80亿</td>
+          <td>影响有限</td>
+        </tr>
+        <tr>
+          <td>数据资产入表（会计）</td>
+          <td>🟢 持续推进</td>
+          <td>370+企业试点</td>
+          <td>无直接影响</td>
+        </tr>
+        <tr>
+          <td>数据资产作价出资</td>
+          <td>🟡 审慎推进</td>
+          <td>个案探索阶段</td>
+          <td>间接影响</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <section class="news-item" style="margin-top: 18px;">
+      <div class="item-header">
+        <span class="item-index">11</span>
+        <span class="item-title">宝钢股份发布碳排放数据管理体系，ESG数据资产化进入制造业实操<span class="item-tag tag-esg">ESG</span></span>
+      </div>
+      <div class="item-desc">
+        6月5日（第55个世界环境日），宝钢股份以"智绿融合 '碳'索未来"为主题举办主题活动，正式发布<strong>2025年度可持续发展报告及碳排放数据管理体系</strong>。宝钢通过物联网传感器+大数据平台实现碳排放数据的<strong>实时采集、自动核算、智能披露</strong>，2025年度实现减碳超200万吨。这一体系实质上将碳排放数据转化为<strong>可计量、可审计、可交易的数据资产</strong>，为ESG数据资产化提供了制造业范本。分析人士指出，宝钢模式验证了一条路径：传统制造企业的节能减排数据，经过标准化治理后，完全具备入表条件——这意味着数据资产化的边界正在从"数字原生企业"扩展至"传统工业企业"。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：东方财富网 / 宝钢股份 / 世界环境日</span>
+        <span>2026-06-05</span>
+        <a class="item-link" href="https://finance.eastmoney.com/a/202606053762296647.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===== 五、地方实践 ===== -->
+  <section class="section">
+    <div class="section-title">五、地方实践</div>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">12</span>
+        <span class="item-title">"数聚京蓉·链动锦江"：2026数据要素赋能制造业合作交流会在京举办，成渝双城数据战略升级<span class="item-tag tag-local">地方</span></span>
+      </div>
+      <div class="item-desc">
+        6月10日，"数聚京蓉·链动锦江"——2026数据要素赋能制造业高质量发展合作交流会在北京成功举办，由锦江区、成都传媒集团和中关村智酷联合主办，百余位政企学界嘉宾共商数据要素与实体经济深度融合路径。会议聚焦<strong>制造业数据采集治理、工业数据资产化、AI+智能制造</strong>三大方向，推动京蓉两地产业协同。成都高新区同步推进西部数据交易中心建设，锦江区发布工业数据资产化试点方案——成渝双城经济圈正在形成<strong>以数据要素驱动制造业升级的"西部样板"</strong>，为中西部数字经济差异化发展探索新路径。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：新浪财经 / 成都传媒集团 / 中关村智酷</span>
+        <span>2026-06-10</span>
+        <a class="item-link" href="https://finance.sina.com.cn/roll/2026-06-10/doc-iniaxqxp4448948.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">13</span>
+        <span class="item-title">"数据要素×"大赛贵州分赛+陕西分赛相继启动，中西部数据竞赛格局加速成型<span class="item-tag tag-event">赛事</span></span>
+      </div>
+      <div class="item-desc">
+        6月7-8日，2026年"数据要素×"大赛<strong>陕西分赛</strong>和<strong>贵州分赛</strong>相继启动。陕西分赛聚焦文旅融合、产业创新、数字政府核心领域，面向全国征集数据要素×优秀场景案例；贵州分赛设置<strong>12条赛道</strong>，涵盖工业制造、现代农业、数字贸易、数据安全等方向。至此，<strong>长三角（上海/宁波/浙江）、珠三角（广东）、中西部（贵州/陕西）三大区域数据竞赛体系已全面铺开</strong>，加上此前已启动的成渝交流会、即将举办的西部数博会，中西部地区正以赛为媒加速数据要素市场建设，试图在数字经济版图中抢占差异化先机。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：贵州省大数据发展领导小组 / 洛南县政府 / 陕西省数据和政务服务局</span>
+        <span>2026-06-07/08</span>
+        <a class="item-link" href="https://baijiahao.baidu.com/s?id=1867433983305068710" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">14</span>
+        <span class="item-title">第七届西部数字经济博览会6月26日西安开幕，"一带一路"数字丝绸之路成亮点<span class="item-tag tag-local">地方</span></span>
+      </div>
+      <div class="item-desc">
+        第七届西部数字经济博览会将于6月26日至28日在西安国际会展中心举办，由西安市人民政府主办，主题为<strong>"数聚丝路活力 智绘西部未来"</strong>。博览会规划2万平方米展览面积，设置九大主题展区，打造"1+1+8+N"活动矩阵。重点邀请中亚五国、德国等10个国家及港澳地区政企代表团参会，同期将举办<strong>西安市"数据要素×"场景案例征集与展示活动</strong>。博览会的国际化定位标志着西部数字经济正从"区域自循环"走向"丝路协同"，数据要素的跨境合作有望成为西北地区数字经济发展的新增长极。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：西安市人民政府 / 百度百科</span>
+        <span>2026-06-26</span>
+        <a class="item-link" href="https://baike.baidu.com/item/%E7%AC%AC%E4%B8%83%E5%B1%8A%E8%A5%BF%E9%83%A8%E6%95%B0%E5%AD%97%E7%BB%8F%E6%B5%8E%E5%8D%9A%E8%A7%88%E4%BC%9A/67907976" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===== 深度观察 ===== -->
+  <section class="section">
+    <div class="section-title">深度观察</div>
+
+    <section class="observe-block">
+      <div class="observe-label">观察一：从"量价齐升"到"规范整肃"——数据资产化的上半场与下半场</div>
+      <div class="observe-text">
+        6月11日国家数据局"数据要素×"成果发布会呈现出令人振奋的"量价齐升"图景——活跃数据1.67ZB、交易额增长39.8%、760个典型场景。然而仅在一周前，沪深交易所刚刚全面叫停了数据资产ABS，给狂飙突进的数据资产融资踩下急刹车。这两条新闻放在一起看，恰好勾勒出数据资产化进程的<strong>"上半场"与"下半场"分水岭</strong>：上半场以"释放价值"为旗帜，鼓励创新、容忍试错、追求速度；下半场以"规范发展"为准绳，强调标准、防范风险、追求质量。ABS叫停并非否定数据资产化方向，而是对"伪数据资产"和"监管套利"的精准纠偏——正如科创板注册制改革中的现场检查撤否潮，短期阵痛是市场走向成熟的必经阶段。
+      </div>
+    </section>
+
+    <section class="observe-block">
+      <div class="observe-label">观察二：数据跨境"三路并进"——欧盟数字规则扩张、中国制度框架成型的全球博弈</div>
+      <div class="observe-text">
+        欧盟与韩国签署数字贸易协议、广东自贸区数据出境负面清单进入实操、法治日报系统阐述中国数据跨境治理框架——本周三条线索共同指向一个判断：<strong>全球数据跨境流动规则正在加速分化与重构</strong>。欧盟以FTA补充协议的形式向亚太输出其数字治理标准，中国则以自贸区负面清单+安全评估+标准合同三路径构建自主框架。值得关注的是，两条路径并非零和博弈——广东负面清单覆盖的28个领域与欧盟数字贸易协议中的条款高度重叠（人工智能、金融、医疗），说明<strong>全球数据治理正在形成"求同存异"的务实共识</strong>。对长三角企业而言，既要跟上国内制度创新步伐，也要预判国际规则演变，做到"一套数据合规体系适配多套规则"。
+      </div>
+    </section>
+
+    <section class="observe-block">
+      <div class="observe-label">观察三：中西部数字经济的"差异化突围"——成渝制造、贵州算力、陕西丝路的各自赛道</div>
+      <div class="observe-text">
+        本周成渝数据要素赋能制造业交流会、贵州分赛12条赛道、西部数博会丝路主题三件事串联起一条清晰线索：<strong>中西部省份正在放弃"全赛道竞争"，转向基于自身禀赋的差异化突围</strong>。成渝以制造业数据资产化为切口（契合其工业基地定位），贵州以算力+数据安全为特色（延续"大数据之都"基因），陕西以丝路跨境数据合作为旗帜（依托"一带一路"枢纽地位）——三条路径避免了与长三角、珠三角的正面竞争，形成了<strong>"一个西部、三种模式"的多元格局</strong>。对临平而言，中西部"差异化突围"的启示在于：与其在数据交易所数量、政策力度上与一线城市硬拼，不如聚焦"工业数据资产化"这一独特优势，做深做透制造业数据服务的垂直赛道。
+      </div>
+    </section>
+  </section>
+
+  <!-- ===== 临平关注 ===== -->
+  <section class="linping-focus">
+    <div class="lf-title">📍 临平关注</div>
+    <div class="lf-text">
+      <strong>本周多条重磅动态与临平数据产业发展方向高度关联，三大机遇值得把握。</strong><br><br>
+      <strong>第一，数据资产ABS叫停是"危"更是"机"——临平的务实路径更具韧性。</strong>沪深交易所叫停ABS主要针对城投借数据名义变相融资的"伪数据资产"，而临平以老板电器、运达风电等制造业龙头企业为底座，其工业数据资产具有<strong>真实业务场景、清晰权属关系、可验证经济价值</strong>三大特征，恰恰是监管鼓励的方向。临平数协应在行业洗牌期主动引导区内企业走"先入表、后融资"的合规路径，避免重蹈城投套利覆辙。<br><br>
+      <strong>第二，数据出境负面清单"广东样本"为浙江提供参照，临平企业应提前布局跨境数据合规。</strong>广东负面清单覆盖28个领域的实操经验，对浙江自贸区数据跨境制度创新具有直接参考价值。临平区出口导向型制造企业（老板电器、春风动力等）的外贸数据、供应链数据天然具备跨境流动需求，建议协会近期组织一次数据出境合规专题辅导。<br><br>
+      <strong>第三，中西部"差异化突围"倒逼临平重新审视自身定位——"工业数据资产化"就是临平的护城河。</strong>成渝以制造业数据为切口、贵州以算力为旗帜、陕西以丝路为纽带，临平的差异化优势同样清晰：<strong>算力小镇+数据运营中心+制造业集群"三件套"</strong>，构成了全国罕见的"数据采集（工厂）—数据治理（运营中心）—算力支撑（联通算力中心）—资产化服务（协会）"全链条闭环。下一步应着力将这一闭环从"概念"推向"产品"，率先输出"临平工业数据资产化标准方案"，抢占行业话语权。
+    </div>
+  </section>
+
+  <!-- ===== 特别提醒 ===== -->
+  <section class="reminder-box">
+    <strong>📌 近期重点事件日历</strong><br>
+    · <strong>2026-06-12～14</strong>（今起）｜2026中国国际数字经济博览会（石家庄），聚焦数据要素市场化<br>
+    · <strong>2026-06-16～18</strong>｜2026中国（广州）跨境电商交易会，亚马逊发布《2026中国出口跨境电商发展趋势白皮书》<br>
+    · <strong>2026-06-18～20</strong>｜2026全球数据合规峰会（上海），GDPR实施八周年特别论坛<br>
+    · <strong>2026-06-26～28</strong>｜第七届西部数字经济博览会（西安），"一带一路"数字丝绸之路专题<br>
+    · <strong>2026-07-01</strong>｜DCMM 2.0新国标（GB/T 36073-2025）正式实施，倒计时19天<br>
+    · <strong>2026-07-17</strong>｜中国—上合组织国家数字经济合作典型案例征集截止<br>
+    · <strong>持续关注</strong>｜数据资产ABS监管细则修订进展，预计Q3公布新规后逐步恢复审核
+  </section>
+
+</section><!-- end daily-body -->
+
+<!-- ========== FOOTER ========== -->
+<section class="daily-footer">
+  <div class="footer-brand">临数通 · 数据资产日报</div>
+  <div class="footer-editor">杭州市临平区数据产业协会（临平数协）联合出品</div>
+  <div class="footer-date">2026年6月12日 · 星期五</div>
+  <div class="footer-note">
+    本报告资讯来源于公开渠道，仅供参考，不构成投资建议。<br>
+    数据资产化相关业务请咨询专业机构，注意合规风险。<br>
+    转载请注明来源：临平数协·临数通数据产业周刊
+  </div>
+</section>
+
+<!-- ===== 二维码占位区 ===== -->
+<section class="qr-section">
+  <div class="qr-hint">扫码关注 · 临平数协公众号</div>
+  <div class="qr-box">二维码</div>
+</section>
+
+</body>
+</html>
