@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产日报 - 2026年6月15日</title>
+<style>
+  * { margin:0; padding:0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #F5F1EA;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .cover-banner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #A89880;
+    text-align: center;
+    border-bottom: 1px solid #EBE3D8;
+  }
+
+  .daily-body {
+    background: #fff;
+    padding: 0 20px 10px;
+  }
+
+  .section {
+    padding: 18px 0;
+    border-bottom: 1px dashed #E8DDD0;
+  }
+  .section:last-child { border-bottom: none; }
+
+  .section-title {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #4A2C1A;
+    border-left: 4px solid #8B6920;
+    padding-left: 12px;
+    margin-bottom: 16px;
+  }
+
+  .news-item {
+    margin-bottom: 18px;
+    padding: 14px 16px;
+    background: #FEFCF8;
+    border-radius: 6px;
+    border: 1px solid #EDE6D8;
+  }
+
+  .item-header { margin-bottom: 8px; }
+
+  .item-index {
+    display: inline-block;
+    background: #8B6920;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    width: 20px; height: 20px;
+    text-align: center; line-height: 20px;
+    border-radius: 3px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  .item-title {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #2E1F12;
+    line-height: 1.6;
+    vertical-align: middle;
+  }
+
+  .item-tag {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-left: 6px;
+    vertical-align: middle;
+    line-height: 1.4;
+    color: #fff;
+  }
+  .tag-hot       { background: #8B4513; }
+  .tag-urgent    { background: #A0522D; }
+  .tag-market    { background: #6B3810; }
+  .tag-crossborder { background: #8B6914; }
+  .tag-framework { background: #5C4A2E; }
+  .tag-attention { background: #B8860B; }
+  .tag-security  { background: #4A2C1A; }
+  .tag-esg       { background: #6B8E23; }
+  .tag-local     { background: #706030; }
+  .tag-innovation { background: #8B6508; }
+  .tag-scheme    { background: #5C3D1E; }
+  .tag-model     { background: #7B3F00; }
+
+  .item-desc {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 13.5px;
+    color: #4A3E30;
+    line-height: 1.75;
+    margin-bottom: 8px;
+  }
+
+  .item-meta {
+    font-size: 11px;
+    color: #A89880;
+    margin-top: 6px;
+  }
+  .item-meta span, .item-meta a {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    margin-right: 12px;
+  }
+  .item-link {
+    color: #8B6920;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* === TOP 5 表格 === */
+  .top5-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 8px;
+    font-size: 12.5px;
+  }
+  .top5-table thead th {
+    background: #D4BE9C;
+    color: #4A2C1A;
+    font-weight: 700;
+    padding: 8px 8px;
+    text-align: left;
+    font-size: 12px;
+  }
+  .top5-table tbody td {
+    padding: 7px 8px;
+    border-bottom: 1px solid #EBE3D8;
+    color: #4A3E30;
+  }
+  .top5-table tbody tr:nth-child(even) td { background: #FEFCF8; }
+
+  /* === 深度观察 === */
+  .insight-box {
+    background: #FBF8F4;
+    padding: 16px 18px;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid #EDE6D8;
+  }
+  .insight-box p {
+    font-size: 13.5px;
+    color: #4A3E30;
+    line-height: 1.85;
+    margin-bottom: 12px;
+    text-indent: 2em;
+  }
+  .insight-box p:last-child { margin-bottom: 0; }
+
+  /* === 临平关注 === */
+  .linping-focus {
+    background: #F4ECD8;
+    padding: 16px 18px;
+    border-radius: 6px;
+    margin: 10px 0;
+    border: 1px solid #E0D0A8;
+  }
+  .linping-focus p, .linping-focus span {
+    font-size: 13.5px;
+    color: #4A2C1A;
+    line-height: 1.85;
+  }
+
+  /* === 特别提醒 === */
+  .reminder-box {
+    background: #FEFCF8;
+    padding: 14px 16px;
+    border-left: 4px solid #8B6920;
+    margin: 10px 0;
+    font-size: 13px;
+    color: #5C4A2E;
+    line-height: 1.9;
+  }
+
+  /* === Footer === */
+  .daily-footer {
+    background: #F2EBE0;
+    padding: 20px 24px 16px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 16px 0 0;
+  }
+  .footer-title {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 6px;
+  }
+  .footer-desc {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 12px;
+    color: #A89880;
+    line-height: 1.7;
+  }
+  .footer-date {
+    font-size: 11px;
+    color: #C9AD7A;
+    margin-top: 6px;
+  }
+
+  /* === 二维码 === */
+  .qr-section {
+    background: #fff;
+    padding: 14px 20px;
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 10px;
+  }
+  .qr-section img { width: 100px; height: auto; margin: 6px 0; }
+  .qr-section .qr-label {
+    font-size: 11px;
+    color: #A89880;
+  }
+</style>
+</head>
+<body>
+
+<!-- === COVER BANNER === -->
+<img class="cover-banner" src="banner_final.png" alt="数据资产日报头图 — 临平数协">
+
+<div class="meta-bar">
+  临数通 · 数据产业周刊编辑部 &nbsp;|&nbsp; 杭州市临平区数据产业协会（临平数协）联合出品
+</div>
+
+<!-- ========== BODY ========== -->
+<section class="daily-body">
+
+  <!-- ===== 一、今日要闻 ===== -->
+  <section class="section">
+    <div class="section-title">一、今日要闻</div>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">6部委联合定调"数据要素×"收官年：760个典型场景超额完成，2026年大赛锚定6大突破方向<span class="item-tag tag-hot">重磅</span></span>
+      </div>
+      <div class="item-desc">
+        6月14日，数据资产前沿等多家行业媒体对6月11日国家数据局主持召开的2026年"数据要素×"首场专题新闻发布会进行了系统复盘。这是三年行动计划收官前<strong>规模最大的跨部委联合发布会</strong>，住房和城乡建设部、交通运输部、应急管理部、中国科学院、中国气象局五大部委同台亮相，各自发布数据要素×行业应用成果。交通运输部汇聚近<strong>500项高价值数据</strong>、培育109个智能体；住建部通过数据共享为企业办理审批近<strong>320万件</strong>；中科院累计汇交科学数据超<strong>320PB</strong>；气象局向130万用户提供334TB数据。国家数据局明确提出2026年"数据要素×"大赛的<strong>六大突破方向</strong>——以赛搭台、以赛强基、以赛促用、以赛兴市、以赛强产、以赛赋智，标志着数据要素战略从"宏大叙事"全面转向"小切口、真问题"的务实阶段。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：数据资产前沿 / 新浪财经 / 新华社</span>
+        <span>2026-06-14</span>
+        <a class="item-link" href="https://finance.sina.com.cn/roll/2026-06-14/doc-inickvrp8781050.shtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">全球AI大模型赛道密集放量：苹果WWDC26发布Siri重大革新，国产MiniMax M3调用量冲入全球前三<span class="item-tag tag-model">大模型</span></span>
+      </div>
+      <div class="item-desc">
+        6月13日，搜狐科技/量子位综合梳理近期全球AI产业动态显示：苹果WWDC26发布Siri问世15年来最大规模重构——内部代号"Campo"，首次深度集成<strong>谷歌Gemini大模型</strong>，从语音助手升级为独立AI应用，标志着苹果"自研AI优先"战略的重大调整。国产方面，MiniMax 6月1日发布的新一代大模型M3（自研MSA架构、百万级上下文、编程对标顶尖），发布首周即冲进<strong>全球调用量前三</strong>。更值得关注的是，中国大模型周调用量已<strong>连续六周超过美国</strong>，6月首周达14.19万亿token，全球前五大调用模型中中国占据四席——标志着国产大模型从技术验证全面迈入规模商用阶段。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：搜狐科技 / 量子位 / 至顶科技</span>
+        <span>2026-06-13</span>
+        <a class="item-link" href="https://www.sohu.com/a/1033831969_120426565" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">国家数据局印发高质量数据集建设行动方案：六大专项行动推进至2028年，鼓励数据集质押融资、数据信托等多模式创新<span class="item-tag tag-scheme">方案</span></span>
+      </div>
+      <div class="item-desc">
+        6月8日，国家数据局正式印发《关于推进行业高质量数据集建设行动的实施方案》，部署<strong>强基扩容、标注攻坚、提质增效、应用赋能、管理服务、价值释放</strong>六大专项行动，目标到2028年底建成一批覆盖重点领域的行业高质量数据集，形成"场景牵引数据—数据驱动模型—模型赋能应用—应用创造价值"的<strong>数据飞轮</strong>。《方案》特别提出鼓励探索<strong>数据集质押融资、作价入股、资产证券化、数据信托、数据保险</strong>等多元资产化创新模式——这是在沪深交易所叫停数据资产ABS仅5天后发布的重磅文件，被市场解读为"堵偏门、开正门"的明确政策信号。对制造业企业而言，方案强调链主单位牵引、具身智能数据优先，意味着老板电器等家电龙头积累的真实家庭场景数据有望成为"AI-Ready"级战略资产。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：国家数据局 / 腾讯新闻 / 百度百家号</span>
+        <span>2026-06-09</span>
+        <a class="item-link" href="https://www.nda.gov.cn/sjj/zwgk/tzgg/0608/20260608172117399715004_pc.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===== 二、政策动态 ===== -->
+  <section class="section">
+    <div class="section-title">二、政策动态</div>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">国家数据局鼓励数据资产多元创新模式：继ABS叫停后，"数据集质押融资+数据信托"路径正式得到政策背书<span class="item-tag tag-urgent">急</span></span>
+      </div>
+      <div class="item-desc">
+        据东方财富6月11日深度分析文章，在沪深交易所6月3日窗口指导暂停数据资产ABS申报后仅5天，国家数据局6月8日印发的高质量数据集建设方案明确鼓励数据集质押融资、数据信托等<strong>五条创新路径</strong>，时间点的"接踵而至"被市场解读为<strong>"堵偏门、开正门"的精准纠偏</strong>。报道指出，此前城投平台以不具备市场化变现能力的数据质押获得贷款、再打包ABS的"贴标"操作泛滥——前4月发行量已超2025全年，交易所累计受理超80单、计划总规模突破1800亿元，但以纯数据现金流支撑的占比不足5%。未来合规项目需满足<strong>"真数据、真资产、真现金流"</strong>三大底线。值得关注的是，中铁一局10.34亿元数据资产ABS在窗口指导期间顺利通过（历时42天），其成功要素在于央企主体+真实应收账款+无地方政府隐性担保。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：东方财富网 / 上海证券报</span>
+        <span>2026-06-11</span>
+        <a class="item-link" href="https://finance.eastmoney.com/a/202606113768643698.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">2026数智化转型创新推进大会在京举办，发布4大数字化转型标准应用成果<span class="item-tag tag-framework">框架</span></span>
+      </div>
+      <div class="item-desc">
+        据中国电子报6月9日报道，2026数智化转型创新推进大会近日在北京举行，200余名政企学界代表参会。会上集中发布了<strong>4大成果</strong>：《2026数字化转型参考架构国家标准应用推广成果报告》《数字化转型参考架构标准应用分类指引——集团型、企业型、工厂型》《数字化转型标准应用行业联合推进计划》以及数字化转型标准应用推广标杆单位。工信部信息技术发展司副司长傅永宝指出，当前制造业数智化转型加速推进，"一图四清单"已落地见效，工业互联网平台实现提级跃升。本次大会的成果集中发布，标志着<strong>数字化转型正从"标杆试点"走向"标准复制"</strong>，全国统一的数据治理与数字化转型标准体系加速成型。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：中国电子报 / 凤凰网 / 中关村信息技术联盟</span>
+        <span>2026-06-09</span>
+        <a class="item-link" href="https://finance.ifeng.com/c/8tiUnDvUBlW" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">第八届北京智源大会召开：聚焦科学智能与数据开放共享，中科院发布"磐石·100"模型体系<span class="item-tag tag-attention">关注</span></span>
+      </div>
+      <div class="item-desc">
+        6月12-13日，第八届北京智源大会在中关村国际创新中心举办。大会以<strong>"科学智能与数据开放共享"</strong>为核心主题，汇聚全球顶尖AI科学家。中国科学院在大会上发布了<strong>"磐石·100"模型体系</strong>，覆盖物理、化学、生命科学等基础学科领域，标志着科学数据驱动AI for Science进入新阶段。大会还首次发布了"科学数据开放共享评价指数"，推动科研数据的规范化开放与价值释放。对数据要素行业而言，科学数据的流通和定价一直是前沿难题，智源大会的探索为<strong>高价值数据的资产评估与交易</strong>提供了学术界视角的解决方案。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：中国电子报 / 智源研究院 / 新浪科技</span>
+        <span>2026-06-12</span>
+        <a class="item-link" href="http://www.cena.com.cn/industrynews/" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===== 三、行业观察 ===== -->
+  <section class="section">
+    <div class="section-title">三、行业观察</div>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">2026长三角国际人工智能应用场景科创大赛在上海启幕：以真实场景落地实效为核心标尺，央地共建产业培育范式<span class="item-tag tag-crossborder">赛事</span></span>
+      </div>
+      <div class="item-desc">
+        6月12日，2026长三角国际人工智能应用场景科创大赛在第十二届中国（上海）国际技术进出口交易会配套活动——第七届智能机器人创新发展交流会上正式启动。据人民网6月13日报道，大赛立足<strong>长三角产业创新优势</strong>，锚定新质生产力培育核心目标，以<strong>真实场景落地实效为核心标尺</strong>，创新央地共建产业培育范式。赛事将全方位激发人工智能在制造业、医疗健康、城市治理等领域的场景应用活力。值得关注的是，大赛与上交会同场举办，意味着<strong>AI场景化应用与国际贸易数字化</strong>正在形成协同效应——长三角企业"技术出海"的通道进一步打通。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：人民网 / 上证报 / MSN</span>
+        <span>2026-06-13</span>
+        <a class="item-link" href="https://sh.people.com.cn/n2/2026/0613/c134768-41609524.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">国产AI大模型调用量连续六周超越美国：从"技术追随"到"规模领先"，中国AI产业生态的转折点到来<span class="item-tag tag-market">市场</span></span>
+      </div>
+      <div class="item-desc">
+        伴随MiniMax M3（6月1日发布）的强劲表现，中国大模型产业实现里程碑式突破：<strong>中国大模型周调用量已连续六周超过美国</strong>，2026年6月首周达<strong>14.19万亿token</strong>，全球前五大调用模型中中国占据四席。业内分析认为，这一趋势背后的结构性因素包括：①中国庞大的移动互联网用户基数驱动高频调用；②国产模型在编程、超长上下文等方面的能力已接近或超越国际同级产品；③中国市场<strong>企业级AI应用渗透率加速提升</strong>，制造业、金融、政务领域的模型调用量贡献了主要增量。对数据要素市场而言，大模型调用量爆发意味着<strong>高质量训练数据的需求将进一步井喷</strong>，国家数据局此时印发数据集建设方案可谓恰逢其时。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：搜狐科技 / 量子位 / 至顶智库</span>
+        <span>2026-06-13</span>
+        <a class="item-link" href="https://www.sohu.com/a/1033831969_120426565" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">宁波举办2026数据要素与数字产业生态创新大会，AI+制造成为核心议题<span class="item-tag tag-local">地方</span></span>
+      </div>
+      <div class="item-desc">
+        6月6日，2026数据要素与数字产业生态创新大会在宁波广播电视集团召开，由宁波市数据局指导、宁波市大数据发展协会主办，华为、AI省部共建协同创新中心等联合承办。大会聚焦<strong>数据要素赋能先进制造与现代服务业</strong>，重点探讨工业数据采集治理、AI质检、供应链数据协同等制造业数字化转型场景。宁波作为长三角制造业重镇，正在形成<strong>"数据+制造"双轮驱动的差异化路径</strong>——相比于上海的数据交易所生态和杭州的互联网+AI生态，宁波选择了以工业数据资产化为切口的务实路线，为长三角其他制造型城市提供了可参照的"宁波样本"。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：凤凰网宁波 / 宁波市大数据发展协会</span>
+        <span>2026-06-06</span>
+        <a class="item-link" href="http://nb.ifeng.com/c/8toYrKXA208" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===== 四、数据入表与资本化 ===== -->
+  <section class="section">
+    <div class="section-title">四、数据入表与资本化</div>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">数据资产入表"两极分化"：A股上市公司入表企业达96家，一季度入表金额8.45亿元，头部集中趋势明显<span class="item-tag tag-market">市场</span></span>
+      </div>
+      <div class="item-desc">
+        据新浪财经固收专题研究6月9日报告，债券发行人2024年末、2025年末、2026年一季度的数据资产入表金额分别为<strong>9.40亿元、10.07亿元和8.45亿元</strong>，入表企业家数分别为69家、96家和79家。平均入表金额分别为0.14亿元、0.10亿元和0.11亿元。从趋势看，<strong>入表企业数量在增加但平均金额在下降</strong>，说明更多中小企业开始尝试入表，但头部企业仍占据绝对主导。报告指出，A股和债券发行人入表均呈现"2024年入表较多、2025年增速放缓、2026年一季度有所下滑"的共同走势，可能与<strong>数据资产评估标准趋严、ABS融资渠道收紧</strong>有关，但也从侧面反映出数据资产入表正从"风口期"进入"规范期"，质量重于数量。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：新浪财经 / 固收专题研究</span>
+        <span>2026-06-09</span>
+        <a class="item-link" href="https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/search/rptid/834425082916/index.phtml" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">高质量数据集建设方案详解：从"数据入表"到"数据集入表"，制造业数据资产化的下一站<span class="item-tag tag-innovation">创新</span></span>
+      </div>
+      <div class="item-desc">
+        国家数据局6月8日印发的高质量数据集建设方案中，"价值释放"专项行动明确提出<strong>鼓励数据集作价入股、质押融资</strong>，这意味着数据资产化的载体单元正在从"单一数据"升级为"数据集"。对制造业企业而言，工业设备运行数据、供应链数据、质检数据等经过标准化的采集、标注、治理后，可以<strong>作为一个整体资产包</strong>进行入表和融资，而不是零散地评估单项数据。方案明确提出链主单位应面向行业开放数据集，老板电器作为厨电领域"链主"，其厨房场景数据集（接入超百万智能设备）有望率先受益。与此同时，方案强调<strong>"AI-Ready"标准</strong>——数据必须经过结构化、标注和质量验证后才能用于模型训练，这意味着"脏数据入表"的路径彻底堵死，有能力完成数据治理的企业将获得显著的先发优势。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：国家数据局 / 百度百家号 / 数据资产前沿</span>
+        <span>2026-06-09</span>
+        <a class="item-link" href="https://baijiahao.baidu.com/s?id=1867571837958738075" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <!-- TOP 5 入表标杆 -->
+    <section style="margin-top:6px; border-top:1px solid #EDE6D8; padding-top:8px;">
+      <div style="font-family:-apple-system,BlinkMacSystemFont,'PingFang SC','Microsoft YaHei',sans-serif; font-size:14px; font-weight:700; color:#4A2C1A; margin-bottom:8px;">▎数据资产化TOP5标杆</div>
+      <table class="top5-table">
+        <thead>
+          <tr>
+            <th style="width:28%">企业/主体</th>
+            <th style="width:30%">资产类型</th>
+            <th style="width:20%">估值/金额</th>
+            <th style="width:22%">模式</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>中远海科</td>
+            <td>船视宝航运数据</td>
+            <td>2.8亿元</td>
+            <td>数据资产评估入表</td>
+          </tr>
+          <tr>
+            <td>中铁一局</td>
+            <td>应收账款+数据资产ABS</td>
+            <td>10.34亿元</td>
+            <td>央企数据ABS（合规）</td>
+          </tr>
+          <tr>
+            <td>宝钢股份</td>
+            <td>碳排放数据管理体系</td>
+            <td>减碳200万吨</td>
+            <td>ESG数据资产化</td>
+          </tr>
+          <tr>
+            <td>河钢集团</td>
+            <td>工业数据+碳数据</td>
+            <td>双资产入表</td>
+            <td>"产品+碳"模式</td>
+          </tr>
+          <tr>
+            <td>临河区人民医院</td>
+            <td>医共体诊疗数据</td>
+            <td>1077.2万元</td>
+            <td>医疗数据入表（首例）</td>
+          </tr>
+        </tbody>
+      </table>
+      <div style="font-size:10px; color:#C9AD7A; text-align:right; margin-top:2px;">数据截至2026年6月中旬</div>
+    </section>
+  </section>
+
+  <!-- ===== 五、地方实践 ===== -->
+  <section class="section">
+    <div class="section-title">五、地方实践</div>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">长三角AI科创大赛上海启幕，临平算力小镇具备天然参赛优势<span class="item-tag tag-local">地方</span></span>
+      </div>
+      <div class="item-desc">
+        6月12日在上海启幕的2026长三角国际AI应用场景科创大赛，以"真实场景落地实效"为核心标尺，面向制造业、医疗健康、城市治理等方向征集优秀案例。对临平而言，<strong>算力小镇+联通算力中心+数据要素运营中心</strong>"三件套"构成了AI应用场景的天然试验田——无论是工业质检、智能供应链还是城市治理数字化，临平均已有真实数据积累和落地场景。临平数协应积极组织区内企业参赛，借助大赛平台向长三角展示<strong>"工业数据资产化·临平方案"</strong>，抢占制造业AI应用场景的标准话语权。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：人民网上海 / 上交会</span>
+        <span>2026-06-13</span>
+        <a class="item-link" href="https://sh.people.com.cn/n2/2026/0613/c134768-41609524.html" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">宁波"数据+制造"模式走通：华为等龙头企业联合打造工业数据生态，为长三角制造城市提供样板<span class="item-tag tag-local">地方</span></span>
+      </div>
+      <div class="item-desc">
+        宁波6月6日数据要素与数字产业生态创新大会上，华为、AI省部共建协同创新中心等联合推动<strong>"数据要素赋能先进制造"</strong>的宁波模式已初具雏形：以工业数据采集治理为基础层，以AI质检、供应链协同为应用层，以数据资产入表为价值释放层。这一三层架构与临平的"数据采集（工厂）—数据治理（运营中心）—算力支撑（联通中心）—资产化服务（协会）"四层闭环高度同构。宁波经验表明：<strong>制造型城市不需要与上海、杭州拼平台规模，聚焦工业数据的垂直场景即可建立差异化竞争力</strong>——这对临平是直接的策略参考。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：凤凰网宁波 / 宁波市数据局</span>
+        <span>2026-06-06</span>
+        <a class="item-link" href="http://nb.ifeng.com/c/8toYrKXA208" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+
+    <section class="news-item">
+      <div class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">北京智源大会发布科学数据共享评价指数：科研数据资产化探索走出关键一步<span class="item-tag tag-attention">关注</span></span>
+      </div>
+      <div class="item-desc">
+        第八届北京智源大会（6月12-13日）首次发布了<strong>"科学数据开放共享评价指数"</strong>，对全球科研机构的数据开放程度进行量化排名。中科院同步发布"磐石·100"模型体系，验证了高质量科学数据集在AI训练中的核心价值。对数据要素行业而言，科学数据的共享评价指数实质上提供了一种<strong>"数据质量评级+定价参考"</strong>的雏形——这与商业数据资产的价值评估在方法论上存在显著交叉。随着高质量数据集建设方案的推进，科学数据的评价指标体系有望向工业数据、政务数据等领域延伸，为<strong>跨行业的数据资产评估标准统一</strong>提供底层框架。
+      </div>
+      <div class="item-meta">
+        <span class="item-source">来源：智源研究院 / 中国电子报 / 中科院</span>
+        <span>2026-06-13</span>
+        <a class="item-link" href="http://www.cena.com.cn/industrynews/" target="_blank">原文链接 ↗</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===== 深度观察 ===== -->
+  <section class="section">
+    <div class="section-title">深度观察</div>
+
+    <section class="insight-box">
+      <p>本周的行业图景呈现出鲜明的"一半火焰、一半海水"结构。<strong>国家数据局数据集建设方案与"数据要素×"六部委发布会</strong>构成了火焰面——六大专项行动的200多家机构参与、760个典型场景、14万亿token的大模型调用量、六大突破方向的清晰路线图，政策决心和市场势能前所未有。而<strong>数据资产ABS被沪深交易所全面叫停</strong>则是海水面——前4月发行超2025全年、80余单累计1800亿规模背后，是城投借数据名义变相融资的"伪创新"泛滥。两件事放在一起看，方向非常清晰：<strong>政策鼓励的是"真数据、真资产、真现金流"，打击的是"零成本套利"的通道业务</strong>。正如数据集方案在ABS叫停仅5天后即下发所传递的信号——不是不让你做，而是要你做对。</p>
+
+      <p>值得特别关注的是<strong>"数据集"正在成为数据资产化的新型载体单元</strong>。国家数据局方案首次在政策层面明确提出"鼓励数据集质押融资、作价入股、数据信托"，这意味着评估对象从单个数据项升级为经标准化治理后的数据集。过去企业入表时面临的一大障碍是"单项数据价值难以量化"——一个设备的运行数据单独看价值有限，但经过标注、结构化、质量验证的工业数据集，作为模型训练的"原材料"就具备了独立的市场价值。这一转变对临平而言意义重大：老板电器百万级智能设备积累的厨房场景数据、春风动力工业产线数据、艺尚小镇时尚零售数据，天然具备"数据集化"条件。关键在于<strong>谁能率先完成AI-Ready标准的数据治理</strong>。</p>
+
+      <p>第三个值得关注的信号来自<strong>国产AI大模型的"规模反超"</strong>。中国大模型调用量连续六周超过美国、全球前五大调用模型中中国占四席——这不是概念炒作，是实打实的token消费数据。调用量爆发意味着两件事：①高质量训练数据的缺口将进一步扩大，数据集建设方案的紧迫性在此得到印证；②制造业、金融、政务等垂直场景的AI渗透率加速提升，工业数据资产的价值水涨船高。对临平而言，算力小镇承载的AI训练算力、数据要素运营中心支撑的数据治理能力，正站在这一轮"数据+AI"双重红利的交汇点上——关键在于将基础设施优势转化为可交易的<strong>数据产品和服务</strong>。</p>
+    </section>
+  </section>
+
+  <!-- ===== 临平关注 ===== -->
+  <section class="section">
+    <div class="section-title">临平关注</div>
+
+    <section class="linping-focus">
+      <span><strong>本周多条重磅动态与临平数据产业发展方向高度关联，三大机遇值得把握。</strong><br><br>
+      <strong>第一，长三角AI应用场景科创大赛是临平"露脸"的好时机。</strong>6月12日启动的长三角AI科创大赛以"真实场景落地实效"为核心标尺，临平的算力小镇+数据运营中心+制造业集群"三件套"天然具备参赛优势。建议协会组织区内企业（老板电器、春风动力、运达风电等）提交工业AI质检、智能供应链、碳排放数据管理等方向的真实案例参赛，借助上交会平台向长三角展示<strong>"工业数据资产化·临平方案"</strong>。<br><br>
+      <strong>第二，高质量数据集建设方案是老板电器的重大政策利好。</strong>方案明确"链主单位面向行业开放数据集"、点名推进"具身智能"数据集建设，老板电器作为厨电链主、百万级智能设备接入方，其厨房场景数据集的"AI-Ready"改造将直接受益。建议协会近期协助老板电器对接方案中的六大专项行动，争取入选<strong>行业高质量数据集示范项目</strong>。<br><br>
+      <strong>第三，数据资产化进入"规范发展"新阶段，临平的务实路径更具韧性。</strong>ABS叫停+数据集方案出台组合拳之下，行业洗牌不可避免——但洗牌的方向对临平有利：规则收紧了城投套利的空间，却为拥有<strong>真实工业数据、清晰权属、可验证经济价值</strong>的制造业企业打开了正规融资通道。临平应抓住这一窗口期，加快区内企业数据确权、入表、评估的标准化进程，率先输出<strong>"临平工业数据资产化标准方案"</strong>。</span>
+    </section>
+  </section>
+
+  <!-- ===== 特别提醒 ===== -->
+  <section class="section">
+    <div class="section-title">特别提醒</div>
+
+    <section class="reminder-box">
+      <strong>📌 近期重点事件日历</strong><br>
+      · <strong>2026-06-18～20</strong>｜2026全球数据合规峰会（上海），GDPR实施八周年特别论坛<br>
+      · <strong>2026-06-26～28</strong>｜第七届西部数字经济博览会（西安），"一带一路"数字丝绸之路专题<br>
+      · <strong>2026-07-01</strong>｜DCMM 2.0新国标（GB/T 36073-2025）正式实施，倒计时16天<br>
+      · <strong>2026-07-17</strong>｜中国—上合组织国家数字经济合作典型案例征集截止<br>
+      · <strong>2026-07月中</strong>｜2026年"数据要素×"大赛浙江分赛报名截止（具体日期请关注省数据局通知）<br>
+      · <strong>2026-06-15</strong>（今天）｜2026中国国际数字经济博览会（石家庄）闭幕
+    </section>
+  </section>
+
+</section><!-- /.daily-body -->
+
+<!-- === FOOTER === -->
+<div class="daily-footer">
+  <div class="footer-title">临数通 · 数据产业周刊</div>
+  <div class="footer-desc">杭州市临平区数据产业协会（临平数协）联合出品<br>数聚临平 · 协创未来</div>
+  <div class="footer-date">2026年6月15日 · 星期一</div>
+</div>
+
+<div class="qr-section">
+  <img src="qrcode.png" alt="临平数协公众号二维码">
+  <div class="qr-label">扫码关注「临平数协」公众号</div>
+</div>
+
+</body>
+</html>
