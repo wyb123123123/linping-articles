@@ -28,212 +28,243 @@
     font-size: 11px;
     color: #A89880;
     text-align: center;
-    border-bottom: 1px solid #EBE3D8;
+    border-bottom: 1px solid #EBE3D5;
+    letter-spacing: 1px;
   }
 
   .daily-body {
     background: #fff;
-    padding: 0 20px 10px;
+    padding: 24px 22px;
   }
 
   .section {
-    padding: 18px 0;
-    border-bottom: 1px dashed #E8DDD0;
+    margin-bottom: 30px;
   }
-  .section:last-child { border-bottom: none; }
-
   .section-title {
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
     font-size: 17px;
     font-weight: 700;
     color: #4A2C1A;
+    padding: 8px 0 8px 14px;
     border-left: 4px solid #8B6920;
-    padding-left: 12px;
     margin-bottom: 16px;
+    letter-spacing: 1px;
   }
 
   .news-item {
-    margin-bottom: 18px;
-    padding: 14px 16px;
-    background: #FEFCF8;
-    border-radius: 6px;
-    border: 1px solid #EDE6D8;
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #EBE0CE;
   }
-
-  .item-header { margin-bottom: 8px; }
-
-  .item-index {
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .news-item .item-header {
+    margin-bottom: 6px;
+  }
+  .news-item .item-index {
     display: inline-block;
+    vertical-align: top;
     background: #8B6920;
     color: #fff;
-    font-size: 12px;
-    font-weight: 700;
-    width: 20px; height: 20px;
-    text-align: center; line-height: 20px;
-    border-radius: 3px;
-    margin-right: 8px;
-    vertical-align: middle;
-  }
-
-  .item-title {
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    color: #2E1F12;
-    line-height: 1.6;
-    vertical-align: middle;
-  }
-
-  .item-tag {
-    display: inline-block;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
-    padding: 2px 6px;
+    min-width: 19px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  .news-item .item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2E1F12;
+    line-height: 1.55;
+  }
+  .news-item .item-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
     border-radius: 3px;
     margin-left: 6px;
+    font-weight: 500;
     vertical-align: middle;
-    line-height: 1.4;
-    color: #fff;
+    letter-spacing: 0.5px;
   }
-  .tag-hot       { background: #8B4513; }
-  .tag-urgent    { background: #A0522D; }
-  .tag-market    { background: #6B3810; }
-  .tag-crossborder { background: #8B6914; }
-  .tag-framework { background: #5C4A2E; }
-  .tag-attention { background: #B8860B; }
-  .tag-security  { background: #4A2C1A; }
-  .tag-esg       { background: #6B8E23; }
-  .tag-local     { background: #706030; }
-  .tag-innovation { background: #8B6508; }
-  .tag-scheme    { background: #5C3D1E; }
-  .tag-model     { background: #7B3F00; }
+  .tag-hot        { background: #F0E2D0; color: #6B3A18; }
+  .tag-attention  { background: #F2E6D5; color: #5C3115; }
+  .tag-event      { background: #F1E4D2; color: #7A4520; }
+  .tag-framework  { background: #F0E3D0; color: #5E3316; }
+  .tag-urgent     { background: #F5E8D8; color: #7B3B1A; }
+  .tag-market     { background: #F2E5D4; color: #6D3E1C; }
+  .tag-innovation { background: #F1E4D0; color: #63401E; }
+  .tag-crossborder{ background: #F2E6D2; color: #6B421F; }
+  .tag-model      { background: #F3E7D5; color: #5E3C1A; }
+  .tag-entry      { background: #EFE0CA; color: #704520; }
+  .tag-surge      { background: #F4E8D5; color: #6B3518; }
+  .tag-local      { background: #F1E4CE; color: #6C4220; }
+  .tag-finance    { background: #F0E2CC; color: #683D1C; }
+  .tag-data       { background: #F1E5D0; color: #63421E; }
+  .tag-trust      { background: #F0E4D0; color: #6D3F1C; }
+  .tag-esg        { background: #E8F0E0; color: #3B5E1A; }
+  .tag-security   { background: #F5E8E0; color: #7B3A1A; }
 
-  .item-desc {
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
-    font-size: 13.5px;
+  .news-item .item-desc {
+    font-size: 14px;
     color: #4A3E30;
-    line-height: 1.75;
-    margin-bottom: 8px;
+    line-height: 1.78;
+    margin: 6px 0 10px;
   }
-
-  .item-meta {
-    font-size: 11px;
-    color: #A89880;
-    margin-top: 6px;
-  }
-  .item-meta span, .item-meta a {
+  .news-item .item-meta {
     font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
-    margin-right: 12px;
+    font-size: 12px;
+    color: #A89880;
+    line-height: 1.8;
   }
-  .item-link {
+  .news-item .item-source {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #968878;
+  }
+  .news-item .item-link {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
     color: #8B6920;
     text-decoration: none;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 500;
   }
 
-  /* === TOP 5 表格 === */
   .top5-table {
     width: 100%;
     border-collapse: collapse;
-    margin: 12px 0 8px;
-    font-size: 12.5px;
+    font-size: 13px;
+    margin-top: 10px;
   }
-  .top5-table thead th {
+  .top5-table th {
     background: #D4BE9C;
     color: #4A2C1A;
-    font-weight: 700;
-    padding: 8px 8px;
-    text-align: left;
-    font-size: 12px;
+    font-weight: 600;
+    padding: 11px 8px;
+    text-align: center;
+    border-bottom: 2px solid #8B6920;
   }
-  .top5-table tbody td {
-    padding: 7px 8px;
-    border-bottom: 1px solid #EBE3D8;
+  .top5-table td {
+    padding: 10px 8px;
+    text-align: center;
+    border-bottom: 1px solid #E8D8C0;
     color: #4A3E30;
+    background: #fff;
   }
-  .top5-table tbody tr:nth-child(even) td { background: #FEFCF8; }
+  .top5-table tr:first-child td {
+    font-weight: 600;
+    color: #4A2C1A;
+    background: #FBF7F1;
+  }
 
-  /* === 深度观察 === */
-  .insight-box {
+  .observe-block {
     background: #FBF8F4;
+    border-radius: 8px;
     padding: 16px 18px;
-    border-radius: 6px;
-    margin: 10px 0;
-    border: 1px solid #EDE6D8;
+    margin-bottom: 14px;
+    border: 1px solid #E5D5BC;
   }
-  .insight-box p {
+  .observe-block .observe-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 7px;
+  }
+  .observe-block .observe-text {
     font-size: 13.5px;
     color: #4A3E30;
-    line-height: 1.85;
-    margin-bottom: 12px;
-    text-indent: 2em;
+    line-height: 1.8;
   }
-  .insight-box p:last-child { margin-bottom: 0; }
 
-  /* === 临平关注 === */
   .linping-focus {
     background: #F4ECD8;
-    padding: 16px 18px;
-    border-radius: 6px;
-    margin: 10px 0;
-    border: 1px solid #E0D0A8;
+    border: 1px solid #C9AD7A;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 22px 0;
   }
-  .linping-focus p, .linping-focus span {
-    font-size: 13.5px;
-    color: #4A2C1A;
-    line-height: 1.85;
-  }
-
-  /* === 特别提醒 === */
-  .reminder-box {
-    background: #FEFCF8;
-    padding: 14px 16px;
-    border-left: 4px solid #8B6920;
-    margin: 10px 0;
-    font-size: 13px;
-    color: #5C4A2E;
-    line-height: 1.9;
-  }
-
-  /* === Footer === */
-  .daily-footer {
-    background: #F2EBE0;
-    padding: 20px 24px 16px;
-    text-align: center;
-    border-radius: 10px;
-    margin: 16px 0 0;
-  }
-  .footer-title {
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+  .linping-focus .lf-title {
     font-size: 15px;
     font-weight: 700;
     color: #4A2C1A;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
   }
-  .footer-desc {
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
-    font-size: 12px;
-    color: #A89880;
-    line-height: 1.7;
-  }
-  .footer-date {
-    font-size: 11px;
-    color: #C9AD7A;
-    margin-top: 6px;
+  .linping-focus .lf-text {
+    font-size: 14px;
+    color: #3A2E20;
+    line-height: 1.85;
   }
 
-  /* === 二维码 === */
-  .qr-section {
-    background: #fff;
-    padding: 14px 20px;
-    text-align: center;
-    border-radius: 0 0 10px 10px;
-    margin-bottom: 10px;
+  .reminder-box {
+    background: #FAF7F0;
+    border: 1px solid #D8C5A5;
+    border-left: 4px solid #8B6920;
+    border-radius: 6px;
+    padding: 15px 18px;
+    margin: 18px 0;
+    font-size: 13px;
+    color: #5C3D1A;
+    line-height: 1.85;
   }
-  .qr-section img { width: 100px; height: auto; margin: 6px 0; }
-  .qr-section .qr-label {
+
+  .daily-footer {
+    background: #F2EBE0;
+    padding: 22px 24px;
+    text-align: center;
+    border-top: 1px solid #E5D8C4;
+    border-radius: 8px;
+    margin: 0 22px 18px;
+  }
+  .daily-footer .footer-brand {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6B4528;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .daily-footer .footer-editor {
+    font-size: 12px;
+    color: #A89880;
+    margin-bottom: 4px;
+  }
+  .daily-footer .footer-date {
+    font-size: 12px;
+    color: #A89880;
+    margin-bottom: 14px;
+  }
+  .daily-footer .footer-note {
     font-size: 11px;
     color: #A89880;
+    line-height: 1.85;
+  }
+
+  .qr-section {
+    background: #fff;
+    padding: 18px 22px 28px;
+    text-align: center;
+  }
+  .qr-section .qr-hint {
+    font-size: 13px;
+    color: #A89880;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+  }
+  .qr-section .qr-box {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background: #fff;
+    border: 2px dashed #D4BE9C;
+    border-radius: 6px;
+    line-height: 120px;
+    font-size: 12px;
+    color: #C9AD7A;
   }
 </style>
 </head>
@@ -343,7 +374,7 @@
       </div>
       <div class="item-meta">
         <span class="item-source">来源：中国电子报 / 智源研究院 / 新浪科技</span>
-        <span>2026-06-12</span>
+        <span>2026-06-15</span>
         <a class="item-link" href="http://www.cena.com.cn/industrynews/" target="_blank">原文链接 ↗</a>
       </div>
     </section>
@@ -574,17 +605,23 @@
 
 </section><!-- /.daily-body -->
 
-<!-- === FOOTER === -->
-<div class="daily-footer">
-  <div class="footer-title">临数通 · 数据产业周刊</div>
-  <div class="footer-desc">杭州市临平区数据产业协会（临平数协）联合出品<br>数聚临平 · 协创未来</div>
+<!-- ========== FOOTER ========== -->
+<section class="daily-footer">
+  <div class="footer-brand">临数通 · 数据资产日报</div>
+  <div class="footer-editor">杭州市临平区数据产业协会（临平数协）联合出品</div>
   <div class="footer-date">2026年6月15日 · 星期一</div>
-</div>
+  <div class="footer-note">
+    本报告资讯来源于公开渠道，仅供参考，不构成投资建议。<br>
+    数据资产化相关业务请咨询专业机构，注意合规风险。<br>
+    转载请注明来源：临平数协·临数通数据产业周刊
+  </div>
+</section>
 
-<div class="qr-section">
-  <img src="qrcode.png" alt="临平数协公众号二维码">
-  <div class="qr-label">扫码关注「临平数协」公众号</div>
-</div>
+<!-- ===== 二维码占位区 ===== -->
+<section class="qr-section">
+  <div class="qr-hint">扫码关注 · 临平数协公众号</div>
+  <div class="qr-box">二维码</div>
+</section>
 
 </body>
 </html>
