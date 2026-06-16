@@ -216,55 +216,78 @@
 
   .daily-footer {
     background: #fff;
-    padding: 32px 24px 24px;
+    padding: 20px 16px 10px;
     text-align: center;
-    border-top: 1px solid #E5D8C4;
   }
-  .daily-footer .footer-slogan {
-    font-size: 15px;
-    font-weight: 700;
-    color: #333;
+  .daily-footer .slogan-line {
+    font-size: 14px;
+    color: #888;
+    font-weight: normal;
     letter-spacing: 1px;
-    margin-bottom: 18px;
+    line-height: 2;
+    text-align: center;
   }
-  .daily-footer .footer-editorial {
-    font-size: 13px;
-    color: #666;
-    margin-bottom: 12px;
-    line-height: 1.8;
-  }
-  .daily-footer .footer-copyright {
-    font-size: 11px;
+  .daily-footer .editor-info {
+    font-size: 12px;
     color: #999;
+    font-weight: normal;
+    letter-spacing: 0.5px;
     line-height: 1.8;
-    margin-bottom: 20px;
+    text-align: center;
   }
-  .daily-footer .footer-contact {
-    font-size: 13px;
-    color: #333;
-    margin-top: 4px;
+  .daily-footer .publish-date {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.8;
+    text-align: center;
+  }
+  .copyright-section {
+    text-align: center;
+    padding: 8px 16px 16px;
+    margin: 0;
+  }
+  .copyright-section p {
+    font-size: 11px;
+    color: #b2b2b2;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.8;
+    text-align: center;
   }
 
   .qr-section {
-    background: #fff;
-    padding: 24px 22px 30px;
+    background: #f7f7f7;
+    padding: 20px 16px;
+    margin: 16px 0 0;
     text-align: center;
+    border-radius: 0;
+  }
+  .qr-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .qr-section .qr-img {
+    width: 120px;
+    height: 120px;
+    display: block;
+    border: 0;
+    margin: 0 auto;
   }
   .qr-section .qr-hint {
-    font-size: 13px;
-    color: #666;
-    line-height: 1.7;
-    margin-bottom: 14px;
-  }
-  .qr-section .qr-box {
-    width: 160px;
-    height: 160px;
-    margin: 0 auto;
-    background: #F8F6F0;
-    border: 1px solid #E5D8C4;
-    line-height: 160px;
     font-size: 12px;
-    color: #C9AD7A;
+    color: #888;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 8px;
   }
 </style>
 </head>
@@ -614,24 +637,23 @@
 
 <!-- ========== FOOTER ========== -->
 <section class="daily-footer">
-  <div class="footer-slogan">—— 数据驱动未来，资产赋能发展 ——</div>
-  <div class="footer-editorial">
-    临数通 · 数据产业周刊编辑部<br>
-    2026年6月16日
-  </div>
-  <div class="footer-copyright">
-    本资讯内容来源于外部公开媒体；<br>
-    如链接无法打开、信息与官方发布存在出入；<br>
-    敬请自行核验，本会不对转载内容准确性承担责任。<br>
-    如涉及版权问题，请联系我们处理。
-  </div>
-  <div class="footer-contact">— 业务咨询 · 会员服务 —</div>
+  <p class="slogan-line">—— 数据驱动未来，资产赋能发展 ——</p>
+  <p class="editor-info">临数通 · 数据产业周刊编辑部</p>
+  <p class="publish-date">2026年6月16日</p>
+</section>
+<section class="copyright-section">
+  <p>本资讯内容来源于外部公开媒体；</p>
+  <p>如链接无法打开、信息与官方发布存在出入；</p>
+  <p>敬请自行核验，本会不对转载内容准确性承担责任。</p>
+  <p>如涉及版权问题，请联系我们处理。</p>
 </section>
 
 <!-- ===== 二维码关注区 ===== -->
 <section class="qr-section">
-  <div class="qr-hint">微信扫一扫<br>关注该公众号</div>
-  <div class="qr-box">二维码</div>
+  <span class="qr-wrapper">
+    <img class="qr-img" src="http://mmbiz.qpic.cn/mmbiz_png/7GicXj7u0w9XDr0neocAYKc9utt4pGon8o7TFnAjJNkzDEIGSSyOAfWPlJ80G2W8bGGGGIpMAo8Q3g0S7ZKlKMQ/0?wx_fmt=png" alt="公众号二维码">
+  </span>
+  <p class="qr-hint">微信扫一扫<br>关注该公众号</p>
 </section>
 
 </body>
