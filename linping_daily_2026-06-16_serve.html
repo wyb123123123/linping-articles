@@ -215,57 +215,71 @@
   }
 
   .daily-footer {
-    background: #F2EBE0;
-    padding: 22px 24px;
+    background: #fff;
+    padding: 32px 24px 24px;
     text-align: center;
     border-top: 1px solid #E5D8C4;
-    border-radius: 8px;
-    margin: 0 22px 18px;
   }
-  .daily-footer .footer-brand {
-    font-size: 14px;
-    font-weight: 600;
-    color: #6B4528;
-    margin-bottom: 10px;
+  .daily-footer .footer-slogan {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
     letter-spacing: 1px;
+    margin-bottom: 18px;
   }
-  .daily-footer .footer-editor {
-    font-size: 12px;
-    color: #A89880;
-    margin-bottom: 4px;
+  .daily-footer .footer-editorial {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 12px;
+    line-height: 1.8;
   }
-  .daily-footer .footer-date {
-    font-size: 12px;
-    color: #A89880;
-    margin-bottom: 14px;
-  }
-  .daily-footer .footer-note {
+  .daily-footer .footer-copyright {
     font-size: 11px;
-    color: #A89880;
-    line-height: 1.85;
+    color: #999;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  .daily-footer .footer-contact {
+    font-size: 13px;
+    color: #333;
+    margin-top: 4px;
   }
 
   .qr-section {
-    background: #fff;
-    padding: 18px 22px 28px;
+    background: #F7F7F7;
+    padding: 22px 22px 28px;
     text-align: center;
+    border-radius: 0;
+  }
+  .qr-section .qr-logo {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 1px solid #E5E5E5;
+  }
+  .qr-section .qr-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
   }
   .qr-section .qr-hint {
-    font-size: 13px;
-    color: #A89880;
-    letter-spacing: 1px;
-    margin-bottom: 14px;
+    font-size: 12px;
+    color: #888;
+    line-height: 1.7;
+    margin-bottom: 12px;
   }
   .qr-section .qr-box {
-    width: 120px;
-    height: 120px;
+    width: 140px;
+    height: 140px;
     margin: 0 auto;
     background: #fff;
-    border: 2px dashed #D4BE9C;
-    border-radius: 6px;
-    line-height: 120px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    line-height: 140px;
     font-size: 12px;
-    color: #C9AD7A;
+    color: #BBB;
   }
 </style>
 </head>
@@ -615,19 +629,25 @@
 
 <!-- ========== FOOTER ========== -->
 <section class="daily-footer">
-  <div class="footer-brand">临数通 · 数据资产日报</div>
-  <div class="footer-editor">杭州市临平区数据产业协会（临平数协）联合出品</div>
-  <div class="footer-date">2026年6月16日 · 星期二</div>
-  <div class="footer-note">
-    本报告资讯来源于公开渠道，仅供参考，不构成投资建议。<br>
-    数据资产化相关业务请咨询专业机构，注意合规风险。<br>
-    转载请注明来源：临平数协·临数通数据产业周刊
+  <div class="footer-slogan">—— 数据驱动未来，资产赋能发展 ——</div>
+  <div class="footer-editorial">
+    临数通 · 数据产业周刊编辑部<br>
+    2026年6月16日
   </div>
+  <div class="footer-copyright">
+    本资讯内容来源于外部公开媒体；<br>
+    如链接无法打开、信息与官方发布存在出入；<br>
+    敬请自行核验，本会不对转载内容准确性承担责任。<br>
+    如涉及版权问题，请联系我们处理。
+  </div>
+  <div class="footer-contact">— 业务咨询 · 会员服务 —</div>
 </section>
 
-<!-- ===== 二维码占位区 ===== -->
+<!-- ===== 二维码关注区 ===== -->
 <section class="qr-section">
-  <div class="qr-hint">扫码关注 · 临平数协公众号</div>
+  <img class="qr-logo" src="http://mmbiz.qpic.cn/mmbiz_png/7GicXj7u0w9XDr0neocAYKc9utt4pGon8o7TFnAjJNkzDEIGSSyOAfWPlJ80G2W8bGGGGIpMAo8Q3g0S7ZKlKMQ/0?wx_fmt=png" alt="临平数协">
+  <div class="qr-name">临平数协</div>
+  <div class="qr-hint">微信扫一扫<br>关注该公众号</div>
   <div class="qr-box">二维码</div>
 </section>
 
