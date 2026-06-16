@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产日报 - 2026年6月17日</title>
+<style>
+  * { margin:0; padding:0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #F5F1EA;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .cover-banner { display: block; width: 100%; margin: 0 auto; }
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff; padding: 12px 24px; font-size: 11px; color: #A89880;
+    text-align: center; border-bottom: 1px solid #EBE3D5; letter-spacing: 1px;
+  }
+  .daily-body { background: #fff; padding: 24px 22px; }
+  .section { margin-bottom: 30px; }
+  .section-title {
+    font-size: 17px; font-weight: 700; color: #4A2C1A;
+    padding: 8px 0 8px 14px; border-left: 4px solid #8B6920;
+    margin-bottom: 16px; letter-spacing: 1px;
+  }
+  .news-item { margin-bottom: 20px; padding-bottom: 18px; border-bottom: 1px dashed #EBE0CE; }
+  .news-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .news-item .item-header { margin-bottom: 6px; }
+  .news-item .item-index {
+    display: inline-block; vertical-align: top; background: #8B6920; color: #fff;
+    font-size: 11px; font-weight: 600; min-width: 19px; height: 19px;
+    line-height: 19px; text-align: center; border-radius: 4px; margin-top: 3px; margin-right: 8px;
+  }
+  .news-item .item-title { font-size: 15px; font-weight: 600; color: #2E1F12; line-height: 1.55; }
+  .news-item .item-tag {
+    display: inline-block; font-size: 10.5px; padding: 1px 7px; border-radius: 3px;
+    margin-left: 6px; font-weight: 500; vertical-align: middle; letter-spacing: 0.5px;
+  }
+  .tag-hot        { background: #F0E2D0; color: #6B3A18; }
+  .tag-attention  { background: #F2E6D5; color: #5C3115; }
+  .tag-event      { background: #F1E4D2; color: #7A4520; }
+  .tag-framework  { background: #F0E3D0; color: #5E3316; }
+  .tag-market     { background: #F2E5D4; color: #6D3E1C; }
+  .tag-innovation { background: #F1E4D0; color: #63401E; }
+  .tag-crossborder{ background: #F2E6D2; color: #6B421F; }
+  .tag-entry      { background: #EFE0CA; color: #704520; }
+  .tag-surge      { background: #F4E8D5; color: #6B3518; }
+  .tag-local      { background: #F1E4CE; color: #6C4220; }
+  .tag-finance    { background: #F0E2CC; color: #683D1C; }
+  .tag-data       { background: #F1E5D0; color: #63421E; }
+  .tag-esg        { background: #E8F0E0; color: #3B5E1A; }
+  .tag-security   { background: #F5E8E0; color: #7B3A1A; }
+  .tag-eu         { background: #E8EBF5; color: #2E3A6E; }
+  .news-item .item-desc { font-size: 14px; color: #4A3E30; line-height: 1.78; margin: 6px 0 10px; }
+  .news-item .item-meta {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 12px; color: #A89880; line-height: 1.8;
+  }
+  .news-item .item-source { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; color: #968878; }
+  .news-item .item-link {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #8B6920; text-decoration: none; font-size: 12px; font-weight: 500;
+  }
+  .top5-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 10px; table-layout: fixed; }
+  .top5-table th { background: #D4BE9C; color: #4A2C1A; font-weight: 600; padding: 7px 4px; text-align: center; border-bottom: 2px solid #8B6920; }
+  .top5-table td { padding: 6px 4px; text-align: center; border-bottom: 1px solid #E8D8C0; color: #4A3E30; background: #fff; }
+  .top5-table tr:first-child td { font-weight: 600; color: #4A2C1A; background: #FBF7F1; }
+  .observe-block { background: #FBF8F4; border-radius: 8px; padding: 16px 18px; margin-bottom: 14px; border: 1px solid #E5D5BC; }
+  .observe-block .observe-label { font-size: 13px; font-weight: 700; color: #4A2C1A; margin-bottom: 7px; }
+  .observe-block .observe-text { font-size: 13.5px; color: #4A3E30; line-height: 1.8; }
+  .linping-focus { background: #F4ECD8; border: 1px solid #C9AD7A; border-radius: 8px; padding: 20px; margin: 22px 0; }
+  .linping-focus .lf-title { font-size: 15px; font-weight: 700; color: #4A2C1A; margin-bottom: 12px; }
+  .linping-focus .lf-text { font-size: 14px; color: #3A2E20; line-height: 1.85; }
+  .reminder-box { background: #FAF7F0; border: 1px solid #D8C5A5; border-left: 4px solid #8B6920; border-radius: 6px; padding: 15px 18px; margin: 18px 0; font-size: 13px; color: #5C3D1A; line-height: 1.85; }
+  .daily-footer { background: #fff; padding: 20px 16px 10px; text-align: center; }
+  .daily-footer .slogan-line { font-size: 14px; color: #888; font-weight: normal; letter-spacing: 1px; line-height: 2; text-align: center; }
+  .daily-footer .editor-info { font-size: 12px; color: #999; font-weight: normal; letter-spacing: 0.5px; line-height: 1.8; text-align: center; }
+  .daily-footer .publish-date { font-size: 12px; color: #999; font-weight: normal; letter-spacing: 0; line-height: 1.8; text-align: center; }
+  .copyright-section { text-align: center; padding: 8px 16px 16px; margin: 0; }
+  .copyright-section p { font-size: 11px; color: #b2b2b2; font-weight: normal; letter-spacing: 0; line-height: 1.8; text-align: center; }
+  .qr-section { background: #f7f7f7; padding: 20px 16px; margin: 16px 0 0; text-align: center; border-radius: 0; }
+  .qr-wrapper { display: inline-block; vertical-align: top; padding: 8px; background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; margin-bottom: 8px; }
+  .qr-section .qr-img { width: 120px; height: 120px; display: block; border: 0; margin: 0 auto; }
+  .qr-section .qr-hint { font-size: 12px; color: #888; font-weight: normal; letter-spacing: 0.5px; line-height: 1.8; text-align: center; margin-top: 8px; }
+</style>
+</head>
+<body>
+<img class="cover-banner" src="banner_final.png" alt="数据资产日报头图 — 临平数协">
+<section class="meta-bar">临数通 · 数据产业周刊编辑部 &nbsp;|&nbsp; 杭州市临平区数据产业协会（临平数协）联合出品</section>
+<section class="daily-body">
+
+  <section class="section">
+    <div class="section-title">一、今日要闻</div>
+    <section class="news-item">
+      <div class="item-header"><span class="item-index">1</span><span class="item-title">2026人民数据大会自贡开幕：人民网搭台"智汇盐都"，数据赋能老工业城市转型<span class="item-tag tag-hot">重磅</span></span></div>
+      <div class="item-desc">6月16日，<strong>2026人民数据大会在四川自贡正式开幕</strong>，会期两天至17日。大会以"智汇盐都，数据'贡'赢"为主题，由人民网主办，采用"1+4+N"模式——1个主会场开幕式、4场专题交流（数据要素市场化/人工智能+产业/数字文旅/低空经济），并配套产业对接、成果展示等系列活动。来自国家数据局、四川省政府、中国信通院以及华为、腾讯等企业的数百名代表参会。值得关注的是，<strong>人民网在开幕式上发布了《2026中国数据要素市场化指数报告》</strong>，首次以量化指标体系评估31个省区市的数据要素市场化进程。自贡作为"千年盐都"正加速从传统工业向数字经济转型，本次大会意在探索<strong>中小城市数据要素发展"弯道超车"的地方路径</strong>。</div>
+      <div class="item-meta"><span class="item-source">来源：人民网 / 新华网</span><span>2026-06-16</span><br><a class="item-link" href="http://finance.people.com.cn/n1/2026/0610/c1004-40737617.html" target="_blank">原文链接 ↗</a></div>
+    </section>
+    <section class="news-item">
+      <div class="item-header"><span class="item-index">2</span><span class="item-title">AI生态大会在京开幕：中关村聚势"人工智能+"，千行百业场景落地进入密集发布期<span class="item-tag tag-innovation">创新</span></span></div>
+      <div class="item-desc">6月16日，<strong>人工智能+生态大会（AIEC 2026）在北京中关村展示中心举行</strong>。大会以"集聚激活生态创新力量、加速推进人工智能落地"为宗旨，汇聚政产学研用多方资源，系统探索"人工智能+"从战略部署迈向产业实践的方法路径。大会发布了<strong>《2026中国人工智能+行业发展蓝皮书》</strong>，覆盖制造业、医疗、金融、教育、交通等12个重点行业场景。工信部相关司局负责人在会上透露，我国人工智能核心产业规模已突破<strong>1.2万亿元</strong>，AI+制造、AI+医疗两大领域率先实现规模化落地，工业AI质检市场年增速达45%。大会标志着"人工智能+"从"政策定调"阶段进入"密集落地"阶段。</div>
+      <div class="item-meta"><span class="item-source">来源：新浪科技 / 中关村管委会 / 工信部</span><span>2026-06-16</span><br><a class="item-link" href="https://baijiahao.baidu.com/s?id=1867621904210687647" target="_blank">原文链接 ↗</a></div>
+    </section>
+    <section class="news-item">
+      <div class="item-header"><span class="item-index">3</span><span class="item-title">全球AI大模型调用量连续八周上涨至44.6万亿Token：推理需求首超训练，国产模型加速追赶<span class="item-tag tag-surge">爆发</span></span></div>
+      <div class="item-desc">据OpenRouter最新数据，上周（6月8日至14日）<strong>全球AI大模型总调用量达44.6万亿Token</strong>，较前一周增长23.5%，实现连续八周上涨。更值得关注的结构性变化是：<strong>推理调用量首次超过训练调用量</strong>——这意味着AI产业正从"建模型"阶段进入"用模型"阶段。国产大模型表现亮眼：DeepSeek V4周调用量环比增长38%，稳居全球前五；Kimi K2.6、智谱GLM-5的开发者调用量也在快速攀升。资本市场同步反应——6月15日CS人工智能指数强势上涨4.61%，光迅科技涨停，浪潮信息涨9.7%。分析人士指出，"词元经济"正在成为衡量AI产业活跃度的新指标，Token调用量相当于数字时代的"用电量"。</div>
+      <div class="item-meta"><span class="item-source">来源：OpenRouter / 新浪财经 / CSDN</span><span>2026-06-15</span><br><a class="item-link" href="https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckz5138765.shtml" target="_blank">原文链接 ↗</a></div>
+    </section>
+  </section>
+
+  <section class="section">
+    <div class="section-title">二、政策动态</div>
+    <section class="news-item">
+      <div class="item-header"><span class="item-index">4</span><span class="item-title">欧盟推出"技术主权一揽子方案"：芯片法案2.0 + 云与AI发展法案，全球数据治理规则博弈加剧<span class="item-tag tag-eu">欧盟</span></span></div>
+      <div class="item-desc">6月上旬，欧盟委员会正式公布<strong>"欧洲技术主权一揽子方案"</strong>，包含两项核心立法提案——《芯片法案2.0》和《云与人工智能发展法案》，以及"开源战略""能源领域数字化与人工智能行动计划"等配套文件。方案明确提出：到2030年欧盟芯片全球市场份额翻倍至20%，建立<strong>欧盟统一云计算与AI基础设施认证体系</strong>，对非欧盟云服务提供商设定数据本地化要求。这是自GDPR、AI法案之后，欧盟在数字治理领域的又一轮重大立法动作。分析人士指出，欧盟此举将对<strong>中国AI和云服务企业的出海合规产生深远影响</strong>——企业不仅需要关注数据出境，还需要应对欧盟"技术主权"框架下的基础设施准入壁垒。</div>
+      <div class="item-meta"><span class="item-source">来源：欧盟委员会 / 新浪科技 / 路透社</span><span>2026-06-上旬</span><br><a class="item-link" href="http://k.sina.com.cn/article_7857201856_1d45362c001906tcmi.html" target="_blank">原文链接 ↗</a></div>
+    </section>
+    <section class="news-item">
+      <div class="item-header"><span class="item-index">5</span><span class="item-title">亚马逊发布跨境电商白皮书：超98%中国卖家使用AI工具，AI驱动出海进入"新范式"<span class="item-tag tag-crossborder">跨境</span></span></div>
+      <div class="item-desc">6月11日（16日跨交会开幕），亚马逊全球开店亚太区创新中心发布<strong>《AI重塑出海新范式——2026中国出口跨境电商发展趋势白皮书》</strong>，这是亚马逊连续第八年发布该系列报告。白皮书披露：<strong>超过98%的中国受访卖家已在运营中使用AI工具</strong>，其中16%已从单点工具进阶到AI工作流或智能体，实现运营自动化与决策智能化。白皮书首次系统提出"AI驱动跨境电商全球化"已构成结构性机遇，聚焦AI选品、智能供应链、数字支付三大趋势。中国卖家AI使用率从2024年的约60%飙升至98%，意味着<strong>AI正从跨境电商的"可选配件"变为"基础设施"</strong>，不拥抱AI的卖家将面临被淘汰的风险。</div>
+      <div class="item-meta"><span class="item-source">来源：亚马逊全球开店 / 国际在线 / 湖北日报</span><span>2026-06-11</span><br><a class="item-link" href="https://gd.cri.cn/n/20260612/80087310-638c-4234-e9dc-699b41db9c3a.html" target="_blank">原文链接 ↗</a></div>
+    </section>
+    <section class="news-item">
+      <div class="item-header"><span class="item-index">6</span><span class="item-title">联合国报告警示AI环境成本：2030年数据中心耗电将达945太瓦时，水资源消耗翻倍<span class="item-tag tag-esg">ESG</span></span></div>
+      <div class="item-desc">6月3日，联合国大学水、环境与健康研究所发布报告<strong>《人工智能能耗的环境成本：碳、水和土地足迹》</strong>。报告预测，到2030年全球数据中心用电需求将达<strong>945太瓦时（TWh）</strong>，相当于日本和德国年用电量之和；相关用水量将相当于13亿人一年的基本生活用水量。报告警告，如果按当前增速，AI基础设施的环境足迹将在四年内翻番。此前中国信通院6月1日发布的《全球AI算力报告》已指出，<strong>算力绿色化是2026年AI产业的核心矛盾之一</strong>，PUE（电能使用效率）已成为数据中心竞争力的关键指标。这对临平算力小镇和联通算力中心的启示是：在扩大算力规模的同时，绿色低碳化运营不仅是社会责任，更是产业竞争的"准入门槛"。</div>
+      <div class="item-meta"><span class="item-source">来源：联合国大学 / 澎湃新闻 / 中国信通院</span><span>2026-06-03</span><br><a class="item-link" href="https://baijiahao.baidu.com/s?id=1867779593094829223" target="_blank">原文链接 ↗</a></div>
+    </section>
+  </section>
+
+  <section class="section">
+    <div class="section-title">三、行业观察</div>
+    <section class="news-item">
+      <div class="item-header"><span class="item-index">7</span><span class="item-title">"数据要素×"大赛上海分赛城乡建设赛道启动：聚焦住建/工程/城市/村镇四大场景<span class="item-tag tag-local">地方</span></span></div>
+      <div class="item-desc">6月9日，2026年"数据要素×"大赛<strong>上海分赛（城乡建设赛道）动员宣贯会在普陀区举行</strong>。该赛道聚焦住房、工程、城市、村镇四大场景，旨在挖掘数据要素在建筑信息模型（BIM）、城市体检、住房保障、村镇数字化等领域的创新应用。此前，住建部在6月11日六部委发布会上披露的数据已引发关注——工程建设项目审批管理系统累计办理近320万件审批，城乡建设数据治理空间巨大。上海城乡建设赛道的启动，意味着<strong>数据要素×在垂直行业（住房和城乡建设）的应用已从"部委规划"走向"赛事落地"</strong>，为数据赋能城市精细化治理提供了新场景。</div>
+      <div class="item-meta"><span class="item-source">来源：上海市住建委 / 普陀区政府 / 人民网</span><span>2026-06-09</span><br><a class="item-link" href="https://www.sohu.com/a/1034774244_121123887" target="_blank">原文链接 ↗</a></div>
+    </section>
+    <section class="news-item">
+      <div class="item-header"><span class="item-index">8</span><span class="item-title">医疗AI中试基地首批成果发布：扎根临床、落地基层，10余专科专病数据集超150TB<span class="item-tag tag-data">数据</span></span></div>
+      <div class="item-desc">6月9日，<strong>医疗领域国家人工智能应用中试基地阶段性成果发布会在京举行</strong>，集中发布一批扎根临床、落地基层、赋能产业的AI+医药智能应用。此前中国联通发布的亿元医疗数据集计划正是依托该中试基地——目前已面向<strong>10余个专科专病领域打造行业高质量数据集超150TB</strong>，达成数据交易规模超千万元，服务医药研发管线30余项。国家卫生健康委副主任郭燕红表示，将加快建设医疗数据中试平台和可信数据空间，推动医疗数据"供得出、流得动、用得好"。医疗数据资产化正在从"零散试点"走向"平台化运营"，中试基地+可信数据空间的组合模式有望向制造业、交通等领域推广。</div>
+      <div class="item-meta"><span class="item-source">来源：央广网 / 国家卫生健康委</span><span>2026-06-09</span><br><a class="item-link" href="https://www.cnr.cn/bj/sijh/20260609/t20260609_527655021.shtml" target="_blank">原文链接 ↗</a></div>
+    </section>
+    <section class="news-item">
+      <div class="item-header"><span class="item-index">9</span><span class="item-title">A股ESG信披率49%创新高：2706家公司发布ESG报告，数据治理成为ESG核心议题<span class="item-tag tag-esg">ESG</span></span></div>
+      <div class="item-desc">截至2026年4月30日年报披露季结束，<strong>A股全市场共有2706家上市公司同步发布ESG报告</strong>（含可持续发展报告），披露率达49%，创历史新高。此前沪深北交易所于1月30日发布"可持续发展报告编制指南"修订版，新增污染物排放、能源利用、水资源利用三项环境议题披露指南，给出量化数据核算方法。值得关注的是，<strong>数据治理与数据安全已经上升为ESG评价中的核心维度</strong>——DCMM 2.0（7月1日实施）新增"数据资产域"考核维度，企业数据管理能力正在成为ESG评级机构的新关注点。对于临平制造业企业而言，将数据资产治理纳入ESG披露框架，有望成为提升资本市场估值的"加分项"。</div>
+      <div class="item-meta"><span class="item-source">来源：新华网 / 沪深北交易所 / 中证网</span><span>2026-06</span><br><a class="item-link" href="https://www.warmland.cn/information/30_521.html" target="_blank">原文链接 ↗</a></div>
+    </section>
+  </section>
+
+  <section class="section">
+    <div class="section-title">四、数据入表与资本化</div>
+    <section class="news-item">
+      <div class="item-header"><span class="item-index">10</span><span class="item-title">A股数据资产入表全景：123家企业一季度末入表34.34亿，平均每家2800万，"千亿时代"前夜<span class="item-tag tag-entry">入表</span></span></div>
+      <div class="item-desc">据券商最新专题研究统计，A股上市公司<strong>2026年一季度末数据资产入表金额为34.34亿元</strong>，入表企业家数123家，平均入表金额0.28亿元（约2800万元）。回顾趋势：2024年末入表20.81亿元（91家）、2025年末37.17亿元（129家），入表规模呈现"台阶式"增长。分析人士指出，<strong>入表规模尚未爆发的主要原因在于评估标准（GB/T 46353）和DCMM认证尚未全面落地</strong>——企业普遍在"等标准、等指引"。随着7月1日DCMM 2.0实施和高质量数据集方案的推进，预计2026年年报季数据资产入表将迎来首个"千亿时刻"——入表企业有望突破500家，总规模冲击1000亿元。债券发行人同样在布局，2026年一季度末数据资产入表8.72亿元，数据资产正在成为企业信用评估的新维度。</div>
+      <div class="item-meta"><span class="item-source">来源：新浪财经 / 券商研报</span><span>2026-06 最新</span><br><a class="item-link" href="https://stock.finance.sina.com.cn/stock/go.php/vReport_Show/kind/search/rptid/834425082916/index.phtml" target="_blank">原文链接 ↗</a></div>
+    </section>
+    <section class="news-item">
+      <div class="item-header"><span class="item-index">11</span><span class="item-title">数据资产化进入"供给侧改革"：从"能不能入表"到"值不值得入表"，三权分置激活数据集级资产<span class="item-tag tag-framework">框架</span></span></div>
+      <div class="item-desc">随着国家数据局高质量数据集方案、中国联通亿元医疗数据计划、医疗AI中试基地成果发布"三箭齐发"，数据资产化正从宏观制度建设阶段进入<strong>微观操作落地阶段</strong>。核心逻辑变化在于：①政策颗粒度从"企业级"细化到"数据集级"——企业不必等到全部数据治理完成，可以从最有价值的具体数据集开始入表；②"三权分置"（持有权、使用权、经营权）解决了多主体协作的数据确权难题；③"先评价、后估值"的GB/T 46353方法论已被市场初步接受，评估机构正在形成标准化服务能力。行业共识认为，<strong>2026年下半年将是数据资产入表的"窗口期"</strong>——7月1日DCMM 2.0实施、高质量数据集方案政策细则落地、各地数据知识产权登记平台完善，三重利好叠加将推动入表加速。</div>
+      <div class="item-meta"><span class="item-source">来源：国家数据局 / 知乎 / 智库研报</span><span>2026-06</span><br><a class="item-link" href="https://zhuanlan.zhihu.com/p/2044836406615397080" target="_blank">原文链接 ↗</a></div>
+    </section>
+    <p style="font-size:11.5px;color:#4A2C1A;font-weight:700;margin:14px 0 8px;">2026年上半年数据资产入表趋势 — 从"政策驱动"到"市场驱动"的临界点</p>
+    <table class="top5-table">
+      <thead><tr><th>时间节点</th><th>入表金额</th><th>入表企业数</th><th>关键催化剂</th></tr></thead>
+      <tbody>
+        <tr><td>2024年末</td><td>20.81亿元</td><td>91家</td><td>《暂行规定》首年执行</td></tr>
+        <tr><td>2025年末</td><td>37.17亿元</td><td>129家</td><td>数据资产化政策密集出台</td></tr>
+        <tr><td>2026年Q1末</td><td>34.34亿元</td><td>123家</td><td>GB/T 46353实施（5月）</td></tr>
+        <tr><td>2026年H1（预计）</td><td>约45亿元</td><td>约150家</td><td>DCMM 2.0+数据集方案</td></tr>
+        <tr><td>2026年报（预判）</td><td>冲击1000亿</td><td>冲击500家</td><td>三权分置+三标联动</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="section">
+    <div class="section-title">五、地方实践</div>
+    <section class="news-item">
+      <div class="item-header"><span class="item-index">12</span><span class="item-title">临平算力小镇第二批项目评审结果出炉：AI芯片、自动驾驶、通感一体化等项目过审<span class="item-tag tag-local">临平</span></span></div>
+      <div class="item-desc">6月15日，<strong>2026年第二批杭州临平算力小镇项目评审结果正式出炉</strong>，MemoraX AI项目、自动驾驶车辆底盘及轮胎智能监控解决方案、通感一体化UWB高精度定位和高速数传芯片设计及产业化、主控算法实验等多个高能级项目通过评审。算力小镇作为浙江省级特色小镇创建单位，正在从"算力基础设施"向"算力+AI+制造"三位一体生态升级。值得关注的是，此次过审项目涵盖AI芯片设计、自动驾驶感知、通感一体化等前沿赛道，凸显临平正从"算力承接地"向"算力创新策源地"转型。结合此前临平数智云廊年产10000台工业机器人制造项目（6月12日-18日公示），临平的智能制造+算力双轮驱动格局日益清晰。</div>
+      <div class="item-meta"><span class="item-source">来源：临平区人民政府 / 算力小镇管委会</span><span>2026-06-15</span><br><a class="item-link" href="https://www.linping.gov.cn/col/col1229594361/art/2026/art_afa5fae521564ee1b4c32bc6d8e94fdd.html" target="_blank">原文链接 ↗</a></div>
+    </section>
+    <section class="news-item">
+      <div class="item-header"><span class="item-index">13</span><span class="item-title">北京发布2026智慧城市场景创新需求清单（第三批）：数据安全、城市治理、交通数字孪生成焦点<span class="item-tag tag-local">地方</span></span></div>
+      <div class="item-desc">6月2日，北京市政务服务和数据管理局发布<strong>《2026北京市智慧城市场景创新需求清单（第三批）》</strong>，面向社会公开征集场景解决方案。清单聚焦数据安全运营、城市运行"一网统管"、交通数字孪生、基层智慧治理等方向，延续了国务院办公厅《关于加快场景培育和开放推动新场景大规模应用的实施意见》的政策脉络。北京作为全国智慧城市建设的"头雁"，其场景清单的发布意味着<strong>城市治理领域的数据需求正从"模糊方向"走向"精确场景"</strong>——数据安全运营、交通数字孪生等方向的技术需求已被明确量化，为数据服务企业提供了可落地的商业机会。对临平而言，北京的经验可以作为智慧城市数据场景化的参照模板。</div>
+      <div class="item-meta"><span class="item-source">来源：北京市政务服务和数据管理局</span><span>2026-06-02</span><br><a class="item-link" href="https://www.beijing.gov.cn/zhengce/zhengcefagui/202606/t20260602_4682276.html" target="_blank">原文链接 ↗</a></div>
+    </section>
+    <section class="news-item">
+      <div class="item-header"><span class="item-index">14</span><span class="item-title">"数据要素×"大赛烟台选拔赛启动：17部门联合主办，"数据赋能·乘数而上"覆盖全产业链<span class="item-tag tag-event">赛事</span></span></div>
+      <div class="item-desc">6月11日，2026年"数据要素×"大赛<strong>山东分赛烟台市选拔赛正式启动</strong>，由烟台市大数据局等17个部门联合主办。赛事以"数据赋能·乘数而上"为主题，设置工业制造、现代农业、商贸流通、交通运输等16个赛道，面向全社会征集创新性、实用性、可落地的数据创新应用项目。截至目前，<strong>全国已有广东（17赛道）、河南、宁夏、山东烟台、上海城乡建设等多个省/市/赛道启动分赛</strong>，形成"以赛搭台、以赛促用、以赛兴市"的全国性赛事矩阵。烟台选拔赛的特色在于17个部门的联合主办——这意味着数据要素×已不仅是数据局一家的事，而是成为政府各部门共同参与的系统工程。</div>
+      <div class="item-meta"><span class="item-source">来源：烟台市大数据局 / 搜狐新闻</span><span>2026-06-11</span><br><a class="item-link" href="https://www.sohu.com/a/1035293412_121218495" target="_blank">原文链接 ↗</a></div>
+    </section>
+  </section>
+
+  <section class="section">
+    <div class="section-title">深度观察</div>
+    <section class="observe-block">
+      <div class="observe-label">观察一：全球AI"词元经济"爆发 + 欧盟技术主权方案 — 中国AI产业面临"内外双驱"的新格局</div>
+      <div class="observe-text">本周两大信号叠加释放出明确方向：<strong>全球AI产业进入"推理驱动"新阶段</strong>——44.6万亿Token调用量中推理首次超过训练，意味着AI正在从"技术展示"走向"生产力工具"；与此同时，<strong>欧盟技术主权方案（芯片法案2.0+云AI法案）</strong>在数据本地化、基础设施认证等方面筑起新壁垒，中国AI企业的出海路径需要重新规划。对临平而言，"内外双驱"格局下的机会在于：算力小镇的国产AI芯片项目可以在欧盟"去美化"趋势中找到市场空间，但前提是满足欧盟的绿色低碳（PUE）和可信AI认证要求。</div>
+    </section>
+    <section class="observe-block">
+      <div class="observe-label">观察二：从"人民数据大会"到"自贡模式" — 中小城市数据要素发展的第三条道路</div>
+      <div class="observe-text">人民数据大会选址自贡具有很强的象征意义——自贡是典型的"老工业城市"，GDP排名四川中游，远非北上广深等数据要素"第一梯队"。但正是这样的城市，在数据要素市场化中可能找到<strong>"弯道超车"的差异化路径</strong>：不拼算力规模、不拼人才密度，而是拼"特色产业数据深度"——自贡的盐化工、彩灯文旅、通用航空等垂直领域数据，如果善加挖掘和资产化，可能形成不可替代的数据壁垒。这给临平的启示是：<strong>制造业数据集的深度和独特性，才是临平在数据要素竞争中的真正护城河</strong>——老板电器的厨电数据、春风动力的摩托车工况数据，在全球范围内都具有独特性。</div>
+    </section>
+    <section class="observe-block">
+      <div class="observe-label">观察三：AI环境成本 + ESG信披率49% — 数据资产化的"绿色维度"即将成为必修课</div>
+      <div class="observe-text">联合国AI环境成本报告与A股ESG信披率创新高，从两个方向指向同一趋势：<strong>数据资产的"绿色含量"正在成为市场定价的新因子</strong>。当AI数据中心用电量将达到945太瓦时（相当于日德两国之和），算力的"碳足迹"将不再是可选项而是必答题。DCMM 2.0新增"数据资产域"与ESG强制信披形成"双标联动"——企业的数据治理能力和数据资产的碳排放，将直接影响ESG评级和资本市场估值。对临平算力小镇而言，绿色PUE不是成本，而是未来吸引AI企业入驻的<strong>核心竞争力</strong>。</div>
+    </section>
+  </section>
+
+  <section class="linping-focus">
+    <div class="lf-title">📍 临平关注</div>
+    <div class="lf-text">
+      <strong>本周三大机遇与临平数据产业方向高度契合，建议协会重点关注、主动布局。</strong><br><br>
+      <strong>第一，算力小镇第二批项目评审通过——"算力+AI+制造"生态闭环加速形成。</strong>MemoraX AI、自动驾驶感知、通感一体化芯片等项目的入驻，标志着算力小镇正从"基础设施提供商"升级为"AI创新策源地"。建议协会联合算力小镇管委会，<strong>组织区内制造企业与新入驻AI企业开展"数据供需对接会"</strong>——让老板电器的产线数据、春风动力的车辆数据、西奥电梯的梯联网数据找到AI"算力用户"，形成"制造数据→AI训练→智能应用→产业升级"的闭环。<br><br>
+      <strong>第二，AI环境成本报告+ESG信披率49%——临平算力的绿色竞争力需要"亮牌"。</strong>联合国报告警示AI耗电将达945TWh，ESG信披已将数据治理纳入核心维度。建议协会推动临平算力小镇和联通算力中心<strong>率先发布"算力碳足迹报告"和"绿色PUE认证"</strong>，在全国算力竞争中打出"绿色算力"差异化标签。同时，帮助区内制造企业将数据资产治理纳入ESG披露框架，提升企业在资本市场的估值溢价。<br><br>
+      <strong>第三，中小企业数字化转型"政策窗口"仍在——DCMM 2.0倒计时14天。</strong>距离DCMM 2.0实施仅剩14天，建议协会联合区数据局，对区内重点企业开展<strong>DCMM预评估+数据知识产权登记+数据集盘点"三合一"快速辅导</strong>。特别是跨境电商企业——亚马逊白皮书显示98%中国卖家已用AI，临平出口企业在AI合规和数据治理方面仍有较大提升空间，"DCMM预评估+数据出境合规辅导"双管齐下，可帮助企业抢占AI跨境新赛道先机。
+    </div>
+  </section>
+
+  <section class="reminder-box">
+    <strong>📌 近期重点事件日历</strong><br>
+    · <strong>2026-06-16～18</strong>（进行中）｜2026中国（广州）跨境电商交易会，亚马逊发布AI驱动跨境白皮书<br>
+    · <strong>2026-06-16～17</strong>（今日）｜2026人民数据大会（四川自贡），《数据要素市场化指数报告》发布<br>
+    · <strong>2026-06-16</strong>（今日）｜人工智能+生态大会（北京中关村），《AI+行业发展蓝皮书》发布<br>
+    · <strong>2026-06-18～20</strong>｜2026全球数据合规峰会（上海），GDPR实施八周年特别论坛<br>
+    · <strong>2026-06-25</strong>｜"数据要素×"大赛浙江分赛温州站报名截止<br>
+    · <strong>2026-06-26～28</strong>｜第七届西部数字经济博览会（西安），"一带一路"数字丝绸之路专题<br>
+    · <strong>2026-07-01</strong>｜DCMM 2.0新国标（GB/T 36073-2025）正式实施，倒计时14天<br>
+    · <strong>2026-07-17</strong>｜中国—上合组织国家数字经济合作典型案例征集截止<br>
+    · <strong>持续关注</strong>｜数据资产ABS穿透式监管新规酝酿中，预计Q3出炉
+  </section>
+
+</section>
+
+<section class="daily-footer">
+  <p class="slogan-line">—— 数据驱动未来，资产赋能发展 ——</p>
+  <p class="editor-info">临数通 · 数据产业周刊编辑部</p>
+  <p class="publish-date">2026年6月17日</p>
+</section>
+<section class="copyright-section">
+  <p>本资讯内容来源于外部公开媒体；</p>
+  <p>如链接无法打开、信息与官方发布存在出入；</p>
+  <p>敬请自行核验，本会不对转载内容准确性承担责任。</p>
+  <p>如涉及版权问题，请联系我们处理。</p>
+</section>
+<section class="qr-section">
+  <span class="qr-wrapper"><img class="qr-img" src="http://mmbiz.qpic.cn/mmbiz_png/7GicXj7u0w9XDr0neocAYKc9utt4pGon8o7TFnAjJNkzDEIGSSyOAfWPlJ80G2W8bGGGGIpMAo8Q3g0S7ZKlKMQ/0?wx_fmt=png" alt="公众号二维码"></span>
+  <p class="qr-hint">微信扫一扫<br>关注该公众号</p>
+</section>
+
+</body>
+</html>
