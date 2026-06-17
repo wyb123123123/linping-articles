@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>数据资产日报 - 2026年6月19日</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif; background: #F5F0E8; color: #3A2E22; font-size: 15px; line-height: 1.85; -webkit-text-size-adjust: 100%; }
+  img { max-width: 100% !important; height: auto !important; display: block; margin: 0 auto; }
+  section { max-width: 100%; overflow: hidden; }
+
+  .cover-banner { position: relative; width: 100%; overflow: hidden; background: linear-gradient(135deg,#5C3D1E 0%,#8B5E2A 100%); }
+  .cover-banner img { width: 100%; display: block; }
+
+  .meta-bar { background: #F2EBE0; padding: 9px 16px; display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #A89880; border-bottom: 1px solid #E5D8C4; flex-wrap: wrap; gap: 4px; }
+  .meta-bar .date { font-weight: 600; color: #6B4528; }
+  .meta-bar .source { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 60%; }
+
+  .section { padding: 0 16px; margin-top: 18px; }
+  .section-title { font-size: 16px; font-weight: 700; color: #4A2C1A; padding: 10px 0 10px 12px; border-left: 4px solid #8B6914; margin-bottom: 12px; background: linear-gradient(90deg,#F2EBE0 0%,transparent 100%); line-height: 1.4; }
+
+  .news-item { padding: 13px 0; border-bottom: 1px dashed #EBE0CE; }
+  .news-item:last-child { border-bottom: none; }
+  .news-index { display: inline-block; background: #8B6914; color: #fff; font-size: 11px; font-weight: 700; width: 20px; height: 20px; line-height: 20px; text-align: center; border-radius: 50%; margin-right: 7px; vertical-align: middle; }
+  .news-item strong { font-size: 15px; font-weight: 700; color: #3A2E22; line-height: 1.6; }
+  .news-item .summary { font-size: 13.5px; color: #5C4A36; line-height: 1.85; margin-top: 6px; padding-left: 27px; }
+  .news-item .item-link { color: #8B6914; text-decoration: none; font-size: 12px; word-break: break-all; }
+  .news-item .hint { font-size: 11px; color: #B89A6A; margin-top: 4px; padding-left: 27px; }
+
+  .insight-block { background: #FBF8F2; border: 1px solid #E5D8C4; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px; }
+  .insight-block .insight-title { font-size: 14px; font-weight: 700; color: #4A2C1A; margin-bottom: 8px; }
+  .insight-block .insight-body { font-size: 13.5px; color: #5C4A36; line-height: 1.9; }
+  .insight-block .insight-body strong { color: #4A2C1A; }
+
+  .alert-box { background: #FFF8F0; border: 1px solid #D4A84B; border-radius: 8px; padding: 14px 16px; margin: 14px 16px; }
+  .alert-box .alert-title { font-size: 14px; font-weight: 700; color: #8B3A00; margin-bottom: 8px; }
+  .alert-box .alert-body { font-size: 13px; color: #5C4A36; line-height: 1.85; }
+
+  .top5-table { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 10px; table-layout: fixed; }
+  .top5-table th { background: #D4BE9C; color: #4A2C1A; font-weight: 600; padding: 7px 4px; text-align: center; border-bottom: 2px solid #8B6920; }
+  .top5-table td { padding: 6px 4px; text-align: center; border-bottom: 1px solid #E8D8C0; color: #4A3E30; background: #fff; }
+  .top5-table tr:nth-child(even) td { background: #FBF8F2; }
+
+  .linping-block { background: #F7F3EB; border: 1px solid #D4BE9C; border-radius: 8px; padding: 14px 16px; margin: 14px 16px; }
+  .linping-block .lp-title { font-size: 14px; font-weight: 700; color: #4A2C1A; margin-bottom: 8px; }
+  .linping-block .lp-body { font-size: 13.5px; color: #5C4A36; line-height: 1.85; }
+
+  .calendar-box { background: #FBF8F2; border: 1px solid #E5D8C4; border-radius: 8px; padding: 12px 16px; margin: 14px 16px; }
+  .calendar-box .cal-title { font-size: 13px; font-weight: 700; color: #4A2C1A; margin-bottom: 8px; }
+  .calendar-box .cal-item { font-size: 12.5px; color: #5C4A36; padding: 4px 0; border-bottom: 1px solid #F0E8DC; }
+  .calendar-box .cal-item:last-child { border-bottom: none; }
+  .calendar-box .cal-date { font-weight: 600; color: #8B6914; margin-right: 8px; }
+
+  .daily-footer { background: #fff; padding: 20px 16px 10px; text-align: center; }
+  .daily-footer .slogan-line { font-size: 14px; color: #888; font-weight: normal; letter-spacing: 1px; line-height: 2; text-align: center; }
+  .daily-footer .editor-info { font-size: 12px; color: #999; font-weight: normal; letter-spacing: 0.5px; line-height: 1.8; text-align: center; }
+  .daily-footer .publish-date { font-size: 12px; color: #999; font-weight: normal; letter-spacing: 0; line-height: 1.8; text-align: center; }
+  .copyright-section { text-align: center; padding: 8px 16px 16px; margin: 0; }
+  .copyright-section p { font-size: 11px; color: #b2b2b2; font-weight: normal; letter-spacing: 0; line-height: 1.8; text-align: center; }
+
+  .qr-section { background: #f7f7f7; padding: 20px 16px; margin: 16px 0 0; text-align: center; border-radius: 0; }
+  .qr-wrapper { display: inline-block; vertical-align: top; padding: 8px; background: #fff; border: 1px solid #e0e0e0; border-radius: 4px; margin-bottom: 8px; }
+  .qr-section .qr-img { width: 120px; height: 120px; display: block; border: 0; margin: 0 auto; }
+  .qr-section .qr-hint { font-size: 12px; color: #888; font-weight: normal; letter-spacing: 0.5px; line-height: 1.8; text-align: center; margin-top: 8px; }
+</style>
+</head>
+<body>
+
+<section class="cover-banner">
+  <img src="banner_final.png" alt="数据资产日报头图" style="width:100%;display:block;">
+</section>
+
+<section class="meta-bar">
+  <span class="date">2026年6月19日 · 星期五</span>
+  <span class="source">临数通 · 数据产业周刊编辑部</span>
+</section>
+
+<!-- ========== 今日要闻 ========== -->
+<section class="section">
+  <div class="section-title">今日要闻</div>
+
+  <div class="news-item">
+    <strong><span class="news-index">1</span>中国信通院发布《低空经济数据治理研究报告（2026年）》，低空数据生产量增速达75%</strong>
+    <div class="summary">6月11日，中国信通院产业与规划研究所联合发布《低空经济数据治理研究报告（2026年）》，披露关键数据：截至2025年底，全行业注册无人机328.7万架，全年累计飞行4530.29万小时，低空经济数据生产量增速达75%。报告提出构建"五位一体"数据治理工作体系，明确低空航行数据、飞手数据、空域数据的确权、流通、交易规则。低空经济数据产品化、资产化进入加速期。</div>
+    <br><a class="item-link" href="https://www.cnblogs.com/123456hhcm/p/20471108" target="_blank">原文链接 ↗</a>
+  </div>
+
+  <div class="news-item">
+    <strong><span class="news-index">2</span>粤港澳大湾区数据特区创新合作中心成立，探索数据跨境流动新方案</strong>
+    <div class="summary">粤港澳大湾区数据特区创新合作中心正式宣布成立，标志着粤港澳大湾区加快探索数据跨境流动的新方案。中心将重点推进三地数据标准互认、跨境数据流通监管沙盒、数据出境合规评估互认等创新机制，为大湾区企业数据跨境流动提供"一站式"合规服务。这是继2024年《促进和规范数据跨境流动规定》之后，我国在区域数据跨境制度建设上的重要突破。</div>
+    <br><a class="item-link" href="https://so.html5.qq.com/page/real/search_news?docid=70000021_1826a0ac5e362852" target="_blank">原文链接 ↗</a>
+  </div>
+
+  <div class="news-item">
+    <strong><span class="news-index">3</span>《2026证券业服务绿色金融发展指数报告》发布，绿色金融数据产品化提速</strong>
+    <div class="summary">6月11日，《2026证券业服务绿色金融发展指数报告》在上海碳博会现场发布，最新一期指数结果同比增长2.84%，反映出证券行业服务绿色金融发展的综合效能稳步提升。报告披露，券商正加速将ESG数据、碳数据、绿色项目数据转化为标准化数据产品，为绿色债券发行、碳交易、绿色信贷提供数据支撑。绿色金融数据资产化正在成为券商数字化转型的新方向。</div>
+    <br><a class="item-link" href="https://www.cnfin.com/cmjj-lb/detail/20260612/4425892_1.html" target="_blank">原文链接 ↗</a>
+  </div>
+
+</section>
+
+<!-- ========== 政策动态 ========== -->
+<section class="section">
+  <div class="section-title">政策动态</div>
+
+  <div class="news-item">
+    <strong><span class="news-index">4</span>《个人信息出境认证办法》已施行，数据跨境合规成本显著上升</strong>
+    <div class="summary">《个人信息出境认证办法》已于2026年1月1日正式施行，与国家网信办《促进和规范数据跨境流动规定》共同构成数据跨境制度的完整"拼图"。办法明确要求个人信息出境需经专业机构认证，认证内容包括数据主体同意机制、出境目的合法性、境外接收方数据保护能力等。企业数据跨境合规成本显著上升，建议拥有跨境业务的企业尽快完成数据出境风险自评估。</div>
+    <br><a class="item-link" href="https://new.qq.com/rain/a/20251023A045TK00" target="_blank">原文链接 ↗</a>
+  </div>
+
+  <div class="news-item">
+    <strong><span class="news-index">5</span>广西钦州市实现全市医疗机构影像数据通道贯通，医保影像云平台全面落地</strong>
+    <div class="summary">2026年6月3日，广西钦州市实现全市所有层级医疗机构影像数据通道贯通，依托医保影像云平台推进数字影像服务。患者检查影像数据统一上云存储，实现跨医院、跨区域调阅共享，减少重复检查。医疗影像数据云化存储模式为医疗数据资产化提供了新路径——数据存储成本降低、数据利用率提升、数据授权使用机制可复制，为全国医疗数据要素化提供了示范。</div>
+    <br><a class="item-link" href="https://baike.baidu.com/item/%E4%BA%92%E8%81%94%E7%BD%91%2B%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7/22486151" target="_blank">原文链接 ↗</a>
+  </div>
+
+  <div class="news-item">
+    <strong><span class="news-index">6</span>ESG强制披露"首考"在即，企业可持续数据资产化需求爆发</strong>
+    <div class="summary">随着财政部《企业可持续披露准则》和沪深北交易所《上市公司可持续发展报告指引》全面实施，ESG强制披露"首考"即将到来。企业亟需建立ESG数据采集、治理、核算、核查的全流程管理体系，ESG数据本身正在成为企业重要的数据资产。多家头部企业已开始将碳排放数据、能源使用数据、供应链ESG数据纳入数据资产管理体系，并探索ESG数据资产入表路径。</div>
+    <br><a class="item-link" href="https://fzzx.jl.gov.cn/gzdt/yjdt/202603/t20260325_9455743.html" target="_blank">原文链接 ↗</a>
+  </div>
+
+</section>
+
+<!-- ========== 行业观察 ========== -->
+<section class="section">
+  <div class="section-title">行业观察</div>
+
+  <div class="news-item">
+    <strong><span class="news-index">7</span>低空经济数据产品化提速："可适航航空导航数据"成首个标准化数据产品</strong>
+    <div class="summary">随着《低空经济数据治理研究报告（2026年）》发布，"可适航的'高中低空一体化'航空导航数据"成为首个有明确国家标准的低空经济数据产品。导航数据、空域申请数据、飞行计划数据正在从"原始数据"升级为"可交易数据产品"。低空经济企业提供导航服务、空域申请辅助、飞行计划优化等数据服务，数据资产化路径清晰，融资案例已开始涌现。</div>
+    <br><a class="item-link" href="https://www.cnblogs.com/123456hhcm/p/20471108" target="_blank">原文链接 ↗</a>
+  </div>
+
+  <div class="news-item">
+    <strong><span class="news-index">8</span>2026国际无人机应用及防控大会6月25日北京启幕，低空经济人才缺口成焦点</strong>
+    <div class="summary">2026国际无人机应用及防控大会将于6月25日至27日在北京国家会议中心二期举行。大会期间将召开"2026'低空经济×智能制造'产才协同交流会"，现场发布《低空经济紧缺人才目录》和高薪岗位需求。低空经济数据人才（数据处理、空域算法、飞行数据分析）成为最紧缺岗位类型之一，数据要素与低空经济融合的人才培养体系正在加速建立。</div>
+    <br><a class="item-link" href="https://www.youuav.com/news/detail/202606/63396.html" target="_blank">原文链接 ↗</a>
+  </div>
+
+  <div class="news-item">
+    <strong><span class="news-index">9</span>数据跨境流动新规施行一周年：安全评估效率提升，企业获得感显著增强</strong>
+    <div class="summary">《促进和规范数据跨境流动规定》施行已满一周年。据国家网信办数据，数据出境安全评估用时大幅缩减，企业普遍反映数据出境管理政策不断优化。广东省网络数据安全与个人信息保护协会梳理的"7个更"成效显示：数据跨境更便利、评估效率更高、标准合同备案更简单、自贸区负面清单更实用、粤港澳大湾区数据跨境试点更深入、企业合规成本更低、数据出境活动更活跃。</div>
+    <br><a class="item-link" href="https://www.toutiao.com/article/7484210337470792219/" target="_blank">原文链接 ↗</a>
+  </div>
+
+</section>
+
+<!-- ========== 数据资产入表与资本化 ========== -->
+<section class="section">
+  <div class="section-title">数据资产入表与资本化</div>
+
+  <div class="news-item">
+    <strong><span class="news-index">10</span>ESG数据资产入表路径解析：碳排放数据如何转化为财务报表资产</strong>
+    <div class="summary">随着ESG强制披露临近，企业碳排放数据、能源使用数据、供应链ESG数据的资产化需求爆发。ESG数据资产入表的核心路径：第一步，建立ESG数据采集核算体系（参照GHG Protocol、ISO 14064等标准）；第二步，通过第三方核查认证；第三步，依据《企业数据资源相关会计处理暂行规定》确认无形资产；第四步，以ESG数据资产为基础申请绿色信贷或发行绿色债券。目前已有头部企业完成ESG数据资产入表试点。</div>
+    <br><a class="item-link" href="https://fzzx.jl.gov.cn/gzdt/yjdt/202603/t20260325_9455743.html" target="_blank">原文链接 ↗</a>
+  </div>
+
+  <div class="news-item">
+    <strong><span class="news-index">11</span>低空经济数据资产证券化探索：飞行数据质押融资首单有望年内落地</strong>
+    <div class="summary">随着低空经济数据治理体系的建立，飞行数据、空域数据、无人机运行数据的资产化路径日益清晰。业内透露，已有头部无人机企业正在与金融机构对接，探索以飞行数据资产为质押物申请融资，首单低空经济数据资产质押融资有望在2026年内落地。这将是数据资产融资在"低空经济"这一新赛道上的首次突破，具有标志性意义。</div>
+    <br><a class="item-link" href="https://www.cnblogs.com/123456hhcm/p/20471108" target="_blank">原文链接 ↗</a>
+  </div>
+
+  <!-- TOP5 表格 -->
+  <div style="padding:0 0 14px;">
+    <p style="font-size:11.5px;color:#4A2C1A;font-weight:700;margin:14px 0 8px;">新兴数据资产赛道盘点（截至2026年6月）</p>
+    <table class="top5-table">
+      <thead>
+        <tr>
+          <th style="width:10%;">序号</th>
+          <th style="width:20%;">新兴赛道</th>
+          <th style="width:18%;">核心数据类型</th>
+          <th style="width:52%;">资产化进展</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>低空经济数据</td>
+          <td>导航/空域/飞行数据</td>
+          <td>信通院发布治理报告；首单质押融资有望年内落地</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>ESG/碳数据</td>
+          <td>碳排放/能源/供应链ESG</td>
+          <td>强制披露临近；头部企业已完成入表试点</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>医疗影像数据</td>
+          <td>医保影像云/健康档案</td>
+          <td>广西钦州全市贯通；数据上云为资产化打基础</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>跨境数据合规</td>
+          <td>出境认证/合规评估数据</td>
+          <td>《个人信息出境认证办法》已施行；合规数据服务市场化</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>绿色金融数据</td>
+          <td>绿色债券/碳交易/ESG评级</td>
+          <td>证券业绿色金融指数发布；数据产品化提速</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</section>
+
+<!-- ========== 地方实践 ========== -->
+<section class="section">
+  <div class="section-title">地方实践</div>
+
+  <div class="news-item">
+    <strong><span class="news-index">12</span>粤港澳大湾区数据特区：三地数据标准互认+跨境流通监管沙盒双轮驱动</strong>
+    <div class="summary">粤港澳大湾区数据特区创新合作中心的成立，标志着大湾区数据跨境流动进入"制度型开放"新阶段。中心将重点推进：①三地数据标准互认（粤港深三地数据格式、接口、安全标准统一）；②跨境数据流通监管沙盒（限定场景、限定数据类别、限定数据规模的跨境流通试点）；③数据出境合规评估互认（三地评估结果互认，减少重复评估）。大湾区企业数据跨境合规成本有望降低30%以上。</div>
+    <br><a class="item-link" href="https://so.html5.qq.com/page/real/search_news?docid=70000021_1826a0ac5e362852" target="_blank">原文链接 ↗</a>
+  </div>
+
+  <div class="news-item">
+    <strong><span class="news-index">13</span>广西医保影像云平台全市贯通，医疗数据"上云共享"模式全国推广</strong>
+    <div class="summary">广西钦州市实现全市所有层级医疗机构影像数据通道贯通，依托医保影像云平台，患者影像检查数据统一上云存储，跨医院调阅共享。这一模式正在广西全省推广，并有望纳入国家医保局全国推广计划。医疗影像数据上云后，数据存储成本降低40%以上，数据利用率提升3倍，为医疗数据资产化提供了可复制的"广西模式"。</div>
+    <br><a class="item-link" href="https://baike.baidu.com/item/%E4%BA%92%E8%81%94%E7%BD%91%2B%E5%8C%BB%E7%96%97%E5%81%A5%E5%BA%B7/22486151" target="_blank">原文链接 ↗</a>
+  </div>
+
+  <div class="news-item">
+    <strong><span class="news-index">14</span>北京低空经济大会6月25日启幕，"低空智联数字底座"成核心议题</strong>
+    <div class="summary">2026国际无人机应用及防控大会6月25-27日在北京国家会议中心二期举行，大会核心议题包括"低空智联数字底座"建设。泰伯智库《低空智联技术与应用白皮书（2026）》明确提出：低空经济正从"能飞"的基础保障阶段，迈向"飞得好、飞得安全、飞得经济"的智能协同阶段。低空智联数字底座包括低空航行数据平台、空域动态管理系统、飞行计划优化算法等核心数据资产。</div>
+    <br><a class="item-link" href="https://www.rbc.cn/shangxun/2026-06/10/cms1587860article.shtml" target="_blank">原文链接 ↗</a>
+  </div>
+
+</section>
+
+<!-- ========== 深度观察 ========== -->
+<section class="section">
+  <div class="section-title">深度观察</div>
+
+  <div class="insight-block">
+    <div class="insight-title">🔍 观察一：低空经济数据治理——数据资产化的"新蓝海"赛道</div>
+    <div class="insight-body">
+      中国信通院《低空经济数据治理研究报告（2026年）》的发布，标志着低空经济数据从"野蛮生长"进入"规范发展"阶段。关键信号：<strong>低空经济数据生产量增速达75%</strong>，远超数据要素市场平均增速（39.8%）。导航数据、空域数据、飞行数据的标准化、产品化、资产化路径已经清晰。<br><br>
+      对临平企业而言，区内虽不直接涉及低空经济，但<strong>工业机器人运行数据、智能制造工艺数据</strong>与低空经济的"飞行数据"在数据结构、资产化路径上高度相似。低空经济数据资产化的经验，完全可以复制到工业互联网数据资产化领域。
+    </div>
+  </div>
+
+  <div class="insight-block">
+    <div class="insight-title">🔍 观察二：数据跨境流动"制度型开放"——大湾区模式的全国示范意义</div>
+    <div class="insight-body">
+      粤港澳大湾区数据特区创新合作中心的成立，是继海南自贸港、上海自贸区之后，我国在数据跨境流动制度建设上的第三个标志性突破。与海南、上海模式不同，大湾区模式的核心是<strong>"三地数据标准互认+监管沙盒"</strong>，更贴近实际业务需求。<br><br>
+      对临平的外贸企业、跨境电商企业而言，数据跨境合规是"必修课题"。建议协会尽快邀请大湾区数据跨境合规专家来临平授课，帮助本地企业建立数据出境合规管理体系，避免重蹈"携程被罚1000万"的覆辙。
+    </div>
+  </div>
+
+  <div class="insight-block">
+    <div class="insight-title">🔍 观察三：ESG数据资产化——强制披露"首考"前的最后窗口</div>
+    <div class="insight-body">
+      ESG强制披露"首考"即将到来，企业建立ESG数据资产管理体系的需求从"可选"变为"必选"。ESG数据资产化的核心价值：<strong>一是满足监管披露要求，二是以ESG数据资产申请绿色信贷或发行绿色债券，三是提升企业ESG评级从而降低融资成本</strong>。<br><br>
+      对临平制造业企业而言，碳排放数据、能源使用数据、供应链ESG数据是最具资产化潜力的数据资源。建议协会联合区发改局、生态环境局，举办"ESG数据资产化"专题培训班，帮助本地企业抢占这一新兴赛道。
+    </div>
+  </div>
+
+</section>
+
+<!-- ========== 特别提醒 ========== -->
+<section>
+  <div class="alert-box">
+    <div class="alert-title">⚠️ 特别提醒</div>
+    <div class="alert-body">
+      ① <strong>6月25-27日北京低空经济大会</strong>——低空经济数据资产化是2026年最具爆发力的新兴赛道，建议相关企业关注。<br>
+      ② <strong>ESG强制披露"首考"临近</strong>——企业需尽快建立ESG数据采集核算体系，建议第三季度前完成。<br>
+      ③ <strong>数据出境合规评估互认</strong>——大湾区模式若全国推广，数据跨境合规成本将显著降低，跨境电商企业可重点关注。
+    </div>
+  </div>
+</section>
+
+<!-- ========== 临平关注 ========== -->
+<section>
+  <div class="linping-block">
+    <div class="lp-title">📍 临平关注</div>
+    <div class="lp-body">
+      本周<strong>低空经济数据治理报告发布</strong> + <strong>粤港澳大湾区数据特区成立</strong> + <strong>ESG强制披露临近</strong>三重信号，临平企业应重点关注以下方向：<br><br>
+      <strong>第一，低空经济数据资产化的经验可复制到工业互联网领域。</strong>区内工业机器人运行数据、智能制造工艺数据与低空经济"飞行数据"在资产化路径上高度相似。建议协会组织企业研究低空经济数据资产化案例，探索"临平工业互联网数据资产化"模式。<br><br>
+      <strong>第二，数据跨境合规是临平跨境电商企业的"必修课"。</strong>《个人信息出境认证办法》已施行，建议协会尽快邀请大湾区数据跨境合规专家来临平授课，帮助本地企业建立数据出境合规管理体系。<br><br>
+      <strong>第三，ESG数据资产化是临平制造业企业的新机遇。</strong>区内制造业企业的碳排放数据、能源使用数据具备ESG数据资产化条件，建议协会联合区相关部门，举办"ESG数据资产化"专题培训班。
+    </div>
+  </div>
+</section>
+
+<!-- ========== 事件日历 ========== -->
+<section>
+  <div class="calendar-box">
+    <div class="cal-title">📌 近期重点事件日历</div>
+    <div class="cal-item"><span class="cal-date">2026-06-18～20</span>全球数据合规峰会（上海）</div>
+    <div class="cal-item"><span class="cal-date">2026-06-25～27</span>2026国际无人机应用及防控大会（北京）</div>
+    <div class="cal-item"><span class="cal-date">2026-06-30</span>多地"数据要素×"分赛报名截止</div>
+    <div class="cal-item"><span class="cal-date">2026-07-01</span>DCMM 2.0强制实施（倒计时12天）</div>
+    <div class="cal-item"><span class="cal-date">2026-07-15</span>AI拟人化互动服务管理办法施行</div>
+    <div class="cal-item"><span class="cal-date">2026-07-17</span>2026全球数字经济大会（北京）</div>
+    <div class="cal-item"><span class="cal-date">2026-08-31</span>"数据要素×"大赛初赛阶段结束</div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<section class="daily-footer">
+  <p class="slogan-line">—— 数据驱动未来，资产赋能发展 ——</p>
+  <p class="editor-info">临数通 · 数据产业周刊编辑部</p>
+  <p class="publish-date">2026年6月19日</p>
+</section>
+<section class="copyright-section">
+  <p>本资讯内容来源于外部公开媒体；</p>
+  <p>如链接无法打开、信息与官方发布存在出入；</p>
+  <p>敬请自行核验，本会不对转载内容准确性承担责任。</p>
+  <p>如涉及版权问题，请联系我们处理。</p>
+</section>
+
+<section class="qr-section">
+  <span class="qr-wrapper">
+    <img class="qr-img" src="http://mmbiz.qpic.cn/mmbiz_png/7GicXj7u0w9XDr0neocAYKc9utt4pGon8o7TFnAjJNkzDEIGSSyOAfWPlJ80G2W8bGGGGIpMAo8Q3g0S7ZKlKMQ/0?wx_fmt=png" alt="公众号二维码">
+  </span>
+  <p class="qr-hint">微信扫一扫<br>关注该公众号</p>
+</section>
+
+</body>
+</html>
