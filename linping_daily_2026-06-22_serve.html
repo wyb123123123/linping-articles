@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产日报 - 2026年6月22日</title>
+<style>
+  * { margin:0; padding:0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #F5F1EA;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .cover-banner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #A89880;
+    text-align: center;
+    border-bottom: 1px solid #EBE3D5;
+    letter-spacing: 1px;
+  }
+
+  .daily-body {
+    background: #fff;
+    padding: 24px 22px;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #4A2C1A;
+    padding: 8px 0 8px 14px;
+    border-left: 4px solid #8B6920;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .news-item {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #EBE0CE;
+  }
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .news-item .item-header {
+    margin-bottom: 6px;
+  }
+  .news-item .item-index {
+    display: inline-block;
+    vertical-align: top;
+    background: #8B6920;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 19px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  .news-item .item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2E1F12;
+    line-height: 1.55;
+  }
+  .news-item .item-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .tag-hot        { background: #F0E2D0; color: #6B3A18; }
+  .tag-attention  { background: #F2E6D5; color: #5C3115; }
+  .tag-event      { background: #F1E4D2; color: #7A4520; }
+  .tag-framework  { background: #F0E3D0; color: #5E3316; }
+  .tag-urgent     { background: #F5E8D8; color: #7B3B1A; }
+  .tag-market     { background: #F2E5D4; color: #6D3E1C; }
+  .tag-innovation { background: #F1E4D0; color: #63401E; }
+  .tag-crossborder{ background: #F2E6D2; color: #6B421F; }
+  .tag-model      { background: #F3E7D5; color: #5E3C1A; }
+  .tag-entry      { background: #EFE0CA; color: #704520; }
+  .tag-surge      { background: #F4E8D5; color: #6B3518; }
+  .tag-local      { background: #F1E4CE; color: #6C4220; }
+  .tag-finance    { background: #F0E2CC; color: #683D1C; }
+  .tag-data       { background: #F1E5D0; color: #63421E; }
+  .tag-trust      { background: #F0E4D0; color: #6D3F1C; }
+  .tag-security   { background: #F5E8E0; color: #7B3A1A; }
+  .tag-warning    { background: #F5E8E0; color: #8B2A0A; }
+
+  .news-item .item-desc {
+    font-size: 14px;
+    color: #4A3E30;
+    line-height: 1.78;
+    margin: 6px 0 10px;
+  }
+  .news-item .item-meta {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 12px;
+    color: #A89880;
+    line-height: 1.8;
+  }
+  .news-item .item-source {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #968878;
+  }
+  .news-item .item-link {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #8B6920;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .top5-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    margin-top: 10px;
+    table-layout: fixed;
+  }
+  .top5-table th {
+    background: #D4BE9C;
+    color: #4A2C1A;
+    font-weight: 600;
+    padding: 7px 4px;
+    text-align: center;
+    border-bottom: 2px solid #8B6920;
+  }
+  .top5-table td {
+    padding: 6px 4px;
+    text-align: center;
+    border-bottom: 1px solid #E8D8C0;
+    color: #4A3E30;
+    background: #fff;
+  }
+  .top5-table tr:first-child td {
+    font-weight: 600;
+    color: #4A2C1A;
+    background: #FBF7F1;
+  }
+
+  .observe-block {
+    background: #FBF8F4;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    border: 1px solid #E5D5BC;
+  }
+  .observe-block .observe-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 7px;
+  }
+  .observe-block .observe-text {
+    font-size: 13.5px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+
+  .linping-focus {
+    background: #F4ECD8;
+    border: 1px solid #C9AD7A;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 22px 0;
+  }
+  .linping-focus .lf-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 12px;
+  }
+  .linping-focus .lf-text {
+    font-size: 14px;
+    color: #3A2E20;
+    line-height: 1.85;
+  }
+
+  .reminder-box {
+    background: #FAF7F0;
+    border: 1px solid #D8C5A5;
+    border-left: 4px solid #8B6920;
+    border-radius: 6px;
+    padding: 15px 18px;
+    margin: 18px 0;
+    font-size: 13px;
+    color: #5C3D1A;
+    line-height: 1.85;
+  }
+
+  .daily-footer {
+    background: #fff;
+    padding: 20px 16px 10px;
+    text-align: center;
+  }
+  .daily-footer .slogan-line {
+    font-size: 14px;
+    color: #888;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 2;
+    text-align: center;
+  }
+  .daily-footer .editor-info {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    text-align: center;
+  }
+  .daily-footer .publish-date {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.8;
+    text-align: center;
+  }
+  .copyright-section {
+    text-align: center;
+    padding: 8px 16px 16px;
+    margin: 0;
+  }
+  .copyright-section p {
+    font-size: 11px;
+    color: #b2b2b2;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  .qr-section {
+    background: #f7f7f7;
+    padding: 20px 16px;
+    margin: 16px 0 0;
+    text-align: center;
+    border-radius: 0;
+  }
+  .qr-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .qr-section .qr-img {
+    width: 120px;
+    height: 120px;
+    display: block;
+    border: 0;
+    margin: 0 auto;
+  }
+  .qr-section .qr-hint {
+    font-size: 12px;
+    color: #888;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<!-- 封面头图 -->
+<img class="cover-banner" src="banner_final.png" alt="数据资产日报 2026年6月22日">
+
+<!-- 编辑部信息栏 -->
+<section class="meta-bar">
+  DATA ASSET DAILY REPORT · 2026年6月22日 星期一 · 临数通 × 临平数协 联合出品
+</section>
+
+<!-- 主体内容 -->
+<section class="daily-body">
+
+  <!-- ① 今日要闻 -->
+  <section class="section">
+    <section class="section-title">🔥 今日要闻</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">七部委联合印发《平台经济大中小企业协同发展行动方案（2026—2028）》<span class="item-tag tag-hot">重磅</span></span>
+      </section>
+      <section class="item-desc">
+        工信部、中央网信办、发改委、科技部、商务部、市场监管总局、国家数据局7个部委联合出手：到2028年，发布3批平台开放清单，遴选不少于100个平台资源开放场景试点项目，打造不少于10个智能服务平台及60个可落地应用场景。方案明确将<strong>通用大模型、行业垂直大模型、自主AI智能体</strong>列为核心扶持赛道，推动平台间数据互通互联，探索"破壁垒、促开放、强协同"新格局。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：工业和信息化部 · 2026年6月18日</span><br>
+        <a class="item-link" href="https://www.miit.gov.cn/jgsj/xgj/wjfb/art/2026/art_9e17a2a2908f4f46a251bee44d83275f.html">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">网信办、工信部、公安部联合发布《网络数据安全风险评估办法》<span class="item-tag tag-security">安全</span></span>
+      </section>
+      <section class="item-desc">
+        三部门6月18日联合公布，<strong>8月20日起施行</strong>。办法规定建立网络数据安全风险评估专项工作机制，明确主管部门对<strong>重要数据处理者</strong>开展风险评估检查，并禁止对同一事件重复要求评估——合规"减负"与安全"提质"并重。这是我国数据安全领域继《数据安全法》后又一重量级落地执行规范，对平台企业数据合规工作提出具体操作指引。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：国家互联网信息办公室 · 2026年6月18日</span><br>
+        <a class="item-link" href="https://www.cac.gov.cn/2026-06/18/c_1783525609778371.htm">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">智谱AI开源旗舰模型GLM-5.2，AI编程全球第二<span class="item-tag tag-model">大模型</span></span>
+      </section>
+      <section class="item-desc">
+        智谱正式上线并以MIT协议开源GLM-5.2，支持<strong>百万级超长上下文</strong>，在全球开源模型Code Arena中夺得第一（全球第二，仅次于Claude Fable 5）。此次开源背景是部分海外先进AI模型因合规限制在中国停用，GLM-5.2以"自主可控+开放普惠"直接填补市场真空，数据训练与推理数据也将随着大规模使用加速积累成为企业核心数据资产。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：智谱AI · 2026年6月17日</span><br>
+        <a class="item-link" href="https://news.qq.com/rain/a/20260617A03S3O00">原文链接 ↗</a>
+      </section>
+    </section>
+  </section>
+
+  <!-- ② 政策动态 -->
+  <section class="section">
+    <section class="section-title">📋 政策动态</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">4</span>
+        <span class="item-title">住建部与国家数据局联合发文：房屋建筑统一代码制度全面建立<span class="item-tag tag-framework">框架</span></span>
+      </section>
+      <section class="item-desc">
+        两部门联合印发通知，要求到<strong>2027年底</strong>实现新建房屋建筑统一代码赋码全覆盖，推进全生命周期"一码贯通"；到<strong>2030年底</strong>全面建成房屋建筑高质量数据集，提升城市智慧治理能力。这标志着建筑数据资产化进入国家顶层设计，为城市数字孪生和智慧城市建设提供数据底座支撑。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：国家数据局 · 2026年6月18日</span><br>
+        <a class="item-link" href="https://www.nda.gov.cn/">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">5</span>
+        <span class="item-title">国家网信办发布《分布式数字身份互通互认规定（征求意见稿）》<span class="item-tag tag-attention">关注</span></span>
+      </section>
+      <section class="item-desc">
+        依托国家区块链网络建设"身份链"，支持个人和企事业单位申请DID（分布式数字身份）；经权威机构核验后签发实名凭证；<strong>鼓励DID与数字人民币、税务、海关等行业身份体系互通互认</strong>，构建全国一体化可信数字身份生态。DID的推广将为数据确权、数据产品交易链路提供更可信的身份基础。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：网信中国 · 2026年6月18日</span><br>
+        <a class="item-link" href="https://www.cac.gov.cn/">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">6</span>
+        <span class="item-title">四川省出台数字经济创新型企业培育方案，探索数据资产质押贷款<span class="item-tag tag-finance">金融</span></span>
+      </section>
+      <section class="item-desc">
+        四川省发改委发布方案，扩容省级"算力券"，首次探索<strong>"词元（Token）券"</strong>政策；支持数据权益纳入可质押知识产权范围，探索<strong>数据资产质押贷款</strong>；支持符合条件的数创企业上市挂牌。Token券与数据资产质押的同步落地，意味着西部省份正在全面打通"数据→入表→融资"全链条。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：四川省发展和改革委员会 · 2026年6月</span><br>
+        <a class="item-link" href="https://www.sc.gov.cn/">原文链接 ↗</a>
+      </section>
+    </section>
+  </section>
+
+  <!-- ③ 行业观察 -->
+  <section class="section">
+    <section class="section-title">📊 行业观察</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">7</span>
+        <span class="item-title">我国算力总规模跃居全球第二，"六张网"建设全面提速<span class="item-tag tag-surge">爆发</span></span>
+      </section>
+      <section class="item-desc">
+        央视报道，中国算力总规模已跃居全球第二，成为国家"六张网"（算力网、政务网、物联网、工业互联网、能源互联网、交通互联网）中最新一张网。"十五五"规划纲要明确深入推进"东数西算"工程，构建多层次算力设施体系。<strong>广东省</strong>同步公布AI算力三年行动方案，2028年目标智能算力突破<strong>300EFLOPS</strong>、新建不少于20个智能计算中心。算力即数据处理能力，也是数据资产价值释放的核心底座。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：央视新闻、广东省人民政府 · 2026年6月19日</span><br>
+        <a class="item-link" href="https://baijiahao.baidu.com/s?id=1868520618834832416">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">8</span>
+        <span class="item-title">上海数交所严正声明：数据资产代币化RWA均为骗局<span class="item-tag tag-warning">预警</span></span>
+      </section>
+      <section class="item-desc">
+        上海数据交易所6月15日发布严正声明：当前不开展任何形式的<strong>现实世界资产代币化（RWA）</strong>及打着"RDA"旗号的类金融、变相募集资金业务，从未授权或委托任何主体以本所名义进行上述活动。背景是多个不法机构冒用上海数交所名义行骗。数据资产市场健康发展需要坚决划清"产业创新"与"金融欺诈"的边界。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：上海数据交易所 · 2026年6月15日</span><br>
+        <a class="item-link" href="https://www.chinadep.com/bulletin/notices/CTC_20260615170521150892">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">9</span>
+        <span class="item-title">中国加紧筹建世界人工智能合作组织，构建数据主权新秩序<span class="item-tag tag-hot">重磅</span></span>
+      </section>
+      <section class="item-desc">
+        外交部长王毅在国新办新闻发布会上宣布，<strong>中国正加紧筹建世界人工智能合作组织</strong>，欢迎各方加入，共促"智能向善"。这一动作与国家数据局推进高质量数据集建设、"数据要素×"三年收官高度协同——只有掌握高质量数据资产，才能在国际AI合作中拥有实质性话语权。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：人民日报 · 2026年6月17日</span><br>
+        <a class="item-link" href="https://news.qq.com/rain/a/20260620A08MB600">原文链接 ↗</a>
+      </section>
+    </section>
+  </section>
+
+  <!-- ④ 数据入表与资本化 -->
+  <section class="section">
+    <section class="section-title">💹 数据入表与资本化</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">10</span>
+        <span class="item-title">数字人民币国际运营中心与26家金融机构签约，跨境支付迈上新台阶<span class="item-tag tag-crossborder">跨境</span></span>
+      </section>
+      <section class="item-desc">
+        在2026中国国际金融展上，数字人民币国际运营中心与首批<strong>26家金融机构</strong>（含工银亚洲、中银香港、农行香港分行等）签署直接参与者服务协议，依托"数币达"（CBETS）平台提供低成本跨境数字支付服务。同步成立的<strong>上海跨境贸易数字金融服务公司</strong>注册资本5亿元，上海数据集团为第二大股东——数据资产正式成为跨境金融基础设施的战略资源。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：新华社、支付之家 · 2026年6月16日</span><br>
+        <a class="item-link" href="https://finance.sina.com.cn/jjxw/2026-06-17/doc-inicsmhw5753844.shtml">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">11</span>
+        <span class="item-title">武汉"汉数通"以Token为计价单位的AI数据交易模式正式运营<span class="item-tag tag-innovation">创新</span></span>
+      </section>
+      <section class="item-desc">
+        武汉"汉数通"数据服务中心启动运营，在全国<strong>率先探索以Token为计价单位</strong>的AI数据交易新模式，实现数据产品流通次数指数级增长。同期，厦门"词元（Token）超市"上线，国产大模型时代"Token经济"正成为数据资产定价的新维度——从"按条计费"升级为"按智能价值计费"。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：武汉市数据局 · 2026年6月16日</span><br>
+        <a class="item-link" href="https://www.anyong.net/data-space/industry-trends/5079.html">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <!-- 数据资产融资方式对比表 -->
+    <section style="margin-top: 14px;">
+      <p style="font-size:11.5px;color:#4A2C1A;font-weight:700;margin:14px 0 8px;">新型数据资产定价计量体系 — Token时代的四大计价维度</p>
+      <table class="top5-table">
+        <thead>
+          <tr>
+            <th style="width:20%">计价维度</th>
+            <th style="width:30%">代表模式</th>
+            <th style="width:25%">落地案例</th>
+            <th style="width:25%">适用场景</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Token消耗量</td>
+            <td>词元券 / Token超市</td>
+            <td>四川词元券、厦门超市</td>
+            <td>AI推理服务</td>
+          </tr>
+          <tr>
+            <td>数据流通次数</td>
+            <td>汉数通交易模式</td>
+            <td>武汉汉数通平台</td>
+            <td>结构化数据产品</td>
+          </tr>
+          <tr>
+            <td>数据集质量评级</td>
+            <td>贵阳数商分级评价</td>
+            <td>贵阳大数交所</td>
+            <td>高质量训练数据</td>
+          </tr>
+          <tr>
+            <td>资产入表价值</td>
+            <td>会计评估+ABS融资</td>
+            <td>各地入表补贴政策</td>
+            <td>企业融资增信</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </section>
+
+  <!-- ⑤ 地方实践 -->
+  <section class="section">
+    <section class="section-title">🌏 地方实践</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">12</span>
+        <span class="item-title">上海开展2026年数字出海服务平台试点，杭州经信局推进AI产业项目申报<span class="item-tag tag-local">地方</span></span>
+      </section>
+      <section class="item-desc">
+        上海市数据局启动数字出海服务平台试点，围绕<strong>提升数字出海服务供给质量、深化数据领域国际合作</strong>两大目标，构筑功能互补的出海服务网络。杭州市经信局同期组织2026年第一批人工智能产业项目申报，涵盖多模态通用大模型、垂直领域专用模型、标杆型应用场景示范项目等——<strong>临平区企业</strong>可借此窗口积极申报，抢占政策红利。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：上海市数据局、杭州市经信局 · 2026年6月17日/6月12日</span><br>
+        <a class="item-link" href="https://www.anyong.net/data-space/industry-trends/5079.html">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">13</span>
+        <span class="item-title">广东"湾擎"省级政务智能中枢上线，全国首个省级AI治理平台落地<span class="item-tag tag-innovation">创新</span></span>
+      </section>
+      <section class="item-desc">
+        广东"湾擎"省级政务智能中枢上线试运行，构建"3553"服务体系，搭建Token级安全可控AI创新沙箱，成为全国政务智能应用创新核心载体。同日，<strong>重庆渝中区"数据系"产业发展三年行动方案</strong>发布，按"1+9+5+N"体系打造全链条产业生态，建设西部数据交易中心渝中专区。长三角、珠三角、西部三大区域数据产业加速圈层聚合。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：央视新闻、渝中发布 · 2026年6月17日/6月12日</span><br>
+        <a class="item-link" href="https://www.anyong.net/data-space/industry-trends/5079.html">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">14</span>
+        <span class="item-title">贵阳大数交所发布数据商分级评价体系，构建数据生态协同机制<span class="item-tag tag-market">市场</span></span>
+      </section>
+      <section class="item-desc">
+        贵阳大数据交易所正式发布<strong>数据商分级评价体系</strong>，将数据商划分为资源型、技术型、应用型、服务型四大类，从基础实力、数据运营能力、交易规模等七个维度进行评价。分级评价不仅是数据市场规范化的重要工具，也是数据资产"品质标签化"的探索——分级越高，数据产品在融资、质押、ABS等环节获得的溢价越高。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：贵阳大数据交易所 · 2026年6月15日</span><br>
+        <a class="item-link" href="https://www.anyong.net/data-space/industry-trends/5079.html">原文链接 ↗</a>
+      </section>
+    </section>
+  </section>
+
+  <!-- ⑥ 深度观察 -->
+  <section class="section">
+    <section class="section-title">🔬 深度观察</section>
+
+    <section class="observe-block">
+      <section class="observe-label">观察① · 七部委协同定调：平台经济进入数据要素"开放共享期"</section>
+      <section class="observe-text">
+        七部委联合行动罕见地将<strong>国家数据局列入共同发文主体</strong>，表明数据要素已成为平台经济大中小企业协同的核心粘合剂。方案要求发布平台开放清单、遴选开放场景试点，实质是用行政手段推动平台数据从"垄断资产"转向"流通要素"。对数据资产化产业而言，这意味着更多企业将在数据开放框架下获得高质量外部数据，数据采购、数据治理、数据产品化需求将持续扩大。
+      </section>
+    </section>
+
+    <section class="observe-block">
+      <section class="observe-label">观察② · Token计价革命：数据资产定价逻辑正在重构</section>
+      <section class="observe-text">
+        从武汉"汉数通"到四川"词元券"，再到招商银行首张"Token信用卡"，<strong>Token（词元）正在成为AI时代数据价值的最小计量单位</strong>。这一趋势的深层逻辑是：数据的价值最终体现在其驱动AI模型推理的能力上。传统"按条/按GB计费"的数据交易模式正在被"按智能价值计费"替代。先建立数据资产→再挂钩Token价值→再进入金融融资体系，这条路径正在多省加速打通。
+      </section>
+    </section>
+
+    <section class="observe-block">
+      <section class="observe-label">观察③ · 数据安全新时代：合规成本下降，违规代价上升</section>
+      <section class="observe-text">
+        《网络数据安全风险评估办法》（8月20日施行）与《促进平台经济协同发展行动方案》共同构建了"鼓励开放+强化安全"的双轨格局。前者降低了合规企业的重复评估负担（明确禁止就同一事件重复要求评估），后者要求平台开放数据但须符合数据安全标准。企业的最优策略是：<strong>尽早完成数据安全体系建设，越快合规，越能抢先享受数据开放红利</strong>，同时避免8月施行后的合规追责风险。
+      </section>
+    </section>
+  </section>
+
+  <!-- ⑦ 临平关注 -->
+  <section class="linping-focus">
+    <section class="lf-title">📍 临平关注</section>
+    <section class="lf-text">
+      本周政策密集落地，临平企业有三项紧迫行动窗口：<br><br>
+      <strong>一、参与杭州市第一批AI产业项目申报。</strong>杭州市经信局已正式开放申报，涵盖多模态大模型、垂直专用模型、标杆应用场景等多类型。临平算力小镇签约企业（自动驾驶、AI芯片、工业大模型）、老板电器（国家高质量数据集试点）等具有明确竞争优势，协会可协助做好申报材料对接工作。<br><br>
+      <strong>二、尽快部署数据安全风险评估体系。</strong>《网络数据安全风险评估办法》将于8月20日施行，距今约两个月。拥有大量用户数据的制造企业、平台型企业应尽快自查"重要数据处理者"认定范围，提前完成安全评估，避免施行后的合规被动局面。协会可召集区内重点企业开展政策解读与合规培训。<br><br>
+      <strong>三、借力Token计价新模式开拓数据资产融资新路径。</strong>四川、武汉相继试点数据资产质押贷款和Token计价交易，结合临平数智城"数字经济核心产业增加值91.15亿元"的基础，区内企业可主动探索将生产数据、设备运行数据与AI推理服务挂钩，提前布局数据资产化的"Token价值锚"，为未来融资创造溢价空间。
+    </section>
+  </section>
+
+  <!-- ⑧ 特别提醒 -->
+  <section class="reminder-box">
+    <strong>📌 近期重点事件日历</strong><br>
+    · <strong>2026-06-22</strong>｜今日：七部委平台经济方案已印发，开始研读对接<br>
+    · <strong>2026-06-30</strong>｜"数据要素×"大赛浙江分赛各地选拔赛报名截止（部分城市）<br>
+    · <strong>2026-07-01</strong>｜DCMM 2.0国家标准（GB/T 36073-2025）正式施行<br>
+    · <strong>2026-07-15</strong>｜"数据要素×"大赛浙江分赛报名全面截止，临平企业务必提前准备<br>
+    · <strong>2026-07-17～20</strong>｜2026世界人工智能大会（WAIC）在上海世博中心举办<br>
+    · <strong>2026-08-20</strong>｜《网络数据安全风险评估办法》正式施行，企业须完成合规自查<br>
+    · <strong>2026-Q3</strong>｜数据资产ABS穿透式监管新规预计出炉，数据信托结构将面临重构
+  </section>
+
+</section><!-- /daily-body -->
+
+<!-- ========== FOOTER ========== -->
+<section class="daily-footer">
+  <p class="slogan-line">—— 数据驱动未来，资产赋能发展 ——</p>
+  <p class="editor-info">临数通 · 数据产业周刊编辑部</p>
+  <p class="publish-date">2026年6月22日</p>
+</section>
+<section class="copyright-section">
+  <p>本资讯内容来源于外部公开媒体；</p>
+  <p>如链接无法打开、信息与官方发布存在出入；</p>
+  <p>敬请自行核验，本会不对转载内容准确性承担责任。</p>
+  <p>如涉及版权问题，请联系我们处理。</p>
+</section>
+
+<!-- ===== 二维码关注区 ===== -->
+<section class="qr-section">
+  <span class="qr-wrapper">
+    <img class="qr-img" src="http://mmbiz.qpic.cn/mmbiz_png/7GicXj7u0w9XDr0neocAYKc9utt4pGon8o7TFnAjJNkzDEIGSSyOAfWPlJ80G2W8bGGGGIpMAo8Q3g0S7ZKlKMQ/0?wx_fmt=png" alt="公众号二维码">
+  </span>
+  <p class="qr-hint">微信扫一扫<br>关注该公众号</p>
+</section>
+
+</body>
+</html>
