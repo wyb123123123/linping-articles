@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产日报 - 2026年6月23日</title>
+<style>
+  * { margin:0; padding:0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #F5F1EA;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .cover-banner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #A89880;
+    text-align: center;
+    border-bottom: 1px solid #EBE3D5;
+    letter-spacing: 1px;
+  }
+
+  .daily-body {
+    background: #fff;
+    padding: 24px 22px;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #4A2C1A;
+    padding: 8px 0 8px 14px;
+    border-left: 4px solid #8B6920;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .news-item {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #EBE0CE;
+  }
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .news-item .item-header {
+    margin-bottom: 6px;
+  }
+  .news-item .item-index {
+    display: inline-block;
+    vertical-align: top;
+    background: #8B6920;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 19px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  .news-item .item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2E1F12;
+    line-height: 1.55;
+  }
+  .news-item .item-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .tag-hot        { background: #F0E2D0; color: #6B3A18; }
+  .tag-attention  { background: #F2E6D5; color: #5C3115; }
+  .tag-event      { background: #F1E4D2; color: #7A4520; }
+  .tag-framework  { background: #F0E3D0; color: #5E3316; }
+  .tag-urgent     { background: #F5E8D8; color: #7B3B1A; }
+  .tag-market     { background: #F2E5D4; color: #6D3E1C; }
+  .tag-innovation { background: #F1E4D0; color: #63401E; }
+  .tag-crossborder{ background: #F2E6D2; color: #6B421F; }
+  .tag-model      { background: #F3E7D5; color: #5E3C1A; }
+  .tag-entry      { background: #EFE0CA; color: #704520; }
+  .tag-surge      { background: #F4E8D5; color: #6B3518; }
+  .tag-local      { background: #F1E4CE; color: #6C4220; }
+  .tag-finance    { background: #F0E2CC; color: #683D1C; }
+  .tag-data       { background: #F1E5D0; color: #63421E; }
+  .tag-trust      { background: #F0E4D0; color: #6D3F1C; }
+  .tag-security   { background: #F5E8E0; color: #7B3A1A; }
+  .tag-warning    { background: #F5E8E0; color: #8B2A0A; }
+
+  .news-item .item-desc {
+    font-size: 14px;
+    color: #4A3E30;
+    line-height: 1.78;
+    margin: 6px 0 10px;
+  }
+  .news-item .item-meta {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    font-size: 12px;
+    color: #A89880;
+    line-height: 1.8;
+  }
+  .news-item .item-source {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #968878;
+  }
+  .news-item .item-link {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    color: #8B6920;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .top5-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    margin-top: 10px;
+    table-layout: fixed;
+  }
+  .top5-table th {
+    background: #D4BE9C;
+    color: #4A2C1A;
+    font-weight: 600;
+    padding: 7px 4px;
+    text-align: center;
+    border-bottom: 2px solid #8B6920;
+  }
+  .top5-table td {
+    padding: 6px 4px;
+    text-align: center;
+    border-bottom: 1px solid #E8D8C0;
+    color: #4A3E30;
+    background: #fff;
+  }
+  .top5-table tr:first-child td {
+    font-weight: 600;
+    color: #4A2C1A;
+    background: #FBF7F1;
+  }
+
+  .observe-block {
+    background: #FBF8F4;
+    border-radius: 8px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+    border: 1px solid #E5D5BC;
+  }
+  .observe-block .observe-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 7px;
+  }
+  .observe-block .observe-text {
+    font-size: 13.5px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+
+  .linping-focus {
+    background: #F4ECD8;
+    border: 1px solid #C9AD7A;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 22px 0;
+  }
+  .linping-focus .lf-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 12px;
+  }
+  .linping-focus .lf-text {
+    font-size: 14px;
+    color: #3A2E20;
+    line-height: 1.85;
+  }
+
+  .reminder-box {
+    background: #FAF7F0;
+    border: 1px solid #D8C5A5;
+    border-left: 4px solid #8B6920;
+    border-radius: 6px;
+    padding: 15px 18px;
+    margin: 18px 0;
+    font-size: 13px;
+    color: #5C3D1A;
+    line-height: 1.85;
+  }
+
+  .daily-footer {
+    background: #fff;
+    padding: 20px 16px 10px;
+    text-align: center;
+  }
+  .daily-footer .slogan-line {
+    font-size: 14px;
+    color: #888;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 2;
+    text-align: center;
+  }
+  .daily-footer .editor-info {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    text-align: center;
+  }
+  .daily-footer .publish-date {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.8;
+    text-align: center;
+  }
+  .copyright-section {
+    text-align: center;
+    padding: 8px 16px 16px;
+    margin: 0;
+  }
+  .copyright-section p {
+    font-size: 11px;
+    color: #b2b2b2;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  .qr-section {
+    background: #f7f7f7;
+    padding: 20px 16px;
+    margin: 16px 0 0;
+    text-align: center;
+    border-radius: 0;
+  }
+  .qr-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .qr-section .qr-img {
+    width: 120px;
+    height: 120px;
+    display: block;
+    border: 0;
+    margin: 0 auto;
+  }
+  .qr-section .qr-hint {
+    font-size: 12px;
+    color: #888;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<!-- 封面头图 -->
+<img class="cover-banner" src="banner_final.png" alt="数据资产日报 2026年6月23日">
+
+<!-- 编辑部信息栏 -->
+<section class="meta-bar">
+  DATA ASSET DAILY REPORT · 2026年6月23日 星期二 · 临数通 × 临平数协 联合出品
+</section>
+
+<!-- 主体内容 -->
+<section class="daily-body">
+
+  <!-- ① 今日要闻 -->
+  <section class="section">
+    <section class="section-title">🔥 今日要闻</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">六部门联合印发《金融信息服务数据分类分级指南》<span class="item-tag tag-finance">金融</span></span>
+      </section>
+      <section class="item-desc">
+        国家网信办、央行、金融监管总局、证监会、国家统计局、国家外汇局六部门联合出手，为金融数据资产入表与合规流通确立<strong>统一标尺</strong>。指南按业务属性将数据分为<strong>业务数据、用户数据、企业数据</strong>3个一级类、9个二级类、67个三级类；按重要程度和敏感程度分为<strong>核心数据、重要数据、敏感一般数据、常规一般数据</strong>四级。这是金融领域首个跨部委协同的数据分类分级国家标准，标志着金融数据资产化进入"有标可依"新阶段。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：国家网信办 · 2026年6月13日</span><br>
+        <a class="item-link" href="https://news.qq.com/rain/a/20260615A0949R00">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">2026中国国际金融展开幕："数币达"升级+AI深度赋能金融<span class="item-tag tag-innovation">创新</span></span>
+      </section>
+      <section class="item-desc">
+        6月16日，2026中国国际金融展在上海开幕。数字人民币国际运营中心将原有三大平台迭代升级为<strong>"数币达"跨境数字支付平台</strong>，接入首批金融机构，实现跨境支付、区块链服务、数字资产三大功能一体化。央行副行长邹澜指出，要强化科技引领，加强新阶段金融科技发展顶层设计。展会同时聚焦AI技术深度赋能金融行业，多家机构展出AI风控、智能投顾、数字员工等落地应用。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：新华网 · 2026年6月17日</span><br>
+        <a class="item-link" href="https://www.xinhuanet.com/fortune/20260617/d297cdab324548a3ab840ed40fe4cad8/c.html">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">北京2026年优化营商环境十大行动启动，数据要素开放纳入改革方向<span class="item-tag tag-framework">框架</span></span>
+      </section>
+      <section class="item-desc">
+        北京市6月16日正式启动2026年优化营商环境十大行动，围绕"政府服务更高效、企业经营更安心、发展动能更充沛"三大维度推进。其中<strong>基层改革创新攻坚行动</strong>明确面向企业系统化开放政务、医疗、交通等领域应用场景，推动新技术新产品率先落地，探索新业态新模式<strong>"沙盒监管"</strong>；产业发展"全链赋能"行动聚焦机器人、生物医药、智能终端等领域打造"一区一产业"营商环境示范。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：北京日报客户端 · 2026年6月16日</span><br>
+        <a class="item-link" href="https://so.html5.qq.com/page/real/search_news?docid=70000021_8776a30d1e175952">原文链接 ↗</a>
+      </section>
+    </section>
+  </section>
+
+  <!-- ② 政策动态 -->
+  <section class="section">
+    <section class="section-title">📋 政策动态</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">4</span>
+        <span class="item-title">DCMM 2.0倒计时8天：7月1日正式实施，新增数据资产域<span class="item-tag tag-urgent">急</span></span>
+      </section>
+      <section class="item-desc">
+        国家标准《数据管理能力成熟度评估模型》（GB/T 36073-2025，简称DCMM 2.0）将于<strong>7月1日正式实施</strong>。相比1.0版本，DCMM 2.0<strong>新增数据资产域</strong>，升级能力项与成熟度规则，从传统数据管理向现代化要素运营演进，适配数据要素市场化与合规要求。企业需重点关注：数据资产域涵盖数据资产盘点、登记、评估、运营等全链条管理能力，是企业数据资产入表的重要前置基础。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：国家市场监督管理总局 · 2025年12月31日发布</span><br>
+        <a class="item-link" href="https://www.sohu.com/a/990930284_120341746">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">5</span>
+        <span class="item-title">公共数据授权运营价格机制落地：政府指导定价首批产品在福建交付<span class="item-tag tag-data">数据</span></span>
+      </section>
+      <section class="item-desc">
+        全国首批政府指导定价的公共数据授权运营产品在福建正式交付，标志着公共数据要素市场从"探索期"进入<strong>"定价流通期"</strong>。国家数据局在《2026年数字经济发展工作要点》中明确提出"推动各地加快建立健全公共数据授权运营价格形成机制"。福建模式的核心是：政府定底价、市场调浮价、运营方收费按比例返还，为百万小微企业获信贷提供数据支撑，形成"公共数据→信用评估→普惠金融"闭环。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：国家数据局 · 2026年5月20日</span><br>
+        <a class="item-link" href="https://www.gov.cn/lianbo/202605/content_7069803.htm">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">6</span>
+        <span class="item-title">《个人信息出境认证办法》施行：数据跨境制度"三驾马车"补齐<span class="item-tag tag-crossborder">跨境</span></span>
+      </section>
+      <section class="item-desc">
+        国家网信办、国家市场监管总局联合发布的《个人信息出境认证办法》已于2026年1月1日起施行。该办法与<strong>数据出境安全评估、个人信息出境标准合同</strong>并列，构成我国数据跨境流动管理的"三驾马车"。办法明确了个人信息出境认证的适用情形、认证机构条件和程序要求，为企业提供了一条<strong>合规成本更低、适用范围更广</strong>的数据出境路径，特别利好跨境电商、跨国企业集团内部数据传输。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：国家互联网信息办公室 · 2025年10月30日</span><br>
+        <a class="item-link" href="https://finance.sina.com.cn/tjhz/2025-10-30/doc-infvrnxr2637738.shtml">原文链接 ↗</a>
+      </section>
+    </section>
+  </section>
+
+  <!-- ③ 行业观察 -->
+  <section class="section">
+    <section class="section-title">📊 行业观察</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">7</span>
+        <span class="item-title">企业级AI智能体市场爆发：2026年将达449亿元，年复合增长107%<span class="item-tag tag-surge">爆发</span></span>
+      </section>
+      <section class="item-desc">
+        央视财经报道，中国企业级AI智能体市场2025年已达<strong>212亿元</strong>，预计2026年将增至<strong>449亿元</strong>，2029年有望突破3320亿元，年复合增长率高达<strong>107%</strong>。智能体相关专利申请去年暴涨143%。智源大会发布FlagOS 2.1基础软硬件生态，推出覆盖心脏辅助诊断、科学发现、个人专属助理的智能体解决方案，标志着AI从"模型能力"走向<strong>"模型+智能体+芯片适配+真实工作流"</strong>的系统化落地阶段。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：央视财经/智源大会 · 2026年6月16日</span><br>
+        <a class="item-link" href="https://finance.sina.com.cn/stock/t/2026-06-10/doc-iniaxeiv1328011.shtml">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">8</span>
+        <span class="item-title">"数据要素×"大赛多地分赛密集启动：四川、江苏、吉林同步开赛<span class="item-tag tag-event">赛事</span></span>
+      </section>
+      <section class="item-desc">
+        2026年"数据要素×"大赛分赛进入密集启动期。<strong>四川分赛</strong>暨第七届数字四川创新大赛6月16日在成都启动，22个省直部门联动；<strong>江苏分赛</strong>同日在常州启动，设置17个赛道125个赛题，聚焦工业制造和体育服务；<strong>吉林分赛</strong>长春站初赛同步启动，定于6月至9月举行。三地分赛均由国家数据局和省级人民政府指导，形成"国家指导+省级主办+市州落地"三级联动格局。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：国家数据局/四川省发改委 · 2026年6月16-18日</span><br>
+        <a class="item-link" href="https://news.qq.com/rain/a/20260618A0ABFX00">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">9</span>
+        <span class="item-title">算力网纳入国家"六张网"顶层部署：东数西算深化，四部委联合推进<span class="item-tag tag-market">市场</span></span>
+      </section>
+      <section class="item-desc">
+        算力网作为"六张网"之一被纳入国家顶层部署。国家发改委等四部委联合印发通知，在京津冀、长三角、粤港澳大湾区、成渝、内蒙古、贵州、甘肃、宁夏八大枢纽节点持续推进扩容。我国算力总规模已跃居<strong>全球第二</strong>，AI爆发式增长使算力需求呈指数级攀升。宁夏中卫西部云基地新建数据中心机房层高从5米"长高"到更高标准，专业电工供不应求——算力基础设施正从"建设期"进入<strong>"运营提质期"</strong>。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：新华网/国家发改委 · 2026年6月16-22日</span><br>
+        <a class="item-link" href="https://finance.sina.com.cn/jjxw/2026-06-16/doc-inicqnrs9556342.shtml">原文链接 ↗</a>
+      </section>
+    </section>
+  </section>
+
+  <!-- ④ 数据入表与资本化 -->
+  <section class="section">
+    <section class="section-title">💰 数据入表与资本化</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">10</span>
+        <span class="item-title">金融数据分类分级指南为数据资产入表确立统一标尺<span class="item-tag tag-entry">入表</span></span>
+      </section>
+      <section class="item-desc">
+        六部门《金融信息服务数据分类分级指南》的发布，直接解决了金融数据资产入表面临的<strong>"分类无标尺、分级无依据"</strong>痛点。此前金融机构数据资产入表面临分类口径不一、敏感程度界定模糊等难题，导致估值和审计缺乏统一基准。新指南将67个三级类目与四级分级体系对应到财务核算科目，为金融机构数据资产<strong>盘点→登记→评估→入表→流通</strong>全链条提供操作依据，预计将大幅加速金融行业数据资产入表进程。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：国家网信办等六部门 · 2026年6月13日</span><br>
+        <a class="item-link" href="https://news.qq.com/rain/a/20260615A0949R00">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">11</span>
+        <span class="item-title">公共数据授权运营定价落地：数据资产融资五大路径成型<span class="item-tag tag-trust">信托</span></span>
+      </section>
+      <section class="item-desc">
+        福建首批政府指导定价公共数据产品交付，验证了"公共数据→信用评估→普惠金融"闭环模式的商业可行性。结合近期数据资产质押贷款、Token券试点、数据ABS等创新实践，数据资产融资已形成五大可复制路径。以下表格系统梳理各模式的核心要素与适用场景：
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：国家数据局/福建省数据局 · 2026年6月</span><br>
+        <a class="item-link" href="https://www.gov.cn/lianbo/202605/content_7069803.htm">原文链接 ↗</a>
+      </section>
+      <p style="font-size:11.5px;color:#4A2C1A;font-weight:700;margin:14px 0 8px;">2026年数据资产融资五大路径对比</p>
+      <table class="top5-table">
+        <thead>
+          <tr>
+            <th style="width:18%">融资模式</th>
+            <th style="width:22%">核心机制</th>
+            <th style="width:20%">适用主体</th>
+            <th style="width:20%">优势</th>
+            <th style="width:20%">落地进度</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>数据资产质押贷款</td>
+            <td>数据资产确权→评估→质押</td>
+            <td>拥有大量数据的企业</td>
+            <td>流程成熟、银行认可</td>
+            <td>多地落地</td>
+          </tr>
+          <tr>
+            <td>公共数据授权运营</td>
+            <td>政府定价→运营变现→分润</td>
+            <td>国有数据运营公司</td>
+            <td>数据来源合规可靠</td>
+            <td>福建首批交付</td>
+          </tr>
+          <tr>
+            <td>数据资产ABS</td>
+            <td>数据产品现金流证券化</td>
+            <td>数据交易频繁企业</td>
+            <td>融资规模大</td>
+            <td>年内申报超2000亿</td>
+          </tr>
+          <tr>
+            <td>Token券试点</td>
+            <td>词元计价→效用付费</td>
+            <td>AI训练数据供给方</td>
+            <td>匹配AI时代需求</td>
+            <td>四川试点中</td>
+          </tr>
+          <tr>
+            <td>数据信托</td>
+            <td>信托受托→数据运营</td>
+            <td>数据密集型机构</td>
+            <td>风险隔离+专业运营</td>
+            <td>探索阶段</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </section>
+
+  <!-- ⑤ 地方实践 -->
+  <section class="section">
+    <section class="section-title">🌍 地方实践</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">12</span>
+        <span class="item-title">临平算力小镇第二批项目评审结果出炉：AI+芯片+自动驾驶多赛道落地<span class="item-tag tag-local">地方</span></span>
+      </section>
+      <section class="item-desc">
+        2026年第二批杭州临平算力小镇项目评审结果公布，多个高精尖项目通过评审：<strong>MemoraX AI项目</strong>（AI记忆与存储）、<strong>自动驾驶车辆底盘及轮胎智能监控解决方案</strong>、<strong>通感一体化UWB高精度定位和高速数传芯片设计及产业化项目</strong>、主控算法实验室等。临平算力小镇作为长三角算力应用端枢纽中心和杭州市算力产业创新核，持续吸引AI、芯片、智能驾驶领域优质项目落地，产业集聚效应进一步显现。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：临平算力小镇 · 2026年6月14日</span><br>
+        <a class="item-link" href="https://mp.weixin.qq.com/s?__biz=MzAxNjA3MzEyMQ==&mid=2662052768&idx=2&sn=1fee62905c9aac1a99f5f3a533c0557f">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">13</span>
+        <span class="item-title">智源大会FlagOS 2.1发布：智能体从"模型能力"走向"系统化落地"<span class="item-tag tag-innovation">创新</span></span>
+      </section>
+      <section class="item-desc">
+        第八届北京智源大会6月12-13日举行，智源发布基础软硬件生态<strong>FlagOS 2.1</strong>全面升级，智能体方向推出覆盖<strong>心脏辅助诊断、科学发现、个人专属助理</strong>的落地解决方案。大会传递明确信号：国产AI竞争已从单一模型能力走向"模型+智能体+芯片适配+真实工作流"的系统化能力。这意味着AI落地不再依赖单一模型比拼，而是需要数据、算力、算法、工程能力的全栈协同，为数据要素赋能AI提供了新路径。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：智源大会 · 2026年6月16日</span><br>
+        <a class="item-link" href="https://finance.sina.com.cn/wm/2026-06-16/doc-inicqxfr7662712.shtml">原文链接 ↗</a>
+      </section>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">14</span>
+        <span class="item-title">算力租赁概念A股走强：AI推理需求全面爆发驱动高端GPU紧缺<span class="item-tag tag-surge">爆发</span></span>
+      </section>
+      <section class="item-desc">
+        6月16日A股算力租赁概念震荡走强，莲花控股午后涨停，贵广网络、南威软件、南兴股份、中贝通信同步跟涨。消息面上，受2026年AI大模型、智能体及企业推理需求全面爆发推动，高端H800/H100算力卡供需缺口持续扩大，算力租赁价格中枢上移。这反映AI产业正从"训练端"向<strong>"推理端"</strong>迁移，推理算力需求将超过训练算力，对数据中心运营和算力调度提出新要求。
+      </section>
+      <section class="item-meta">
+        <span class="item-source">来源：腾讯财经 · 2026年6月16日</span><br>
+        <a class="item-link" href="https://news.qq.com/rain/a/20260616A054WM00">原文链接 ↗</a>
+      </section>
+    </section>
+  </section>
+
+  <!-- 深度观察 -->
+  <section class="section">
+    <section class="section-title">🔍 深度观察</section>
+
+    <section class="observe-block">
+      <section class="observe-label">一、金融数据标准化的乘数效应</section>
+      <section class="observe-text">
+        六部门《金融信息服务数据分类分级指南》看似是一份技术标准，实则是金融数据资产化的"基础设施工程"。67个三级类目和四级分级体系，直接打通了数据资产入表"最后一公里"——从此金融机构做数据资产盘点有了统一口径，做估值有了分级依据，做审计有了合规基准。叠加DCMM 2.0新增数据资产域将于7月1日实施，"标准+评估"双轮驱动下，金融行业有望成为数据资产入表规模化落地的先行领域。
+      </section>
+    </section>
+
+    <section class="observe-block">
+      <section class="observe-label">二、AI推理拐点已至，算力需求结构性转换</section>
+      <section class="observe-text">
+        算力租赁概念走强、企业级AI智能体市场107%年增长、智源大会FlagOS 2.1系统化落地——三条线索指向同一趋势：AI正从"训练驱动"转向"推理驱动"。训练算力需求集中在头部大厂，而推理算力需求分散在各行各业的企业应用场景中。这意味着算力消费主体将从少数科技巨头扩展到千万级企业用户，算力网"六张网"建设的必要性进一步凸显。对临平而言，算力小镇提前布局算力应用端枢纽，恰好踩在产业拐点上。
+      </section>
+    </section>
+
+    <section class="observe-block">
+      <section class="observe-label">三、公共数据定价机制是数据要素市场的"价格锚"</section>
+      <section class="observe-text">
+        福建首批政府指导定价公共数据产品交付，看似地方实践，实则是全国数据要素市场的"价格锚"工程。公共数据作为数据要素中质量最高、权威性最强的类型，其定价机制一旦建立，将为商业数据定价提供参照系。叠加数据资产质押、ABS、Token券、信托五大融资路径并行推进，数据要素从"资源"到"资产"到"资本"的全链条正在加速打通。
+      </section>
+    </section>
+  </section>
+
+  <!-- 临平关注 -->
+  <section class="linping-focus">
+    <section class="lf-title">📍 临平关注</section>
+    <section class="lf-text">
+      本周三条主线值得临平企业重点关注：<br><br>
+      <strong>一、DCMM 2.0实施在即，尽快启动数据管理能力评估。</strong>7月1日新国标正式实施，新增数据资产域直接影响企业数据资产入表的前置基础。临平制造业企业密集，建议借力协会资源，提前开展数据管理能力自评和贯标准备。<br><br>
+      <strong>二、金融数据分类分级指南为临平金融科技企业带来合规升级窗口。</strong>67个三级类目和四级分级体系，是金融机构数据治理的操作手册。临平数字港入驻的金融科技企业可参照该标准优化数据治理体系，抢占金融数据资产入表先机。<br><br>
+      <strong>三、算力小镇第二批项目评审结果释放产业集聚信号。</strong>AI记忆存储、自动驾驶监控、UWB芯片等高精尖项目落地，印证临平算力产业生态正在从"基础设施建设"转向"应用场景落地"。协会将联动算力小镇运营方，为会员企业提供项目对接和场景合作机会。
+    </section>
+  </section>
+
+  <!-- 特别提醒 -->
+  <section class="reminder-box">
+    <strong>📌 近期重点事件日历</strong><br>
+    ■ <strong>2026-06-23</strong>（今日）：《个人信息出境认证办法》已施行，跨境数据企业需完成合规自查<br>
+    ■ <strong>2026-06-25～27</strong>：北京低空经济大会（低空经济数据治理报告已发布）<br>
+    ■ <strong>2026-06-30</strong>：2026年"数据要素×"大赛各分赛报名截止（四川/江苏/吉林等）<br>
+    ■ <strong>2026-07-01</strong>：DCMM 2.0（GB/T 36073-2025）正式实施<br>
+    ■ <strong>2026-07-15</strong>：《人工智能生成合成内容标识管理办法》施行<br>
+    ■ <strong>2026-07-17～20</strong>：2026世界人工智能大会（WAIC）上海<br>
+    ■ <strong>2026-08-20</strong>：《网络数据安全风险评估办法》施行
+  </section>
+
+</section><!-- /daily-body -->
+
+<!-- ========== FOOTER ========== -->
+<section class="daily-footer">
+  <p class="slogan-line">—— 数据驱动未来，资产赋能发展 ——</p>
+  <p class="editor-info">临数通 · 数据产业周刊编辑部</p>
+  <p class="publish-date">2026年6月23日</p>
+</section>
+<section class="copyright-section">
+  <p>本资讯内容来源于外部公开媒体；</p>
+  <p>如链接无法打开、信息与官方发布存在出入；</p>
+  <p>敬请自行核验，本会不对转载内容准确性承担责任。</p>
+  <p>如涉及版权问题，请联系我们处理。</p>
+</section>
+
+<!-- ===== 二维码关注区 ===== -->
+<section class="qr-section">
+  <span class="qr-wrapper">
+    <img class="qr-img" src="http://mmbiz.qpic.cn/mmbiz_png/7GicXj7u0w9XDr0neocAYKc9utt4pGon8o7TFnAjJNkzDEIGSSyOAfWPlJ80G2W8bGGGGIpMAo8Q3g0S7ZKlKMQ/0?wx_fmt=png" alt="公众号二维码">
+  </span>
+  <p class="qr-hint">微信扫一扫<br>关注该公众号</p>
+</section>
+
+</body>
+</html>
