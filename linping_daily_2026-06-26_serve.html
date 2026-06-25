@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产日报 - 2026年6月26日</title>
+<style>
+  * { margin:0; padding:0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #F5F1EA;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .cover-banner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #A89880;
+    text-align: center;
+    border-bottom: 1px solid #EBE3D5;
+    letter-spacing: 1px;
+  }
+
+  .daily-body {
+    background: #fff;
+    padding: 24px 22px;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #4A2C1A;
+    padding: 8px 0 8px 14px;
+    border-left: 4px solid #8B6920;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .news-item {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #EBE0CE;
+  }
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .news-item .item-header {
+    margin-bottom: 6px;
+  }
+  .news-item .item-index {
+    display: inline-block;
+    vertical-align: top;
+    background: #8B6920;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 19px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  .news-item .item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2E1F12;
+    line-height: 1.55;
+  }
+  .news-item .item-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .tag-hot        { background: #F0E2D0; color: #6B3A18; }
+  .tag-attention  { background: #F2E6D5; color: #5C3115; }
+  .tag-event      { background: #F1E4D2; color: #7A4520; }
+  .tag-framework  { background: #F0E3D0; color: #5E3316; }
+  .tag-market     { background: #EDE5D3; color: #6A3A1A; }
+  .tag-innovation { background: #F3E8D6; color: #6B4018; }
+  .tag-cross      { background: #F0E4D1; color: #5A3215; }
+  .tag-model      { background: #EEE2CF; color: #62391B; }
+  .tag-urgent     { background: #F5E4D4; color: #7B3820; }
+  .tag-local      { background: #EDE6D4; color: #5F3C1A; }
+  .tag-suspend    { background: #F8E0D8; color: #8B2A1A; }
+  .tag-opensource { background: #E8F0E2; color: #3A5A1A; }
+  .tag-global     { background: #E2E8F0; color: #2A4A6B; }
+  .tag-data       { background: #F2E8D5; color: #5C3A1A; }
+  .tag-finance    { background: #F0E2D2; color: #5E3416; }
+  .tag-surge      { background: #F6E5D5; color: #7A3920; }
+  .tag-entry      { background: #EFE5D2; color: #603818; }
+  .tag-trust      { background: #EEE4D0; color: #583215; }
+
+  .item-desc {
+    font-size: 13.5px;
+    color: #4A3E30;
+    line-height: 1.75;
+    margin-top: 6px;
+  }
+  .item-meta {
+    font-size: 11.5px;
+    color: #A89880;
+    margin-top: 7px;
+  }
+  .item-link {
+    color: #8B6920;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* 表格样式 */
+  .top5-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    margin-top: 10px;
+    table-layout: fixed;
+  }
+  .top5-table th {
+    background: #D4BE9C;
+    color: #4A2C1A;
+    font-weight: 600;
+    padding: 7px 4px;
+    text-align: center;
+    border-bottom: 2px solid #8B6920;
+  }
+  .top5-table td {
+    padding: 6px 4px;
+    text-align: center;
+    border-bottom: 1px solid #E8D8C0;
+    color: #4A3E30;
+    background: #fff;
+  }
+  .top5-table tr:nth-child(even) td {
+    background: #FAF6F0;
+  }
+
+  /* 深度观察 */
+  .insight-box {
+    background: #FBF8F4;
+    border-left: 3px solid #8B6920;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    border-radius: 0 4px 4px 0;
+  }
+  .insight-box .insight-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 8px;
+  }
+  .insight-box .insight-body {
+    font-size: 13px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+
+  /* 临平关注 */
+  .linping-box {
+    background: #F4ECD8;
+    padding: 16px 18px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+  }
+  .linping-box .lp-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 8px;
+  }
+  .linping-box .lp-body {
+    font-size: 13px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+
+  /* 特别提醒 */
+  .reminder-box {
+    border-left: 4px solid #8B6920;
+    padding: 12px 16px;
+    background: #FDFAF5;
+    margin-bottom: 10px;
+  }
+  .reminder-box .rem-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 8px;
+  }
+  .reminder-box .rem-item {
+    font-size: 12.5px;
+    color: #5A4A38;
+    line-height: 1.9;
+  }
+
+  /* FOOTER */
+  .daily-footer {
+    background: #fff;
+    padding: 20px 16px 10px;
+    text-align: center;
+  }
+  .daily-footer .slogan-line {
+    font-size: 14px;
+    color: #888;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 2;
+    text-align: center;
+  }
+  .daily-footer .editor-info {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    text-align: center;
+  }
+  .daily-footer .publish-date {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.8;
+    text-align: center;
+  }
+  .copyright-section {
+    text-align: center;
+    padding: 8px 16px 16px;
+    margin: 0;
+  }
+  .copyright-section p {
+    font-size: 11px;
+    color: #b2b2b2;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  .qr-section {
+    background: #f7f7f7;
+    padding: 20px 16px;
+    margin: 16px 0 0;
+    text-align: center;
+    border-radius: 0;
+  }
+  .qr-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .qr-section .qr-img {
+    width: 120px;
+    height: 120px;
+    display: block;
+    border: 0;
+    margin: 0 auto;
+  }
+  .qr-section .qr-hint {
+    font-size: 12px;
+    color: #888;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<!-- 封面头图 -->
+<img class="cover-banner" src="banner_final.png" alt="临平数协数据资产日报 2026年6月26日">
+
+<!-- 编辑部信息栏 -->
+<section class="meta-bar">
+  临数通 · 数据资产日报 &nbsp;|&nbsp; DATA ASSET DAILY REPORT &nbsp;|&nbsp; 2026年6月26日（星期五）&nbsp;|&nbsp; 临平数协联合出品
+</section>
+
+<!-- 主体内容 -->
+<section class="daily-body">
+
+  <!-- 一、今日要闻 -->
+  <section class="section">
+    <div class="section-title">一、今日要闻</div>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">数据资产ABS被全面叫停：监管重拳整治城投套利，穿透式规则将出台<span class="item-tag tag-suspend">急</span></span>
+      </section>
+      <p class="item-desc">6月3日，沪深交易所向投行下发窗口指导，<strong>全面暂停</strong>数据资产ABS的申报、封卷及发行。2025年全年落地11单融资45.9亿元，2026年前5个月即井喷至<strong>21单</strong>，城投平台争相涌入"点数成金"。监管层发现部分城投借创新产品套利，曲线实现"非标转标"，并非真正数据资产融资。业内预计，穿透式监管校准规则将在近期出台，对底层数据资产质量、现金流真实性提出更严格要求。</p>
+      <p class="item-meta">来源：财新网 / 雪球 · 2026-06-05 &nbsp;
+      <br><a class="item-link" href="https://finance.caixin.com/m/2026-06-05/102451063.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">智谱AI开源GLM-5.2旗舰模型：7530亿参数，MIT协议全量开放<span class="item-tag tag-opensource">开源</span></span>
+      </section>
+      <p class="item-desc">6月17日，智谱AI正式开源旗舰大模型<strong>GLM-5.2</strong>权重，采用MIT开源协议全量开放。该模型参数总量达<strong>7530亿</strong>，单次推理激活约400亿参数，支持100万token长上下文。同日，HuggingFace自掏腰包为GLM-5.2提供<strong>6小时全球免费算力</strong>。加上Kimi K2.7 Code、Claude Fable 5等密集发布，6月成为AI大模型格局洗牌最剧烈的一个月。</p>
+      <p class="item-meta">来源：腾讯新闻 / 搜狐科技 · 2026-06-17 &nbsp;
+      <br><a class="item-link" href="https://news.qq.com/rain/a/20260617A02X9R00" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">夏季达沃斯论坛开幕：中国"灯塔工厂"占比过半，数字经济全球瞩目<span class="item-tag tag-global">全球</span></span>
+      </section>
+      <p class="item-desc">2026年夏季达沃斯论坛6月22日至24日举行，6月22日世界经济论坛公布全球<strong>灯塔工厂</strong>新名单，中国案例占比<strong>过半</strong>。论坛聚焦"智能时代的协作与增长"，中国14亿人口消费市场与千行百业数字化转型需求成为热议焦点。智能制造、智慧城市、绿色能源、数字消费——在中国，新技术从来不缺"试验田"，数据正以"润物细无声"的方式重塑商业肌理。</p>
+      <p class="item-meta">来源：新华社 / 百家号 · 2026-06-24 &nbsp;
+      <br><a class="item-link" href="https://baijiahao.baidu.com/s?id=1868857517111915868" target="_blank">原文链接 ↗</a></p>
+    </section>
+  </section>
+
+  <!-- 二、政策动态 -->
+  <section class="section">
+    <div class="section-title">二、政策动态</div>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">4</span>
+        <span class="item-title">个人信息保护专项行动纵深推进：从法治到共治的中国方案<span class="item-tag tag-framework">框架</span></span>
+      </section>
+      <p class="item-desc">中央网信办6月13-14日连续发布专家解读文章，系统阐释个人信息保护专项行动的深层逻辑——<strong>"以法治为纲、以共治为要"</strong>。《个人信息保护法》施行近五年，2026年专项行动是其执法经验的集中输出：重点覆盖App违规收集、人脸识别滥用、数据过度采集等高发问题，并在此前世界互联网大会、联合国互联网治理论坛等平台积极宣介中国方案，推动个人信息保护领域国际规则协调。</p>
+      <p class="item-meta">来源：中央网信办 · 2026-06-14 &nbsp;
+      <br><a class="item-link" href="https://www.cac.gov.cn/2026-06/14/c_1783182377560643.htm" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">5</span>
+        <span class="item-title">等保2.0数据安全新标准（GA/T 2380）6月1日正式施行<span class="item-tag tag-urgent">急</span></span>
+      </section>
+      <p class="item-desc">公安部发布的<strong>GA/T 2380-2026</strong>《信息安全技术 网络安全等级保护数据安全要求》于6月1日正式施行，系等保2.0体系下首个专门针对<strong>数据全生命周期安全</strong>的配套标准。该标准覆盖数据采集、存储、使用、加工、传输、提供、公开、删除等全流程，对网络运营者提出数据分类分级、访问控制、加密脱敏、审计追溯等系统性要求，与DCMM 2.0（7月1日实施）形成"安全+管理"双轮驱动格局。</p>
+      <p class="item-meta">来源：公安部 / 安恒信息 · 2026-06-12 &nbsp;
+      <br><a class="item-link" href="https://ftrans.cn/2026/06/12/new-standard-2/" target="_blank">原文链接 ↗</a></p>
+    </section>
+  </section>
+
+  <!-- 三、行业观察 -->
+  <section class="section">
+    <div class="section-title">三、行业观察</div>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">6</span>
+        <span class="item-title">硅基流动完成超20亿元B轮融资，AI推理服务市场持续升温<span class="item-tag tag-surge">爆发</span></span>
+      </section>
+      <p class="item-desc">6月16日，模型推理服务商<strong>硅基流动</strong>宣布完成超20亿元B轮融资，由多家头部机构联合投资。同日消息，SpaceX以600亿美元估值换股收购AI编程独角兽Cursor母公司Anysphere。AI算力服务商密集获得大额融资，反映出市场对AI推理基础设施的强劲需求——从训练到推理，AI全栈服务化正在催生新一轮产业投资热潮，算力即服务的商业模式日趋成熟。</p>
+      <p class="item-meta">来源：财新网 · 2026-06-17 &nbsp;
+      <br><a class="item-link" href="https://www.caixin.com/2026-06-17/102454873.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">7</span>
+        <span class="item-title">呼和浩特和林格尔：草原上崛起"算力之城"，绿色算力产业崛起<span class="item-tag tag-market">市场</span></span>
+      </section>
+      <p class="item-desc">新华社6月22日报道，内蒙古呼和浩特和林格尔新区作为"东数西算"枢纽节点，正加速崛起为<strong>绿色算力之城</strong>。和林格尔多云算力资源监测与调度平台已首批接入国家算力网，实现算力资源全国流动。2026年新增算力负荷<strong>300兆瓦</strong>，专业电工和空调技工招聘需求占岗位近三分之一——算力产业的爆发不仅拉动了高技术就业，也正在重塑区域经济结构。</p>
+      <p class="item-meta">来源：新华社 · 2026-06-22 &nbsp;
+      <br><a class="item-link" href="https://baijiahao.baidu.com/s?id=1868752073603968908" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">8</span>
+        <span class="item-title">2026跨境电商交易会广州开幕：超千家供应链企业参展，数据赋能成核心议题<span class="item-tag tag-cross">跨境</span></span>
+      </section>
+      <p class="item-desc">6月16日至18日，2026中国跨境电商交易会在广州广交会展馆举办，展览面积超<strong>5万平方米</strong>，汇聚50多家跨境电商平台、全国近40个产业带、<strong>200多家</strong>产业园区代表。同期，长三角跨境电商交易会在无锡举办，聚焦AI应用与特色产业融合。跨境电商进入"硬核竞争新周期"——产品安全、税务、<strong>数据合规</strong>、EPR四维体系强制落地，数据正成为跨境贸易的核心竞争力。</p>
+      <p class="item-meta">来源：广东省政府 / 中研普华 · 2026-06-17 &nbsp;
+      <br><a class="item-link" href="https://www.gd.gov.cn/gdywdt/zwzt/zjzsjjyx/wmtz/content/post_4910672.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+  </section>
+
+  <!-- 四、数据入表与资本化 -->
+  <section class="section">
+    <div class="section-title">四、数据入表与资本化</div>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">9</span>
+        <span class="item-title">ABS暂停深度透视：2026年前5月井喷21单，"点数成金"遭遇监管急刹车<span class="item-tag tag-entry">入表</span></span>
+      </section>
+      <p class="item-desc">数据资产ABS从首单落地到全面暂停仅不足一年。2025年全年11单融资45.9亿元，2026年前5个月即完成<strong>21单</strong>，节奏骤然提速。但业内人士指出，融资主体大部分为<strong>城投平台</strong>，部分项目底层数据资产质量存疑、现金流预测过于乐观。交易所早在4月便发出窗口指导希望控制规模，但难挡融资冲动。此次全面暂停后，业内预计将出台<strong>穿透式审核规则</strong>，对数据资产的真实性、独立性、可交易性进行逐层核查。</p>
+      <p class="item-meta">来源：财新网 / 东方财富 · 2026-06-05 &nbsp;
+      <br><a class="item-link" href="https://baijiahao.baidu.com/s?id=1867159655865501903" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">10</span>
+        <span class="item-title">数据资产融资另类路径浮现：知识产权证券化、数据信托、供应链数据融资提速<span class="item-tag tag-trust">信托</span></span>
+      </section>
+      <p class="item-desc">ABS通道收紧之际，数据资产融资的替代路径正在加速探索。<strong>知识产权证券化</strong>在深圳、上海等地已有成熟案例，数据信托模式在贵阳大数据交易所完成首批试点，<strong>供应链数据融资</strong>则依托核心企业信用为上下游中小企业提供新的融资方案。与ABS不同，这些路径更注重数据资产的<strong>真实商业价值</strong>而非城投信用背书，更符合监管层"脱虚向实"的政策导向。</p>
+      <p class="item-meta">来源：雪球 / 数据交易网 · 2026-06-11 &nbsp;
+      <br><a class="item-link" href="https://baijiahao.baidu.com/s?id=1867700331241723327" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <p style="font-size:11.5px;color:#4A2C1A;font-weight:700;margin:14px 0 8px;">数据资产融资路径对比 — 2026上半年快照</p>
+    <table class="top5-table">
+      <thead>
+        <tr>
+          <th style="width:24%">融资路径</th>
+          <th style="width:18%">当前状态</th>
+          <th style="width:28%">代表案例/规模</th>
+          <th style="width:30%">监管态度</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>数据资产ABS</td>
+          <td>全面暂停</td>
+          <td>2026前5月21单</td>
+          <td>穿透式校准待出台</td>
+        </tr>
+        <tr>
+          <td>增信银行贷款</td>
+          <td>主流路径</td>
+          <td>非上市417家20.92亿</td>
+          <td>稳步发展</td>
+        </tr>
+        <tr>
+          <td>知识产权证券化</td>
+          <td>加速发展</td>
+          <td>深圳/上海/北京已落地</td>
+          <td>鼓励创新</td>
+        </tr>
+        <tr>
+          <td>数据信托</td>
+          <td>试点阶段</td>
+          <td>贵阳数交所首批试点</td>
+          <td>审慎支持</td>
+        </tr>
+        <tr>
+          <td>供应链数据融资</td>
+          <td>快速增长</td>
+          <td>核心企业信用+中小微</td>
+          <td>积极推动</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 五、地方实践 -->
+  <section class="section">
+    <div class="section-title">五、地方实践</div>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">11</span>
+        <span class="item-title">沈阳"智改数转"激活老工业基地：年底规上企业数字化改造全覆盖<span class="item-tag tag-local">地方</span></span>
+      </section>
+      <p class="item-desc">据人民邮电报6月23日报道，沈阳出台《推进制造业智能化改造数字化转型行动方案（2026—2027年）》，以智能制造为主攻方向，打造数字化改造的<strong>"沈阳模式"</strong>。到今年年底，全市将全面完成规上工业企业免费评估诊断，实现<strong>规上企业数字化改造全覆盖</strong>。作为东北老工业基地代表，沈阳的"链式"转型路径——龙头企业带动供应链上下游协同数字化——正成为区域制造业重振的重要突破口。</p>
+      <p class="item-meta">来源：人民邮电报 · 2026-06-23 &nbsp;
+      <br><a class="item-link" href="https://www.cnii.com.cn/rmydb/202606/t20260623_744952.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">12</span>
+        <span class="item-title">"创客中国"临平区区域赛落幕：AI+先进制造+生物医药三大项目晋级<span class="item-tag tag-local">地方</span></span>
+      </section>
+      <p class="item-desc">6月17日，第十一届"创客中国"杭州赛区临平区区域赛在浙江省国家大学科技园（临平）成功举办。大赛聚焦<strong>AI、先进制造、生物医药</strong>三大前沿方向，多个项目展现临平区在"数智融合"领域的创新实力。晋级项目将代表临平参加市级决赛。本次赛事由省经信厅指导、市经信局主办，凸显临平作为杭州数字经济重要承载地的产业创新生态——算力小镇、G60数智产业园等载体持续孵化高成长性科技企业。</p>
+      <p class="item-meta">来源：icloudnews · 2026-06-23 &nbsp;
+      <br><a class="item-link" href="https://www.icloudnews.net/a/119050.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">13</span>
+        <span class="item-title">临平新城入选高能级服务业创新发展区：算力科技引领三大核心赛道<span class="item-tag tag-local">地方</span></span>
+      </section>
+      <p class="item-desc">临平区发改局6月16日公开信息显示，<strong>临平新城</strong>成功入选第二批高能级服务业创新发展区，以算力科技、数字时尚、新消费三大产业为核心，构建"研发设计—检验检测—数字服务—供应链金融—人才赋能"<strong>全链条</strong>生产性服务生态。艺尚小镇实现扩容发展，跨境电商产业加速集聚。临平新城与临平经济技术开发区、大运河科创城协同，正成为全区生产性服务业快速发展的核心载体。</p>
+      <p class="item-meta">来源：临平区政府 · 2026-06-16 &nbsp;
+      <br><a class="item-link" href="https://www.linping.gov.cn/col/col1229610842/art/2026/art_43d1cc72930542c6b7e609b0adc66432.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+  </section>
+
+  <!-- 深度观察 -->
+  <section class="section">
+    <div class="section-title">📊 深度观察</div>
+
+    <section class="insight-box">
+      <div class="insight-title">① 数据资产ABS暂停：一次必要的"急刹车"</div>
+      <div class="insight-body">从首单落地不到一年即被全面叫停，数据资产ABS的"过山车"轨迹折射出新兴资产类别融资的核心矛盾：<strong>创新速度与监管节奏的错配</strong>。城投平台涌入并非偶然——数据资产ABS的低门槛、高包容性恰好填补了传统城投融资渠道收窄后的缺口。"非标转标"的套利逻辑本质上是将城投信用包装为数据资产信用，而非真正基于数据资产的商业价值。穿透式监管校准势在必行，但不宜因噎废食——高质量、可独立产生现金流的数据资产，依然是最具潜力的新型融资标的。</div>
+    </section>
+
+    <section class="insight-box">
+      <div class="insight-title">② GLM-5.2全量开源：国产大模型的"数据飞轮"效应</div>
+      <div class="insight-body">智谱选择MIT协议全量开源GLM-5.2，HuggingFace主动提供免费算力——这一组合标志着国产大模型从"追赶"走向"生态构建"。开源将加速模型在千行百业的落地，而每一次落地都将产生大量行业数据和反馈，形成"<strong>模型开源→场景渗透→数据回流→模型优化</strong>"的飞轮效应。对数据产业而言，这意味着高质量行业数据集、标注数据、反馈数据的价值将被重新定价——AI时代的"数据石油"，已经进入开采加速期。</div>
+    </section>
+
+    <section class="insight-box">
+      <div class="insight-title">③ 等保2.0+DCMM 2.0双标落地：数据合规进入"双轮驱动"时代</div>
+      <div class="insight-body">GA/T 2380（6月1日已施行）管"安全底线"，DCMM 2.0（7月1日施行）管"管理上限"，两套标准在数据分类分级、访问控制、审计追溯等关键环节形成互补。对临平区企业而言，这一"双标"格局既是合规挑战也是竞争机遇——率先同时通过等保三级和DCMM二级以上的企业，将在公共数据授权运营、数据资产入表融资、政府采购等场景中获得显著的<strong>先发优势</strong>。窗口期仅剩不到一周，建议企业即刻启动对标评估。</div>
+    </section>
+  </section>
+
+  <!-- 临平关注 -->
+  <section class="section">
+    <div class="section-title">🏙️ 临平关注</div>
+    <section class="linping-box">
+      <div class="lp-title">临平数协战略建议（2026年6月26日）</div>
+      <div class="lp-body">
+        <strong>一、抓住等保+DCMM双标落地窗口，组织会员集中贯标。</strong>GA/T 2380已施行近一月、DCMM 2.0将于7月1日实施，两大标准叠加构成数据合规"双轮驱动"。协会可联合专业机构为会员企业提供对标评估服务，帮助制造、金融、信息技术等数据密集型行业率先达标，抢占公共数据授权运营和政府采购的先发优势。<br><br>
+        <strong>二、关注数据资产融资路径切换，引导企业对接合规替代方案。</strong>ABS暂停后，知识产权证券化、数据信托、供应链数据融资等替代路径正在加速发展。协会可联合后日资本等金融机构，为会员企业梳理适合自身的数据资产融资方案，推动临平区成为数据资产融资模式创新的"试验田"。<br><br>
+        <strong>三、借力"创客中国"赛事成果，加速AI+先进制造项目落地。</strong>临平区域赛涌现的AI、先进制造、生物医药优质项目，可依托算力小镇、G60数智产业园、临平新城等载体加速产业化。建议协会搭建项目与资本、政策、场景的对接平台，推动"创客项目"向"临平企业"高效转化。<br><br>
+        <strong>四、关注跨境电商数据合规需求，拓展数字贸易赋能服务。</strong>跨境电商进入"硬核合规"新周期，数据合规成为核心竞争力。临平艺尚小镇、临平新城跨境电商产业集聚，协会可探索联合专业机构推出"跨境电商数据合规诊断"服务，帮助临平外贸企业应对国际数据规则。
+      </div>
+    </section>
+  </section>
+
+  <!-- 特别提醒 -->
+  <section class="section">
+    <div class="section-title">⏰ 特别提醒</div>
+    <section class="reminder-box">
+      <div class="rem-title">📌 近期重点事件日历</div>
+      <div class="rem-item">
+        <strong>2026-06-01（已施行）</strong>｜GA/T 2380-2026等保2.0数据安全标准正式施行，覆盖数据全生命周期<br>
+        <strong>2026-07-01（倒计时5天）</strong>｜DCMM 2.0（GB/T 36073-2025）正式实施，新增数据资产域<br>
+        <strong>2026-07-15</strong>｜《网络数据安全风险评估办法》正式施行，重要数据处理者须完成首次评估<br>
+        <strong>2026-07-17～20</strong>｜WAIC 2026世界人工智能大会，上海世博展览馆，超300款AI产品全球首发<br>
+        <strong>2026-07-20（前）</strong>｜"数据要素×"大赛各地分赛报名截止<br>
+        <strong>2026-Q3</strong>｜数据资产ABS穿透式监管校准规则预计出台，数据信托/知识产权证券化细则有望同步发布
+      </div>
+    </section>
+  </section>
+
+</section><!-- end daily-body -->
+
+<!-- ========== FOOTER ========== -->
+<section class="daily-footer">
+  <p class="slogan-line">—— 数据驱动未来，资产赋能发展 ——</p>
+  <p class="editor-info">临数通 · 数据产业周刊编辑部</p>
+  <p class="publish-date">2026年6月26日</p>
+</section>
+<section class="copyright-section">
+  <p>本资讯内容来源于外部公开媒体；</p>
+  <p>如链接无法打开、信息与官方发布存在出入；</p>
+  <p>敬请自行核验，本会不对转载内容准确性承担责任。</p>
+  <p>如涉及版权问题，请联系我们处理。</p>
+</section>
+
+<!-- ===== 二维码关注区 ===== -->
+<section class="qr-section">
+  <span class="qr-wrapper">
+    <img class="qr-img" src="http://mmbiz.qpic.cn/mmbiz_png/7GicXj7u0w9XDr0neocAYKc9utt4pGon8o7TFnAjJNkzDEIGSSyOAfWPlJ80G2W8bGGGGIpMAo8Q3g0S7ZKlKMQ/0?wx_fmt=png" alt="公众号二维码">
+  </span>
+  <p class="qr-hint">微信扫一扫<br>关注该公众号</p>
+</section>
+
+</body>
+</html>
