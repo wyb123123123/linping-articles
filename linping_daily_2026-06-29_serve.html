@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产日报 - 2026年6月29日</title>
+<style>
+  * { margin:0; padding:0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #F5F1EA;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .cover-banner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #A89880;
+    text-align: center;
+    border-bottom: 1px solid #EBE3D5;
+    letter-spacing: 1px;
+  }
+
+  .daily-body {
+    background: #fff;
+    padding: 24px 22px;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #4A2C1A;
+    padding: 8px 0 8px 14px;
+    border-left: 4px solid #8B6920;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .news-item {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #EBE0CE;
+  }
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .news-item .item-header {
+    margin-bottom: 6px;
+  }
+  .news-item .item-index {
+    display: inline-block;
+    vertical-align: top;
+    background: #8B6920;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 19px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  .news-item .item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2E1F12;
+    line-height: 1.55;
+  }
+  .news-item .item-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .tag-hot        { background: #F0E2D0; color: #6B3A18; }
+  .tag-attention  { background: #F2E6D5; color: #5C3115; }
+  .tag-event      { background: #F1E4D2; color: #7A4520; }
+  .tag-framework  { background: #F0E3D0; color: #5E3316; }
+  .tag-market     { background: #EDE5D3; color: #6A3A1A; }
+  .tag-innovation { background: #F3E8D6; color: #6B4018; }
+  .tag-cross      { background: #F0E4D1; color: #5A3215; }
+  .tag-model      { background: #EEE2CF; color: #62391B; }
+  .tag-urgent     { background: #F5E4D4; color: #7B3820; }
+  .tag-local      { background: #EDE6D4; color: #5F3C1A; }
+  .tag-opensource { background: #E8F0E0; color: #3B5E28; }
+  .tag-security   { background: #F6E8E0; color: #7B3A20; }
+  .tag-ipo        { background: #E8EEF5; color: #2A4A7B; }
+
+  .item-desc {
+    font-size: 13.5px;
+    color: #4A3E30;
+    line-height: 1.75;
+    margin-top: 6px;
+  }
+  .item-meta {
+    font-size: 11.5px;
+    color: #A89880;
+    margin-top: 7px;
+  }
+  .item-link {
+    color: #8B6920;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* 表格样式 */
+  .top5-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    margin-top: 10px;
+    table-layout: fixed;
+  }
+  .top5-table th {
+    background: #D4BE9C;
+    color: #4A2C1A;
+    font-weight: 600;
+    padding: 7px 4px;
+    text-align: center;
+    border-bottom: 2px solid #8B6920;
+  }
+  .top5-table td {
+    padding: 6px 4px;
+    text-align: center;
+    border-bottom: 1px solid #E8D8C0;
+    color: #4A3E30;
+    background: #fff;
+  }
+  .top5-table tr:nth-child(even) td {
+    background: #FAF6F0;
+  }
+
+  /* 深度观察 */
+  .insight-box {
+    background: #FBF8F4;
+    border-left: 3px solid #8B6920;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    border-radius: 0 4px 4px 0;
+  }
+  .insight-box .insight-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 8px;
+  }
+  .insight-box .insight-body {
+    font-size: 13px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+
+  /* 临平关注 */
+  .linping-box {
+    background: #F4ECD8;
+    padding: 16px 18px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+  }
+  .linping-box .lp-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 8px;
+  }
+  .linping-box .lp-body {
+    font-size: 13px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+
+  /* 特别提醒 */
+  .reminder-box {
+    border-left: 4px solid #8B6920;
+    padding: 12px 16px;
+    background: #FDFAF5;
+    margin-bottom: 10px;
+  }
+  .reminder-box .rem-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 8px;
+  }
+  .reminder-box .rem-item {
+    font-size: 12.5px;
+    color: #5A4A38;
+    line-height: 1.9;
+  }
+
+  /* FOOTER */
+  .daily-footer {
+    background: #fff;
+    padding: 20px 16px 10px;
+    text-align: center;
+  }
+  .daily-footer .slogan-line {
+    font-size: 14px;
+    color: #888;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 2;
+    text-align: center;
+  }
+  .daily-footer .editor-info {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    text-align: center;
+  }
+  .daily-footer .publish-date {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.8;
+    text-align: center;
+  }
+  .copyright-section {
+    text-align: center;
+    padding: 8px 16px 16px;
+    margin: 0;
+  }
+  .copyright-section p {
+    font-size: 11px;
+    color: #b2b2b2;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  .qr-section {
+    background: #f7f7f7;
+    padding: 20px 16px;
+    margin: 16px 0 0;
+    text-align: center;
+    border-radius: 0;
+  }
+  .qr-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .qr-section .qr-img {
+    width: 120px;
+    height: 120px;
+    display: block;
+    border: 0;
+    margin: 0 auto;
+  }
+  .qr-section .qr-hint {
+    font-size: 12px;
+    color: #888;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<!-- 封面头图 -->
+<img class="cover-banner" src="banner_final.png" alt="临平数协数据资产日报 2026年6月29日">
+
+<!-- 编辑部信息栏 -->
+<section class="meta-bar">
+  临数通 · 数据资产日报 &nbsp;|&nbsp; DATA ASSET DAILY REPORT &nbsp;|&nbsp; 2026年6月29日（星期一）&nbsp;|&nbsp; 临平数协联合出品
+</section>
+
+<!-- 主体内容 -->
+<section class="daily-body">
+
+  <!-- 一、今日要闻 -->
+  <section class="section">
+    <div class="section-title">一、今日要闻</div>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">2026全球数字经济大会倒计时3天：国家级数据要素底座即将亮相北京<span class="item-tag tag-hot">重磅</span></span>
+      </section>
+      <p class="item-desc">6月25日，2026全球数字经济大会新闻发布会正式宣布：本届大会将于<strong>7月2日至5日</strong>在北京国家会议中心举办，以"建设数字友好城市——智惠无界，数联全球"为主题。大会汇聚<strong>近40个高级别团组、千余位嘉宾</strong>，联动30余家国际组织、40余座城市组建全球数字经济城市联盟、112家全球商协会。50余场专题论坛覆盖AI、数字治理、数据要素全产业链，近20项行业规则标准将陆续发布。数据要素发展论坛将集中亮相国家级数据要素底座、央国企数智创新联合实验室等重磅成果。</p>
+      <p class="item-meta">来源：北京市政府 / 央广网 · 2026-06-25 &nbsp;
+      <br><a class="item-link" href="https://www.beijing.gov.cn/ywdt/gzdt/202606/t20260626_4724043.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">DeepSeek发布DSpark推理加速框架：梁文锋署名，单用户提速60%-85%<span class="item-tag tag-opensource">开源</span></span>
+      </section>
+      <p class="item-desc">6月27日，DeepSeek联合北京大学正式发布推理加速框架<strong>DSpark</strong>，提出基于半自回归生成的置信度调度推测解码方案。该框架已部署于DeepSeek-V4线上服务系统，单用户生成速度提升<strong>60%-85%</strong>，同步开源全栈推测性解码训练框架DeepSpec（MIT许可）。此举标志着DeepSeek在完成<strong>500亿元首轮融资</strong>后，率先落子推理优化赛道——大模型竞赛正式从"拼参数"进入"拼效率"新阶段。</p>
+      <p class="item-meta">来源：腾讯新闻 / 第一财经 · 2026-06-27 &nbsp;
+      <br><a class="item-link" href="https://news.qq.com/rain/a/20260627A078RG00" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">三部门联合公布《网络数据安全风险评估办法》，8月20日起施行<span class="item-tag tag-urgent">急</span></span>
+      </section>
+      <p class="item-desc">6月18日，国家网信办、工信部、公安部联合公布《网络数据安全风险评估办法》（以下简称《办法》），自<strong>2026年8月20日</strong>起施行。《办法》明确：处理重要数据的网络数据处理者应当<strong>每年度</strong>开展风险评估，重要数据安全状态发生重大变化时须及时开展专项评估。评估内容包括数据分类分级、全生命周期安全保护、个人信息保护、安全管理制度及应急预案等关键维度。这是继《数据安全法》《网络数据安全管理条例》后的关键配套规章，数据安全合规的"紧箍咒"进一步收紧。</p>
+      <p class="item-meta">来源：国家网信办 / 人民日报 · 2026-06-18 &nbsp;
+      <br><a class="item-link" href="https://www.cac.gov.cn/2026-06/18/c_1783525609815499.htm" target="_blank">原文链接 ↗</a></p>
+    </section>
+  </section>
+
+  <!-- 二、政策动态 -->
+  <section class="section">
+    <div class="section-title">二、政策动态</div>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">4</span>
+        <span class="item-title">数据产权登记工作指引即将落地：全国统一登记体系破题确权难题<span class="item-tag tag-framework">框架</span></span>
+      </section>
+      <p class="item-desc">国家数据局就《数据产权登记工作指引（试行）》公开征求意见后，业界预计正式版本将于<strong>近期印发</strong>。该指引基于"数据二十条"确立的数据资源持有权、数据加工使用权、数据产品经营权"三权分置"框架，首次对全国统一数据产权登记规则作出系统规定。当前各地数据登记存在"多证并存"局面——数据知识产权登记、数据产品登记、数据资产凭证等多轨并行，统一登记体系将为企业数据确权入表扫清制度障碍，数据资产评估与融资的"产权根基"就此奠定。</p>
+      <p class="item-meta">来源：国家数据局 / 道可特律师事务所 · 2026年4-5月 &nbsp;
+      <br><a class="item-link" href="https://www.nda.gov.cn/sjj/zwgk/zjjd/0407/20260407165920611653824_pc.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">5</span>
+        <span class="item-title">科创板AI上市新政：证监会扩大适用范围至人工智能大模型企业<span class="item-tag tag-ipo">上市</span></span>
+      </section>
+      <p class="item-desc">6月17日陆家嘴论坛上，证监会主席吴清宣布科创板将推出两项重磅改革：一是将第五套上市标准适用范围<strong>扩大至人工智能领域</strong>，积极支持优质AI大模型企业上市；二是落实发展未来产业战略部署，支持量子科技、生物制造、具身智能等"硬科技"企业在科创板上市。同日，上交所发布相关审核指引，AI大模型企业融资通道实质性拓宽，有望加速国内数据+AI企业的资本化进程。</p>
+      <p class="item-meta">来源：第一财经 / 证监会 · 2026-06-17 &nbsp;
+      <br><a class="item-link" href="https://baijiahao.baidu.com/s?id=1868969085991073387" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">6</span>
+        <span class="item-title">厦门"四链融合"模式发布：数据产业创新链+产业链+资金链+人才链协同<span class="item-tag tag-innovation">创新</span></span>
+      </section>
+      <p class="item-desc">6月26日，厦门市2026年数据产业"四链融合"活动成功举办，200余位政产学研代表共探数据要素市场化配置改革路径。活动期间，<strong>火山引擎数字内容创新实验室</strong>正式落地厦门思明区，厦门市AI漫剧产业联盟同步成立。思明区数字内容创作公共服务平台以数据驱动为核心，构建覆盖算力、模型、内容创作的全链条数字生态，为地方数据产业"四链融合"提供了可复制的实践样本。</p>
+      <p class="item-meta">来源：人民网福建 / 福建日报 · 2026-06-26 &nbsp;
+      <br><a class="item-link" href="https://baijiahao.baidu.com/s?id=1869043308881754811" target="_blank">原文链接 ↗</a></p>
+    </section>
+  </section>
+
+  <!-- 三、行业观察 -->
+  <section class="section">
+    <div class="section-title">三、行业观察</div>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">7</span>
+        <span class="item-title">AI投资资源鸿沟惊人：头部企业月均7500美元/员工 vs 中位数仅12美元<span class="item-tag tag-market">市场</span></span>
+      </section>
+      <p class="item-desc">城堡证券与Ramp联合发布的最新数据显示AI投资领域的极端两极分化：头部<strong>1%企业</strong>每月为单名员工投入<strong>7500美元</strong>用于AI相关支出，而行业中位数水平企业仅为<strong>12美元</strong>，差距高达<strong>625倍</strong>。AI驱动的生产力提升成果或将不成比例流向资金实力雄厚的企业，进一步拓宽头部企业的竞争护城河。对企业而言，跟踪自身及同行的季度AI资本支出变化，已成为预判行业格局重塑方向的关键先行指标。</p>
+      <p class="item-meta">来源：新浪财经 · 2026-06-29 &nbsp;
+      <br><a class="item-link" href="http://finance.sina.com.cn/stock/usstock/summary/2026-06-29/doc-inieznpi0334796.shtml" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">8</span>
+        <span class="item-title">数说故事冲刺港股IPO：估值超50亿，企业级垂直大模型赛道升温<span class="item-tag tag-ipo">上市</span></span>
+      </section>
+      <p class="item-desc">6月18日，国内商业增长赛道排名第三的原生AI企业<strong>数说故事</strong>正式向港交所递交IPO申请，独家保荐人为中信建投国际。递表前两日，公司刚完成亿元级Pre-IPO融资，投后估值超<strong>50亿元人民币</strong>。作为企业级垂直大模型代表，其核心业务涵盖AI数据分析、消费者洞察、数字营销等场景，凸显了数据驱动商业智能的价值释放路径。这意味着企业数据资产正从"成本中心"向"估值引擎"质变。</p>
+      <p class="item-meta">来源：百度百家号 · 2026-06-22 &nbsp;
+      <br><a class="item-link" href="https://baijiahao.baidu.com/s?id=1868616061770082519" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">9</span>
+        <span class="item-title">DeepSeek全员倍扩：500亿融资后"人才核聚变"，AI数据工程师成抢手货<span class="item-tag tag-market">市场</span></span>
+      </section>
+      <p class="item-desc">继完成500亿元融资后，DeepSeek宣布将所有部门规模至少<strong>扩大一倍</strong>，广招服务端开发工程师、<strong>预训练数据工程师</strong>、AI搜索算法/架构工程师、Agent Harness工程师等核心岗位。消息公布后，英伟达股价盘中一度下跌3.5%，市场预计低成本AI模型的崛起将削弱高端AI芯片的持续投入需求。值得注意的是，"预训练数据工程师"位列扩招前三，折射出<strong>高质量数据集</strong>已成为大模型竞争的战略稀缺资源。</p>
+      <p class="item-meta">来源：新浪财经 · 2026-06-26 &nbsp;
+      <br><a class="item-link" href="https://finance.sina.com.cn/roll/2026-06-26/doc-inieskua0661948.shtml" target="_blank">原文链接 ↗</a></p>
+    </section>
+  </section>
+
+  <!-- 四、数据入表与资本化 -->
+  <section class="section">
+    <div class="section-title">四、数据入表与资本化</div>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">10</span>
+        <span class="item-title">ABS暂停后数据资产融资路径全景：产权登记+银行增信+信托多轨并行<span class="item-tag tag-model">模式</span></span>
+      </section>
+      <p class="item-desc">6月3日数据资产ABS被全面叫停后，市场密切关注替代性融资路径。目前主流路径有三：一是<strong>数据资产增信银行贷款</strong>——417家非上市企业已累计获融资20.92亿元，仍是最大融资渠道；二是<strong>数据信托</strong>——以信托架构实现数据资产的风险隔离与收益分配；三是<strong>数据知识产权证券化</strong>——部分地区已有成功案例。随着全国统一数据产权登记制度即将落地，数据资产的确权基础将进一步夯实，预计融资规模和参与主体均将显著扩大。</p>
+      <p class="item-meta">来源：上海交通大学高金 / 知乎 · 2026-06 &nbsp;
+      <br><a class="item-link" href="https://zhuanlan.zhihu.com/p/2019781968733171775" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">11</span>
+        <span class="item-title">产权登记统一在即：企业数据确权入表迎来关键制度窗口<span class="item-tag tag-framework">框架</span></span>
+      </section>
+      <p class="item-desc">《数据产权登记工作指引》即将正式印发，这是数据要素市场建设从"多点试水"到"统一规则"的关键里程碑。指引将数据产权界定为权利人对特定数据享有的<strong>财产性权利</strong>，登记内容包括数据来源、数据范围、数据质量、权利归属等核心要素。对企业的直接影响有二：一是在登记制度落地前完成数据盘点与预确权，即可在正式施行后<strong>率先实现"有证可依"</strong>的数据资产入表；二是产权登记凭证将成为银行授信、交易所挂牌、公共数据授权运营的准入基础。</p>
+      <p class="item-meta">来源：国家数据局 / 知乎专栏 · 2026-05-06 &nbsp;
+      <br><a class="item-link" href="https://zhuanlan.zhihu.com/p/2041193563980124236" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <p style="font-size:11.5px;color:#4A2C1A;font-weight:700;margin:14px 0 8px;">数据资产融资三大路径对比 — 2026年6月快照</p>
+    <table class="top5-table">
+      <thead>
+        <tr>
+          <th style="width:22%">融资方式</th>
+          <th style="width:16%">规模/数量</th>
+          <th style="width:20%">代表案例</th>
+          <th style="width:20%">优势</th>
+          <th style="width:22%">局限</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>增信银行贷款</td>
+          <td>20.92亿元</td>
+          <td>417家企业</td>
+          <td>审批快、门槛低</td>
+          <td>额度有限</td>
+        </tr>
+        <tr>
+          <td>数据信托</td>
+          <td>试点阶段</td>
+          <td>中诚信托等</td>
+          <td>风险隔离</td>
+          <td>法律框架待完善</td>
+        </tr>
+        <tr>
+          <td>知识产权证券化</td>
+          <td>数亿元</td>
+          <td>深圳、杭州</td>
+          <td>标准化融资</td>
+          <td>评估定价难度大</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 五、地方实践 -->
+  <section class="section">
+    <div class="section-title">五、地方实践</div>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">12</span>
+        <span class="item-title">全球数字经济大会数据要素发展论坛：国家级数据要素底座+央国企联合实验室将亮相<span class="item-tag tag-local">地方</span></span>
+      </section>
+      <p class="item-desc">作为全球数字经济大会的核心品牌活动，数据要素发展论坛已连续举办6届。今年论坛以"数据要素赋能数智经济新发展"为主题，将多维度呈现国家数据要素综合试验区阶段性建设成效，集中亮相<strong>国家级数据要素底座</strong>和<strong>央国企数智创新联合实验室</strong>。论坛还将发布《全球数字经济城市发展报告》《全球数字经济灯塔案例》《全球数字友好城市评价指引》三份重磅报告，为全球提供可衡量、可复制、可推广的数字友好发展指南。</p>
+      <p class="item-meta">来源：人民网 / 千龙网 · 2026-06-26 &nbsp;
+      <br><a class="item-link" href="https://beijing.qianlong.com/2026/0626/8688418.shtml" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">13</span>
+        <span class="item-title">数字经济产业博览会阵容公布：国际组织参展，首发首秀区汇集新款人形机器人<span class="item-tag tag-event">展会</span></span>
+      </section>
+      <p class="item-desc">2026全球数字经济大会配套博览会设<strong>6大特色展区</strong>——全球OPC共创节、国际合作展区、全球新品首发首秀区、数字城市发展展区、AI全域应用场景展区和数字文娱消费展区。国际贸易中心、国际电信联盟、联合国工业发展组织等国际机构参展，<strong>新款人形机器人</strong>与世界模型将在首发首秀区集中亮相。此外，北京隆福寺街区将开设数字潮市，依托数字孪生技术打通线上线下一体化消费场景，亦庄推出人形机器人产业专线特色文旅线路。</p>
+      <p class="item-meta">来源：北京市政府 / 中国新闻网 · 2026-06-25 &nbsp;
+      <br><a class="item-link" href="https://www.chinanews.com.cn/cj/2026/06-25/10647263.shtml" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">14</span>
+        <span class="item-title">广州数科集团专利申请揭示：AI训练数据管理成产业新赛道<span class="item-tag tag-innovation">创新</span></span>
+      </section>
+      <p class="item-desc">国家知识产权局6月26日公布，广州人工智能融合赋能中心有限公司、广州数据集团有限公司、广电运通集团联合申请"一种多集群的混合并行训练策略分级优化方法和系统"专利。该专利聚焦<strong>AI训练数据的多集群协同管理</strong>与优化，体现了企业将数据管理能力作为专利护城河的战略方向。在数据要素市场加速建设的大背景下，AI训练数据的管理、调度、优化正在从后台工程走向前台专利竞争，成为数据产业的新兴赛道。</p>
+      <p class="item-meta">来源：新浪财经 · 2026-06-27 &nbsp;
+      <br><a class="item-link" href="http://k.sina.com.cn/article_7857201856_1d45362c001907h9tc.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+  </section>
+
+  <!-- 深度观察 -->
+  <section class="section">
+    <div class="section-title">📊 深度观察</div>
+
+    <section class="insight-box">
+      <div class="insight-title">① DeepSeek DSpark：大模型从"比谁聪明"到"比谁快"的竞赛转折</div>
+      <div class="insight-body">DeepSeek悄然发布DSpark框架，看似只是一次推理加速的技术更新，实际上透露出大模型产业已经进入深水区——当各家基础模型能力趋近，<strong>推理效率成为新的竞争壁垒</strong>。单用户生成速度提升60%-85%、整体吞吐不变，这套"DSpark+DeepSpec"组合的意义在于：它完成了大模型的"供给侧改革"——同样的算力投入产出更多服务能力，本质上是在降低<strong>数据→智能</strong>的转化成本。这对数据产业意味着什么？意味着AI对数据的消耗速度将进一步加快，高质量数据集的价值将进一步被放大。数据不再是"静态矿产"，而是"动态燃料"。</div>
+    </section>
+
+    <section class="insight-box">
+      <div class="insight-title">② 全球数字经济大会7月启幕：数据要素市场化的"北京答卷"与临平机遇</div>
+      <div class="insight-body">7月2日，2026全球数字经济大会将集中展示中国数据要素市场化的阶段性成果。核心看点有三：一是<strong>国家级数据要素底座</strong>首次亮相——这是继数据局成立、数字经济发展工作要点印发之后，数据要素基础设施建设从规划到实体落地的标志性事件；二是<strong>央国企数智创新联合实验室</strong>，意味着央国企将联合推动数据资源深度整合与AI应用创新；三是近20项行业规则标准将陆续发布——数据确权、数据交易、数据安全、数据资产评估的规则体系加速成型。对于临平而言，全球数字经济大会不仅是观察风向的窗口，更是对接国家级平台、争取数据要素先行先试政策的重要契机。</div>
+    </section>
+
+    <section class="insight-box">
+      <div class="insight-title">③ 《网络数据安全风险评估办法》实施倒计时：52天的合规窗口期</div>
+      <div class="insight-body">距《办法》8月20日正式施行还有<strong>52天</strong>。根据《办法》要求，处理重要数据的网络数据处理者需每年度开展风险评估，评估覆盖数据分类分级、全生命周期安全、个人信息保护等维度。对临平区企业而言，这既是合规压力也是竞争机遇：率先完成评估达标的企业，将在公共数据授权运营、数据产品交易所挂牌、数据资产融资申请中获得优先权。建议企业立即启动三项准备：一是<strong>数据资产全面盘点与分类分级</strong>；二是<strong>数据安全管理制度与应急预案建设</strong>；三是<strong>网络安全等级保护测评</strong>——三者缺一不可。</div>
+    </section>
+  </section>
+
+  <!-- 临平关注 -->
+  <section class="section">
+    <div class="section-title">🏙️ 临平关注</div>
+    <section class="linping-box">
+      <div class="lp-title">临平数协战略建议（2026年6月29日）</div>
+      <div class="lp-body">
+        <strong>一、积极对接2026全球数字经济大会平台。</strong>大会7月2日即开幕，国家级数据要素底座、央国企数智创新联合实验室等重磅成果将集中亮相。临平数协可组织线上观摩团，重点关注数据要素发展论坛、产业数字化和AI+专题论坛，梳理可借鉴的政策工具与合作机会，为会员企业提供对接国家平台的桥梁。<br><br>
+        <strong>二、推动会员企业抢抓数据产权登记窗口期。</strong>《数据产权登记工作指引》正式印发在即，建议协会联合专业机构为会员企业提供"数据资源盘点+预确权"服务包，帮助率先完成数据资产盘点与权利界定，在统一登记制度落地后抢占先发优势。特别是老板电器、临平算力小镇入驻企业等制造业主体，工业数据资源丰富但确权路径尚不清晰，应优先推进。<br><br>
+        <strong>三、启动《网络数据安全风险评估办法》合规备战。</strong>距8月20日仅52天。协会可联合律所、安全厂商为会员企业提供"一站式"合规辅导——涵盖数据分类分级、安全制度搭建、等保测评、风险评估报告编制等全链路服务。未雨绸缪，方能立于主动。
+      </div>
+    </section>
+  </section>
+
+  <!-- 特别提醒 -->
+  <section class="section">
+    <div class="section-title">⏰ 特别提醒</div>
+    <section class="reminder-box">
+      <div class="rem-title">📌 近期重点事件日历</div>
+      <div class="rem-item">
+        <strong>2026-07-01</strong>｜DCMM 2.0（GB/T 36073-2025）正式实施，新增数据资产域，企业申评最后冲刺<br>
+        <strong>2026-07-02～05</strong>｜2026全球数字经济大会，北京国家会议中心，人形机器人+世界模型全球首发<br>
+        <strong>2026-07-15</strong>｜《网络数据安全风险评估办法》正式施行前，建议企业5周内完成首次自评<br>
+        <strong>2026-07-17～20</strong>｜WAIC 2026世界人工智能大会，上海世博展览馆，超300款AI产品全球首发<br>
+        <strong>2026-07-20（前）</strong>｜"数据要素×"大赛各地分赛报名截止，临平相关主体建议尽早备赛<br>
+        <strong>2026-08-20</strong>｜《网络数据安全风险评估办法》正式施行，重要数据处理者须完成年度评估<br>
+        <strong>2026-Q3</strong>｜《数据产权登记工作指引》预计正式印发，企业数据确权入表进入制度快车道
+      </div>
+    </section>
+  </section>
+
+</section><!-- end daily-body -->
+
+<!-- ========== FOOTER ========== -->
+<section class="daily-footer">
+  <p class="slogan-line">—— 数据驱动未来，资产赋能发展 ——</p>
+  <p class="editor-info">临数通 · 数据产业周刊编辑部</p>
+  <p class="publish-date">2026年6月29日</p>
+</section>
+<section class="copyright-section">
+  <p>本资讯内容来源于外部公开媒体；</p>
+  <p>如链接无法打开、信息与官方发布存在出入；</p>
+  <p>敬请自行核验，本会不对转载内容准确性承担责任。</p>
+  <p>如涉及版权问题，请联系我们处理。</p>
+</section>
+
+<!-- ===== 二维码关注区 ===== -->
+<section class="qr-section">
+  <span class="qr-wrapper">
+    <img class="qr-img" src="http://mmbiz.qpic.cn/mmbiz_png/7GicXj7u0w9XDr0neocAYKc9utt4pGon8o7TFnAjJNkzDEIGSSyOAfWPlJ80G2W8bGGGGIpMAo8Q3g0S7ZKlKMQ/0?wx_fmt=png" alt="公众号二维码">
+  </span>
+  <p class="qr-hint">微信扫一扫<br>关注该公众号</p>
+</section>
+
+</body>
+</html>
