@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产日报 - 2026年6月30日</title>
+<style>
+  * { margin:0; padding:0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #F5F1EA;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .cover-banner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #A89880;
+    text-align: center;
+    border-bottom: 1px solid #EBE3D5;
+    letter-spacing: 1px;
+  }
+
+  .daily-body {
+    background: #fff;
+    padding: 24px 22px;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #4A2C1A;
+    padding: 8px 0 8px 14px;
+    border-left: 4px solid #8B6920;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .news-item {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #EBE0CE;
+  }
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .news-item .item-header {
+    margin-bottom: 6px;
+  }
+  .news-item .item-index {
+    display: inline-block;
+    vertical-align: top;
+    background: #8B6920;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 19px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  .news-item .item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2E1F12;
+    line-height: 1.55;
+  }
+  .news-item .item-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .tag-hot        { background: #F0E2D0; color: #6B3A18; }
+  .tag-attention  { background: #F2E6D5; color: #5C3115; }
+  .tag-event      { background: #F1E4D2; color: #7A4520; }
+  .tag-framework  { background: #F0E3D0; color: #5E3316; }
+  .tag-market     { background: #EDE5D3; color: #6A3A1A; }
+  .tag-innovation { background: #F3E8D6; color: #6B4018; }
+  .tag-cross      { background: #F0E4D1; color: #5A3215; }
+  .tag-model      { background: #EEE2CF; color: #62391B; }
+  .tag-urgent     { background: #F5E4D4; color: #7B3820; }
+  .tag-local      { background: #EDE6D4; color: #5F3C1A; }
+  .tag-opensource { background: #E8F0E0; color: #3B5E28; }
+  .tag-security   { background: #F6E8E0; color: #7B3A20; }
+  .tag-ipo        { background: #E8EEF5; color: #2A4A7B; }
+  .tag-industry   { background: #EDE8F0; color: #4A3A7A; }
+
+  .item-desc {
+    font-size: 13.5px;
+    color: #4A3E30;
+    line-height: 1.75;
+    margin-top: 6px;
+  }
+  .item-meta {
+    font-size: 11.5px;
+    color: #A89880;
+    margin-top: 7px;
+  }
+  .item-link {
+    color: #8B6920;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* 表格样式 */
+  .top5-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    margin-top: 10px;
+    table-layout: fixed;
+  }
+  .top5-table th {
+    background: #D4BE9C;
+    color: #4A2C1A;
+    font-weight: 600;
+    padding: 7px 4px;
+    text-align: center;
+    border-bottom: 2px solid #8B6920;
+  }
+  .top5-table td {
+    padding: 6px 4px;
+    text-align: center;
+    border-bottom: 1px solid #E8D8C0;
+    color: #4A3E30;
+    background: #fff;
+  }
+  .top5-table tr:nth-child(even) td {
+    background: #FAF6F0;
+  }
+
+  /* 深度观察 */
+  .insight-box {
+    background: #FBF8F4;
+    border-left: 3px solid #8B6920;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    border-radius: 0 4px 4px 0;
+  }
+  .insight-box .insight-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 8px;
+  }
+  .insight-box .insight-body {
+    font-size: 13px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+
+  /* 临平关注 */
+  .linping-box {
+    background: #F4ECD8;
+    padding: 16px 18px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+  }
+  .linping-box .lp-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 8px;
+  }
+  .linping-box .lp-body {
+    font-size: 13px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+
+  /* 特别提醒 */
+  .reminder-box {
+    border-left: 4px solid #8B6920;
+    padding: 12px 16px;
+    background: #FDFAF5;
+    margin-bottom: 10px;
+  }
+  .reminder-box .rem-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 8px;
+  }
+  .reminder-box .rem-item {
+    font-size: 12.5px;
+    color: #5A4A38;
+    line-height: 1.9;
+  }
+
+  /* FOOTER */
+  .daily-footer {
+    background: #fff;
+    padding: 20px 16px 10px;
+    text-align: center;
+  }
+  .daily-footer .slogan-line {
+    font-size: 14px;
+    color: #888;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 2;
+    text-align: center;
+  }
+  .daily-footer .editor-info {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    text-align: center;
+  }
+  .daily-footer .publish-date {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.8;
+    text-align: center;
+  }
+  .copyright-section {
+    text-align: center;
+    padding: 8px 16px 16px;
+    margin: 0;
+  }
+  .copyright-section p {
+    font-size: 11px;
+    color: #b2b2b2;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  .qr-section {
+    background: #f7f7f7;
+    padding: 20px 16px;
+    margin: 16px 0 0;
+    text-align: center;
+    border-radius: 0;
+  }
+  .qr-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .qr-section .qr-img {
+    width: 120px;
+    height: 120px;
+    display: block;
+    border: 0;
+    margin: 0 auto;
+  }
+  .qr-section .qr-hint {
+    font-size: 12px;
+    color: #888;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<!-- 封面头图 -->
+<img class="cover-banner" src="banner_final.png" alt="临平数协数据资产日报 2026年6月30日">
+
+<!-- 编辑部信息栏 -->
+<section class="meta-bar">
+  临数通 · 数据资产日报 &nbsp;|&nbsp; DATA ASSET DAILY REPORT &nbsp;|&nbsp; 2026年6月30日（星期二）&nbsp;|&nbsp; 临平数协联合出品
+</section>
+
+<!-- 主体内容 -->
+<section class="daily-body">
+
+  <!-- 一、今日要闻 -->
+  <section class="section">
+    <section class="section-title">一、今日要闻</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">2026工业互联网大会北京收官：工业AI融合赋能新型工业化写入宣言<span class="item-tag tag-hot">重磅</span></span>
+      </section>
+      <p class="item-desc">6月29日至30日，<strong>2026工业互联网大会</strong>在北京世纪金源大饭店举办，主题为"工业互联网与人工智能融合赋能新型工业化"。大会聚焦工业数智融合创新、智能场景落地、标识AI协同赋能、工业5G独立专网、具身智能应用等前沿领域，发布多项平台和场景建设成果。五部门联合启动的工业5G独立专网全国试点同步推进——由工业企业自建接入网、核心网，实现关键生产数据的<strong>全链路自主管控</strong>，矿山、装备制造、能源等重点行业率先纳入试点范围。</p>
+      <p class="item-meta">来源：中国信通院 / 人民政协网 · 2026-06-29 &nbsp;
+      <br><a class="item-link" href="https://www.aii-alliance.org/index/2026Index.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">mBridge累计交易额近5000亿元：数字人民币2.0重塑全球跨境支付格局<span class="item-tag tag-hot">重磅</span></span>
+      </section>
+      <p class="item-desc">6月24日，央行数字货币研究所所长穆长春在2026夏季达沃斯论坛发表《央行数字货币重塑跨境支付》演讲，披露重磅数据：多边央行数字货币桥（mBridge）截至2025年底<strong>累计交易额近5000亿元</strong>，已吸引49家商业银行参与，其中境外外资银行21家。数字人民币2.0于2026年1月完成升级——纳入M1计量、实名钱包计息、享受存款保险保障，从"数字现金"进化为"数字存款货币"，成为全球央行数字货币应用的标杆案例。</p>
+      <p class="item-meta">来源：中国经营报 / 新浪财经 · 2026-06-26 &nbsp;
+      <br><a class="item-link" href="https://baijiahao.baidu.com/s?id=1869044312762318284" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">全球数字经济大会7月2日北京启幕：50余场论坛、20项标准即将落地<span class="item-tag tag-event">峰会</span></span>
+      </section>
+      <p class="item-desc">2026全球数字经济大会将于<strong>7月2日至5日</strong>在北京国家会议中心举行，以"建设数字友好城市——智惠无界，数联全球"为主题。大会汇聚30余家国际组织、112家全球商协会、40余座城市，首发首秀活动将展示最新人形机器人和世界模型。数据要素发展论坛、AI治理论坛等50余场专题论坛同步进行，<strong>近20项行业规则标准</strong>将在大会期间陆续发布，将成为下半年数字经济领域规格最高的产业盛宴。</p>
+      <p class="item-meta">来源：北京市政府 / 中新网 · 2026-06-25 &nbsp;
+      <br><a class="item-link" href="https://www.chinanews.com.cn/cj/2026/06-25/10647263.shtml" target="_blank">原文链接 ↗</a></p>
+    </section>
+  </section>
+
+  <!-- 二、政策动态 -->
+  <section class="section">
+    <section class="section-title">二、政策动态</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">4</span>
+        <span class="item-title">五部门联合启动工业5G独立专网试点：制造业关键数据实现自主管控<span class="item-tag tag-framework">框架</span></span>
+      </section>
+      <p class="item-desc">2026年6月24日，工信部联合国务院国资委等<strong>五部门</strong>正式启动工业5G独立专网全国试点，试点针对原材料、装备制造、消费品、电子信息等重点行业，支持企业自主建设接入网、核心网等关键设施，彻底解决公共5G网络难以满足工业生产"低时延、高稳定、高安全"需求的痛点。<strong>关键生产数据不出厂</strong>成为核心价值主张——企业数据主权保障与工业互联网数据安全治理将迎来实质性突破。</p>
+      <p class="item-meta">来源：工信部 / 人民日报 · 2026-06-24 &nbsp;
+      <br><a class="item-link" href="https://baijiahao.baidu.com/s?id=1869293742140570272" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">5</span>
+        <span class="item-title">浙江推进产业数据价值化：培育数商60家、工业高质量数据集20个<span class="item-tag tag-local">地方</span></span>
+      </section>
+      <p class="item-desc">浙江省2026年《推进产业数据价值化与数字基础设施发展工作要点》明确：力争<strong>培育浙江数商60家</strong>、工业领域高质量数据集20个，累计建成5G基站超31万个，推动智算云服务规模超<strong>45EFLOPS</strong>。工作要点聚焦"数算网"融合发展，强化工业数据价值释放、智能算力普惠供给和网络基础设施演进升级，为新型工业化提供数字底座。临平区作为杭州重要的高端制造和数字经济集聚区，正是这一目标的核心承接地之一。</p>
+      <p class="item-meta">来源：浙江省政府 · 2026-04-15 &nbsp;
+      <br><a class="item-link" href="https://www.zj.gov.cn/col/col1229641549/art/2026/art_12012f2a7a0a4acb838b3a5c1c226862.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">6</span>
+        <span class="item-title">《网络数据安全风险评估办法》8月20日施行：年度评估成法定义务<span class="item-tag tag-urgent">急</span></span>
+      </section>
+      <p class="item-desc">国家网信办、工信部、公安部联合公布的《网络数据安全风险评估办法》将于<strong>2026年8月20日</strong>正式施行，距今不足2个月。处理重要数据的网络数据处理者须<strong>每年开展一次</strong>风险评估，内容涵盖数据分类分级、全生命周期安全保护、个人信息合规、应急预案有效性等维度。企业需在8月20日前完成首次评估并建立持续评估机制，评估结果须向主管部门报告。数据资产化进程中的合规底座正在加速夯实。</p>
+      <p class="item-meta">来源：国家网信办 · 2026-06-18 &nbsp;
+      <br><a class="item-link" href="https://www.cac.gov.cn/2026-06/18/c_1783525609815499.htm" target="_blank">原文链接 ↗</a></p>
+    </section>
+  </section>
+
+  <!-- 三、行业观察 -->
+  <section class="section">
+    <section class="section-title">三、行业观察</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">7</span>
+        <span class="item-title">深圳福田"数据要素全生态产业园"正式启用：首个数据要素全链条社区亮相<span class="item-tag tag-innovation">创新</span></span>
+      </section>
+      <p class="item-desc">6月26日，2026深圳数字经济产业生态会议在福田区<strong>彩田湾区数智港社区</strong>举行，该社区以全国首个数据要素全生态产业园深科技城为主阵地，联动深业上城、新浩e都两大载体，形成<strong>总计60万㎡优质产业空间</strong>。现场河套e站通数据跨境流动服务中心等四项重磅成果集中落地，50余家企业展示数字经济产品及解决方案。这是继北京、上海之后，深圳将"数据要素"与"产业社区"深度绑定的最新实践。</p>
+      <p class="item-meta">来源：深圳新闻网 / 人民网 · 2026-06-29 &nbsp;
+      <br><a class="item-link" href="https://baijiahao.baidu.com/s?id=1869309623025094773" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">8</span>
+        <span class="item-title">隐私计算市场2030年将突破380亿美元：联邦学习与TEE双赛道高速增长<span class="item-tag tag-market">市场</span></span>
+      </section>
+      <p class="item-desc">最新行业研究预测，到2030年全球隐私计算市场将突破<strong>380亿美元</strong>，联邦学习（FL）与可信执行环境（TEE）复合增长率分别维持<strong>28%和22%</strong>左右。这一增长动力主要来自金融机构对跨境数据协作的需求激增，以及各国数据安全法规密集落地带动的合规投入。国内方面，SITS 2026框架首次将AI原生能力引入隐私计算——支持跨机构联合建模与推理，融合可信执行环境与密码学多方协议，成为"数据可用不可见"技术落地的最新范式。</p>
+      <p class="item-meta">来源：IIM研究院 · 2026-05-20 &nbsp;
+      <br><a class="item-link" href="https://www.iim.net.cn/91/view-250504-1.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">9</span>
+        <span class="item-title">GW级Token工厂深圳论坛：AI数据基础设施进入算力工厂化时代<span class="item-tag tag-model">模型</span></span>
+      </section>
+      <p class="item-desc">6月30日，聚焦"下一代算力底座"的深圳行业论坛召开，核心议题是GW级<strong>Token工厂</strong>——将AI推理算力以工厂化方式集中部署，实现Token生产的规模化与低成本化。从Agent到数字员工、从智能客服到工业智能体，企业级应用推动Token消费进入高速增长阶段，AI算力基础设施正经历从"数据中心"到"算力工厂"的代际跃迁，而数据作为Token生产的核心"原料"，其质量、治理和资产化价值被重新审视。</p>
+      <p class="item-meta">来源：百度百家号 · 2026-06-30 &nbsp;
+      <br><a class="item-link" href="https://baijiahao.baidu.com/s?id=1868933389071355589" target="_blank">原文链接 ↗</a></p>
+    </section>
+  </section>
+
+  <!-- 四、数据入表与资本化 -->
+  <section class="section">
+    <section class="section-title">四、数据入表与资本化</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">10</span>
+        <span class="item-title">数字人民币纳入M1：数字货币"计息+保险"新模式赋能数字资产管理<span class="item-tag tag-innovation">创新</span></span>
+      </section>
+      <p class="item-desc">2026年1月，数字人民币完成2.0版本升级：实名钱包余额按<strong>活期存款计息</strong>、享受存款保险保障，并正式纳入M1计量。这一变化不仅改变了数字货币的货币性质，更为企业数字资产管理打开全新空间——企业持有数字人民币余额可作为可计息流动性资产纳入资产负债表管理，与数据资产入表形成"数字资产双轮"逻辑。穆长春在达沃斯论坛进一步透露，mBridge正稳步推进成员扩充，目标建成<strong>多边治理+平等互利</strong>的全球跨境支付新型基础设施。</p>
+      <p class="item-meta">来源：新浪财经 / 财经杂志 · 2026-06-28 &nbsp;
+      <br><a class="item-link" href="http://finance.sina.com.cn/wm/2026-06-28/doc-iniexpvw4019239.shtml" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">11</span>
+        <span class="item-title">工业5G独立专网数据主权模型：制造业数据资产确权的"物理隔离"新路径<span class="item-tag tag-model">模式</span></span>
+      </section>
+      <p class="item-desc">工业5G独立专网试点的深层价值在于构建制造业数据资产的<strong>物理确权基础</strong>：企业自建的专网中，生产数据从采集到存储全程留存于企业自控系统，核心数据的<strong>权属归属清晰</strong>、数据不出厂，为后续数据资产评估、入表核准、融资质押提供了可信的数据治理前提。对比此前数据资产融资普遍面临的"数据来源不清、权属争议"卡点，工业专网模式提供了一条以"物理基础设施主权"支撑"数据资产法律主权"的新路径。</p>
+      <p class="item-meta">来源：工信部 / 数据观 · 2026-06-24 &nbsp;
+      <br><a class="item-link" href="https://www.miit.gov.cn/ztzl/rdzt/gyhlw/wjfb/art/2026/art_046597bc0f4c4dd094467cd48b8d641d.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">12</span>
+        <span class="item-title">2026年上半年数据资产入表进展：国资企业率先探路，融资渠道多轨并行</span>
+      </section>
+      <p class="item-desc">随着2026年上半年接近尾声，各地数据资产入表进展呈现明显分化。<strong>国央企集团</strong>凭借数据规模与监管协同优势，已在数据资产评估、确权登记、入表核准方面形成可复制路径；中小企业则主要通过行业数据联盟、平台数据合作等方式寻求入表突破口。从融资渠道看，<strong>产权登记+银行增信+信托质押</strong>三轨并行格局已基本确立，ABS通道暂缓后，各方转向更稳健的债权融资和股权价值重估模式。</p>
+
+      <table class="top5-table">
+        <thead>
+          <tr>
+            <th style="width:22%">入表路径</th>
+            <th style="width:28%">适用主体</th>
+            <th style="width:28%">核心条件</th>
+            <th style="width:22%">融资形式</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>自建数据集</td>
+            <td>国央企/数据密集型企业</td>
+            <td>高质量数据集认证</td>
+            <td>银行贷款/增信</td>
+          </tr>
+          <tr>
+            <td>平台授权数据</td>
+            <td>中小企业/行业联盟成员</td>
+            <td>交易所登记+权属清晰</td>
+            <td>数据信托/质押</td>
+          </tr>
+          <tr>
+            <td>政务数据授权运营</td>
+            <td>持牌运营机构</td>
+            <td>政府授权书+合规评估</td>
+            <td>特许经营权融资</td>
+          </tr>
+          <tr>
+            <td>工业专网数据</td>
+            <td>制造业龙头企业</td>
+            <td>5G专网+物理隔离</td>
+            <td>股权/产业基金</td>
+          </tr>
+          <tr>
+            <td>跨境数据资产</td>
+            <td>跨境贸易企业/FTZ机构</td>
+            <td>出境安全评估通过</td>
+            <td>跨境数据产品交易</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="item-meta">来源：数据观 / 临平数协整理 · 2026-06-30 &nbsp;</p>
+    </section>
+  </section>
+
+  <!-- 五、地方实践 -->
+  <section class="section">
+    <section class="section-title">五、地方实践</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">13</span>
+        <span class="item-title">深圳河套"数据跨境流动服务中心"揭牌：大湾区数据自由流动新枢纽<span class="item-tag tag-cross">跨境</span></span>
+      </section>
+      <p class="item-desc">深圳福田区2026深圳数字经济产业生态会议上，<strong>河套e站通数据跨境流动服务中心</strong>正式揭牌，成为粤港澳大湾区首个面向企业的一站式数据出境合规服务机构。该中心将提供数据出境安全评估辅导、标准合同备案、个人信息跨境认证等全链条服务，大湾区内地9市前5个月进出口额已达4.28万亿元（同比增长18.8%），数据跨境顺畅流动正成为大湾区外贸增长的新变量。</p>
+      <p class="item-meta">来源：深圳新闻网 / 粤港澳大湾区官网 · 2026-06-29 &nbsp;
+      <br><a class="item-link" href="https://www.sznews.com/news/content/2026-06/29/content_32106137.htm" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">14</span>
+        <span class="item-title">重庆部署"5G+工业互联网"高质量发展：西部地区工业数据治理加速提级<span class="item-tag tag-local">地方</span></span>
+      </section>
+      <p class="item-desc">重庆通信管理局近期部署推进2026年"5G+工业互联网"高质量发展工作，聚焦<strong>全市信息通信业协同新型工业化建设</strong>，落实《打造"5G+工业互联网"512工程升级版实施方案》，要求深入推进工业互联网创新发展，加快"5G+工业互联网"融合创新。此举是西部地区工业数字化的系统性提升——工业数据从"接入"走向"治理"，从设备联网走向数据资产积累，为中西部工业企业数据资产化打下基础。</p>
+      <p class="item-meta">来源：工信部 · 2026-04-23 &nbsp;
+      <br><a class="item-link" href="https://www.miit.gov.cn/xwfb/gxdt/dfdt/art/2026/art_a3c9c70872cd4fa1820ef0aa6168ceac.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">15</span>
+        <span class="item-title">粤港澳大湾区智慧交通展广州落幕：数据底座+业务应用的"交通数智图景"<span class="item-tag tag-innovation">创新</span></span>
+      </section>
+      <p class="item-desc">6月24日至26日，粤港澳大湾区智慧交通科技创新大会暨成果展在广州举行，以"数智融合，引领交通新未来"为主题。中移互联网展示从<strong>数据底座到业务应用</strong>的"智为先、算为要、通为本"交通数智新图景——核心展品包括AI路网调度平台、多维交通数据融合中台、车路协同数据治理方案，展示了以数据资产化视角管理城市级交通数据的最新实践。</p>
+      <p class="item-meta">来源：中国日报 · 2026-06-24 &nbsp;
+      <br><a class="item-link" href="http://cnews.chinadaily.com.cn/a/202606/24/WS6a3b9e1fa310d709c2fb9e90.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+  </section>
+
+  <!-- 六、深度观察 -->
+  <section class="section">
+    <section class="section-title">六、深度观察</section>
+
+    <section class="insight-box">
+      <p class="insight-title">📡 工业5G独立专网：数据主权从"法律宣示"到"基础设施确权"</p>
+      <p class="insight-body">数据资产化长期面临"确权难"困局——即便有数据二十条三权分置框架，数据在公共网络中传输、存储、共享的物理过程仍导致权属边界模糊。工业5G独立专网的战略意义在于：<strong>以物理隔离重建数据主权的基础设施根基</strong>。企业自建、自管的5G专网意味着生产数据从不"离开"企业控制范围，权属天然清晰，为数据资产评估、入表、融资质押提供最坚实的底层依据。这是继数据二十条、数据产权登记之后，数据确权体系的第三块拼图——"制度确权""登记确权""基础设施确权"三位一体的完整闭环正在形成。</p>
+    </section>
+
+    <section class="insight-box">
+      <p class="insight-title">💰 数字人民币2.0：数字资产管理的"新基础设施"价值</p>
+      <p class="insight-body">数字人民币纳入M1计量并实现计息，不仅是货币制度层面的创新，更是<strong>企业数字资产管理工具链的重大扩展</strong>。当数字货币持有本身可产生利息收益，企业将逐步把可编程数字人民币纳入日常资金管理体系；结合数据资产入表，未来企业资产负债表将同时出现"数据资产"和"数字货币资产"两类全新科目——数字资产文明的制度基础正在从上层建筑向货币底层延伸。mBridge近5000亿元累计交易额则证明，主权数字货币已具备取代传统SWIFT渠道的实际能力。</p>
+    </section>
+
+    <section class="insight-box">
+      <p class="insight-title">🔍 上半年总结：2026年数字经济六大关键词</p>
+      <p class="insight-body">站在2026年上半年收官节点，本轮数字经济发展可归纳为六大关键词：①<strong>工业数字化"第二曲线"</strong>——5G专网将制造业数据治理推向新高度；②<strong>数据确权闭环</strong>——登记指引+基础设施+评估标准三轨汇流；③<strong>AI推理效率革命</strong>——DSpark等框架将AI应用成本压缩到普惠门槛；④<strong>数字货币全球化</strong>——mBridge5000亿交易额标志人民币国际化数字新路径；⑤<strong>数据产业社区化</strong>——深圳、北京等城市以产业园区方式集中打造数据要素生态；⑥<strong>合规常态化</strong>——风险评估年度化、跨境认证体系化，数据安全底线持续强化。</p>
+    </section>
+  </section>
+
+  <!-- 七、临平关注 -->
+  <section class="section">
+    <section class="section-title">七、临平关注</section>
+
+    <section class="linping-box">
+      <p class="lp-title">🏙️ 工业互联网大会启示：临平"智能制造+数据资产"双轮驱动正当时</p>
+      <p class="lp-body">2026工业互联网大会的主题——"工业互联网与人工智能融合赋能新型工业化"，与临平区"2327X"先进制造业集群和智能制造"8332"计划高度契合。临平区拥有老板电器等国家高质量数据集试点企业，在<strong>工业5G独立专网试点</strong>全国推进背景下，临平制造业龙头企业具备优先纳入试点、率先实现生产数据物理确权的政策机会窗口。本会将持续跟踪工业互联网大会成果，协助会员企业对接数字工厂、工业大数据平台等专项资源，推动临平企业数据资产"从生产到入表"全链条落地。</p>
+    </section>
+
+    <section class="linping-box">
+      <p class="lp-title">📊 下半年机遇：全球数字经济大会政策红利与临平对接点</p>
+      <p class="lp-body">7月2日启幕的全球数字经济大会将发布<strong>近20项行业规则标准</strong>，涵盖数据要素交易、AI治理、数字基础设施等领域。临平区作为杭州数字港所在地，G60数智产业园、联通算力中心是对接全球数字经济大会标准落地的重要载体。本会将组织会员企业参与大会相关论坛，重点关注数据要素发展论坛发布的国家级底座标准——这些标准将直接影响杭州数据要素运营中心的建设规范和服务模式，临平区率先布局将占先机。</p>
+    </section>
+  </section>
+
+  <!-- 八、特别提醒 -->
+  <section class="section">
+    <section class="section-title">八、特别提醒</section>
+
+    <section class="reminder-box">
+      <p class="rem-title">📅 近期重要时间节点</p>
+      <p class="rem-item">• <strong>7月2日</strong>｜2026全球数字经济大会北京开幕（持续至7月5日）</p>
+      <p class="rem-item">• <strong>7月2-4日</strong>｜全球数字经济大会"首发首秀"展区亮相，人形机器人与世界模型集中展示</p>
+      <p class="rem-item">• <strong>8月20日前</strong>｜企业需完成数据安全风险评估（《网络数据安全风险评估办法》施行日截止）</p>
+      <p class="rem-item">• <strong>持续推进</strong>｜工业5G独立专网全国试点报名，有条件的制造业企业可关注申报通道</p>
+      <p class="rem-item">• <strong>近期</strong>｜《数据产权登记工作指引（试行）》正式版本预计近期印发，关注国家数据局官网</p>
+    </section>
+  </section>
+
+</section>
+
+<!-- FOOTER -->
+<section class="daily-footer">
+  <p class="slogan-line">—— 数据驱动未来，资产赋能发展 ——</p>
+  <p class="editor-info">临数通 · 数据产业周刊编辑部</p>
+  <p class="publish-date">2026年6月30日</p>
+</section>
+
+<section class="copyright-section">
+  <p>本报告由临平数协·临数通编辑部整理发布</p>
+  <p>内容来源于公开信息，仅供参考，不构成投资建议</p>
+  <p>转载请注明来源：杭州市临平区数据产业协会</p>
+  <p>联系我们：杭州数字港2号楼 · 临平区数据产业协会</p>
+</section>
+
+<section class="qr-section">
+  <section class="qr-wrapper">
+    <img class="qr-img" src="https://mmbiz.qpic.cn/mmbiz_jpg/ia8DdCdOoxnHl3yM7wqgibGqh6B34XsYibGsUAqXN4Tia0o0VwDCp40GGiajqaicjkj8hynib7nVlkgFbvPBP9icBf3yww/0?wx_fmt=jpeg" alt="临平数协公众号二维码">
+  </section>
+  <p class="qr-hint">微信扫一扫 关注该公众号</p>
+</section>
+
+</body>
+</html>
