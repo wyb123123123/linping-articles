@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>数据资产日报 - 2026年7月2日</title>
+<style>
+  * { margin:0; padding:0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #F5F1EA;
+    color: #333;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .cover-banner {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .meta-bar {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", sans-serif;
+    background: #fff;
+    padding: 12px 24px;
+    font-size: 11px;
+    color: #A89880;
+    text-align: center;
+    border-bottom: 1px solid #EBE3D5;
+    letter-spacing: 1px;
+  }
+
+  .daily-body {
+    background: #fff;
+    padding: 24px 22px;
+  }
+
+  .section {
+    margin-bottom: 30px;
+  }
+  .section-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #4A2C1A;
+    padding: 8px 0 8px 14px;
+    border-left: 4px solid #8B6920;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  .news-item {
+    margin-bottom: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px dashed #EBE0CE;
+  }
+  .news-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .news-item .item-header {
+    margin-bottom: 6px;
+  }
+  .news-item .item-index {
+    display: inline-block;
+    vertical-align: top;
+    background: #8B6920;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    min-width: 19px;
+    height: 19px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 3px;
+    margin-right: 8px;
+  }
+  .news-item .item-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2E1F12;
+    line-height: 1.55;
+  }
+  .news-item .item-tag {
+    display: inline-block;
+    font-size: 10.5px;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 6px;
+    font-weight: 500;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .tag-hot        { background: #F0E2D0; color: #6B3A18; }
+  .tag-attention  { background: #F2E6D5; color: #5C3115; }
+  .tag-event      { background: #F1E4D2; color: #7A4520; }
+  .tag-framework  { background: #F0E3D0; color: #5E3316; }
+  .tag-market     { background: #EDE5D3; color: #6A3A1A; }
+  .tag-innovation { background: #F3E8D6; color: #6B4018; }
+  .tag-cross      { background: #F0E4D1; color: #5A3215; }
+  .tag-model      { background: #EEE2CF; color: #62391B; }
+  .tag-urgent     { background: #F5E4D4; color: #7B3820; }
+  .tag-local      { background: #EDE6D4; color: #5F3C1A; }
+  .tag-opensource { background: #E8F0E0; color: #3B5E28; }
+  .tag-security   { background: #F6E8E0; color: #7B3A20; }
+  .tag-ipo        { background: #E8EEF5; color: #2A4A7B; }
+  .tag-industry   { background: #EDE8F0; color: #4A3A7A; }
+  .tag-rural      { background: #E8F2EC; color: #2A5E40; }
+  .tag-talent     { background: #EEE8F2; color: #52387A; }
+  .tag-robot      { background: #E8F0F5; color: #2A5580; }
+
+  .item-desc {
+    font-size: 13.5px;
+    color: #4A3E30;
+    line-height: 1.75;
+    margin-top: 6px;
+  }
+  .item-meta {
+    font-size: 11.5px;
+    color: #A89880;
+    margin-top: 7px;
+  }
+  .item-link {
+    color: #8B6920;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* 表格样式 */
+  .top5-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    margin-top: 10px;
+    table-layout: fixed;
+  }
+  .top5-table th {
+    background: #D4BE9C;
+    color: #4A2C1A;
+    font-weight: 600;
+    padding: 7px 4px;
+    text-align: center;
+    border-bottom: 2px solid #8B6920;
+  }
+  .top5-table td {
+    padding: 6px 4px;
+    text-align: center;
+    border-bottom: 1px solid #E8D8C0;
+    color: #4A3E30;
+    background: #fff;
+  }
+  .top5-table tr:nth-child(even) td {
+    background: #FAF6F0;
+  }
+
+  /* 深度观察 */
+  .insight-box {
+    background: #FBF8F4;
+    border-left: 3px solid #8B6920;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    border-radius: 0 4px 4px 0;
+  }
+  .insight-box .insight-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 8px;
+  }
+  .insight-box .insight-body {
+    font-size: 13px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+
+  /* 临平关注 */
+  .linping-box {
+    background: #F4ECD8;
+    padding: 16px 18px;
+    border-radius: 4px;
+    margin-bottom: 14px;
+  }
+  .linping-box .lp-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 8px;
+  }
+  .linping-box .lp-body {
+    font-size: 13px;
+    color: #4A3E30;
+    line-height: 1.8;
+  }
+
+  /* 特别提醒 */
+  .reminder-box {
+    border-left: 4px solid #8B6920;
+    padding: 12px 16px;
+    background: #FDFAF5;
+    margin-bottom: 10px;
+  }
+  .reminder-box .rem-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #4A2C1A;
+    margin-bottom: 8px;
+  }
+  .reminder-box .rem-item {
+    font-size: 12.5px;
+    color: #5A4A38;
+    line-height: 1.9;
+  }
+
+  /* FOOTER */
+  .daily-footer {
+    background: #fff;
+    padding: 20px 16px 10px;
+    text-align: center;
+  }
+  .daily-footer .slogan-line {
+    font-size: 14px;
+    color: #888;
+    font-weight: normal;
+    letter-spacing: 1px;
+    line-height: 2;
+    text-align: center;
+  }
+  .daily-footer .editor-info {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    text-align: center;
+  }
+  .daily-footer .publish-date {
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.8;
+    text-align: center;
+  }
+  .copyright-section {
+    text-align: center;
+    padding: 8px 16px 16px;
+    margin: 0;
+  }
+  .copyright-section p {
+    font-size: 11px;
+    color: #b2b2b2;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  .qr-section {
+    background: #f7f7f7;
+    padding: 20px 16px;
+    margin: 16px 0 0;
+    text-align: center;
+    border-radius: 0;
+  }
+  .qr-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  .qr-section .qr-img {
+    width: 120px;
+    height: 120px;
+    display: block;
+    border: 0;
+    margin: 0 auto;
+  }
+  .qr-section .qr-hint {
+    font-size: 12px;
+    color: #888;
+    font-weight: normal;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+    text-align: center;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<!-- 封面头图 -->
+<img class="cover-banner" src="banner_final.png" alt="临平数协数据资产日报 2026年7月2日">
+
+<!-- 编辑部信息栏 -->
+<section class="meta-bar">
+  临数通 · 数据资产日报 &nbsp;|&nbsp; DATA ASSET DAILY REPORT &nbsp;|&nbsp; 2026年7月2日（星期四）&nbsp;|&nbsp; 临平数协联合出品
+</section>
+
+<!-- 主体内容 -->
+<section class="daily-body">
+
+  <!-- 一、今日要闻 -->
+  <section class="section">
+    <section class="section-title">一、今日要闻</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">1</span>
+        <span class="item-title">2026全球数字经济大会今日北京开幕：人形机器人+世界模型集中亮相<span class="item-tag tag-hot">重磅</span></span>
+      </section>
+      <p class="item-desc"><strong>2026全球数字经济大会</strong>于7月2日正式在北京国家会议中心拉开帷幕，会期4天。本届大会以"建设数字友好城市——智惠无界，数联全球"为主题，规模创历史新高：近40个国际高级别团组、千余名海内外嘉宾参会，50余场专题论坛覆盖全产业链。开幕式发布<strong>3份全球数字经济权威报告</strong>（城市发展报告、灯塔案例、数字友好城市评价指引），近20项行业标准集中出炉。同期举办的数字经济产业博览会设6大展区，国内外最新<strong>人形机器人、世界模型、AI中医具身智能机器人、轻量化AIGC创作工具</strong>首次集中亮相。"全球OPC共创节"同期推出AI超新星黑客松35支团队路演、红杉中国等头部创投对接及24场免费AI工作坊。本次大会为中国数字经济领域迄今<strong>国际化规模最大</strong>的一场盛会。</p>
+      <p class="item-meta">来源：中国新闻网 / 北京日报 · 2026-07-02 &nbsp;
+      <br><a class="item-link" href="https://www.chinanews.com.cn/cj/2026/06-25/10647263.shtml" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">2</span>
+        <span class="item-title">国常会AI扶持政策7月1日正式落地：万卡级智算+芯片补贴+政企场景全面开放<span class="item-tag tag-framework">政策</span></span>
+      </section>
+      <p class="item-desc">6月29日国务院常务会议审议通过的人工智能产业扶持政策于<strong>7月1日正式落地执行</strong>。政策含三大核心部署：一是要求新建万卡级智算中心必须配套高速光传输设备，加大对高端芯片、存储材料研发的补贴与税收减免力度；二是开放政企场景推动AI商业化应用，加速"人工智能+"行动规模化落地；三是强化高质量数据供给，将<strong>行业数据集建设</strong>纳入AI基础设施规划范畴。政策落地标志中国AI产业发展进入"算力基建+数据供给+场景开放"三位一体新阶段。</p>
+      <p class="item-meta">来源：央视新闻 / 中国证券报 · 2026-07-01 &nbsp;
+      <br><a class="item-link" href="https://news.qq.com/rain/a/20260630A023HK00" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">3</span>
+        <span class="item-title">智元第15000台具身机器人量产下线：具身智能从实验室叩开工厂大门<span class="item-tag tag-robot">具身</span></span>
+      </section>
+      <p class="item-desc">6月28日，智元机器人宣布第15000台通用具身机器人<strong>"精灵G2"</strong>正式量产下线，距3月破万台仅用时不足3个月，再次刷新全球行业量产纪录。该台机器人当天即交付<strong>龙旗科技南昌工厂</strong>投入真实产线，8台精灵G2并线完成平板量产质检工段全流程作业，6天生产产品17500余件，作业成功率<strong>99.99%</strong>。此外，精灵G2已在上汽通用奥特能超级工厂电池量产线部署，定位精度±0.1mm，为<strong>汽车行业首批</strong>投入量产产线的人形机器人。智元目前年产能已达10万台以上，覆盖产线上下料、工业搬运、安防巡检等7大部署场景。"万亩机器人小镇"产能进一步扩张。</p>
+      <p class="item-meta">来源：搜狐科技 / 腾讯新闻 · 2026-06-29 &nbsp;
+      <br><a class="item-link" href="https://www.sohu.com/a/1043234380_121039600" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+  </section>
+
+  <!-- 二、政策动态 -->
+  <section class="section">
+    <section class="section-title">二、政策动态</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">4</span>
+        <span class="item-title">《金融法》草案首次提请全国人大审议：金融领域"1号法律"定调数字金融监管<span class="item-tag tag-hot">重磅</span></span>
+      </section>
+      <p class="item-desc">6月23日，《中华人民共和国金融法（草案）》提请十四届全国人大常委会第二十三次会议首次审议。该法定位于金融领域<strong>"管总"的基础性、综合性、统领性法律</strong>，是我国金融法律体系中具有指导作用的"1"，将构建"1+N+X"科学完备统一的金融法律体系。草案坚持"强监管、防风险、促高质量发展"主线，明确将所有金融活动纳入监管，为人工智能、区块链等新技术催生的新型金融工具与服务模式提供<strong>更具适应性的法律框架</strong>。这标志着中国金融治理进入"统一法治"新时代，数字金融创新将在法治轨道上有序推进。</p>
+      <p class="item-meta">来源：央视新闻 / 财新网 · 2026-06-24 &nbsp;
+      <br><a class="item-link" href="https://finance.cctv.com/2026/06/24/ARTIEGkHOVmyT88xqYTmI5ej260624.shtml" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">5</span>
+        <span class="item-title">《中国人民银行法》时隔23年修订：首次明确数字人民币法律地位<span class="item-tag tag-attention">关注</span></span>
+      </section>
+      <p class="item-desc">与《金融法》同步提请审议的《中国人民银行法（修订草案）》是自1995年制定、2003年修订以来<strong>时隔23年的重大修改</strong>。修订草案共八章54条，亮点包括：首次正式明确<strong>数字人民币</strong>的法律地位和法偿性；完善货币政策和宏观审慎政策"双支柱"调控框架；充实中央银行维护金融稳定职能；增加域外适用条款和阻断、反制措施。数字人民币纳入基本法律框架，为数字支付生态和数据金融创新提供了<strong>顶层制度保障</strong>。</p>
+      <p class="item-meta">来源：财新网 / 每日经济新闻 · 2026-06-24 &nbsp;
+      <br><a class="item-link" href="https://finance.caixin.com/2026-06-24/102456847.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">6</span>
+        <span class="item-title">2026全国中小企业数字化转型典型案例征集启动：数据赋能"小快轻准"<span class="item-tag tag-industry">产业</span></span>
+      </section>
+      <p class="item-desc">中国日报7月1日报道，2026年度<strong>全国中小企业数字化转型典型案例</strong>征集工作正式启动，面向全国筛选中小企业数实深度融合的标杆实践。征集覆盖三类方向：自身应用数字化技术实现核心业务上云的转型企业；具有生态带动能力的平台型/链主企业；为中小企业提供技术赋能、人才培养等公共服务的创新模式。聚焦"小快轻准"数字化路径，鼓励<strong>SaaS平台、低代码、公共数据服务</strong>等轻量化工具降低中小企业数字化门槛。入选案例将汇编推广，形成可复制的中小企业数字化转型方法论。</p>
+      <p class="item-meta">来源：中国日报 / 工信部官网 · 2026-07-01 &nbsp;
+      <br><a class="item-link" href="http://cn.chinadaily.com.cn/a/202607/01/WS6a448400a310d709c2fbb383.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+  </section>
+
+  <!-- 三、行业观察 -->
+  <section class="section">
+    <section class="section-title">三、行业观察</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">7</span>
+        <span class="item-title">数据交易所全国格局深度演进：万亿赛道下AI数据成增长新引擎<span class="item-tag tag-market">市场</span></span>
+      </section>
+      <p class="item-desc">2026年上半年，中国数据交易市场呈现"头部引领、集群发展"态势。深圳数据交易所2024年交易额突破<strong>500亿元</strong>，北京、上海头部交易所交易规模超千亿级别；贵阳大数据交易所累计上架1480个产品，2025年上半年交易笔数达5114笔。值得关注的是，<strong>AI数据产品</strong>成为交易增长的核心驱动力——截至2025年7月，国内主要数据交易所上架产品超52720个，AI训练数据集、行业知识库等需求爆发式增长。全国数据交易市场从"千亿俱乐部"起步向"万亿赛道"迈进，数据交易所正在从撮合平台升级为<strong>全链条数据要素服务枢纽</strong>。</p>
+      <p class="item-meta">来源：通信世界网 / 腾讯云开发者社区 · 2026-06 &nbsp;
+      <br><a class="item-link" href="https://www.cww.net.cn/article?id=603848" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">8</span>
+        <span class="item-title">2026中国国际金融展上海落幕：数字人民币跨境+AI深度赋能金融<span class="item-tag tag-innovation">创新</span></span>
+      </section>
+      <p class="item-desc">6月16日，以"金融强国筑根基 数智创新向未来"为主题的<strong>2026中国国际金融展</strong>在上海世博展览馆举办。中国人民银行副行长邹澜在开幕式指出"强化科技引领，加强新阶段金融科技发展顶层设计"。展会三大看点：数字人民币跨境服务取得<strong>新进展</strong>，多边央行数字货币桥（mBridge）场景扩容；AI技术深度赋能金融行业，新网银行等数字原生银行展示"没有物理网点"的全AI普惠金融服务模式；金融科技从工具角色升级为<strong>金融基础设施核心</strong>。数据驱动的风险管理、智能投顾和数字化运营成为银行竞争新焦点。</p>
+      <p class="item-meta">来源：中国金融新闻网 / 慧企云 · 2026-06-17 &nbsp;
+      <br><a class="item-link" href="https://news.xmsme.cn/2026/6/17/876_9411.shtml" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">9</span>
+        <span class="item-title">浙江7个制造业数字化转型案例入选国家典型：数量全国第一<span class="item-tag tag-local">浙江</span></span>
+      </section>
+      <p class="item-desc">据浙江省数字经济发展中心通报，在工信部组织开展的2025年度制造业数字化转型典型案例推荐中，<strong>浙江省7个案例</strong>成功入选，数量居全国第一。入选案例覆盖城市、重点园区、产业集群和企业四类主体，展现了浙江"点线面"结合系统推进制造业数字化转型的经验。杭州临平区被重点提及，杭州市经信局明确表示将"<strong>支持临平区推动垂类大模型赋能制造业</strong>"，推动临平作为重点区域在AI+制造领域发挥示范作用。浙江数字化转型"临平样本"已进入国家级视野。</p>
+      <p class="item-meta">来源：浙江省数字经济发展中心 / 杭州市经信局 · 2026-06-20 &nbsp;
+      <br><a class="item-link" href="https://jxj.hangzhou.gov.cn/col/col1229265378/art/2026/art_51b44c98d580467a82ca228a0413a01b.html" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+  </section>
+
+  <!-- 四、数据入表与资本化 -->
+  <section class="section">
+    <section class="section-title">四、数据入表与资本化</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">10</span>
+        <span class="item-title">数据资产评估国家标准GB/T 46353-2025施行：构建"技术+市场+法律"三维评估框架<span class="item-tag tag-framework">国标</span></span>
+      </section>
+      <p class="item-desc">《信息技术 大数据 数据资产价值评估》（<strong>GB/T 46353-2025</strong>）已于2026年4月正式发布施行。这是我国首部针对数据资产价值评估的国家标准，系统规定了评估框架、评估对象、评估依据、数据评价、价值影响要素与评估实施全流程。标准创新性引入<strong>"技术-市场-法律"三维评估模型</strong>，从数据质量（技术维度）、数据应用场景（市场维度）、数据合规性（法律维度）综合确定数据资产价值。此前中评协发布的《数据资产评估指导意见》与之协同配合，形成"指导意见+国家标准"双层规范体系，为<strong>数据资产入表后的公允价值计量</strong>提供权威方法论。</p>
+      <p class="item-meta">来源：国家标准信息服务平台 / 中国资产评估协会 · 2026-04 &nbsp;
+      <br><a class="item-link" href="https://std.samr.gov.cn/search/stdPage?q=46353" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">11</span>
+        <span class="item-title">金融数据资产化新路径：《金融法》+数字人民币入法双轮驱动<span class="item-tag tag-market">模式</span></span>
+      </section>
+      <p class="item-desc">《金融法》草案审议与《中国人民银行法》修订的同步推进，为<strong>金融数据资产化</strong>提供了前所未有的法治环境。《金融法》构建统一监管框架，终结金融数据合规碎片化现象；数字人民币明确法律地位和法偿性，为基于数字货币的数据金融服务（如M1计息、数据质押融资、智能合约）开辟合规路径。金融数据资产入表面临的核心障碍——<strong>确权不清、合规模糊、估值困难</strong>——正在通过顶层立法逐步化解。未来金融数据资产有望从"内部辅助工具"升级为"独立资产类别"。</p>
+      <p class="item-meta">来源：央视新闻 / 财新网 · 2026-06-24 &nbsp;
+      <br><a class="item-link" href="https://finance.cctv.com/2026/06/24/ARTIEGkHOVmyT88xqYTmI5ej260624.shtml" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <!-- 入表路径对比表 -->
+    <table class="top5-table">
+      <colgroup>
+        <col style="width:24%">
+        <col style="width:28%">
+        <col style="width:28%">
+        <col style="width:20%">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>入表路径</th>
+          <th>核心要件</th>
+          <th>代表案例</th>
+          <th>适用对象</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>无形资产入表</td>
+          <td>数据治理+确权+资产评估</td>
+          <td>中铁十四局盾构数据</td>
+          <td>制造业/央企</td>
+        </tr>
+        <tr>
+          <td>数据资产ABS</td>
+          <td>资产打包+评级+交易所挂牌</td>
+          <td>中交集团49.6亿元</td>
+          <td>大型国企/运营商</td>
+        </tr>
+        <tr>
+          <td>银行增信融资</td>
+          <td>数据资产质押/抵押登记</td>
+          <td>温州"信贷数据宝"</td>
+          <td>中小企业</td>
+        </tr>
+        <tr>
+          <td>数据资产信托</td>
+          <td>数据资源托管+受益权分置</td>
+          <td>浙江大数据交易中心</td>
+          <td>多产权方共享</td>
+        </tr>
+        <tr>
+          <td>数据产品交易</td>
+          <td>交易所挂牌+定价撮合</td>
+          <td>深数所52720款产品</td>
+          <td>各类数商</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </section>
+
+  <!-- 五、地方实践 -->
+  <section class="section">
+    <section class="section-title">五、地方实践</section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">12</span>
+        <span class="item-title">第七届西部数字经济博览会西安圆满落幕：丝路数据走廊建设提速<span class="item-tag tag-event">盛会</span></span>
+      </section>
+      <p class="item-desc">6月26日至28日，<strong>第七届西部数字经济博览会</strong>在西安国际会展中心成功举办，以"数聚丝路活力 智绘西部未来"为主题。博览会吸引柬埔寨、韩国、泰国、新加坡等多国外宾和跨国企业代表团参与，汇聚全国<strong>30余座城市代表</strong>参会，规划2万平方米展览面积、九大主题展区，采用"1+1+8+N"活动体系。展会聚焦数据要素×工业制造、数字贸易、智慧城市、算力基础设施等关键词，四川与重庆同期联合举办数字乡村协同发展交流会，标志西部数据产业生态从<strong>单点突破进入跨省联动</strong>新阶段。</p>
+      <p class="item-meta">来源：百度百科 / 西安日报 · 2026-06-29 &nbsp;
+      <br><a class="item-link" href="https://baijiahao.baidu.com/s?id=1869108309456104788" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">13</span>
+        <span class="item-title">《重庆市数字经济促进条例》6月1日施行：中西部首部数字经济地方立法<span class="item-tag tag-local">地方</span></span>
+      </section>
+      <p class="item-desc">《重庆市数字经济促进条例》经重庆市六届人大常委会第二十二次会议表决通过，自<strong>2026年6月1日起正式施行</strong>。条例共7章53条，重点围绕数字基础设施、数字产业化、产业数字化、数据要素市场等领域，完善数字经济制度体系。这是中西部地区<strong>首部数字经济促进条例</strong>，首次在地方性法规中明确数据要素市场化配置的具体路径，为成渝双城经济圈数据规则统一提供了法规基础。随着条例施行，重庆在西部地区数据治理领域占据先发优势。</p>
+      <p class="item-meta">来源：同花顺财经 / 住建部 · 2026-04-08 &nbsp;
+      <br><a class="item-link" href="https://stock.10jqka.com.cn/20260408/c675838041.shtml" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+    <section class="news-item">
+      <section class="item-header">
+        <span class="item-index">14</span>
+        <span class="item-title">"数据要素×"大赛四川分赛成都启幕：成渝双城数据生态联动<span class="item-tag tag-event">赛事</span></span>
+      </section>
+      <p class="item-desc">6月16日，2026年"数据要素×"大赛四川分赛暨第七届数字四川创新大赛动员仪式在成都高新区举行，来自全省各市（州）数据管理部门、领军企业、科研院所近<strong>400人</strong>齐聚。该赛事由国家数据局、四川省人民政府指导，省发改委（省数据局）主办，聚焦<strong>工业制造、现代农业、商贸流通、交通运输</strong>等领域的数据场景应用。同期，四川与重庆联合推进数字乡村协同发展交流会，成渝双城在数据要素领域的联动正从数字经济总量合作走向<strong>数据产品和数据规则互认层面</strong>，为西部数据市场一体化提供示范。</p>
+      <p class="item-meta">来源：百度百家号 / 四川省数据局 · 2026-06-18 &nbsp;
+      <br><a class="item-link" href="https://baijiahao.baidu.com/s?id=1868341275655889320" target="_blank">原文链接 ↗</a></p>
+    </section>
+
+  </section>
+
+  <!-- 深度观察 -->
+  <section class="section">
+    <section class="section-title">深度观察</section>
+
+    <section class="insight-box">
+      <p class="insight-title">🤖 观察一：具身智能的"iPhone时刻"——从6台到15000台，数据驱动工厂智能化新范式</p>
+      <p class="insight-body">智元机器人用三年走完从6台原型到15000台量产的跨越，不仅是单一公司的胜利，更标志着中国具身智能产业抵达关键拐点。龙旗科技的产线数据揭示了核心事实：8台精灵G2在真实产线上，以<strong>±0.1mm精度、99.99%成功率</strong>运转6天产出17500件产品。这组数字的深层含义是：具身机器人大规模部署的<strong>数据飞轮已启动</strong>——每台机器人在产线上每完成一次操作，都在为行业知识库贡献训练数据。当机器人数量从百台跃升至万台、十万台，采集的工业数据呈指数级增长，将彻底重构制造业数据资产的源头。临平作为先进制造业基地，老板电器等龙头企业部署具身智能的场景条件已经成熟。</p>
+    </section>
+
+    <section class="insight-box">
+      <p class="insight-title">⚙️ 观察二：2026下半年数字经济"政策闭环"——AI落地+算力基建+金融法治三重奏</p>
+      <p class="insight-body">7月1日国常会AI政策正式落地，7月2日全球数字经济大会开幕，《金融法》《中国人民银行法》同步推进——三件事时间高度重合，构成2026下半年数字经济的核心叙事。AI政策解决了"做什么"（万卡智算+场景开放），数字经济大会回答了"在哪做"（全球协作+首发首秀），金融两法规范了"钱从哪来、如何合规"（数字人民币法偿+金融创新法制度）。三大支点形成政策闭环后，<strong>数据资产化</strong>将加速从概念走向执行——AI驱动需求、算力提供产能、金融法律扫清顾虑。下半年，谁能率先将这三股力量整合并应用于数据资产入表与融资业务，谁就掌握了先机。临平数协应紧盯8月20日《网络数据安全风险评估办法》施行窗口，为会员企业提供合规评估、数据治理、入表融资"三合一"服务包。</p>
+    </section>
+
+  </section>
+
+  <!-- 临平关注 -->
+  <section class="section">
+    <section class="section-title">临平关注</section>
+
+    <section class="linping-box">
+      <p class="lp-title">🏙️ 聚焦临平：智算政策×制造业数字化×下半年提级</p>
+      <p class="lp-body">
+        <strong>【对接AI政策红利窗口】</strong><br>
+        国常会AI扶持政策7月1日正式落地，要求新建万卡级智算中心配套高速光传输设备。临平算力小镇（省级特色小镇）与联通算力中心具有天然承接优势，可积极申报智算扩容项目，争取芯片补贴和税收减免。<strong>杭州经信局已明确支持临平区推动垂类大模型赋能制造业</strong>，政策东风已至。
+        <br><br>
+        <strong>【制造业数据资产入表加速期】</strong><br>
+        GB/T 46353数据资产评估国标施行、《金融法》和央行法修订为数据资产金融化铺路，入表从"试水"进入"标准化"时代。制造业数据治理和资产评估是当前最大蓝海——制造企业数据量大但入表金额薄，蕴藏巨大增值空间。临平数协可联合雾透科技为<strong>临平区制造企业</strong>（如老板电器、安防装备、汽车配件等"2327X"集群企业）提供全流程入表服务，打造浙江乃至全国的"长三角制造业数据资产化示范样本"。
+        <br><br>
+        <strong>【下半年重点关注节点】</strong><br>
+        ① 全球数字经济大会（7/2-5）数据要素论坛+OPC共创节成果跟踪，为临平引进创新生态资源；② 全国中小企业数字化转型典型案例征集——临平企业可积极申报，争创"国家级标杆"；③ 8月20日《网络数据安全风险评估办法》施行——提前启动临平会员企业合规评估服务，化制度压力为专业服务声誉护城河。
+      </p>
+    </section>
+
+  </section>
+
+  <!-- 特别提醒 -->
+  <section class="section">
+    <section class="section-title">特别提醒</section>
+    <section class="reminder-box">
+      <p class="rem-title">📅 近期重要事件日历</p>
+      <p class="rem-item">
+        【7月2日-5日】2026全球数字经济大会北京国家会议中心持续举办，关注数据要素论坛成果<br>
+        【7月2日】全球OPC共创节AI超新星黑客松路演+创投对接<br>
+        【7月下旬】湖南省数字乡村创新大赛初赛阶段（7月26日-31日）<br>
+        【8月20日】《网络数据安全风险评估办法》正式施行——年度评估成法定义务<br>
+        【9月1日】深圳2026年AI语料券专项资金申报启动（至11月10日）<br>
+        【年底前】工信部/国家数据局"模数共振"行动阶段性收官，数模协同生态基本形成<br>
+        【持续进行】2026全国中小企业数字化转型典型案例征集——临平企业可申报
+      </p>
+    </section>
+  </section>
+
+</section><!-- end daily-body -->
+
+<!-- Footer -->
+<section class="daily-footer">
+  <p class="slogan-line">—— 数据驱动未来，资产赋能发展 ——</p>
+  <p class="editor-info">临数通 · 数据产业周刊编辑部</p>
+  <p class="publish-date">2026年7月2日</p>
+</section>
+
+<section class="copyright-section">
+  <p>本刊内容由临平数协编辑部整理发布，仅供参考，不构成投资建议。</p>
+  <p>转载请注明来源：临数通 · 数据资产日报</p>
+  <p>联系我们：杭州市临平区数字港2号楼 · 临平数协</p>
+  <p>© 2026 杭州市临平区数据产业协会 版权所有</p>
+</section>
+
+<section class="qr-section">
+  <section class="qr-wrapper">
+    <img class="qr-img" src="https://mmbiz.qpic.cn/mmbiz_jpg/7mfnE1RXTGST1c2qibp2rBsrxrpDsUfhm3YJp3f7cVYCfzticfic0FmLWg1lqpjD77YibNGCEMFZuaqJe0iaEicibBVnA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="临平数协公众号二维码">
+  </section>
+  <p class="qr-hint">微信扫一扫 关注该公众号</p>
+</section>
+
+</body>
+</html>
